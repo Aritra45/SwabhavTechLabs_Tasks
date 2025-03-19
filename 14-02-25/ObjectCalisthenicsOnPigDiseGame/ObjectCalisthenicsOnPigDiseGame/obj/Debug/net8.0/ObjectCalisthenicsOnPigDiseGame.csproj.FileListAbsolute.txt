@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\bin\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.exe
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\bin\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\bin\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\bin\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.dll
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\bin\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.dll
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\refint\ObjectCalisthenicsOnPigDiseGame.dll
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ObjectCalisthenicsOnPigDiseGame.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\14-02-25\ObjectCalisthenicsOnPigDiseGame\ObjectCalisthenicsOnPigDiseGame\obj\Debug\net8.0\ref\ObjectCalisthenicsOnPigDiseGame.dll

@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\bin\Debug\net8.0\InAndOut.exe
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\bin\Debug\net8.0\InAndOut.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\bin\Debug\net8.0\InAndOut.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\bin\Debug\net8.0\InAndOut.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\bin\Debug\net8.0\InAndOut.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\refint\InAndOut.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\InAndOut.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\InAndOut\InAndOut\obj\Debug\net8.0\ref\InAndOut.dll

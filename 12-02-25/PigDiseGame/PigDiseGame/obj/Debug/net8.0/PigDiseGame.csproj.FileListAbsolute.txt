@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\bin\Debug\net8.0\PigDiseGame.exe
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\bin\Debug\net8.0\PigDiseGame.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\bin\Debug\net8.0\PigDiseGame.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\bin\Debug\net8.0\PigDiseGame.dll
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\bin\Debug\net8.0\PigDiseGame.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.dll
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\refint\PigDiseGame.dll
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\PigDiseGame.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\12-02-25\PigDiseGame\PigDiseGame\obj\Debug\net8.0\ref\PigDiseGame.dll

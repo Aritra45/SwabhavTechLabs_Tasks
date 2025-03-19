@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\bin\Debug\net8.0\Stack.exe
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\bin\Debug\net8.0\Stack.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\bin\Debug\net8.0\Stack.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\bin\Debug\net8.0\Stack.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\bin\Debug\net8.0\Stack.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\refint\Stack.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\Stack.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Stack\Stack\obj\Debug\net8.0\ref\Stack.dll

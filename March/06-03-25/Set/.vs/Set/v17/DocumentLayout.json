@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\set\\set\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|solutionrelative:set\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\set\\set\\hashsets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|solutionrelative:set\\hashsets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\set\\set\\setop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|solutionrelative:set\\setop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\set\\set\\sets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABBC57B-34C2-4E57-B11F-056049710586}|Set\\Set.csproj|solutionrelative:set\\sets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HashSets.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\HashSets.cs",
+              "RelativeDocumentMoniker": "Set\\HashSets.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\HashSets.cs",
+              "RelativeToolTip": "Set\\HashSets.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T12:28:00.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SetOp.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\SetOp.cs",
+              "RelativeDocumentMoniker": "Set\\SetOp.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\SetOp.cs",
+              "RelativeToolTip": "Set\\SetOp.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwCMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:48:04.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sets.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\Sets.cs",
+              "RelativeDocumentMoniker": "Set\\Sets.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\Sets.cs",
+              "RelativeToolTip": "Set\\Sets.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAArwBkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T13:29:07.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\Program.cs",
+              "RelativeDocumentMoniker": "Set\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Set\\Set\\Program.cs",
+              "RelativeToolTip": "Set\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T13:27:04.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

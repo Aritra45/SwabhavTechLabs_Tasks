@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\bin\Debug\net8.0\Armstrong.exe
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\bin\Debug\net8.0\Armstrong.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\bin\Debug\net8.0\Armstrong.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\bin\Debug\net8.0\Armstrong.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\bin\Debug\net8.0\Armstrong.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\refint\Armstrong.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\Armstrong.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Armstrong\Armstrong\obj\Debug\net8.0\ref\Armstrong.dll

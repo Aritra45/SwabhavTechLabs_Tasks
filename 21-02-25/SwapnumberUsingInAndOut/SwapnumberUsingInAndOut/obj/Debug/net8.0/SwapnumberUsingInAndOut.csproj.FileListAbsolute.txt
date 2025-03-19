@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\bin\Debug\net8.0\SwapnumberUsingInAndOut.exe
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\bin\Debug\net8.0\SwapnumberUsingInAndOut.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\bin\Debug\net8.0\SwapnumberUsingInAndOut.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\bin\Debug\net8.0\SwapnumberUsingInAndOut.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\bin\Debug\net8.0\SwapnumberUsingInAndOut.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\refint\SwapnumberUsingInAndOut.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\SwapnumberUsingInAndOut.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SwapnumberUsingInAndOut\SwapnumberUsingInAndOut\obj\Debug\net8.0\ref\SwapnumberUsingInAndOut.dll

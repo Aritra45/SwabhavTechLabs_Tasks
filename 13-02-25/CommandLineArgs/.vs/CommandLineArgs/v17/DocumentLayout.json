@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\13-02-25\\CommandLineArgs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9594DE9C-1C2E-472D-955C-37680B3ED402}|CommandLineArgs\\CommandLineArgs.csproj|e:\\swabhav techlabs solutions pvt ltd\\13-02-25\\commandlineargs\\commandlineargs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9594DE9C-1C2E-472D-955C-37680B3ED402}|CommandLineArgs\\CommandLineArgs.csproj|solutionrelative:commandlineargs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9594DE9C-1C2E-472D-955C-37680B3ED402}|CommandLineArgs\\CommandLineArgs.csproj|e:\\swabhav techlabs solutions pvt ltd\\13-02-25\\commandlineargs\\commandlineargs\\commandlineargs.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9594DE9C-1C2E-472D-955C-37680B3ED402}|CommandLineArgs\\CommandLineArgs.csproj|solutionrelative:commandlineargs\\commandlineargs.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommandLineArgs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\13-02-25\\CommandLineArgs\\CommandLineArgs\\CommandLineArgs.csproj",
+              "RelativeDocumentMoniker": "CommandLineArgs\\CommandLineArgs.csproj",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\13-02-25\\CommandLineArgs\\CommandLineArgs\\CommandLineArgs.csproj",
+              "RelativeToolTip": "CommandLineArgs\\CommandLineArgs.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-13T10:50:18.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\13-02-25\\CommandLineArgs\\CommandLineArgs\\Program.cs",
+              "RelativeDocumentMoniker": "CommandLineArgs\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\13-02-25\\CommandLineArgs\\CommandLineArgs\\Program.cs",
+              "RelativeToolTip": "CommandLineArgs\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T10:45:52.691Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

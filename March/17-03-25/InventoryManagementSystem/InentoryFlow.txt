@@ -1,0 +1,31 @@
+Model (Databese tables):
+
+Class Product: ProductService(Properties:ProductID, Name, Description, Quantity,Price, InventoryId), ShowMenu(){AddProduct(Product p);};
+Class Inventory: InventoryService(Properties: InventoryID, Location),ShowMenu();
+Class Supplier: SupplierService(Properties: SupplierID, Name, ContactInfo,InventoryID), ShowMenu();
+Class Transaction: TransactionService(Properties: TransactionID, ProductID,Type,Quantity, Date, InventoryID),ShowMenu();
+
+Services(interfaces):
+
+ProductService(Add, Delete, Update, View)
+InventoryService(Add, Delete, Update, View)
+SupplierService(Add, Delete, Update, View)
+TransactionServices (Add, View)
+
+Management:
+
+Class Store(SwitchCase(mainMenu))
+
+
+
+
+1) Models
+2) Services
+3) implement services in model
+4) define all methods of services in model
+5)ShowMenu(Sub-menu) for each model
+6)Management(class Store(MainMenu))
+7)Program.cs(Store store=new Store(); store.MainMenu())
+
+
+MainMenu->Sub-menu->Service methods

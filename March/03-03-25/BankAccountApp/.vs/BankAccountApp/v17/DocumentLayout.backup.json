@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\services\\bankmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\services\\bankmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\services\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\services\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\services\\bankstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\services\\bankstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\model\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\model\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\03-03-25\\bankaccountapp\\bankaccountapp\\exceptions\\invalidpanexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89536464-22F0-4A30-999D-5EF3065DF8FD}|BankAccountApp\\BankAccountApp.csproj|solutionrelative:bankaccountapp\\exceptions\\invalidpanexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InvalidPanException.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Exceptions\\InvalidPanException.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\Exceptions\\InvalidPanException.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Exceptions\\InvalidPanException.cs",
+              "RelativeToolTip": "BankAccountApp\\Exceptions\\InvalidPanException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:53:03.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataSerializer.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Services\\DataSerializer.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\Services\\DataSerializer.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Services\\DataSerializer.cs",
+              "RelativeToolTip": "BankAccountApp\\Services\\DataSerializer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T16:09:15.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountType.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\AccountType.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\AccountType.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\AccountType.cs",
+              "RelativeToolTip": "BankAccountApp\\AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:34:00.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BankStore.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Services\\BankStore.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\Services\\BankStore.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Services\\BankStore.cs",
+              "RelativeToolTip": "BankAccountApp\\Services\\BankStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:41:46.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BankManager.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Services\\BankManager.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\Services\\BankManager.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Services\\BankManager.cs",
+              "RelativeToolTip": "BankAccountApp\\Services\\BankManager.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:31:28.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BankDetails.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Model\\BankDetails.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\Model\\BankDetails.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Model\\BankDetails.cs",
+              "RelativeToolTip": "BankAccountApp\\Model\\BankDetails.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:19:38.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Program.cs",
+              "RelativeDocumentMoniker": "BankAccountApp\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\03-03-25\\BankAccountApp\\BankAccountApp\\Program.cs",
+              "RelativeToolTip": "BankAccountApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T11:17:47.818Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

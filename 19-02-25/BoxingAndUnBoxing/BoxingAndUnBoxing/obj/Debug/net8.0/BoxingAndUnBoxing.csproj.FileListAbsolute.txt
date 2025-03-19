@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\bin\Debug\net8.0\BoxingAndUnBoxing.exe
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\bin\Debug\net8.0\BoxingAndUnBoxing.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\bin\Debug\net8.0\BoxingAndUnBoxing.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\bin\Debug\net8.0\BoxingAndUnBoxing.dll
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\bin\Debug\net8.0\BoxingAndUnBoxing.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.dll
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\refint\BoxingAndUnBoxing.dll
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\BoxingAndUnBoxing.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\BoxingAndUnBoxing\BoxingAndUnBoxing\obj\Debug\net8.0\ref\BoxingAndUnBoxing.dll

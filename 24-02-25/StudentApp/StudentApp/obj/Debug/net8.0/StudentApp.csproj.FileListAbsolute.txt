@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\bin\Debug\net8.0\StudentApp.exe
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\bin\Debug\net8.0\StudentApp.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\bin\Debug\net8.0\StudentApp.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\bin\Debug\net8.0\StudentApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\bin\Debug\net8.0\StudentApp.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\refint\StudentApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\StudentApp.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\24-02-25\StudentApp\StudentApp\obj\Debug\net8.0\ref\StudentApp.dll

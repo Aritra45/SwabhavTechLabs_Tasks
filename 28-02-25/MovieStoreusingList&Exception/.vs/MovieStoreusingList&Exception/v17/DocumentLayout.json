@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\exceptions\\listemptyexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\exceptions\\listemptyexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\services\\moviemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\services\\moviemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\services\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\services\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\services\\moviestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\services\\moviestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\genrelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\genrelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\model\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\model\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|e:\\swabhav techlabs solutions pvt ltd\\28-02-25\\moviestoreusinglist\u0026exception\\moviestoreusinglist\u0026exception\\exceptions\\listfullexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2B3F556-9FDD-4BB2-96A8-0E35055EC288}|MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception.csproj|solutionrelative:moviestoreusinglist\u0026exception\\exceptions\\listfullexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListEmptyException.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Exceptions\\ListEmptyException.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Exceptions\\ListEmptyException.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Exceptions\\ListEmptyException.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Exceptions\\ListEmptyException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T15:45:52.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenreList.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\GenreList.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\GenreList.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\GenreList.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\GenreList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T10:19:13.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSerializer.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Services\\DataSerializer.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Services\\DataSerializer.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Services\\DataSerializer.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Services\\DataSerializer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T12:17:36.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListFullException.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Exceptions\\ListFullException.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Exceptions\\ListFullException.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Exceptions\\ListFullException.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Exceptions\\ListFullException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T09:36:16.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovieStore.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Services\\MovieStore.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Services\\MovieStore.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Services\\MovieStore.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Services\\MovieStore.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T12:28:50.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovieManager.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Services\\MovieManager.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Services\\MovieManager.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Services\\MovieManager.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Services\\MovieManager.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T12:28:40.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MovieDetails.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Model\\MovieDetails.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Model\\MovieDetails.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Model\\MovieDetails.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Model\\MovieDetails.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T12:26:04.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Program.cs",
+              "RelativeDocumentMoniker": "MovieStoreusingList\u0026Exception\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\28-02-25\\MovieStoreusingList\u0026Exception\\MovieStoreusingList\u0026Exception\\Program.cs",
+              "RelativeToolTip": "MovieStoreusingList\u0026Exception\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T12:24:38.34Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\bin\Debug\net8.0\InetrfaceImplementation.exe
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\bin\Debug\net8.0\InetrfaceImplementation.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\bin\Debug\net8.0\InetrfaceImplementation.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\bin\Debug\net8.0\InetrfaceImplementation.dll
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\bin\Debug\net8.0\InetrfaceImplementation.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.dll
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\refint\InetrfaceImplementation.dll
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\InetrfaceImplementation.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\InetrfaceImplementation\InetrfaceImplementation\obj\Debug\net8.0\ref\InetrfaceImplementation.dll

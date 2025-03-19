@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\bin\Debug\net8.0\SingleInheritance.exe
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\bin\Debug\net8.0\SingleInheritance.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\bin\Debug\net8.0\SingleInheritance.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\bin\Debug\net8.0\SingleInheritance.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\bin\Debug\net8.0\SingleInheritance.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\refint\SingleInheritance.dll
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\SingleInheritance.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\21-02-25\SingleInheritance\SingleInheritance\obj\Debug\net8.0\ref\SingleInheritance.dll

@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\bin\Debug\net8.0\MutableAndImmutable.exe
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\bin\Debug\net8.0\MutableAndImmutable.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\bin\Debug\net8.0\MutableAndImmutable.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\bin\Debug\net8.0\MutableAndImmutable.dll
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\bin\Debug\net8.0\MutableAndImmutable.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.dll
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\refint\MutableAndImmutable.dll
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\MutableAndImmutable.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\MutableAndImmutable\MutableAndImmutable\obj\Debug\net8.0\ref\MutableAndImmutable.dll

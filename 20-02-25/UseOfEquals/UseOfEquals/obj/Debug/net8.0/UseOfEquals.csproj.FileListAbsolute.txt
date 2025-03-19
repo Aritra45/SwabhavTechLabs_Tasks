@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\bin\Debug\net8.0\UseOfEquals.exe
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\bin\Debug\net8.0\UseOfEquals.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\bin\Debug\net8.0\UseOfEquals.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\bin\Debug\net8.0\UseOfEquals.dll
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\bin\Debug\net8.0\UseOfEquals.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.dll
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\refint\UseOfEquals.dll
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\UseOfEquals.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\UseOfEquals\UseOfEquals\obj\Debug\net8.0\ref\UseOfEquals.dll

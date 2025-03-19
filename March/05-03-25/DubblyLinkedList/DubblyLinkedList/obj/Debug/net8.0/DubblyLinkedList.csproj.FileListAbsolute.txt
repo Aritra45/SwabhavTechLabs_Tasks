@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\bin\Debug\net8.0\DubblyLinkedList.exe
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\bin\Debug\net8.0\DubblyLinkedList.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\bin\Debug\net8.0\DubblyLinkedList.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\bin\Debug\net8.0\DubblyLinkedList.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\bin\Debug\net8.0\DubblyLinkedList.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\refint\DubblyLinkedList.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\DubblyLinkedList.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\05-03-25\DubblyLinkedList\DubblyLinkedList\obj\Debug\net8.0\ref\DubblyLinkedList.dll

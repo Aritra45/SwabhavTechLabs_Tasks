@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EA9F2B-2E97-41A4-BCC9-F04AE1B059BA}|DubblyLinkedList\\DubblyLinkedList.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\05-03-25\\dubblylinkedlist\\dubblylinkedlist\\linkedlists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EA9F2B-2E97-41A4-BCC9-F04AE1B059BA}|DubblyLinkedList\\DubblyLinkedList.csproj|solutionrelative:dubblylinkedlist\\linkedlists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EA9F2B-2E97-41A4-BCC9-F04AE1B059BA}|DubblyLinkedList\\DubblyLinkedList.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\05-03-25\\dubblylinkedlist\\dubblylinkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EA9F2B-2E97-41A4-BCC9-F04AE1B059BA}|DubblyLinkedList\\DubblyLinkedList.csproj|solutionrelative:dubblylinkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EA9F2B-2E97-41A4-BCC9-F04AE1B059BA}|DubblyLinkedList\\DubblyLinkedList.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\05-03-25\\dubblylinkedlist\\dubblylinkedlist\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EA9F2B-2E97-41A4-BCC9-F04AE1B059BA}|DubblyLinkedList\\DubblyLinkedList.csproj|solutionrelative:dubblylinkedlist\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LinkedLists.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\DubblyLinkedList\\LinkedLists.cs",
+              "RelativeDocumentMoniker": "DubblyLinkedList\\LinkedLists.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\DubblyLinkedList\\LinkedLists.cs",
+              "RelativeToolTip": "DubblyLinkedList\\LinkedLists.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:04:44.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Node.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\DubblyLinkedList\\Node.cs",
+              "RelativeDocumentMoniker": "DubblyLinkedList\\Node.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\DubblyLinkedList\\Node.cs",
+              "RelativeToolTip": "DubblyLinkedList\\Node.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:04:30.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\DubblyLinkedList\\Program.cs",
+              "RelativeDocumentMoniker": "DubblyLinkedList\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\05-03-25\\DubblyLinkedList\\DubblyLinkedList\\Program.cs",
+              "RelativeToolTip": "DubblyLinkedList\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T14:04:06.738Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

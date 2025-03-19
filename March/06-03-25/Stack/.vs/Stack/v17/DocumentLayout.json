@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9E23C6-0C36-4005-8F92-81EB9C538121}|Stack\\Stack.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\stack\\stack\\stacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9E23C6-0C36-4005-8F92-81EB9C538121}|Stack\\Stack.csproj|solutionrelative:stack\\stacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9E23C6-0C36-4005-8F92-81EB9C538121}|Stack\\Stack.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\stack\\stack\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9E23C6-0C36-4005-8F92-81EB9C538121}|Stack\\Stack.csproj|solutionrelative:stack\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9E23C6-0C36-4005-8F92-81EB9C538121}|Stack\\Stack.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\06-03-25\\stack\\stack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9E23C6-0C36-4005-8F92-81EB9C538121}|Stack\\Stack.csproj|solutionrelative:stack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stacks.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\Stack\\Stacks.cs",
+              "RelativeDocumentMoniker": "Stack\\Stacks.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\Stack\\Stacks.cs",
+              "RelativeToolTip": "Stack\\Stacks.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T16:41:26.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Node.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\Stack\\Node.cs",
+              "RelativeDocumentMoniker": "Stack\\Node.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\Stack\\Node.cs",
+              "RelativeToolTip": "Stack\\Node.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T16:41:11.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\Stack\\Program.cs",
+              "RelativeDocumentMoniker": "Stack\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\06-03-25\\Stack\\Stack\\Program.cs",
+              "RelativeToolTip": "Stack\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T16:40:23.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

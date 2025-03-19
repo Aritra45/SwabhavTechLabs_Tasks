@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\bin\Debug\net8.0\ReferenceClassParameter.exe
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\bin\Debug\net8.0\ReferenceClassParameter.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\bin\Debug\net8.0\ReferenceClassParameter.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\bin\Debug\net8.0\ReferenceClassParameter.dll
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\bin\Debug\net8.0\ReferenceClassParameter.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.dll
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\refint\ReferenceClassParameter.dll
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ReferenceClassParameter.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\25-02-25\ReferenceClassParameter\ReferenceClassParameter\obj\Debug\net8.0\ref\ReferenceClassParameter.dll

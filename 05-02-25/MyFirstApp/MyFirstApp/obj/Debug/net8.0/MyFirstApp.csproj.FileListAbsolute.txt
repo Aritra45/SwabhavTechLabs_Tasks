@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\bin\Debug\net8.0\MyFirstApp.exe
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\bin\Debug\net8.0\MyFirstApp.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\bin\Debug\net8.0\MyFirstApp.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\bin\Debug\net8.0\MyFirstApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\bin\Debug\net8.0\MyFirstApp.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\refint\MyFirstApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\MyFirstApp.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\MyFirstApp\MyFirstApp\obj\Debug\net8.0\ref\MyFirstApp.dll

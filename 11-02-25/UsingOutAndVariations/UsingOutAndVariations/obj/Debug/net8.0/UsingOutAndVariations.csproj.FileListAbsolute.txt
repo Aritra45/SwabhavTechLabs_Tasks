@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\bin\Debug\net8.0\UsingOutAndVariations.exe
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\bin\Debug\net8.0\UsingOutAndVariations.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\bin\Debug\net8.0\UsingOutAndVariations.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\bin\Debug\net8.0\UsingOutAndVariations.dll
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\bin\Debug\net8.0\UsingOutAndVariations.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.dll
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\refint\UsingOutAndVariations.dll
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\ref\UsingOutAndVariations.dll
+E:\Swabhav Techlabs Solutions pvt ltd\11-02-25\UsingOutAndVariations\UsingOutAndVariations\obj\Debug\net8.0\UsingOutAndVariations.sourcelink.json

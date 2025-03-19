@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\19-02-25\\BoxingAndUnBoxing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{373FE04B-12D2-4ACF-AEA0-B5F60E747CF9}|BoxingAndUnBoxing\\BoxingAndUnBoxing.csproj|e:\\swabhav techlabs solutions pvt ltd\\19-02-25\\boxingandunboxing\\boxingandunboxing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{373FE04B-12D2-4ACF-AEA0-B5F60E747CF9}|BoxingAndUnBoxing\\BoxingAndUnBoxing.csproj|solutionrelative:boxingandunboxing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\19-02-25\\BoxingAndUnBoxing\\BoxingAndUnBoxing\\Program.cs",
+              "RelativeDocumentMoniker": "BoxingAndUnBoxing\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\19-02-25\\BoxingAndUnBoxing\\BoxingAndUnBoxing\\Program.cs",
+              "RelativeToolTip": "BoxingAndUnBoxing\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T11:15:27.5Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

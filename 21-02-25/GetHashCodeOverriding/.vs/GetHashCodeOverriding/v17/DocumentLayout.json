@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\GetHashCodeOverriding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0E1A01C-1318-4737-876A-4992AB11DA06}|GetHashCodeOverriding\\GetHashCodeOverriding.csproj|e:\\swabhav techlabs solutions pvt ltd\\21-02-25\\gethashcodeoverriding\\gethashcodeoverriding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0E1A01C-1318-4737-876A-4992AB11DA06}|GetHashCodeOverriding\\GetHashCodeOverriding.csproj|solutionrelative:gethashcodeoverriding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0E1A01C-1318-4737-876A-4992AB11DA06}|GetHashCodeOverriding\\GetHashCodeOverriding.csproj|e:\\swabhav techlabs solutions pvt ltd\\21-02-25\\gethashcodeoverriding\\gethashcodeoverriding\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0E1A01C-1318-4737-876A-4992AB11DA06}|GetHashCodeOverriding\\GetHashCodeOverriding.csproj|solutionrelative:gethashcodeoverriding\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Person.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\GetHashCodeOverriding\\GetHashCodeOverriding\\Person.cs",
+              "RelativeDocumentMoniker": "GetHashCodeOverriding\\Person.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\GetHashCodeOverriding\\GetHashCodeOverriding\\Person.cs",
+              "RelativeToolTip": "GetHashCodeOverriding\\Person.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAnwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:17:09.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\GetHashCodeOverriding\\GetHashCodeOverriding\\Program.cs",
+              "RelativeDocumentMoniker": "GetHashCodeOverriding\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\GetHashCodeOverriding\\GetHashCodeOverriding\\Program.cs",
+              "RelativeToolTip": "GetHashCodeOverriding\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:16:38.4Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

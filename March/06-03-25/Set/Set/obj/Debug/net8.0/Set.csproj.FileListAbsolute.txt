@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\bin\Debug\net8.0\Set.exe
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\bin\Debug\net8.0\Set.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\bin\Debug\net8.0\Set.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\bin\Debug\net8.0\Set.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\bin\Debug\net8.0\Set.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\refint\Set.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\Set.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Set\Set\obj\Debug\net8.0\ref\Set.dll

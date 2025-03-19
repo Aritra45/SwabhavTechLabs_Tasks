@@ -1,0 +1,113 @@
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.csproj.AssemblyReference.cache
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.AssemblyInfoInputs.cache
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.AssemblyInfo.cs
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.csproj.CoreCompileInputs.cache
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.exe
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.deps.json
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.runtimeconfig.json
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.pdb
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Azure.Core.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Azure.Identity.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.ClientModel.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentA.CA4C0B7D.Up2Date
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\refint\StudentAppUsingDB.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.pdb
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.genruntimeconfig.cache
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\ref\StudentAppUsingDB.dll
+D:\Swabhav Training\12 August 2024\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.dll.config
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.exe
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.dll.config
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\StudentAppUsingDB.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Azure.Core.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Azure.Identity.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.ClientModel.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Memory.Data.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Runtime.Caching.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.csproj.AssemblyReference.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentA.CA4C0B7D.Up2Date
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\refint\StudentAppUsingDB.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\StudentAppUsingDB.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\12-03-25\StudentAppUsingDB\StudentAppUsingDB\obj\Debug\net8.0\ref\StudentAppUsingDB.dll

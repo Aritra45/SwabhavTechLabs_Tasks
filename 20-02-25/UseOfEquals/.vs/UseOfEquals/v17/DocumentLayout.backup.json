@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\20-02-25\\UseOfEquals\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE181AD-B806-4E7F-88DD-3164B4B62C9E}|UseOfEquals\\UseOfEquals.csproj|e:\\swabhav techlabs solutions pvt ltd\\20-02-25\\useofequals\\useofequals\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE181AD-B806-4E7F-88DD-3164B4B62C9E}|UseOfEquals\\UseOfEquals.csproj|solutionrelative:useofequals\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE181AD-B806-4E7F-88DD-3164B4B62C9E}|UseOfEquals\\UseOfEquals.csproj|e:\\swabhav techlabs solutions pvt ltd\\20-02-25\\useofequals\\useofequals\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE181AD-B806-4E7F-88DD-3164B4B62C9E}|UseOfEquals\\UseOfEquals.csproj|solutionrelative:useofequals\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\20-02-25\\UseOfEquals\\UseOfEquals\\Program.cs",
+              "RelativeDocumentMoniker": "UseOfEquals\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\20-02-25\\UseOfEquals\\UseOfEquals\\Program.cs",
+              "RelativeToolTip": "UseOfEquals\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:40:51.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Person.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\20-02-25\\UseOfEquals\\UseOfEquals\\Person.cs",
+              "RelativeDocumentMoniker": "UseOfEquals\\Person.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\20-02-25\\UseOfEquals\\UseOfEquals\\Person.cs",
+              "RelativeToolTip": "UseOfEquals\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:41:29.431Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

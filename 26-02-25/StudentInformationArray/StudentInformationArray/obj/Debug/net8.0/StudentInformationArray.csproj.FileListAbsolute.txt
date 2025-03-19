@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\bin\Debug\net8.0\StudentInformationArray.exe
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\bin\Debug\net8.0\StudentInformationArray.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\bin\Debug\net8.0\StudentInformationArray.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\bin\Debug\net8.0\StudentInformationArray.dll
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\bin\Debug\net8.0\StudentInformationArray.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.dll
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\refint\StudentInformationArray.dll
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\StudentInformationArray.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\26-02-25\StudentInformationArray\StudentInformationArray\obj\Debug\net8.0\ref\StudentInformationArray.dll

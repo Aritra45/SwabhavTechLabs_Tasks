@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\bin\Debug\net8.0\StackAndHeap.exe
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\bin\Debug\net8.0\StackAndHeap.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\bin\Debug\net8.0\StackAndHeap.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\bin\Debug\net8.0\StackAndHeap.dll
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\bin\Debug\net8.0\StackAndHeap.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.dll
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\refint\StackAndHeap.dll
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\StackAndHeap.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\19-02-25\StackAndHeap\StackAndHeap\obj\Debug\net8.0\ref\StackAndHeap.dll

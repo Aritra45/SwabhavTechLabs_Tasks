@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\bin\Debug\net8.0\MovieStoreApp.exe
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\bin\Debug\net8.0\MovieStoreApp.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\bin\Debug\net8.0\MovieStoreApp.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\bin\Debug\net8.0\MovieStoreApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\bin\Debug\net8.0\MovieStoreApp.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\refint\MovieStoreApp.dll
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\MovieStoreApp.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\27-02-25\MovieStoreApp\MovieStoreApp\obj\Debug\net8.0\ref\MovieStoreApp.dll

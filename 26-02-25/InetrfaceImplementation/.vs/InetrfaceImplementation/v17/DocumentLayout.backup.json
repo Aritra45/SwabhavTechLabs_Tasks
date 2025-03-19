@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BCAC7105-7794-4E8E-947A-20184ECFD459}|InetrfaceImplementation\\InetrfaceImplementation.csproj|e:\\swabhav techlabs solutions pvt ltd\\26-02-25\\inetrfaceimplementation\\inetrfaceimplementation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCAC7105-7794-4E8E-947A-20184ECFD459}|InetrfaceImplementation\\InetrfaceImplementation.csproj|solutionrelative:inetrfaceimplementation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCAC7105-7794-4E8E-947A-20184ECFD459}|InetrfaceImplementation\\InetrfaceImplementation.csproj|e:\\swabhav techlabs solutions pvt ltd\\26-02-25\\inetrfaceimplementation\\inetrfaceimplementation\\model\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCAC7105-7794-4E8E-947A-20184ECFD459}|InetrfaceImplementation\\InetrfaceImplementation.csproj|solutionrelative:inetrfaceimplementation\\model\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCAC7105-7794-4E8E-947A-20184ECFD459}|InetrfaceImplementation\\InetrfaceImplementation.csproj|e:\\swabhav techlabs solutions pvt ltd\\26-02-25\\inetrfaceimplementation\\inetrfaceimplementation\\model\\vehical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCAC7105-7794-4E8E-947A-20184ECFD459}|InetrfaceImplementation\\InetrfaceImplementation.csproj|solutionrelative:inetrfaceimplementation\\model\\vehical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Truck.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\InetrfaceImplementation\\Model\\Truck.cs",
+              "RelativeDocumentMoniker": "InetrfaceImplementation\\Model\\Truck.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\InetrfaceImplementation\\Model\\Truck.cs",
+              "RelativeToolTip": "InetrfaceImplementation\\Model\\Truck.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T13:30:24.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vehical.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\InetrfaceImplementation\\Model\\Vehical.cs",
+              "RelativeDocumentMoniker": "InetrfaceImplementation\\Model\\Vehical.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\InetrfaceImplementation\\Model\\Vehical.cs",
+              "RelativeToolTip": "InetrfaceImplementation\\Model\\Vehical.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T13:30:11.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\InetrfaceImplementation\\Program.cs",
+              "RelativeDocumentMoniker": "InetrfaceImplementation\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\26-02-25\\InetrfaceImplementation\\InetrfaceImplementation\\Program.cs",
+              "RelativeToolTip": "InetrfaceImplementation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T13:29:41.323Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

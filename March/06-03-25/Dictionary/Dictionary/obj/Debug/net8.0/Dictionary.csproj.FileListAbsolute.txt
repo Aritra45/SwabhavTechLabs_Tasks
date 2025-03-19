@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\bin\Debug\net8.0\Dictionary.exe
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\bin\Debug\net8.0\Dictionary.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\bin\Debug\net8.0\Dictionary.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\bin\Debug\net8.0\Dictionary.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\bin\Debug\net8.0\Dictionary.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\refint\Dictionary.dll
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\Dictionary.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\March\06-03-25\Dictionary\Dictionary\obj\Debug\net8.0\ref\Dictionary.dll

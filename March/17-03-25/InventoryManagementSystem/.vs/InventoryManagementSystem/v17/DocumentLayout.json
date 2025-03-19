@@ -1,0 +1,231 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\services\\inventoryoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\services\\inventoryoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\model\\inventorystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\model\\inventorystore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\management\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\management\\store.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\services\\transactionoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\services\\transactionoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\services\\supplieroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\services\\supplieroperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\services\\productoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\services\\productoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\model\\transactionstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\model\\transactionstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\model\\supplierstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\model\\supplierstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\model\\productstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\model\\productstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\repository\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\repository\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\repository\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\repository\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\17-03-25\\inventorymanagementsystem\\inventorymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D201DF1B-9627-4122-9EE9-E9E6B7EB22AB}|InventoryManagementSystem\\InventoryManagementSystem.csproj|solutionrelative:inventorymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionOperations.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\TransactionOperations.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Services\\TransactionOperations.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\TransactionOperations.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Services\\TransactionOperations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:23:14.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SupplierOperations.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\SupplierOperations.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Services\\SupplierOperations.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\SupplierOperations.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Services\\SupplierOperations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:21:55.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventoryOperations.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\InventoryOperations.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Services\\InventoryOperations.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\InventoryOperations.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Services\\InventoryOperations.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAiwBYBAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:18:46.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductOperations.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\ProductOperations.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Services\\ProductOperations.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Services\\ProductOperations.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Services\\ProductOperations.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAMwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T13:15:25.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionStore.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\TransactionStore.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Model\\TransactionStore.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\TransactionStore.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Model\\TransactionStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:37:28.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SupplierStore.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\SupplierStore.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Model\\SupplierStore.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\SupplierStore.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Model\\SupplierStore.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T11:15:18.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Store.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Management\\Store.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Management\\Store.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Management\\Store.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Management\\Store.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:20:31.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryStore.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\InventoryStore.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Model\\InventoryStore.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\InventoryStore.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Model\\InventoryStore.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:30:32.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductStore.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\ProductStore.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Model\\ProductStore.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Model\\ProductStore.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Model\\ProductStore.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:31:28.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Repository\\TransactionService.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Repository\\TransactionService.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Repository\\TransactionService.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Repository\\TransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:28:48.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Service.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Repository\\Service.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Repository\\Service.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Repository\\Service.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Repository\\Service.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:25:32.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Menu.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Menu.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Menu.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:19:09.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "InventoryManagementSystem\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\17-03-25\\InventoryManagementSystem\\InventoryManagementSystem\\Program.cs",
+              "RelativeToolTip": "InventoryManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T12:20:42.454Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

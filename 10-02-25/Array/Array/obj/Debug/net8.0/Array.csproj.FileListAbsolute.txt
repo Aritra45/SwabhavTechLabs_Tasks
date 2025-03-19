@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\bin\Debug\net8.0\Array.exe
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\bin\Debug\net8.0\Array.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\bin\Debug\net8.0\Array.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\bin\Debug\net8.0\Array.dll
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\bin\Debug\net8.0\Array.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.dll
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\refint\Array.dll
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\Array.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\10-02-25\Array\Array\obj\Debug\net8.0\ref\Array.dll

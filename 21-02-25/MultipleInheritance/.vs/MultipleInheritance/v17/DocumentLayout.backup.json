@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\MultipleInheritance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A21401E-C853-41CD-8659-EBD989F3B92C}|MultipleInheritance\\MultipleInheritance.csproj|e:\\swabhav techlabs solutions pvt ltd\\21-02-25\\multipleinheritance\\multipleinheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A21401E-C853-41CD-8659-EBD989F3B92C}|MultipleInheritance\\MultipleInheritance.csproj|solutionrelative:multipleinheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\MultipleInheritance\\MultipleInheritance\\Program.cs",
+              "RelativeDocumentMoniker": "MultipleInheritance\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\21-02-25\\MultipleInheritance\\MultipleInheritance\\Program.cs",
+              "RelativeToolTip": "MultipleInheritance\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T11:13:50.793Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

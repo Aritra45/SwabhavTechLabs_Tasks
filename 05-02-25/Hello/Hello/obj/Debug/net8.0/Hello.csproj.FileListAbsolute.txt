@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\bin\Debug\net8.0\Hello.exe
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\bin\Debug\net8.0\Hello.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\bin\Debug\net8.0\Hello.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\bin\Debug\net8.0\Hello.dll
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\bin\Debug\net8.0\Hello.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.dll
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\refint\Hello.dll
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\Hello.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\05-02-25\Hello\Hello\obj\Debug\net8.0\ref\Hello.dll

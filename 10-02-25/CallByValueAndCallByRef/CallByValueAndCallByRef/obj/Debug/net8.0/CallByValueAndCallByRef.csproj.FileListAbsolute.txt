@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\bin\Debug\net8.0\CallByValueAndCallByRef.exe
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\bin\Debug\net8.0\CallByValueAndCallByRef.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\bin\Debug\net8.0\CallByValueAndCallByRef.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\bin\Debug\net8.0\CallByValueAndCallByRef.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\bin\Debug\net8.0\CallByValueAndCallByRef.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\refint\CallByValueAndCallByRef.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\CallByValueAndCallByRef.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\CallByValueAndCallByRef\CallByValueAndCallByRef\obj\Debug\net8.0\ref\CallByValueAndCallByRef.dll

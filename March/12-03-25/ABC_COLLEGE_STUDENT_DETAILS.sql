@@ -1,0 +1,1 @@
+CREATE TABLE student (student_id INT PRIMARY KEY, student_name VARCHAR(20), roll_number INT, email VARCHAR(20), address VARCHAR(50));

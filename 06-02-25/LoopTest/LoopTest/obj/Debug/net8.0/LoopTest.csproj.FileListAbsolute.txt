@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\bin\Debug\net8.0\LoopTest.exe
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\bin\Debug\net8.0\LoopTest.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\bin\Debug\net8.0\LoopTest.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\bin\Debug\net8.0\LoopTest.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\bin\Debug\net8.0\LoopTest.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\refint\LoopTest.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\LoopTest.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\LoopTest\LoopTest\obj\Debug\net8.0\ref\LoopTest.dll

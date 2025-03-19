@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\04-03-25\\accountlibrary\\accountlibrary\\services\\bankmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|solutionrelative:accountlibrary\\services\\bankmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\accountlibrary\\services\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|solutionrelative:accountlibrary\\services\\dataserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\accountlibrary\\model\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|solutionrelative:accountlibrary\\model\\bankdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\accountlibrary\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC004D1A-6399-465E-BC35-80E594089E42}|AccountLibrary\\AccountLibrary.csproj|solutionrelative:accountlibrary\\accounttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BankDetails.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\Model\\BankDetails.cs",
+              "RelativeDocumentMoniker": "AccountLibrary\\Model\\BankDetails.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\Model\\BankDetails.cs",
+              "RelativeToolTip": "AccountLibrary\\Model\\BankDetails.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:09:53.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountType.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\AccountType.cs",
+              "RelativeDocumentMoniker": "AccountLibrary\\AccountType.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\AccountType.cs",
+              "RelativeToolTip": "AccountLibrary\\AccountType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:24:05.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BankManager.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\Services\\BankManager.cs",
+              "RelativeDocumentMoniker": "AccountLibrary\\Services\\BankManager.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\Services\\BankManager.cs",
+              "RelativeToolTip": "AccountLibrary\\Services\\BankManager.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAcwPQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:21:35.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSerializer.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\Services\\DataSerializer.cs",
+              "RelativeDocumentMoniker": "AccountLibrary\\Services\\DataSerializer.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\04-03-25\\AccountLibrary\\AccountLibrary\\Services\\DataSerializer.cs",
+              "RelativeToolTip": "AccountLibrary\\Services\\DataSerializer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T10:09:01.9Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

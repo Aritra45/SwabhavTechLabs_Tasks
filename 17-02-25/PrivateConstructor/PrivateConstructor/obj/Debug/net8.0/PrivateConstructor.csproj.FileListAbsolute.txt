@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\bin\Debug\net8.0\PrivateConstructor.exe
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\bin\Debug\net8.0\PrivateConstructor.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\bin\Debug\net8.0\PrivateConstructor.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\bin\Debug\net8.0\PrivateConstructor.dll
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\bin\Debug\net8.0\PrivateConstructor.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.dll
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\refint\PrivateConstructor.dll
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\PrivateConstructor.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\17-02-25\PrivateConstructor\PrivateConstructor\obj\Debug\net8.0\ref\PrivateConstructor.dll

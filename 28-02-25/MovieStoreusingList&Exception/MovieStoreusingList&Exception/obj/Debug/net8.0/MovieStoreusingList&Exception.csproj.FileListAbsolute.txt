@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\bin\Debug\net8.0\MovieStoreusingList&Exception.exe
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\bin\Debug\net8.0\MovieStoreusingList&Exception.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\bin\Debug\net8.0\MovieStoreusingList&Exception.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\bin\Debug\net8.0\MovieStoreusingList&Exception.dll
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\bin\Debug\net8.0\MovieStoreusingList&Exception.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.dll
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\refint\MovieStoreusingList&Exception.dll
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\MovieStoreusingList&Exception.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\28-02-25\MovieStoreusingList&Exception\MovieStoreusingList&Exception\obj\Debug\net8.0\ref\MovieStoreusingList&Exception.dll

@@ -1,0 +1,15 @@
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\bin\Debug\net8.0\CurrencyCalculator.exe
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\bin\Debug\net8.0\CurrencyCalculator.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\bin\Debug\net8.0\CurrencyCalculator.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\bin\Debug\net8.0\CurrencyCalculator.dll
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\bin\Debug\net8.0\CurrencyCalculator.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.sourcelink.json
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.dll
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\refint\CurrencyCalculator.dll
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\CurrencyCalculator.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\20-02-25\CurrencyCalculator\CurrencyCalculator\obj\Debug\net8.0\ref\CurrencyCalculator.dll

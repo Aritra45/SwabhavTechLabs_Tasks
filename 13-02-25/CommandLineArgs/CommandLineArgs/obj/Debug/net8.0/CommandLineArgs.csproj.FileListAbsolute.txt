@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\bin\Debug\net8.0\CommandLineArgs.exe
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\bin\Debug\net8.0\CommandLineArgs.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\bin\Debug\net8.0\CommandLineArgs.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\bin\Debug\net8.0\CommandLineArgs.dll
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\bin\Debug\net8.0\CommandLineArgs.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.dll
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\refint\CommandLineArgs.dll
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\CommandLineArgs.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\13-02-25\CommandLineArgs\CommandLineArgs\obj\Debug\net8.0\ref\CommandLineArgs.dll

@@ -1,0 +1,14 @@
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\bin\Debug\net8.0\Reverse.exe
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\bin\Debug\net8.0\Reverse.deps.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\bin\Debug\net8.0\Reverse.runtimeconfig.json
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\bin\Debug\net8.0\Reverse.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\bin\Debug\net8.0\Reverse.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.GeneratedMSBuildEditorConfig.editorconfig
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.AssemblyInfoInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.AssemblyInfo.cs
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.csproj.CoreCompileInputs.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\refint\Reverse.dll
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.pdb
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\Reverse.genruntimeconfig.cache
+E:\Swabhav Techlabs Solutions pvt ltd\06-02-25\Reverse\Reverse\obj\Debug\net8.0\ref\Reverse.dll
