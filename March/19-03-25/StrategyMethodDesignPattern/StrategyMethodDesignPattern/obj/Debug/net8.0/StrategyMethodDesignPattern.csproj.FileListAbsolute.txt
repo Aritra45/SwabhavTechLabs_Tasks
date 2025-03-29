@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\bin\Debug\net8.0\StrategyMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\bin\Debug\net8.0\StrategyMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\bin\Debug\net8.0\StrategyMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\bin\Debug\net8.0\StrategyMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\bin\Debug\net8.0\StrategyMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\refint\StrategyMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\StrategyMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\StrategyMethodDesignPattern\StrategyMethodDesignPattern\obj\Debug\net8.0\ref\StrategyMethodDesignPattern.dll

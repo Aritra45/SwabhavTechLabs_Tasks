@@ -1,0 +1,466 @@
+[
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
+    "Method": "AddContact",
+    "RelativePath": "api/Contact/add-contact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addContactDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDto.AddContactDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
+    "Method": "GetAllContacts",
+    "RelativePath": "api/Contact/all-contacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
+    "Method": "DeleteContact",
+    "RelativePath": "api/Contact/remove-contact-access/{contactId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
+    "Method": "UpdateContactActivation",
+    "RelativePath": "api/Contact/update-contact-activation/{contactId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateContactActivationDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDto.UpdateContactActivationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
+    "Method": "UpdateContactFirstName",
+    "RelativePath": "api/Contact/update-contact-first-name/{contactId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateContactFirstNameDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDto.UpdateContactFirstNameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
+    "Method": "UpdateContactLastName",
+    "RelativePath": "api/Contact/update-contact-last-name/{contactId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateContactLastNameDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDto.UpdateContactLastNameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
+    "Method": "AddContactDetails",
+    "RelativePath": "api/ContactDetails/add-contact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addContactDetailsDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDetailsDto.AddContactDetailsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
+    "Method": "GetAllContactDetails",
+    "RelativePath": "api/ContactDetails/all-contact-details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
+    "Method": "DeleteContact",
+    "RelativePath": "api/ContactDetails/remove-contact-details-access/{contactDetailsId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactDetailsId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
+    "Method": "UpdateContactDetailsActivation",
+    "RelativePath": "api/ContactDetails/update-contact-details-activation/{contactDetailsId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactDetailsId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateContactDetailsActivationDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDetailsDto.UpdateContactDetailsActivationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
+    "Method": "UpdateContactDetailsType",
+    "RelativePath": "api/ContactDetails/update-contact-details-type/{contactDetailsId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactDetailsId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateContactDetailsTypeDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDetailsDto.UpdateContactDetailsTypeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
+    "Method": "UpdateContactDetailsValue",
+    "RelativePath": "api/ContactDetails/update-contact-details-value/{contactDetailsId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactDetailsId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateContactDetailsValueDto",
+        "Type": "ContactAppUsingWebApi.Model.ContactDetailsDto.UpdateContactDetailsValueDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.test",
+    "Method": "Get",
+    "RelativePath": "api/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.test",
+    "Method": "Post",
+    "RelativePath": "api/test",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.test",
+    "Method": "Get",
+    "RelativePath": "api/test/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.test",
+    "Method": "Put",
+    "RelativePath": "api/test/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.test",
+    "Method": "Delete",
+    "RelativePath": "api/test/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "AddStaff",
+    "RelativePath": "api/User/add-users-staff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addUserDto",
+        "Type": "ContactAppUsingWebApi.Model.UserDto.AddUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User/all-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "GetByID",
+    "RelativePath": "api/User/get-by-user-id/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "LoginUser",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "ContactAppUsingWebApi.Model.UserDto.LogingUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "DeleteEmployees",
+    "RelativePath": "api/User/remove-user-access/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "UpdateStaffActivation",
+    "RelativePath": "api/User/update-user-activation-staff/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateUserActivationDto",
+        "Type": "ContactAppUsingWebApi.Model.UserDto.UpdateUserActivationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.UserController",
+    "Method": "UpdateStaffName",
+    "RelativePath": "api/User/update-user-name-staff/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateUserNameDto",
+        "Type": "ContactAppUsingWebApi.Model.UserDto.UpdateUserNameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ContactAppUsingWebApi.WeatherForecast, ContactAppUsingWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

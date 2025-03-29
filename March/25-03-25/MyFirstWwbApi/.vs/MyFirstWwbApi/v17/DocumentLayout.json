@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\model\\entity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\model\\entity\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\model\\addemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\model\\addemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\migrations\\20250326104326_updateemployeetablewithaddingisactivecolomn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\migrations\\20250326104326_updateemployeetablewithaddingisactivecolomn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\exception\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\exception\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\model\\updateemployeesalarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\model\\updateemployeesalarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|e:\\tasks\\march\\25-03-25\\myfirstwwbapi\\myfirstwwbapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7AD1C26-E27F-4D1B-A9BE-D626C6E30A1F}|MyFirstWwbApi\\MyFirstWwbApi.csproj|solutionrelative:myfirstwwbapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250326104326_updateEmployeetableWithAddingIsActiveColomn.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Migrations\\20250326104326_updateEmployeetableWithAddingIsActiveColomn.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Migrations\\20250326104326_updateEmployeetableWithAddingIsActiveColomn.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Migrations\\20250326104326_updateEmployeetableWithAddingIsActiveColomn.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Migrations\\20250326104326_updateEmployeetableWithAddingIsActiveColomn.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:43:26.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Exception\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Exception\\NotFoundException.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Exception\\NotFoundException.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Exception\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:06:24.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwEQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:16:18.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Model\\Entity\\Employee.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Model\\Entity\\Employee.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Model\\Entity\\Employee.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Model\\Entity\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:04:59.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateEmployeeSalaryDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Model\\UpdateEmployeeSalaryDto.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Model\\UpdateEmployeeSalaryDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Model\\UpdateEmployeeSalaryDto.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Model\\UpdateEmployeeSalaryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:25:44.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddEmployeeDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Model\\AddEmployeeDto.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Model\\AddEmployeeDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Model\\AddEmployeeDto.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Model\\AddEmployeeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:26:25.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Mycontext.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Data\\Mycontext.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Data\\Mycontext.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Data\\Mycontext.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Data\\Mycontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:07:33.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\appsettings.json",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\appsettings.json",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\appsettings.json",
+              "RelativeToolTip": "MyFirstWwbApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-25T13:11:03.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Program.cs",
+              "RelativeDocumentMoniker": "MyFirstWwbApi\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\25-03-25\\MyFirstWwbApi\\MyFirstWwbApi\\Program.cs",
+              "RelativeToolTip": "MyFirstWwbApi\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwA0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:12:56.183Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

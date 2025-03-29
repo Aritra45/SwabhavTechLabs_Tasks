@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\bin\Debug\net8.0\CommandMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\bin\Debug\net8.0\CommandMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\bin\Debug\net8.0\CommandMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\bin\Debug\net8.0\CommandMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\bin\Debug\net8.0\CommandMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\refint\CommandMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\CommandMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\CommandMethodDesignPattern\CommandMethodDesignPattern\obj\Debug\net8.0\ref\CommandMethodDesignPattern.dll

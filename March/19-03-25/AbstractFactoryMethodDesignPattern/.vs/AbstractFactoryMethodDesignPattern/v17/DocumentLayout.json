@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\management\\honda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\management\\honda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\management\\suzuki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\management\\suzuki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\management\\vehicalmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\management\\vehicalmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\repository\\i_bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\repository\\i_bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\repository\\i_car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\repository\\i_car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\repository\\i_vehicalcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\repository\\i_vehicalcompany.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\services\\hondabike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\services\\hondabike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\services\\hondacar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\services\\hondacar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\services\\suzukibike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\services\\suzukibike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\services\\suzukicar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\services\\suzukicar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\abstractfactorymethoddesignpattern\\abstractfactorymethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF2CA2D-6195-4591-8A6C-D605EE0C73A7}|AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern.csproj|solutionrelative:abstractfactorymethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "I_VehicalCompany.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Repository\\I_VehicalCompany.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Repository\\I_VehicalCompany.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Repository\\I_VehicalCompany.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Repository\\I_VehicalCompany.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:55:41.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HondaBike.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\HondaBike.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Services\\HondaBike.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\HondaBike.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Services\\HondaBike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:53:22.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HondaCar.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\HondaCar.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Services\\HondaCar.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\HondaCar.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Services\\HondaCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:53:10.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "I_Bike.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Repository\\I_Bike.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Repository\\I_Bike.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Repository\\I_Bike.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Repository\\I_Bike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:51:01.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SuzukiCar.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\SuzukiCar.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Services\\SuzukiCar.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\SuzukiCar.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Services\\SuzukiCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:53:31.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Suzuki.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Management\\Suzuki.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Management\\Suzuki.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Management\\Suzuki.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Management\\Suzuki.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:58:23.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehicalManagement.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Management\\VehicalManagement.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Management\\VehicalManagement.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Management\\VehicalManagement.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Management\\VehicalManagement.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T12:19:02.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SuzukiBike.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\SuzukiBike.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Services\\SuzukiBike.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Services\\SuzukiBike.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Services\\SuzukiBike.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:53:46.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "I_Car.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Repository\\I_Car.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Repository\\I_Car.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Repository\\I_Car.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Repository\\I_Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:50:36.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Honda.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Management\\Honda.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Management\\Honda.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Management\\Honda.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Management\\Honda.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:58:15.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "AbstractFactoryMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AbstractFactoryMethodDesignPattern\\AbstractFactoryMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "AbstractFactoryMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:48:01.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

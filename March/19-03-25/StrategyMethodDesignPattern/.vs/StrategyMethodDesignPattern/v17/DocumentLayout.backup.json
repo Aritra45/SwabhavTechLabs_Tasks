@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\strategymethoddesignpattern\\strategymethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|solutionrelative:strategymethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\strategymethoddesignpattern\\strategymethoddesignpattern\\context\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|solutionrelative:strategymethoddesignpattern\\context\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\strategymethoddesignpattern\\strategymethoddesignpattern\\services\\upipayment .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|solutionrelative:strategymethoddesignpattern\\services\\upipayment .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\strategymethoddesignpattern\\strategymethoddesignpattern\\services\\paypalpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|solutionrelative:strategymethoddesignpattern\\services\\paypalpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\strategymethoddesignpattern\\strategymethoddesignpattern\\services\\creditcardpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|solutionrelative:strategymethoddesignpattern\\services\\creditcardpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\strategymethoddesignpattern\\strategymethoddesignpattern\\repository\\i_paymentstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47A980C-058D-475B-827B-48BED5E6496B}|StrategyMethodDesignPattern\\StrategyMethodDesignPattern.csproj|solutionrelative:strategymethoddesignpattern\\repository\\i_paymentstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentContext.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Context\\PaymentContext.cs",
+              "RelativeDocumentMoniker": "StrategyMethodDesignPattern\\Context\\PaymentContext.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Context\\PaymentContext.cs",
+              "RelativeToolTip": "StrategyMethodDesignPattern\\Context\\PaymentContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:59:15.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UPIPayment .cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Services\\UPIPayment .cs",
+              "RelativeDocumentMoniker": "StrategyMethodDesignPattern\\Services\\UPIPayment .cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Services\\UPIPayment .cs",
+              "RelativeToolTip": "StrategyMethodDesignPattern\\Services\\UPIPayment .cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:57:54.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PayPalPayment.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Services\\PayPalPayment.cs",
+              "RelativeDocumentMoniker": "StrategyMethodDesignPattern\\Services\\PayPalPayment.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Services\\PayPalPayment.cs",
+              "RelativeToolTip": "StrategyMethodDesignPattern\\Services\\PayPalPayment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:57:23.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreditCardPayment.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Services\\CreditCardPayment.cs",
+              "RelativeDocumentMoniker": "StrategyMethodDesignPattern\\Services\\CreditCardPayment.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Services\\CreditCardPayment.cs",
+              "RelativeToolTip": "StrategyMethodDesignPattern\\Services\\CreditCardPayment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:56:27.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "I_PaymentStrategy.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Repository\\I_PaymentStrategy.cs",
+              "RelativeDocumentMoniker": "StrategyMethodDesignPattern\\Repository\\I_PaymentStrategy.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Repository\\I_PaymentStrategy.cs",
+              "RelativeToolTip": "StrategyMethodDesignPattern\\Repository\\I_PaymentStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:52:41.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "StrategyMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StrategyMethodDesignPattern\\StrategyMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "StrategyMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:51:32.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

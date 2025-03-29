@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\compositemethoddesignpatterns\\compositemethoddesignpatterns\\service\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|solutionrelative:compositemethoddesignpatterns\\service\\folder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\compositemethoddesignpatterns\\compositemethoddesignpatterns\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|solutionrelative:compositemethoddesignpatterns\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\compositemethoddesignpatterns\\compositemethoddesignpatterns\\service\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|solutionrelative:compositemethoddesignpatterns\\service\\files.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\compositemethoddesignpatterns\\compositemethoddesignpatterns\\repository\\i_filesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B09AA6C-703B-487E-A926-EAE244046E05}|CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns.csproj|solutionrelative:compositemethoddesignpatterns\\repository\\i_filesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Folder.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Service\\Folder.cs",
+              "RelativeDocumentMoniker": "CompositeMethodDesignPatterns\\Service\\Folder.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Service\\Folder.cs",
+              "RelativeToolTip": "CompositeMethodDesignPatterns\\Service\\Folder.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:10:27.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Files.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Service\\Files.cs",
+              "RelativeDocumentMoniker": "CompositeMethodDesignPatterns\\Service\\Files.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Service\\Files.cs",
+              "RelativeToolTip": "CompositeMethodDesignPatterns\\Service\\Files.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:08:06.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "I_FileSystem.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Repository\\I_FileSystem.cs",
+              "RelativeDocumentMoniker": "CompositeMethodDesignPatterns\\Repository\\I_FileSystem.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Repository\\I_FileSystem.cs",
+              "RelativeToolTip": "CompositeMethodDesignPatterns\\Repository\\I_FileSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:06:48.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Program.cs",
+              "RelativeDocumentMoniker": "CompositeMethodDesignPatterns\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\CompositeMethodDesignPatterns\\CompositeMethodDesignPatterns\\Program.cs",
+              "RelativeToolTip": "CompositeMethodDesignPatterns\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:58:42.199Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@MyFirstWwbApi_HostAddress = http://localhost:5245
+
+GET {{MyFirstWwbApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

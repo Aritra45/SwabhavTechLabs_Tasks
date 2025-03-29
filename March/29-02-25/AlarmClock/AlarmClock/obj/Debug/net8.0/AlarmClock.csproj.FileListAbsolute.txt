@@ -1,0 +1,14 @@
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\bin\Debug\net8.0\AlarmClock.exe
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\bin\Debug\net8.0\AlarmClock.deps.json
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\bin\Debug\net8.0\AlarmClock.runtimeconfig.json
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\bin\Debug\net8.0\AlarmClock.dll
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\bin\Debug\net8.0\AlarmClock.pdb
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.AssemblyInfoInputs.cache
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.AssemblyInfo.cs
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.csproj.CoreCompileInputs.cache
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.dll
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\refint\AlarmClock.dll
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.pdb
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\AlarmClock.genruntimeconfig.cache
+E:\Tasks\March\29-02-25\AlarmClock\AlarmClock\obj\Debug\net8.0\ref\AlarmClock.dll

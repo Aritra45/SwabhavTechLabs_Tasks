@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\bin\Debug\net8.0\AdapterMethodDesignPatterns.exe
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\bin\Debug\net8.0\AdapterMethodDesignPatterns.deps.json
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\bin\Debug\net8.0\AdapterMethodDesignPatterns.runtimeconfig.json
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\bin\Debug\net8.0\AdapterMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\bin\Debug\net8.0\AdapterMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\refint\AdapterMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\AdapterMethodDesignPatterns.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\AdapterMethodDesignPatterns\AdapterMethodDesignPatterns\obj\Debug\net8.0\ref\AdapterMethodDesignPatterns.dll

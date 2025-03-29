@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\adaptermethoddesignpatterns\\adaptermethoddesignpatterns\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|solutionrelative:adaptermethoddesignpatterns\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\adaptermethoddesignpatterns\\adaptermethoddesignpatterns\\management\\adapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|solutionrelative:adaptermethoddesignpatterns\\management\\adapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\adaptermethoddesignpatterns\\adaptermethoddesignpatterns\\service\\newservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|solutionrelative:adaptermethoddesignpatterns\\service\\newservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|e:\\tasks\\march\\19-03-25\\adaptermethoddesignpatterns\\adaptermethoddesignpatterns\\repository\\i_vehical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{850D7DDB-EB88-44AC-859C-0306BD3D5698}|AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns.csproj|solutionrelative:adaptermethoddesignpatterns\\repository\\i_vehical.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Adapter.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Management\\Adapter.cs",
+              "RelativeDocumentMoniker": "AdapterMethodDesignPatterns\\Management\\Adapter.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Management\\Adapter.cs",
+              "RelativeToolTip": "AdapterMethodDesignPatterns\\Management\\Adapter.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:26:15.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Service\\NewServices.cs",
+              "RelativeDocumentMoniker": "AdapterMethodDesignPatterns\\Service\\NewServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Service\\NewServices.cs",
+              "RelativeToolTip": "AdapterMethodDesignPatterns\\Service\\NewServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:24:43.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "I_Vehical.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Repository\\I_Vehical.cs",
+              "RelativeDocumentMoniker": "AdapterMethodDesignPatterns\\Repository\\I_Vehical.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Repository\\I_Vehical.cs",
+              "RelativeToolTip": "AdapterMethodDesignPatterns\\Repository\\I_Vehical.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:22:50.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Program.cs",
+              "RelativeDocumentMoniker": "AdapterMethodDesignPatterns\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\AdapterMethodDesignPatterns\\AdapterMethodDesignPatterns\\Program.cs",
+              "RelativeToolTip": "AdapterMethodDesignPatterns\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:09:31.967Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

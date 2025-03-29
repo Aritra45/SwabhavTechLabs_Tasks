@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\observermethoddesignpattern\\observermethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|solutionrelative:observermethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\observermethoddesignpattern\\observermethoddesignpattern\\channels\\youtubechannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|solutionrelative:observermethoddesignpattern\\channels\\youtubechannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\observermethoddesignpattern\\observermethoddesignpattern\\subcriber\\subscribers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|solutionrelative:observermethoddesignpattern\\subcriber\\subscribers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\observermethoddesignpattern\\observermethoddesignpattern\\observer\\i_observers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|solutionrelative:observermethoddesignpattern\\observer\\i_observers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\observermethoddesignpattern\\observermethoddesignpattern\\subject\\i_channel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87FE837E-6694-4A29-A37F-A56E379B47C1}|ObserverMethodDesignPattern\\ObserverMethodDesignPattern.csproj|solutionrelative:observermethoddesignpattern\\subject\\i_channel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Subscribers.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Subcriber\\Subscribers.cs",
+              "RelativeDocumentMoniker": "ObserverMethodDesignPattern\\Subcriber\\Subscribers.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Subcriber\\Subscribers.cs",
+              "RelativeToolTip": "ObserverMethodDesignPattern\\Subcriber\\Subscribers.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:46:53.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YoutubeChannel.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Channels\\YoutubeChannel.cs",
+              "RelativeDocumentMoniker": "ObserverMethodDesignPattern\\Channels\\YoutubeChannel.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Channels\\YoutubeChannel.cs",
+              "RelativeToolTip": "ObserverMethodDesignPattern\\Channels\\YoutubeChannel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:41:20.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "I_Observers.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Observer\\I_Observers.cs",
+              "RelativeDocumentMoniker": "ObserverMethodDesignPattern\\Observer\\I_Observers.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Observer\\I_Observers.cs",
+              "RelativeToolTip": "ObserverMethodDesignPattern\\Observer\\I_Observers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:39:16.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "I_Channel.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Subject\\I_Channel.cs",
+              "RelativeDocumentMoniker": "ObserverMethodDesignPattern\\Subject\\I_Channel.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Subject\\I_Channel.cs",
+              "RelativeToolTip": "ObserverMethodDesignPattern\\Subject\\I_Channel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:37:12.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "ObserverMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\ObserverMethodDesignPattern\\ObserverMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "ObserverMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:22:51.967Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

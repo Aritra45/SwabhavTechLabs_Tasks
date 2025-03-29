@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\19-03-25\\factorymethoddesignpattern\\factorymethoddesignpattern\\repository\\i_vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|solutionrelative:factorymethoddesignpattern\\repository\\i_vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\19-03-25\\factorymethoddesignpattern\\factorymethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|solutionrelative:factorymethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\19-03-25\\factorymethoddesignpattern\\factorymethoddesignpattern\\management\\vehicalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|solutionrelative:factorymethoddesignpattern\\management\\vehicalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\19-03-25\\factorymethoddesignpattern\\factorymethoddesignpattern\\service\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|solutionrelative:factorymethoddesignpattern\\service\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|e:\\swabhav techlabs solutions pvt ltd\\march\\19-03-25\\factorymethoddesignpattern\\factorymethoddesignpattern\\service\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64A13A12-FFB1-4D89-B464-A7AB0467ADB7}|FactoryMethodDesignPattern\\FactoryMethodDesignPattern.csproj|solutionrelative:factorymethoddesignpattern\\service\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehicalFactory.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Management\\VehicalFactory.cs",
+              "RelativeDocumentMoniker": "FactoryMethodDesignPattern\\Management\\VehicalFactory.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Management\\VehicalFactory.cs",
+              "RelativeToolTip": "FactoryMethodDesignPattern\\Management\\VehicalFactory.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAlwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:02:50.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Car.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Service\\Car.cs",
+              "RelativeDocumentMoniker": "FactoryMethodDesignPattern\\Service\\Car.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Service\\Car.cs",
+              "RelativeToolTip": "FactoryMethodDesignPattern\\Service\\Car.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T11:00:45.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bike.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Service\\Bike.cs",
+              "RelativeDocumentMoniker": "FactoryMethodDesignPattern\\Service\\Bike.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Service\\Bike.cs",
+              "RelativeToolTip": "FactoryMethodDesignPattern\\Service\\Bike.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:57:42.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "I_Vehicle.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Repository\\I_Vehicle.cs",
+              "RelativeDocumentMoniker": "FactoryMethodDesignPattern\\Repository\\I_Vehicle.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Repository\\I_Vehicle.cs",
+              "RelativeToolTip": "FactoryMethodDesignPattern\\Repository\\I_Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:55:51.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "FactoryMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\19-03-25\\FactoryMethodDesignPattern\\FactoryMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "FactoryMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T10:54:39.359Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

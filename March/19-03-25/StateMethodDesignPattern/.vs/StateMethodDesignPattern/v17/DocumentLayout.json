@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\statemethoddesignpattern\\statemethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|solutionrelative:statemethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\statemethoddesignpattern\\statemethoddesignpattern\\management\\trafficlightcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|solutionrelative:statemethoddesignpattern\\management\\trafficlightcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\statemethoddesignpattern\\statemethoddesignpattern\\states\\yellowstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|solutionrelative:statemethoddesignpattern\\states\\yellowstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\statemethoddesignpattern\\statemethoddesignpattern\\states\\greenstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|solutionrelative:statemethoddesignpattern\\states\\greenstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\statemethoddesignpattern\\statemethoddesignpattern\\states\\redstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|solutionrelative:statemethoddesignpattern\\states\\redstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\statemethoddesignpattern\\statemethoddesignpattern\\repository\\i_state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D892058-FA41-4913-97DB-DD241D27AFE0}|StateMethodDesignPattern\\StateMethodDesignPattern.csproj|solutionrelative:statemethoddesignpattern\\repository\\i_state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "YellowState.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\States\\YellowState.cs",
+              "RelativeDocumentMoniker": "StateMethodDesignPattern\\States\\YellowState.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\States\\YellowState.cs",
+              "RelativeToolTip": "StateMethodDesignPattern\\States\\YellowState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:37:09.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GreenState.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\States\\GreenState.cs",
+              "RelativeDocumentMoniker": "StateMethodDesignPattern\\States\\GreenState.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\States\\GreenState.cs",
+              "RelativeToolTip": "StateMethodDesignPattern\\States\\GreenState.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:36:42.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RedState.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\States\\RedState.cs",
+              "RelativeDocumentMoniker": "StateMethodDesignPattern\\States\\RedState.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\States\\RedState.cs",
+              "RelativeToolTip": "StateMethodDesignPattern\\States\\RedState.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:35:46.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrafficLightContext.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\Management\\TrafficLightContext.cs",
+              "RelativeDocumentMoniker": "StateMethodDesignPattern\\Management\\TrafficLightContext.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\Management\\TrafficLightContext.cs",
+              "RelativeToolTip": "StateMethodDesignPattern\\Management\\TrafficLightContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:33:30.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "I_State.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\Repository\\I_State.cs",
+              "RelativeDocumentMoniker": "StateMethodDesignPattern\\Repository\\I_State.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\Repository\\I_State.cs",
+              "RelativeToolTip": "StateMethodDesignPattern\\Repository\\I_State.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:32:21.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "StateMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\StateMethodDesignPattern\\StateMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "StateMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T15:30:43.962Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

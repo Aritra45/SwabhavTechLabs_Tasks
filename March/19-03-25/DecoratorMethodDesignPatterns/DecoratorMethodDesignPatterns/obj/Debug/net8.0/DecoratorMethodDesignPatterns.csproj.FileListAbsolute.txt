@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\bin\Debug\net8.0\DecoratorMethodDesignPatterns.exe
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\bin\Debug\net8.0\DecoratorMethodDesignPatterns.deps.json
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\bin\Debug\net8.0\DecoratorMethodDesignPatterns.runtimeconfig.json
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\bin\Debug\net8.0\DecoratorMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\bin\Debug\net8.0\DecoratorMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\refint\DecoratorMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\DecoratorMethodDesignPatterns.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\DecoratorMethodDesignPatterns\DecoratorMethodDesignPatterns\obj\Debug\net8.0\ref\DecoratorMethodDesignPatterns.dll

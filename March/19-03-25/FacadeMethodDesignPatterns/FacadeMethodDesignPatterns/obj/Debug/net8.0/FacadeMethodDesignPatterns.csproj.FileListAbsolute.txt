@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\bin\Debug\net8.0\FacadeMethodDesignPatterns.exe
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\bin\Debug\net8.0\FacadeMethodDesignPatterns.deps.json
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\bin\Debug\net8.0\FacadeMethodDesignPatterns.runtimeconfig.json
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\bin\Debug\net8.0\FacadeMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\bin\Debug\net8.0\FacadeMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\refint\FacadeMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\FacadeMethodDesignPatterns.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\FacadeMethodDesignPatterns\FacadeMethodDesignPatterns\obj\Debug\net8.0\ref\FacadeMethodDesignPatterns.dll

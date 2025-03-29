@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\templatemethoddesignpattern\\templatemethoddesignpattern\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|solutionrelative:templatemethoddesignpattern\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\templatemethoddesignpattern\\templatemethoddesignpattern\\saladrecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|solutionrelative:templatemethoddesignpattern\\saladrecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\templatemethoddesignpattern\\templatemethoddesignpattern\\pastarecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|solutionrelative:templatemethoddesignpattern\\pastarecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\templatemethoddesignpattern\\templatemethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31F40B54-FE09-479F-82EB-96C96A74514B}|TemplateMethodDesignPattern\\TemplateMethodDesignPattern.csproj|solutionrelative:templatemethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SaladRecipe.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\SaladRecipe.cs",
+              "RelativeDocumentMoniker": "TemplateMethodDesignPattern\\SaladRecipe.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\SaladRecipe.cs",
+              "RelativeToolTip": "TemplateMethodDesignPattern\\SaladRecipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T06:30:57.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PastaRecipe.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\PastaRecipe.cs",
+              "RelativeDocumentMoniker": "TemplateMethodDesignPattern\\PastaRecipe.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\PastaRecipe.cs",
+              "RelativeToolTip": "TemplateMethodDesignPattern\\PastaRecipe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T06:30:23.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\Recipe.cs",
+              "RelativeDocumentMoniker": "TemplateMethodDesignPattern\\Recipe.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\Recipe.cs",
+              "RelativeToolTip": "TemplateMethodDesignPattern\\Recipe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T06:29:42.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "TemplateMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\TemplateMethodDesignPattern\\TemplateMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "TemplateMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T06:28:36.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

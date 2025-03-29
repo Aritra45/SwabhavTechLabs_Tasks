@@ -1,0 +1,742 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\service\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\service\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\service\\contactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\service\\contactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\service\\contactdetailsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\service\\contactdetailsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\repository\\userrepositoy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\repository\\userrepositoy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\repository\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\repository\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\repository\\contactdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\repository\\contactdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\entity\\contactdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\entity\\contactdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\entity\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\entity\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\userdto\\updateusernamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\userdto\\updateusernamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\userdto\\updateuseractivationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\userdto\\updateuseractivationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\userdto\\loginsuccessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\userdto\\loginsuccessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\userdto\\loginguserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\userdto\\loginguserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\userdto\\getalluserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\userdto\\getalluserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\userdto\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\userdto\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdto\\updatecontactlastnamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdto\\updatecontactlastnamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdto\\updatecontactfirstnamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdto\\updatecontactfirstnamedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdto\\updatecontactactivationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdto\\updatecontactactivationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdto\\getallcontactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdto\\getallcontactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdto\\addcontactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdto\\addcontactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdetailsdto\\updatecontactdetailsvaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdetailsdto\\updatecontactdetailsvaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdetailsdto\\updatecontactdetailstypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdetailsdto\\updatecontactdetailstypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdetailsdto\\updatecontactdetailsactivationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdetailsdto\\updatecontactdetailsactivationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdetailsdto\\getallcontactdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdetailsdto\\getallcontactdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\contactdetailsdto\\addcontactdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\contactdetailsdto\\addcontactdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\interface\\iservices\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\interface\\iservices\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\interface\\iservices\\icontactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\interface\\iservices\\icontactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\interface\\iservices\\icontactdetailsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\interface\\iservices\\icontactdetailsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\interface\\irepositoryes\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\interface\\irepositoryes\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\interface\\irepositoryes\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\interface\\irepositoryes\\icontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\interface\\irepositoryes\\icontactdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\interface\\irepositoryes\\icontactdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\controllers\\contactdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\controllers\\contactdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\exceptions\\globalnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\exceptions\\globalnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\controllers\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\controllers\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\exception\\mynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\exception\\mynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\model\\entity\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\model\\entity\\errorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_IN48U7N/ContactAppUsingWebApi/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:26:42.773Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepositoy.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Repository\\UserRepositoy.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Repository\\UserRepositoy.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Repository\\UserRepositoy.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Repository\\UserRepositoy.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:31:53.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactDetailsServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\ContactDetailsServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Service\\ContactDetailsServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\ContactDetailsServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Service\\ContactDetailsServices.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:30:26.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\ContactServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Service\\ContactServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\ContactServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Service\\ContactServices.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:14:13.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:27:13.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Program.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:20:03.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Repository\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Repository\\ContactRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Repository\\ContactRepository.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Repository\\ContactRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:25:29.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactDetailsRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Repository\\ContactDetailsRepository.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Repository\\ContactDetailsRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Repository\\ContactDetailsRepository.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Repository\\ContactDetailsRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:44:27.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\Entity\\User.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\User.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:10:54.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactDetails.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\ContactDetails.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\Entity\\ContactDetails.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\ContactDetails.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\Entity\\ContactDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:13:44.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\Entity\\Contact.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\Contact.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\Entity\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:11:45.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateUserNameDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserNameDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserNameDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserNameDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserNameDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:00:09.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateUserActivationDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserActivationDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserActivationDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserActivationDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\UserDto\\UpdateUserActivationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:02:15.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginSuccessDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\LoginSuccessDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\UserDto\\LoginSuccessDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\LoginSuccessDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\UserDto\\LoginSuccessDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:36:22.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LogingUserDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\LogingUserDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\UserDto\\LogingUserDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\LogingUserDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\UserDto\\LogingUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T12:51:15.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetAllUserDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\GetAllUserDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\UserDto\\GetAllUserDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\GetAllUserDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\UserDto\\GetAllUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T10:42:32.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddUserDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\AddUserDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\UserDto\\AddUserDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\UserDto\\AddUserDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\UserDto\\AddUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:49:29.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UpdateContactLastNameDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactLastNameDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactLastNameDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactLastNameDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactLastNameDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:29:56.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateContactFirstNameDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactFirstNameDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactFirstNameDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactFirstNameDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactFirstNameDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:29:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UpdateContactActivationDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactActivationDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactActivationDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactActivationDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDto\\UpdateContactActivationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:31:23.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetAllContactDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\GetAllContactDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDto\\GetAllContactDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\GetAllContactDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDto\\GetAllContactDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T10:45:23.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AddContactDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\AddContactDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDto\\AddContactDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDto\\AddContactDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDto\\AddContactDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:22:08.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateContactDetailsValueDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsValueDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsValueDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsValueDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsValueDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:55:46.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateContactDetailsTypeDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsTypeDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsTypeDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsTypeDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsTypeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:54:59.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UpdateContactDetailsActivationDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsActivationDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsActivationDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsActivationDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\UpdateContactDetailsActivationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:56:57.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetAllContactDetailsDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\GetAllContactDetailsDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\GetAllContactDetailsDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\GetAllContactDetailsDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\GetAllContactDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T10:46:31.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddContactDetailsDto.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\AddContactDetailsDto.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\AddContactDetailsDto.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\ContactDetailsDto\\AddContactDetailsDto.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\ContactDetailsDto\\AddContactDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:53:04.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IServices\\IUserServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Interface\\IServices\\IUserServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IServices\\IUserServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Interface\\IServices\\IUserServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:22:21.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IContactServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IServices\\IContactServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Interface\\IServices\\IContactServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IServices\\IContactServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Interface\\IServices\\IContactServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:11:36.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IContactDetailsServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IServices\\IContactDetailsServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Interface\\IServices\\IContactDetailsServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IServices\\IContactDetailsServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Interface\\IServices\\IContactDetailsServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:27:39.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IRepositoryes\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Interface\\IRepositoryes\\IUserRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IRepositoryes\\IUserRepository.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Interface\\IRepositoryes\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:22:33.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IContactRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactRepository.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:24:55.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IContactDetailsRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactDetailsRepository.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactDetailsRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactDetailsRepository.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Interface\\IRepositoryes\\IContactDetailsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T16:43:22.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Data\\MyContext.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Data\\MyContext.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Data\\MyContext.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Data\\MyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T11:15:03.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ContactDetailsController.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\ContactDetailsController.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Controllers\\ContactDetailsController.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\ContactDetailsController.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Controllers\\ContactDetailsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:58:07.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Controllers\\ContactController.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:32:19.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Mapping\\MappingProfile.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T10:23:21.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GlobalNotFoundException.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Exceptions\\GlobalNotFoundException.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Exceptions\\GlobalNotFoundException.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Exceptions\\GlobalNotFoundException.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Exceptions\\GlobalNotFoundException.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T05:29:10.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "test.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\test.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Controllers\\test.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Controllers\\test.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Controllers\\test.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T05:44:41.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MyNotFoundException.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Exception\\MyNotFoundException.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Exception\\MyNotFoundException.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Exception\\MyNotFoundException.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Exception\\MyNotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T05:39:46.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ErrorResponse.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\ErrorResponse.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Model\\Entity\\ErrorResponse.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Model\\Entity\\ErrorResponse.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Model\\Entity\\ErrorResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T05:33:58.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_IN48U7N/ContactAppUsingWebApi/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_IN48U7N/ContactAppUsingWebApi/True/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-27T11:29:52.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\appsettings.json",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\appsettings.json",
+              "RelativeToolTip": "ContactAppUsingWebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-26T11:18:18.475Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

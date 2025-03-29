@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\bin\Debug\net8.0\StateMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\bin\Debug\net8.0\StateMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\bin\Debug\net8.0\StateMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\bin\Debug\net8.0\StateMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\bin\Debug\net8.0\StateMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\refint\StateMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\StateMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\StateMethodDesignPattern\StateMethodDesignPattern\obj\Debug\net8.0\ref\StateMethodDesignPattern.dll

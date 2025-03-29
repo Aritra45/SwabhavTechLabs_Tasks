@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\bin\Debug\net8.0\TemplateMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\bin\Debug\net8.0\TemplateMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\bin\Debug\net8.0\TemplateMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\bin\Debug\net8.0\TemplateMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\bin\Debug\net8.0\TemplateMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\refint\TemplateMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\TemplateMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\TemplateMethodDesignPattern\TemplateMethodDesignPattern\obj\Debug\net8.0\ref\TemplateMethodDesignPattern.dll

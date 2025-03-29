@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\bin\Debug\net8.0\ObserverMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\bin\Debug\net8.0\ObserverMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\bin\Debug\net8.0\ObserverMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\bin\Debug\net8.0\ObserverMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\bin\Debug\net8.0\ObserverMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\refint\ObserverMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ObserverMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\ObserverMethodDesignPattern\ObserverMethodDesignPattern\obj\Debug\net8.0\ref\ObserverMethodDesignPattern.dll

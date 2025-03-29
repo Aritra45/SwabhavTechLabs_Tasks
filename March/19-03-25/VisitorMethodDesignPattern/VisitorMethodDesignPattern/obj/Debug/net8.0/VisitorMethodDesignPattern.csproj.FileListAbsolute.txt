@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\bin\Debug\net8.0\VisitorMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\bin\Debug\net8.0\VisitorMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\bin\Debug\net8.0\VisitorMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\bin\Debug\net8.0\VisitorMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\bin\Debug\net8.0\VisitorMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\refint\VisitorMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\VisitorMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\VisitorMethodDesignPattern\VisitorMethodDesignPattern\obj\Debug\net8.0\ref\VisitorMethodDesignPattern.dll

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\buildermethoddesignpattern\\buildermethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|solutionrelative:buildermethoddesignpattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\buildermethoddesignpattern\\buildermethoddesignpattern\\service\\manufacturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|solutionrelative:buildermethoddesignpattern\\service\\manufacturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\buildermethoddesignpattern\\buildermethoddesignpattern\\service\\configaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|solutionrelative:buildermethoddesignpattern\\service\\configaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\buildermethoddesignpattern\\buildermethoddesignpattern\\repository\\i_buildcellphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|solutionrelative:buildermethoddesignpattern\\repository\\i_buildcellphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\buildermethoddesignpattern\\buildermethoddesignpattern\\model\\cellphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|solutionrelative:buildermethoddesignpattern\\model\\cellphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|e:\\tasks\\march\\19-03-25\\buildermethoddesignpattern\\buildermethoddesignpattern\\repository\\i_configaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09AB55EA-B066-4C38-BF91-0251CE9F2AF9}|BuilderMethodDesignPattern\\BuilderMethodDesignPattern.csproj|solutionrelative:buildermethoddesignpattern\\repository\\i_configaration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Manufacturer.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Service\\Manufacturer.cs",
+              "RelativeDocumentMoniker": "BuilderMethodDesignPattern\\Service\\Manufacturer.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Service\\Manufacturer.cs",
+              "RelativeToolTip": "BuilderMethodDesignPattern\\Service\\Manufacturer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:45:19.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Configaration.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Service\\Configaration.cs",
+              "RelativeDocumentMoniker": "BuilderMethodDesignPattern\\Service\\Configaration.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Service\\Configaration.cs",
+              "RelativeToolTip": "BuilderMethodDesignPattern\\Service\\Configaration.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:31:05.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "I_BuildCellPhone.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Repository\\I_BuildCellPhone.cs",
+              "RelativeDocumentMoniker": "BuilderMethodDesignPattern\\Repository\\I_BuildCellPhone.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Repository\\I_BuildCellPhone.cs",
+              "RelativeToolTip": "BuilderMethodDesignPattern\\Repository\\I_BuildCellPhone.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:28:41.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CellPhone.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Model\\CellPhone.cs",
+              "RelativeDocumentMoniker": "BuilderMethodDesignPattern\\Model\\CellPhone.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Model\\CellPhone.cs",
+              "RelativeToolTip": "BuilderMethodDesignPattern\\Model\\CellPhone.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvywAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:17:58.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "I_Configaration.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Repository\\I_Configaration.cs",
+              "RelativeDocumentMoniker": "BuilderMethodDesignPattern\\Repository\\I_Configaration.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Repository\\I_Configaration.cs",
+              "RelativeToolTip": "BuilderMethodDesignPattern\\Repository\\I_Configaration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:13:31.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Program.cs",
+              "RelativeDocumentMoniker": "BuilderMethodDesignPattern\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\19-03-25\\BuilderMethodDesignPattern\\BuilderMethodDesignPattern\\Program.cs",
+              "RelativeToolTip": "BuilderMethodDesignPattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T13:06:45.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\bin\Debug\net8.0\ProxyMethodDesignPatterns.exe
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\bin\Debug\net8.0\ProxyMethodDesignPatterns.deps.json
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\bin\Debug\net8.0\ProxyMethodDesignPatterns.runtimeconfig.json
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\bin\Debug\net8.0\ProxyMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\bin\Debug\net8.0\ProxyMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\refint\ProxyMethodDesignPatterns.dll
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.pdb
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ProxyMethodDesignPatterns.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\ProxyMethodDesignPatterns\ProxyMethodDesignPatterns\obj\Debug\net8.0\ref\ProxyMethodDesignPatterns.dll

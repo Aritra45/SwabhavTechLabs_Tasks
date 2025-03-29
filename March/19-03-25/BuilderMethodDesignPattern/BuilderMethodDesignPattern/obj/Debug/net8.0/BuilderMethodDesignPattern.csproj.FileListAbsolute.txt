@@ -1,0 +1,14 @@
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\bin\Debug\net8.0\BuilderMethodDesignPattern.exe
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\bin\Debug\net8.0\BuilderMethodDesignPattern.deps.json
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\bin\Debug\net8.0\BuilderMethodDesignPattern.runtimeconfig.json
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\bin\Debug\net8.0\BuilderMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\bin\Debug\net8.0\BuilderMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.AssemblyInfoInputs.cache
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.AssemblyInfo.cs
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.csproj.CoreCompileInputs.cache
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\refint\BuilderMethodDesignPattern.dll
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.pdb
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\BuilderMethodDesignPattern.genruntimeconfig.cache
+E:\Tasks\March\19-03-25\BuilderMethodDesignPattern\BuilderMethodDesignPattern\obj\Debug\net8.0\ref\BuilderMethodDesignPattern.dll
