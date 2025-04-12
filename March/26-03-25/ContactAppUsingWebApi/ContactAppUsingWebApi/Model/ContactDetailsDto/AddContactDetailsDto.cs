@@ -13,6 +13,5 @@ namespace ContactAppUsingWebApi.Model.ContactDetailsDto
         public bool IsActive { get;}
         [NotNull]
         public int ContactId { get; set; }
-        public Contact Contact { get; set; }
     }
 }

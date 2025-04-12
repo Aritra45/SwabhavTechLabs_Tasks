@@ -1,0 +1,16 @@
+<div style="margin-left: 35%; margin-top: 0.5%;">
+Filter: 
+<label>
+    <input type="radio" value="all" name="filter" [(ngModel)]="selected" (change)="onFilterChange()" />
+    All Courses
+  </label>
+  <label>
+    <input type="radio" value="free" name="filter" [(ngModel)]="selected" (change)="onFilterChange()" />
+    Free Courses
+  </label>
+  <label>
+    <input type="radio" value="paid" name="filter" [(ngModel)]="selected" (change)="onFilterChange()" />
+    Paid Courses
+  </label>
+</div>
+  

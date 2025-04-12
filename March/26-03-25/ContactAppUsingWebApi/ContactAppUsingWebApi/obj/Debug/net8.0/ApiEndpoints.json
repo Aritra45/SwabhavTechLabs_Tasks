@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginDto",
+        "Type": "ContactAppUsingWebApi.Model.UserDto.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ContactAppUsingWebApi.Controllers.ContactController",
     "Method": "AddContact",
     "RelativePath": "api/Contact/add-contact",
@@ -107,7 +123,7 @@
   {
     "ContainingType": "ContactAppUsingWebApi.Controllers.ContactDetailsController",
     "Method": "AddContactDetails",
-    "RelativePath": "api/ContactDetails/add-contact",
+    "RelativePath": "api/ContactDetails/add-contact-details",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -207,6 +223,32 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.RoleController",
+    "Method": "AddRole",
+    "RelativePath": "api/Role/add-new-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addRoleDto",
+        "Type": "ContactAppUsingWebApi.Model.RoleDto.AddRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContactAppUsingWebApi.Controllers.RoleController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/Role/get-all-roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

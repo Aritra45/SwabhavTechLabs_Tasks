@@ -9,6 +9,7 @@ namespace ContactAppUsingWebApi.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contacts { get; set; }
-        public DbSet<ContactDetails> ContactDetails { get; set; }
+        public DbSet<ContactDetails> ContactDetailss { get; set; }
+        public DbSet<Role> Roles { get; set; }
     }
 }

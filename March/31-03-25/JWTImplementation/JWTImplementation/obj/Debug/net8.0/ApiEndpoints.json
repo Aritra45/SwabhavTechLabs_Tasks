@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "JWTImplementation.Controllers.RoleController",
+    "Method": "AddRole",
+    "RelativePath": "api/Role/add-new-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addRoleDto",
+        "Type": "JWTImplementation.Model.RoleDto.AddRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JWTImplementation.Controllers.RoleController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/Role/get-all-roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JWTImplementation.Controllers.StaffController",
+    "Method": "AddStaff",
+    "RelativePath": "api/Staff/add-new-staff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addStaffDto",
+        "Type": "JWTImplementation.Model.StaffDto.AddStaffDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JWTImplementation.Controllers.StaffController",
+    "Method": "GetAllStaffs",
+    "RelativePath": "api/Staff/get-all-staffs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JWTImplementation.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginDto",
+        "Type": "JWTImplementation.Model.StaffDto.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JWTImplementation.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JWTImplementation.WeatherForecast, JWTImplementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

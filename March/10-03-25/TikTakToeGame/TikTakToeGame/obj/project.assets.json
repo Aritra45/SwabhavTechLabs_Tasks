@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\10-03-25\\TikTakToeGame\\TikTakToeGame\\TicTacToeGame.csproj",
+      "projectUniqueName": "E:\\Tasks\\March\\10-03-25\\TikTakToeGame\\TikTakToeGame\\TicTacToeGame.csproj",
       "projectName": "TicTacToeGame",
-      "projectPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\10-03-25\\TikTakToeGame\\TikTakToeGame\\TicTacToeGame.csproj",
+      "projectPath": "E:\\Tasks\\March\\10-03-25\\TikTakToeGame\\TikTakToeGame\\TicTacToeGame.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "E:\\Swabhav Techlabs Solutions pvt ltd\\March\\10-03-25\\TikTakToeGame\\TikTakToeGame\\obj\\",
+      "outputPath": "E:\\Tasks\\March\\10-03-25\\TikTakToeGame\\TikTakToeGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

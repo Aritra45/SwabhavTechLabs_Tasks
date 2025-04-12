@@ -76,7 +76,24 @@ namespace ContactAppUsingWebApi.Migrations
 
                     b.HasIndex("ContactId");
 
-                    b.ToTable("ContactDetails");
+                    b.ToTable("ContactDetailss");
+                });
+
+            modelBuilder.Entity("ContactAppUsingWebApi.Model.Entity.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoleId"));
+
+                    b.Property<string>("Rolename")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("ContactAppUsingWebApi.Model.Entity.User", b =>
@@ -101,7 +118,12 @@ namespace ContactAppUsingWebApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
                     b.HasKey("UserId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -126,6 +148,17 @@ namespace ContactAppUsingWebApi.Migrations
                         .IsRequired();
 
                     b.Navigation("Contact");
+                });
+
+            modelBuilder.Entity("ContactAppUsingWebApi.Model.Entity.User", b =>
+                {
+                    b.HasOne("ContactAppUsingWebApi.Model.Entity.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,23 @@
+h1{
+    margin-left: 40%;
+    color: chocolate;
+}
+
+p{
+    display: inline-flex;
+    border: 4px solid;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    align-items: center;
+
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}

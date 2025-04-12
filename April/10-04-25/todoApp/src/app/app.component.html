@@ -1,0 +1,26 @@
+<h1>Welcome to my {{title}}</h1>
+
+<input type="text" #inputBox>
+<button (click)="addTask()">submit</button>
+
+<br>
+
+<h2>Tasks</h2>
+<div >
+  <ul *ngFor="let task of tasks; index as i">
+    <li >
+      {{task}} 
+      <button (click)="completed(i)">Complete</button>
+       <button (click)="deleteTask(i)">Delete</button>
+    </li>
+  </ul>
+</div>
+
+<h2>Completed Tasks</h2>
+<div *ngFor="let task of completedTasks; index as i">
+  <ul>
+    <li>
+      {{task}} <button (click)="deleteCompletedTask(i)">Delete</button>
+    </li>
+  </ul>
+</div>

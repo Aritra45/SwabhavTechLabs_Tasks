@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetFinder Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="membership-banner">
+    Become a member of the myPurina community today for free! 
+    <a href="#" class="membership-link">Get Started!</a>
+  </div>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-purple" href="#">petfinder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="#">ALL ABOUT PETS</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="#">🔐 SIGN IN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sub Navigation -->
+  <div class="bg-purple text- py-2">
+    <div class="container d-flex flex-wrap justify-content-center gap-4">
+      <a href="#" class="nav-link">ADOPT OR GET INVOLVED</a>
+      <a href="#" class="nav-link">DOGS & PUPPIES</a>
+      <a href="#" class="nav-link">CATS & KITTENS</a>
+      <a href="#" class="nav-link">OTHER TYPES OF PETS</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div class="container">
+      <div class="search-bar bg-white p-3 rounded d-flex">
+        <input type="text" class="form-control me-2" placeholder="Search Terrier, Kitten, etc.">
+        <input type="text" class="form-control me-2" placeholder="Enter City, State, or ZIP">
+        <button class="btn btn-primary">🔍</button>
+      </div>
+      <h1 class="fw-bold">Find your new best friend</h1>
+      <p class="lead">Browse pets from our network of over 14,500 shelters and rescues.</p>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-5 card-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="card-body">
+              <div class="display-6">🐶</div>
+              <h5 class="card-title mt-3">Dogs</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="card-body">
+              <div class="display-6">🐱</div>
+              <h5 class="card-title mt-3">Cats</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="card-body">
+              <div class="display-6">🐾</div>
+              <h5 class="card-title mt-3">Other Animals</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="card-body">
+              <div class="display-6">👥</div>
+              <h5 class="card-title mt-3">Shelters & Rescues</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pets Available Section -->
+<section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary fw-bold" style="color: #732b90;">
+        Pets Available for Adoption Nearby <i class="bi bi-chevron-right"></i>
+      </h2>
+      <div class="row justify-content-center g-4">
+        <!-- Pet Card -->
+        <div class="col-md-2">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="position-relative">
+              <img src="assets//gordo.jpeg" class="card-img-top rounded-top" alt="Gordo">
+              <button class="btn btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-primary" style="color: #732b90;">Gordo</h5>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Repeat for other pets -->
+        <div class="col-md-2">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="position-relative">
+              <img src="assets/pelosa.jpeg" class="card-img-top rounded-top" alt="Marigold">
+              <button class="btn btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-primary" style="color: #732b90;">Pelosa</h5>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-2">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="position-relative">
+              <img src="assets/babygirl.jpeg" class="card-img-top rounded-top" alt="Carrotina">
+              <button class="btn btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-primary" style="color: #732b90;">Baby Girl</h5>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-2">
+          <div class="card border-0 shadow-sm rounded">
+            <div class="position-relative">
+              <img src="assets/penelope.jpeg" class="card-img-top rounded-top" alt="Penelope">
+              <button class="btn btn-light position-absolute top-0 end-0 m-2 rounded-circle shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold text-primary" style="color: #732b90;">Penelope</h5>
+            </div>
+          </div>
+        </div>
+  
+        <!-- More Pets Box -->
+        <div class="col-md-2">
+          <div class="card bg-primary text-white text-center border-0 shadow-sm rounded d-flex flex-column justify-content-between" style="height: 100%;">
+            <div class="p-4">
+              <i class="bi bi-paw-fill fs-1"></i>
+              <p class="mt-3 mb-0">7 more pets available on Petfinder</p>
+            </div>
+            <div class="bg-dark-subtle text-white fw-bold py-2 rounded-bottom" style="cursor:pointer">
+              MEET THEM
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planning to Adopt a Pet Section -->
+<section class="bg-white py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5" style="color: #4e4e4e;">PLANNING TO ADOPT A PET?</h2>
+      <div class="row text-center g-5 justify-content-center">
+        
+        <!-- Checklist -->
+        <div class="col-md-4">
+          <div class="mb-3">
+            <img src="assets/checklist.svg" alt="Checklist Icon" />
+          </div>
+          <h5 class="fw-bold text-primary mb-3" style="color: #732b90;">CHECKLIST FOR NEW ADOPTERS</h5>
+          <p class="text-muted mb-4">Make the adoption transition as smooth as possible.</p>
+          <button class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" style="border-color: #732b90; color: #732b90;">LEARN MORE</button>
+        </div>
+  
+        <!-- Dog Years -->
+        <div class="col-md-4">
+          <div class="mb-3">
+            <img src="assets/human.svg" alt="Dog Years Icon" />
+          </div>
+          <h5 class="fw-bold text-primary mb-3" style="color: #732b90;">HOW OLD IS A DOG IN HUMAN YEARS?</h5>
+          <p class="text-muted mb-4">Learn to translate dog years to human years just for fun, and vice versa. Finally answer how old your dog is!</p>
+          <button class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" style="border-color: #732b90; color: #732b90;">LEARN MORE</button>
+        </div>
+  
+        <!-- FAQs -->
+        <div class="col-md-4">
+          <div class="mb-3">
+            <img src="assets/pet.svg" alt="FAQ Icon" />
+          </div>
+          <h5 class="fw-bold text-primary mb-3" style="color: #732b90;">PET ADOPTION FAQS</h5>
+          <p class="text-muted mb-4">Get answers to all the questions you haven’t thought of for your adoption.</p>
+          <button class="btn btn-outline-primary rounded-pill px-4 py-2 fw-bold" style="border-color: #732b90; color: #732b90;">LEARN MORE</button>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Recently Viewed Pets Section -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+      <h3 class="fw-bold mb-4" style="color: #732b90;">
+        Recently Viewed Pets <i class="bi bi-chevron-right"></i>
+      </h3>
+  
+      <div class="d-flex justify-content-center">
+        <div class="card shadow-sm border-0" style="width: 18rem; border-radius: 12px;">
+          <div class="position-relative">
+            <img src="assets/babygirl.jpeg" class="card-img-top" alt="Baby Girl" style="border-top-left-radius: 12px; border-top-right-radius: 12px; height: 280px; object-fit: cover;">
+            <div class="position-absolute top-0 end-0 m-2">
+              <button class="btn btn-light rounded-circle shadow-sm" style="width: 40px; height: 40px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="card-body bg-white rounded-bottom" style="border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
+            <h5 class="card-title fw-bold" style="color: #732b90;">Baby Girl</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adoption Articles Section -->
+<section class="bg-light py-5">
+    <div class="container">
+      <div class="row g-4">
+  
+        <!-- Dog Adoption Card -->
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="assets/article.webp" class="card-img-top rounded-top" alt="Dog Adoption">
+            <div class="card-body text-center">
+              <img src="assets/article.webp" class="rounded-circle border border-3 border-white shadow" alt="Dog Icon" width="80" height="80" style="margin-top: -40px; object-fit: cover;">
+              <h5 class="mt-3 fw-bold text-dark">Dog Adoption Articles</h5>
+              <p class="text-muted">Learn more about caring for your new dog</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 text-center">
+              <a href="#" class="text-decoration-none fw-bold" style="color: #460062;">READ MORE</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Cat Adoption Card -->
+        <div class="col-md-6">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="assets/article2.webp" class="card-img-top rounded-top" alt="Cat Adoption">
+            <div class="card-body text-center">
+              <img src="assets/article2.webp" class="rounded-circle border border-3 border-white shadow" alt="Cat Icon" width="80" height="80" style="margin-top: -40px; object-fit: cover;">
+              <h5 class="mt-3 fw-bold text-dark">Cat Adoption Articles</h5>
+              <p class="text-muted">Helpful insights on what to expect.</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 text-center">
+              <a href="#" class="text-decoration-none fw-bold" style="color: #460062;">READ MORE</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<footer class="text-white pt-5" style="background-color: #0022ff;">
+    <div class="container">
+      <div class="row gy-4">
+  
+        <!-- Petfinder Logo -->
+        <div class="col-md-2">
+          <img src="https://www.petfinder.com//static/images/pf-logo-footer.png" alt="Petfinder Logo" style="max-width: 100%;">
+        </div>
+  
+        <!-- Resources -->
+        <div class="col-md-2">
+          <h6 class="fw-bold">RESOURCES</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Mobile App Download</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Partnerships</a></li>
+            <li><a href="#" class="text-white text-decoration-none">News Center</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Put Petfinder On Your Site</a></li>
+            <li><a href="#" class="text-white text-decoration-none">For Developers</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Adopt -->
+        <div class="col-md-2">
+          <h6 class="fw-bold">ADOPT OR GET INVOLVED</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">All Adopt or Get Involved</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Adopting Pets</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Animal Shelters & Rescues</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Other Types of Pets</a></li>
+          </ul>
+        </div>
+  
+        <!-- Dogs -->
+        <div class="col-md-2">
+          <h6 class="fw-bold">ABOUT DOGS & PUPPIES</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">All About Dogs & Puppies</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Dog Adoption</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Dog Breeds</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Feeding Your Dog</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Dog Behavior</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Dog Health & Wellness</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Dog Training</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Other Dog Information</a></li>
+          </ul>
+        </div>
+  
+        <!-- Cats -->
+        <div class="col-md-2">
+          <h6 class="fw-bold">ABOUT CATS & KITTENS</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">All About Cats & Kittens</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cat Adoption</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cat Breeds</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Feeding Your Cat</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cat Behavior</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cat Health & Wellness</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cat Training</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Other Cat Information</a></li>
+          </ul>
+        </div>
+  
+       
+  
+      <!-- Legal & Social -->
+      <div class="text-center small pb-2">
+        <p class="mb-2">
+          Shelter & Rescue Registration | Sitemap | Terms of Service | Privacy Policy (updated) | Accessibility |
+          Cookie Policy | Notice at Collection | Your Privacy Choices
+        </p>
+        <p class="mb-0">
+          ©2025 Petfinder.com — All trademarks are owned by Société des Produits Nestlé S.A., or used with permission.
+        </p>
+        <div class="mt-3">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-pinterest fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

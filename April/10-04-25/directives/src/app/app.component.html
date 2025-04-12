@@ -1,0 +1,65 @@
+<h1>Directives Demo</h1>
+
+
+<div>
+  <h3>ngIf & ngIfElse</h3>
+</div>
+<div *ngIf="condition; then ifBlock; else elseBlock"></div>
+<ng-template #ifBlock>
+  <h3>If block is executed</h3>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h3>Else block is executed</h3>
+</ng-template>
+
+<p></p>
+
+<div [ngStyle]="{backgroundColor : condition? 'green':'blue'}">
+<ul *ngFor="let player of players; index as i">
+  <li>
+    {{i+1}} {{player}}
+  </li>
+</ul>
+</div>
+
+<p></p>
+
+<div [ngClass]="{showData : condition}">
+<ul *ngFor="let player of playerWithAge; index as i">
+  <li *ngIf="player.age>40">
+    {{i+1}} Name: {{player.name}},  Age: {{player.age}}
+  </li>
+</ul>
+</div>
+
+
+<br>
+
+<div *ngFor="let student of students; index as i">
+  <ul [ngSwitch]="getMarks(student.marks)">
+    <li  *ngSwitchCase="'green'" style="background-color: green;">
+      {{ i + 1 }} Name: {{ student.name }}, Marks: {{ student.marks }}
+    </li>
+    <li  *ngSwitchCase="'orenge'" style="background-color: orange;">
+      {{ i + 1 }} Name: {{ student.name }}, Marks: {{ student.marks }}
+    </li>
+    <li  *ngSwitchCase="'yellow'" style="background-color: yellow;">
+      {{ i + 1 }} Name: {{ student.name }}, Marks: {{ student.marks }}
+    </li>
+    <li  *ngSwitchCase="'red'" style="background-color: red;">
+      {{ i + 1 }} Name: {{ student.name }}, Marks: {{ student.marks }}
+    </li>
+    <li  *ngSwitchCase="'other'" style="background-color: transparent;">
+      {{ i + 1 }} Name: {{ student.name }}, Marks: {{ student.marks }}
+    </li>
+  </ul>
+</div>
+
+
+
+<div>
+  <input type="text" #inputbox>
+  <button (click)="displayName()">submit</button>
+</div>
+

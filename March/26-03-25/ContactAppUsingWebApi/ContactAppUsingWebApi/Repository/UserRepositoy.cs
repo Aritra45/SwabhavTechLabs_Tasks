@@ -24,20 +24,30 @@ namespace ContactAppUsingWebApi.Repository
             return dbSet.ToList();
         }
 
-        //public User LoginUser(int userId, string password)
+        
+        //public void AddAdminStaff()
         //{
-            
-            
-        //}
+        //    var userEntity = new User
+        //    {
+        //        Name = "Aritra",
+        //        IsAdmin = true,
+        //        IsActive = true,
+        //        Password = BCrypt.Net.BCrypt.EnhancedHashPassword("1234"),
+        //        RoleId = 1
+        //    };
 
+        //    context.Users.Add(userEntity);
+        //    context.SaveChanges();
+        //}
         public User AddStaff(User user)
         {
             var userEntity = new User
             {
                 Name = user.Name,
-                IsAdmin = false,
+                IsAdmin = true,
                 IsActive = true,
                 Password = user.Password,
+                RoleId = 2,
             };
 
             dbSet.Add(userEntity);

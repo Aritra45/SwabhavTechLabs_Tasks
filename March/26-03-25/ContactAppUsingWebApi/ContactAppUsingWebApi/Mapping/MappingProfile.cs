@@ -2,6 +2,7 @@
 using ContactAppUsingWebApi.Model.ContactDetailsDto;
 using ContactAppUsingWebApi.Model.ContactDto;
 using ContactAppUsingWebApi.Model.Entity;
+using ContactAppUsingWebApi.Model.RoleDto;
 using ContactAppUsingWebApi.Model.UserDto;
 namespace ContactAppUsingWebApi.Mapping
 {
@@ -9,6 +10,9 @@ namespace ContactAppUsingWebApi.Mapping
     {
         public MappingProfile()
         {
+            CreateMap<Role, AddRoleDto>();
+            CreateMap<AddRoleDto, Role>();
+
             CreateMap<User, LoginSuccessDto>();
             CreateMap<LoginSuccessDto, User>();
 

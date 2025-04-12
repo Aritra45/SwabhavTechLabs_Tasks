@@ -1,0 +1,29 @@
+
+<h1>Welcome to our {{title}}</h1>
+
+<h2>Product List</h2>
+<div *ngFor="let product of products" style="background-color: beige;">
+  <ul  [ngSwitch]="checkAvailable(product.available)">
+
+    <img [src]="product.image" alt="">
+
+    <li *ngSwitchCase="'green'" style="background-color: green; margin-bottom: 5%; color: white;">
+      Product Name: {{product.name}}
+      <br>
+      Product Price: {{product.price}}
+      <br>
+      <button (click)="details(product.details, product.name)" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: chartreuse; color: white;">Details</button>
+      <button (click)="buy(product.name)" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: chocolate; color: white;">Buy Now</button>
+    </li>
+
+    <li *ngSwitchCase="'red'" style="background-color: red; margin-bottom: 5%; color: white;">
+      Product Name: {{product.name}}
+      <br>
+      Product Price: {{product.price}} 
+      <br>
+      <button (click)="details(product.details, product.name)" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: chartreuse; color: white;">Details</button>
+      <button (click)="notify()" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: coral; color: white;">Notify Me</button>
+    </li>
+
+  </ul>
+</div>

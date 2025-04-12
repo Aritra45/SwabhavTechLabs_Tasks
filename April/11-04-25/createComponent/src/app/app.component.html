@@ -1,0 +1,5 @@
+<h1>I am Parent</h1>
+<div style="border: solid 2px green;">
+<app-header-component [title]="title" (sendIdtoParent) ="getData($event)"></app-header-component>
+</div>
+{{getId}}

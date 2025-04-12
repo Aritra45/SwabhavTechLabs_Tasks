@@ -74,19 +74,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ContactRepository.cs",
-              "DocumentMoniker": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactRepository.cs",
-              "RelativeDocumentMoniker": "ContactApp\\Repository\\ContactRepository.cs",
-              "ToolTip": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactRepository.cs",
-              "RelativeToolTip": "ContactApp\\Repository\\ContactRepository.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAqwLIAAABZAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ContactDetailsRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactDetailsRepository.cs",
+              "RelativeDocumentMoniker": "ContactApp\\Repository\\ContactDetailsRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactDetailsRepository.cs",
+              "RelativeToolTip": "ContactApp\\Repository\\ContactDetailsRepository.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwI4AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T11:20:47.183Z"
+              "WhenOpened": "2025-03-23T11:24:34.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ContactApp\\Repository\\UserRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "ContactApp\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAowJ8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:16:08.366Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -102,16 +115,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactDetailsRepository.cs",
-              "DocumentMoniker": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactDetailsRepository.cs",
-              "RelativeDocumentMoniker": "ContactApp\\Repository\\ContactDetailsRepository.cs",
-              "ToolTip": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactDetailsRepository.cs",
-              "RelativeToolTip": "ContactApp\\Repository\\ContactDetailsRepository.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwI4AAABQAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "ContactApp\\Repository\\ContactRepository.cs",
+              "ToolTip": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\ContactRepository.cs",
+              "RelativeToolTip": "ContactApp\\Repository\\ContactRepository.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAqwLIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T11:24:34.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T11:20:47.183Z"
             },
             {
               "$type": "Document",
@@ -136,19 +148,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T15:08:12.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ContactApp\\Repository\\UserRepository.cs",
-              "ToolTip": "E:\\Tasks\\March\\24-03-25\\ContactApp\\ContactApp\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "ContactApp\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAowJ8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T11:16:08.366Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

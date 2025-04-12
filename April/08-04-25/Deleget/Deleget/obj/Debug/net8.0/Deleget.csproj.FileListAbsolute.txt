@@ -1,0 +1,15 @@
+E:\Tasks\April\08-02-25\Deleget\Deleget\bin\Debug\net8.0\Deleget.exe
+E:\Tasks\April\08-02-25\Deleget\Deleget\bin\Debug\net8.0\Deleget.deps.json
+E:\Tasks\April\08-02-25\Deleget\Deleget\bin\Debug\net8.0\Deleget.runtimeconfig.json
+E:\Tasks\April\08-02-25\Deleget\Deleget\bin\Debug\net8.0\Deleget.dll
+E:\Tasks\April\08-02-25\Deleget\Deleget\bin\Debug\net8.0\Deleget.pdb
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.AssemblyInfoInputs.cache
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.AssemblyInfo.cs
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.csproj.CoreCompileInputs.cache
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.sourcelink.json
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.dll
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\refint\Deleget.dll
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.pdb
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\Deleget.genruntimeconfig.cache
+E:\Tasks\April\08-02-25\Deleget\Deleget\obj\Debug\net8.0\ref\Deleget.dll

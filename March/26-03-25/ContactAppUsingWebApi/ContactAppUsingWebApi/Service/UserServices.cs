@@ -1,80 +1,102 @@
-﻿using ContactAppUsingWebApi.Data;
-using ContactAppUsingWebApi.Exception;
-using ContactAppUsingWebApi.Interface.IRepositoryes;
+﻿using ContactAppUsingWebApi.Interfaces.IRepositoryes;
 using ContactAppUsingWebApi.Interface.IServices;
 using ContactAppUsingWebApi.Model.Entity;
 using ContactAppUsingWebApi.Model.UserDto;
-using ContactAppUsingWebApi.Repository;
-using Microsoft.AspNetCore.Mvc;
+using BCrypt.Net;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using ContactAppUsingWebApi.Exception;
 
 namespace ContactAppUsingWebApi.Service
 {
     public class UserServices : IUserServices
     {
-        //private readonly MyContext context;
+        private readonly IGenericRepository<User> repository;
 
-        IUserRepository repository;
-        public UserServices(IUserRepository userRepository)
+        public UserServices(IGenericRepository<User> userRepository)
         {
             this.repository = userRepository;
         }
 
-
         public List<User> GetAllUsers()
         {
-            List<User> users = new List<User>();
-            foreach (var user in repository.GetAllUsers())
-            {
-                if(user.IsActive == true)
-                {
-                    users.Add(user);
-                }
-            }
-            return users;
+            var users = repository.GetAllAsync();
+            return users.Where(user => user.IsActive==true).ToList();
         }
 
         public User LoginUser(int userId, string password)
         {
             var user = repository.GetByID(userId);
-            bool pass = BCrypt.Net.BCrypt.EnhancedVerify(password, user.Password);
-            if (pass)
+            if (user == null || !BCrypt.Net.BCrypt.EnhancedVerify(password, user.Password))
+                return null;
+
+            return user;
+        }
+
+        public async Task<User> AddStaff(User user)
+        {
+            var userEntity = new User
             {
+                Name = user.Name,
+                IsAdmin = false,
+                IsActive = true,
+                Password = user.Password,
+                RoleId = 2,
+            };
+
+            await repository.AddAsync(userEntity);
+            return userEntity;
+        }
+
+        public User UpdateStaffName(int userId, UpdateUserNameDto updateUserNameDto)
+        {
+            var user = repository.GetByID(userId);
+            if (user != null)
+            {
+                user.Name = updateUserNameDto.Name;
+                repository.Update(user);
                 return user;
             }
             else
             {
-                return null;
+                throw new MyNotFoundException("Not Found");
             }
-            //return repository.LoginUser(userId, password);
         }
-
-        public User AddStaff(User user)
-        {
-            return repository.AddStaff(user);
-        }
-
-
-        public User UpdateStaffName(int userId, UpdateUserNameDto updateUserNameDto)
-        {
-            return repository.UpdateStaffName(userId, updateUserNameDto);
-        }
-
 
         public User UpdateStaffActivation(int userId, UpdateUserActivationDto updateUserActivationDto)
         {
-            return repository.UpdateStaffActivation(userId, updateUserActivationDto);
+            var user = repository.GetByID(userId);
+            if (user != null)
+            {
+                user.IsActive = updateUserActivationDto.IsActive;
+                repository.Update(user);
+                return user;
+            }
+            else
+            {
+                throw new MyNotFoundException("Not Found");
+            }
         }
-
 
         public User GetByID(int userId)
         {
             return repository.GetByID(userId);
         }
 
-
-        public User DeleteEmployees(int userId)
+        public async Task DeleteEmployees(int userId)
         {
-            return repository.DeleteEmployees(userId);
+            var user = repository.GetByID(userId);
+            if (user != null)
+            {
+                user.IsActive = false;
+            }
+            else
+            {
+                throw new MyNotFoundException("Not Found");
+            }
         }
+
+       
     }
 }

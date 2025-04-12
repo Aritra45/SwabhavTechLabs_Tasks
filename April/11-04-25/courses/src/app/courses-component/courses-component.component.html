@@ -1,0 +1,18 @@
+<app-search-component (search)="search($event)"></app-search-component>
+<br />
+<app-filter-component (filterChange)="filterType($event)"></app-filter-component>
+<br>
+<div style="display: flex; flex-direction: row; overflow-x: auto; gap: 20px; padding: 10px; margin-right: 40px;">
+<div *ngFor="let course of courses" style="display: inline-flex">
+  <ul>
+    <p style="border: solid 5px red; text-align: center;">
+      <img [src]="course.image" alt="" style="width: 200px; height: 150px; object-fit: cover; border-radius: 8px;" > <br/>
+      {{ course.name }}<br />
+      ---------------------------------------<br/>
+      {{ course.description }}<br />
+      ---------------------------------------<br/>
+      {{ course.type }} - Price: {{ course.price }}
+    </p>
+  </ul>
+</div>
+</div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TicTacToeGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d8cbbe57871dcc9ded5ab87daf559918f46d62b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72fc48e4f1ec5a98125685ab6f77a512b4612c54")]
 [assembly: System.Reflection.AssemblyProductAttribute("TicTacToeGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TicTacToeGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

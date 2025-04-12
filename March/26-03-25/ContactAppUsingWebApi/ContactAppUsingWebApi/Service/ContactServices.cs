@@ -1,17 +1,21 @@
-﻿using ContactAppUsingWebApi.Data;
+﻿using System.Collections.Generic;
+using ContactAppUsingWebApi.Data;
 using ContactAppUsingWebApi.Exception;
 using ContactAppUsingWebApi.Interface.IRepositoryes;
 using ContactAppUsingWebApi.Interface.IServices;
+using ContactAppUsingWebApi.Interfaces.IRepositoryes;
 using ContactAppUsingWebApi.Model.ContactDto;
 using ContactAppUsingWebApi.Model.Entity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ContactAppUsingWebApi.Service
 {
     public class ContactServices : IContactServices
     {
-        IContactRepository repository;
-        public ContactServices(IContactRepository repository)
+        IGenericRepository<Contact> repository;
+        public ContactServices(IGenericRepository<Contact> repository)
         {
             this.repository = repository;
         }
@@ -19,37 +23,80 @@ namespace ContactAppUsingWebApi.Service
 
         public List<Contact> GetAllContacts()
         {
-            return repository.GetAllContacts();
+            var contacts = repository.GetAllAsync();
+            return contacts.Where(contact => contact.IsActive == true).ToList();
         }
 
 
-        public Contact AddContact(AddContactDto addContactDto)
+        public async Task<Contact> AddContact(AddContactDto addContactDto)
         {
-            return repository.AddContact(addContactDto);
+            var contactEntity = new Contact
+            {
+                FirstName = addContactDto.FirstName,
+                LastName = addContactDto.LastName,
+                IsActive = true,
+                UserId = addContactDto.UserId
+            };
+
+            await repository.AddAsync(contactEntity);
+            return contactEntity;
         }
 
 
         public Contact UpdateContactFirstName(int contactId, UpdateContactFirstNameDto updateContactFirstNameDto)
         {
-            return repository.UpdateContactFirstName(contactId, updateContactFirstNameDto);
+            var contactEntity = repository.GetByID(contactId);
+            if (contactEntity == null)
+            {
+                throw new KeyNotFoundException($"Contact with ID {contactId} not found.");
+            }
+
+            contactEntity.FirstName = updateContactFirstNameDto.FirstName;
+            repository.Update(contactEntity);
+            return contactEntity;
         }
 
         
         public Contact UpdateContactLastName(int contactId, UpdateContactLastNameDto updateContactLastNameDto)
         {
-            return repository.UpdateContactLastName(contactId, updateContactLastNameDto);
+            var contactEntity = repository.GetByID(contactId);
+            if (contactEntity == null)
+            {
+                throw new KeyNotFoundException($"Contact with ID {contactId} not found.");
+            }
+
+            contactEntity.LastName = updateContactLastNameDto.LastName;
+            repository.Update(contactEntity);
+            return contactEntity;
         }
 
         
         public Contact UpdateContactActivation(int contactId, UpdateContactActivationDto updateContactActivationDto)
         {
-            return repository.UpdateContactActivation(contactId, updateContactActivationDto);
+            var contactEntity = repository.GetByID(contactId);
+            if (contactEntity == null)
+            {
+                throw new KeyNotFoundException($"Contact with ID {contactId} not found.");
+            }
+
+            contactEntity.IsActive = updateContactActivationDto.IsActive;
+            repository.Update(contactEntity);
+            return contactEntity;
         }
 
         
-        public Contact DeleteContact(int contactId)
+        public async Task DeleteContact(int contactId)
         {
-            return repository.DeleteContact(contactId);
+            var contact = repository.GetByID(contactId);
+            if (contact != null)
+            {
+                contact.IsActive = false;
+            }
+            else
+            {
+                throw new MyNotFoundException("Not Found");
+            }
         }
     }
+    
 }

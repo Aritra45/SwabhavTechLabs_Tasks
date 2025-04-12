@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9274BC3D-57C4-4DA9-AC97-239B5271D9A8}|XunitTicTac\\XunitTicTac.csproj|e:\\tasks\\march\\10-03-25\\tic tac toe game\\xunittictac\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9274BC3D-57C4-4DA9-AC97-239B5271D9A8}|XunitTicTac\\XunitTicTac.csproj|solutionrelative:xunittictac\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|e:\\tasks\\march\\10-03-25\\tic tac toe game\\tic tac toe game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|solutionrelative:tic tac toe game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|e:\\tasks\\march\\10-03-25\\tic tac toe game\\tic tac toe game\\marktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|solutionrelative:tic tac toe game\\marktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|e:\\tasks\\march\\10-03-25\\tic tac toe game\\tic tac toe game\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|solutionrelative:tic tac toe game\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|e:\\tasks\\march\\10-03-25\\tic tac toe game\\tic tac toe game\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|solutionrelative:tic tac toe game\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|e:\\tasks\\march\\10-03-25\\tic tac toe game\\tic tac toe game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5C8734A-1768-4F90-BEB2-23D0DDF539F1}|Tic Tac Toe Game\\Tic Tac Toe Game.csproj|solutionrelative:tic tac toe game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\XunitTicTac\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "XunitTicTac\\UnitTest1.cs",
+              "ToolTip": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\XunitTicTac\\UnitTest1.cs",
+              "RelativeToolTip": "XunitTicTac\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T10:07:04.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Game.cs",
+              "RelativeDocumentMoniker": "Tic Tac Toe Game\\Game.cs",
+              "ToolTip": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Game.cs*",
+              "RelativeToolTip": "Tic Tac Toe Game\\Game.cs*",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T07:55:48.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MarkType.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\MarkType.cs",
+              "RelativeDocumentMoniker": "Tic Tac Toe Game\\MarkType.cs",
+              "ToolTip": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\MarkType.cs",
+              "RelativeToolTip": "Tic Tac Toe Game\\MarkType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:58:34.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Cell.cs",
+              "RelativeDocumentMoniker": "Tic Tac Toe Game\\Cell.cs",
+              "ToolTip": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Cell.cs",
+              "RelativeToolTip": "Tic Tac Toe Game\\Cell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:50:18.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Board.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Board.cs",
+              "RelativeDocumentMoniker": "Tic Tac Toe Game\\Board.cs",
+              "ToolTip": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Board.cs",
+              "RelativeToolTip": "Tic Tac Toe Game\\Board.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwBgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:49:56.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Program.cs",
+              "RelativeDocumentMoniker": "Tic Tac Toe Game\\Program.cs",
+              "ToolTip": "E:\\Tasks\\March\\10-03-25\\Tic Tac Toe Game\\Tic Tac Toe Game\\Program.cs",
+              "RelativeToolTip": "Tic Tac Toe Game\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:49:05.591Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
