@@ -142,3 +142,6 @@ E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\obj\Debug\net8.
 E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\obj\Debug\net8.0\BankingApp.pdb
 E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\obj\Debug\net8.0\BankingApp.genruntimeconfig.cache
 E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\obj\Debug\net8.0\ref\BankingApp.dll
+E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\bin\Debug\net8.0\CloudinaryDotNet.dll
+E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Tasks\Backend Final Project Banking App\BankingApp\BankingApp\bin\Debug\net8.0\CsvHelper.dll

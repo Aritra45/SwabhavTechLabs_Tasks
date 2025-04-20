@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\service\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\service\\employeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\beneficiary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\beneficiary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\salarydisburesement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\salarydisburesement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\database\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\database\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\interfaces\\iservice\\iemployeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\interfaces\\iservice\\iemployeeservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\model\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\model\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\backend final project banking app\\bankingapp\\bankingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransactionType.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\TransactionType.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\TransactionType.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\TransactionType.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\TransactionType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Program.cs",
+              "RelativeDocumentMoniker": "BankingApp\\Program.cs",
+              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Program.cs",
+              "RelativeToolTip": "BankingApp\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAYwDcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T13:44:16.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Transaction.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Transaction.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Transaction.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T13:43:47.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Beneficiary.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Beneficiary.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Beneficiary.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Beneficiary.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\Beneficiary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:29:50.231Z",
+              "WhenOpened": "2025-04-13T14:26:55.887Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Company.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Company.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Company.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Company.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\Company.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:12:02.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bank.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Bank.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Bank.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Bank.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\Bank.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:07:59.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Role.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Role.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Role.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T12:02:32.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\User.cs",
-              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\User.cs",
-              "RelativeToolTip": "BankingApp\\Model\\Entity\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T11:59:07.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "MyContext.cs",
               "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Database\\MyContext.cs",
               "RelativeDocumentMoniker": "BankingApp\\Database\\MyContext.cs",
               "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Database\\MyContext.cs",
               "RelativeToolTip": "BankingApp\\Database\\MyContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T11:49:22.856Z",
+              "WhenOpened": "2025-04-20T12:30:40.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "BankingApp\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "BankingApp\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:10:42.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Service\\EmployeeServices.cs",
+              "RelativeDocumentMoniker": "BankingApp\\Service\\EmployeeServices.cs",
+              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Service\\EmployeeServices.cs",
+              "RelativeToolTip": "BankingApp\\Service\\EmployeeServices.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAQwHMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:09:23.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEmployeeServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Interfaces\\IService\\IEmployeeServices.cs",
+              "RelativeDocumentMoniker": "BankingApp\\Interfaces\\IService\\IEmployeeServices.cs",
+              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Interfaces\\IService\\IEmployeeServices.cs",
+              "RelativeToolTip": "BankingApp\\Interfaces\\IService\\IEmployeeServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:09:03.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalaryDisburesement.cs",
+              "DocumentMoniker": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\SalaryDisburesement.cs",
+              "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\SalaryDisburesement.cs",
+              "ToolTip": "E:\\Tasks\\Backend Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\SalaryDisburesement.cs",
+              "RelativeToolTip": "BankingApp\\Model\\Entity\\SalaryDisburesement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T12:06:20.435Z",
               "EditorCaption": ""
             }
           ]

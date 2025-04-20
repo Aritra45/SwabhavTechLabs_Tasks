@@ -13,6 +13,9 @@ namespace BankingApp.Database
         public DbSet<Company> Companies { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Beneficiary> Beneficiaries { get; set; }
-
-    }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<AuditLog> AuditLogs { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<SalaryDisburesement> SalaryDisburesements { get; set; }
+        }
 }

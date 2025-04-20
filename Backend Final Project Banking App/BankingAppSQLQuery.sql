@@ -5,11 +5,10 @@ CREATE TABLE Employees (
     EmployeeBankAccountNumber NVARCHAR(15),
     EmployeeSalaryAmount DECIMAL(18,2),
     CompanyEmail NVARCHAR(450),
-	FOREIGN KEY (CompanyEmail) REFERENCES Companies(CompanyEmail)
+	IsActive bit,
 );
 
-ALTER TABLE Employees
-ADD IsActive bit;
+
 
 -- Sample BULK INSERT for CSV
 BULK INSERT Employees
@@ -19,3 +18,18 @@ WITH (
     ROWTERMINATOR = '\n',
     FIRSTROW = 2
 );
+
+drop table Employees
+drop table Transactions
+drop table TransactionTypes
+drop table Role
+drop table Companies
+drop table Beneficiaries
+drop table Banks
+drop table BankAccountTypes
+drop table Users
+
+Insert into Roles(RoleName) values ('Admin')
+Insert into Roles(RoleName) values ('Bank')
+Insert into Roles(RoleName) values ('Company')
+

@@ -10,13 +10,13 @@ namespace BankingApp.Model.Entity
         [NotNull]
         public decimal TransactionAmount { get; set; }
         [NotNull]
-        public DateTime PaymentDate { get; set; } = DateTime.Now;
+        public string Status {  get; set; }
         [NotNull]
-        public string CompanyEmail { get; set; }
+        public DateTime PaymentDate { get; set; }
         [NotNull]
-        public Company Company { get; set; }
-
-        public int BeneficiaryId { get; set; }
-        public Beneficiary Beneficiary { get; set; }
+        public string TransferFromCompanyEmail { get; set; }
+        [NotNull]
+        public string TransferToCompanyEmail { get; set; }
+        
     }
 }

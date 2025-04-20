@@ -1,0 +1,19 @@
+<div class="registration-container">
+    <h2>Register</h2>
+    <form [formGroup]="form" (ngSubmit)="register()">
+        <input type="text" placeholder="Full Name" formControlName="name">
+        <input type="email" placeholder="Email" formControlName="email">
+        <input type="password" placeholder="Password" formControlName="password">
+        <input type="password" placeholder="Confirm Password" formControlName="confirmedPassword">
+        <button type="submit">Register</button>
+        <button type="button" (click)="get()">get Users</button>
+    </form>
+</div>
+
+<div *ngFor="let data of getData">
+    <ul>
+        <li>
+            {{data.name}}
+        </li>
+    </ul>
+</div>

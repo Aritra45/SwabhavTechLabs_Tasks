@@ -1,0 +1,33 @@
+<!-- 
+
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form #form="ngForm" (ngSubmit)="register(form.value)">
+            <input type="text" placeholder="Full Name" name="name" [(ngModel)]="data.name" required>
+            <input type="email" placeholder="Email" name="email" [(ngModel)]="data.email" required>
+            <input type="password" placeholder="Password" name="password" [(ngModel)]="data.password" required>
+            <input type="password" placeholder="Confirm Password" name="CPassword" [(ngModel)]="data.CPassword" required>
+            <button type="submit" [disabled]="!form.valid">Register</button>
+        </form>
+    </div> -->
+
+
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form [formGroup]="form" (ngSubmit)="register()">
+            <input type="text" placeholder="Full Name" formControlName="name">
+            <input type="email" placeholder="Email" formControlName="email">
+            <input type="password" placeholder="Password" formControlName="password">
+            <input type="password" placeholder="Confirm Password" formControlName="confirmedPassword">
+            <button type="submit">Register</button>
+            <button type="button" (click)="get()">get Users</button>
+        </form>
+    </div>
+
+    <div *ngFor="let data of getData">
+        <ul>
+            <li>
+                {{data.name}}
+            </li>
+        </ul>
+    </div>

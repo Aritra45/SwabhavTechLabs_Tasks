@@ -1,0 +1,23 @@
+<app-customer-list (sendtoParent)="getData($event)"></app-customer-list>
+
+<div style="padding-top: 2%;">
+    <table>
+        <tbody>
+        <tr>
+          <th>Customer No</th>
+          <th>Customer Name</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Address</th>
+        </tr>
+      
+        <tr *ngFor="let showCustomer of showCustomers">
+          <td>{{ showCustomer.customerNo }}</td>
+          <td>{{ showCustomer.name }}</td>
+          <td>{{showCustomer.city}}</td>
+          <td>{{showCustomer.country}}</td>
+          <td>{{showCustomer.address}}</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>

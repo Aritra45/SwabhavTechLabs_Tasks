@@ -1,0 +1,67 @@
+<h1>Customer List</h1>
+<div>
+<table>
+    <tbody>
+    <tr>
+      <th>Customer No</th>
+      <th>Customer Name</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let customer of customers, index as i">
+      <td>{{ customer.customerNo }}</td>
+      <td>{{ customer.name }}</td>
+      <td>{{customer.city}}</td>
+      <td>{{customer.country}}</td>
+      <td>{{customer.address}}</td>
+      <td><button (click)="getData(i)">Select</button></td>
+    </tr>
+</tbody>
+</table>
+</div>
+<!-- <div *ngFor="let customer of customers, index as i">
+    
+    <ul>
+        {{customer.customerNo}}
+        {{customer.name}}
+        {{customer.city}}
+        {{customer.country}}
+        {{customer.address}}
+        <button (click)="getData(i)">Select</button>
+    </ul>
+</div> -->
+<!-- <div *ngFor="let showCustomer of showCustomers">
+    <ul>
+        {{showCustomer.customerNo}}
+        {{showCustomer.name}}
+        {{showCustomer.city}}
+        {{showCustomer.country}}
+        {{showCustomer.address}}
+    </ul>
+    
+</div> -->
+---------------------------------------------------------------------------------------------
+<!-- <div style="padding-top: 2%;">
+    <table>
+        <tbody>
+        <tr>
+          <th>Customer No</th>
+          <th>Customer Name</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Address</th>
+        </tr>
+      
+        <tr *ngFor="let showCustomer of showCustomers">
+          <td>{{ showCustomer.customerNo }}</td>
+          <td>{{ showCustomer.name }}</td>
+          <td>{{showCustomer.city}}</td>
+          <td>{{showCustomer.country}}</td>
+          <td>{{showCustomer.address}}</td>
+        </tr>
+    </tbody>
+    </table>
+    </div> -->

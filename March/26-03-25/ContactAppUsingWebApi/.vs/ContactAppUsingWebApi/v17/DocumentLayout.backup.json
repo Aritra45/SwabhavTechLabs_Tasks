@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\service\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\service\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|e:\\tasks\\march\\26-03-25\\contactappusingwebapi\\contactappusingwebapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51E9820F-F09B-45BD-94F6-F3321DC19254}|ContactAppUsingWebApi\\ContactAppUsingWebApi.csproj|solutionrelative:contactappusingwebapi\\data\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,15 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\appsettings.json",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\appsettings.json",
+              "RelativeToolTip": "ContactAppUsingWebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-17T11:36:22.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "RelativeToolTip": "ContactAppUsingWebApi\\Service\\UserServices.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:31:36.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MyContext.cs",
               "DocumentMoniker": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Data\\MyContext.cs",
               "RelativeDocumentMoniker": "ContactAppUsingWebApi\\Data\\MyContext.cs",
               "ToolTip": "E:\\Tasks\\March\\26-03-25\\ContactAppUsingWebApi\\ContactAppUsingWebApi\\Data\\MyContext.cs",
               "RelativeToolTip": "ContactAppUsingWebApi\\Data\\MyContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T11:50:24.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T11:50:24.92Z"
             }
           ]
         }

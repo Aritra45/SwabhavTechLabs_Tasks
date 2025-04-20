@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tasks\\Form\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\model\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\model\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "E:\\Tasks\\Form\\Form\\Controllers\\FormController.cs",
+              "RelativeDocumentMoniker": "Form\\Controllers\\FormController.cs",
+              "ToolTip": "E:\\Tasks\\Form\\Form\\Controllers\\FormController.cs",
+              "RelativeToolTip": "Form\\Controllers\\FormController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T11:39:40.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Tasks\\Form\\Form\\appsettings.json",
+              "RelativeDocumentMoniker": "Form\\appsettings.json",
+              "ToolTip": "E:\\Tasks\\Form\\Form\\appsettings.json",
+              "RelativeToolTip": "Form\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-17T11:36:36.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tasks\\Form\\Form\\Program.cs",
+              "RelativeDocumentMoniker": "Form\\Program.cs",
+              "ToolTip": "E:\\Tasks\\Form\\Form\\Program.cs",
+              "RelativeToolTip": "Form\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T11:31:09.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyContext.cs",
+              "DocumentMoniker": "E:\\Tasks\\Form\\Form\\MyContext.cs",
+              "RelativeDocumentMoniker": "Form\\MyContext.cs",
+              "ToolTip": "E:\\Tasks\\Form\\Form\\MyContext.cs",
+              "RelativeToolTip": "Form\\MyContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T11:31:18.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyForm.cs",
+              "DocumentMoniker": "E:\\Tasks\\Form\\Form\\Model\\MyForm.cs",
+              "RelativeDocumentMoniker": "Form\\Model\\MyForm.cs",
+              "ToolTip": "E:\\Tasks\\Form\\Form\\Model\\MyForm.cs",
+              "RelativeToolTip": "Form\\Model\\MyForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T11:24:26.246Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

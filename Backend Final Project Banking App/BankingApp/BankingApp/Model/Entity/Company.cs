@@ -14,14 +14,24 @@ namespace BankingApp.Model.Entity
         [NotNull]
         public string CompanyAddress { get; set; }
         [NotNull]
-        public string FileName { get; set; }
+        public string CompanyAccountNumber { get; set; }
         [NotNull]
-        public string FilePath { get; set; }
+        public string IFSCNumber { get; set; }
         [NotNull]
-        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public string AadharFilePath { get; set; }
+        [NotNull]
+        public string PanFilePath { get; set; }
+        [NotNull]
+        public string Password { get; set; }
+        [NotNull]
+        public DateTime CreatedAt { get; set; }
+        public bool IsActive { get; set; }
         public bool IsVerified { get; set; }
-        [NotNull]
-        public int BankId { get; set; }
-        public Bank Bank { get; set; }
+        public bool IsAproved { get; set; }
+        
+      
+        public int RoleId { get; set; }
+       
+
     }
 }

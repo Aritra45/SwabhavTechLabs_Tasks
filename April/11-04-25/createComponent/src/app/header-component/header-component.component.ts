@@ -15,5 +15,6 @@ export class HeaderComponentComponent {
   id = 7
   sendEmmited(){
     this.sendIdtoParent.emit(this.id)
+    
   }
 }
