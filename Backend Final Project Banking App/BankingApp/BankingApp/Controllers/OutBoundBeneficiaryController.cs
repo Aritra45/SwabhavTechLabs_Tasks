@@ -17,12 +17,14 @@ namespace BankingApp.Controllers
     {
         IBeneficiaryServices beneficiaryServices;
         IMapper mapper;
-        public OutBoundBeneficiaryController(IBeneficiaryServices beneficiaryServices)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public OutBoundBeneficiaryController(IBeneficiaryServices beneficiaryServices, IHttpContextAccessor httpContextAccessor)
         {
             this.beneficiaryServices = beneficiaryServices;
             var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
             mapper = config.CreateMapper();
             this.mapper = mapper;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpGet("all-oubound-pending-beneficiaries")]
@@ -56,8 +58,15 @@ namespace BankingApp.Controllers
         [Authorize(Roles = "Company")]
         public IActionResult AddOutboundBeneficiaries([FromForm] AddBeneficiaryDto addBeneficiaryDto)
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
+
+            if (string.IsNullOrEmpty(companyEmail))
+                return Unauthorized("Company email not found in token.");
             var beneficiaries = mapper.Map<Beneficiary>(addBeneficiaryDto);
-            var newbeneficiaries = beneficiaryServices.AddOutbouBeneficiaries(beneficiaries);
+            var newbeneficiaries = beneficiaryServices.AddOutbouBeneficiaries(beneficiaries, companyEmail);
             return Ok("beneficiary Added Successfully");
         }
 

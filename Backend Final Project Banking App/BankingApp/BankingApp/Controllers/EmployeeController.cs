@@ -52,7 +52,7 @@ namespace BankingApp.Controllers
         public async Task<IActionResult> DisburseSalaryToAllEmployees()
         {
             var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
-                .FirstOrDefault(c => c.Type == "Id"); // Custom claim you used
+                .FirstOrDefault(c => c.Type == "Id");
 
             var companyEmail = emailClaim?.Value;
 

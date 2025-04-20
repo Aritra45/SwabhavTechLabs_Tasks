@@ -10,8 +10,8 @@ namespace BankingApp.Interfaces.IService
         public List<Beneficiary> GetAllInboundBeneficiaries();
         public List<Beneficiary> GetAllOutboundBeneficiaries();
         public List<Beneficiary> GetAllOutboundNotApprovedBeneficiaries();
-        public Task<Beneficiary> AddInbouBeneficiaries(Beneficiary beneficiary);
-        public Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary);
+        public Task<Beneficiary> AddInbouBeneficiaries(Beneficiary beneficiary, string companyEmail);
+        public Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary, string companyEmail);
         public Beneficiary UpdateOutboundNotApprovedBeneficiaries(string beneficiaryEmail, UpdateNotApprovedBeneficiaryDto updateNotApprovedBeneficiaryDto);
         //public Beneficiary UpdateBeneficiariesIFSCNumber(int beneficiaryId, UpdateBankPasswordDto updateBankPasswordDto);
         //public Beneficiary GetByID(int beneficiaryId);

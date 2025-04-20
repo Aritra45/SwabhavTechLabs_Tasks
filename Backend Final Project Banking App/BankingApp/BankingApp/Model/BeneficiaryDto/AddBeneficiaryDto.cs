@@ -10,7 +10,5 @@ namespace BankingApp.Model.BeneficiaryDto
         public string BankAccountNumber { get; set; }
 
         public string IFSCNumber { get; set; }
-
-        public string CompanyEmail { get; set; }
     }
 }

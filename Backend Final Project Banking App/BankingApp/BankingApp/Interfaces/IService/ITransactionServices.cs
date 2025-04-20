@@ -10,7 +10,7 @@ namespace BankingApp.Interfaces.IService
         public List <Transaction> GetAllTransactions();
         public List<Transaction> GetAllPendingTransactions();
 
-        public Task <Transaction> AddTrasaction(Transaction transaction);
+        public Task <Transaction> AddTrasaction(Transaction transaction, string companyEmail);
         public Transaction UpdatePendingTransaction(int transactionId, UpdatePendingTransactionDto updatePendingTransactionDto);
     }
 }

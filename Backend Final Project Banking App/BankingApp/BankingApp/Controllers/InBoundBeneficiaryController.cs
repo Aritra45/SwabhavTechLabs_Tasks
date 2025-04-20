@@ -17,12 +17,14 @@ namespace BankingApp.Controllers
     {
         IBeneficiaryServices beneficiaryServices;
         IMapper mapper;
-        public InBoundBeneficiaryController(IBeneficiaryServices beneficiaryServices)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public InBoundBeneficiaryController(IBeneficiaryServices beneficiaryServices, IHttpContextAccessor httpContextAccessor)
         {
             this.beneficiaryServices = beneficiaryServices;
             var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
             mapper = config.CreateMapper();
             this.mapper = mapper;
+            this._httpContextAccessor = httpContextAccessor;
         }
 
         [HttpGet("all-inbound-beneficiaries")]
@@ -38,8 +40,15 @@ namespace BankingApp.Controllers
         [Authorize(Roles = "Company")]
         public IActionResult AddInboundBeneficiaries([FromForm] AddBeneficiaryDto addBeneficiaryDto)
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
+
+            if (string.IsNullOrEmpty(companyEmail))
+                return Unauthorized("Company email not found in token.");
             var beneficiaries = mapper.Map<Beneficiary>(addBeneficiaryDto);
-            var newbeneficiaries = beneficiaryServices.AddInbouBeneficiaries(beneficiaries);
+            var newbeneficiaries = beneficiaryServices.AddInbouBeneficiaries(beneficiaries, companyEmail);
             return Ok("beneficiary Added Successfully");
         }
     }

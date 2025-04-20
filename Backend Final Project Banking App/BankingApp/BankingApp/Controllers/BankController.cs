@@ -19,12 +19,14 @@ namespace BankingApp.Controllers
     {
         IBankServices bankServices;
         IMapper mapper;
-        public BankController(IBankServices bankServices)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public BankController(IBankServices bankServices, IHttpContextAccessor httpContextAccessor)
         {
             this.bankServices = bankServices;
             var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
             mapper = config.CreateMapper();
             this.mapper = mapper;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpGet("all-banks")]
@@ -39,7 +41,7 @@ namespace BankingApp.Controllers
         [HttpPost("add-new-bank")]
         [Authorize(Roles = "Admin")]
         public IActionResult AddBanks([FromForm]  AddBankDto addBankDto)
-        {
+        {            
             //var banks = mapper.Map<Bank>(addBankDto);
             //var newUser = bankServices.AddBank(banks);
             string passwd = BCrypt.Net.BCrypt.EnhancedHashPassword(addBankDto.BankPassword);

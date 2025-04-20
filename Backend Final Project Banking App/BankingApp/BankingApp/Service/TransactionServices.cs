@@ -13,18 +13,20 @@ namespace BankingApp.Service
         private readonly IGenericRepository<Transaction> repository;
         MyContext context;
         IBeneficiaryServices beneficiaryServices;
-        public TransactionServices(IGenericRepository<Transaction> transactionRepository, MyContext context, IBeneficiaryServices beneficiaryServices)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public TransactionServices(IGenericRepository<Transaction> transactionRepository, MyContext context, IBeneficiaryServices beneficiaryServices, IHttpContextAccessor httpContextAccessor)
         {
             this.context = context;
             this.repository = transactionRepository;
             this.beneficiaryServices = beneficiaryServices;
+            _httpContextAccessor = httpContextAccessor;
         }
 
-        public async Task<Transaction> AddTrasaction(Transaction transaction)
+        public async Task<Transaction> AddTrasaction(Transaction transaction, string companyEmail)
         {
             var transactionEntity = new Transaction
             {
-                TransferFromCompanyEmail = transaction.TransferFromCompanyEmail,
+                TransferFromCompanyEmail = companyEmail,
                 TransferToCompanyEmail = transaction.TransferToCompanyEmail,
                 TransactionAmount = transaction.TransactionAmount,
                 PaymentDate = DateTime.Now,
@@ -51,8 +53,12 @@ namespace BankingApp.Service
 
         public List<Transaction> GetAllTransactions()
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
             var transactions = repository.GetAllAsync();
-            return transactions.ToList();
+            return transactions.Where(c=>c.TransferFromCompanyEmail==companyEmail).ToList();
         }
 
         public List<Transaction> GetAllPendingTransactions()

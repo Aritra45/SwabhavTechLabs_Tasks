@@ -16,13 +16,16 @@ namespace BankingApp.Service
         private readonly IGenericRepository<Beneficiary> repository;
         ICompanyService companyService;
         MyContext context;
-        public BeneficiaryServices(IGenericRepository<Beneficiary> beneficiaryRepository, MyContext context, ICompanyService companyService)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public BeneficiaryServices(IGenericRepository<Beneficiary> beneficiaryRepository, MyContext context, ICompanyService companyService, IHttpContextAccessor httpContextAccessor)
         {
             this.context = context;
             this.repository = beneficiaryRepository;
             this.companyService = companyService;
+            _httpContextAccessor = httpContextAccessor;
         }
-        public async Task<Beneficiary> AddInbouBeneficiaries(Beneficiary beneficiary)
+        public async Task<Beneficiary> AddInbouBeneficiaries(Beneficiary beneficiary, string companyEmail)
         {
             var beneficiaryEntity = new Beneficiary
             {
@@ -32,7 +35,7 @@ namespace BankingApp.Service
                 IFSCNumber = beneficiary.IFSCNumber,
                 BeneficiaryType = "Inbound",
                 IsApproved = true,
-                CompanyEmail = beneficiary.CompanyEmail,
+                CompanyEmail = companyEmail,
             };
 
             var companies = companyService.GetAllCompanies();
@@ -59,7 +62,7 @@ namespace BankingApp.Service
                 throw new NullReferenceException();
             }
         }
-        public async Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary)
+        public async Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary, string companyEmail)
         {
             var beneficiaryEntity = new Beneficiary
             {
@@ -69,32 +72,11 @@ namespace BankingApp.Service
                 IFSCNumber = beneficiary.IFSCNumber,
                 BeneficiaryType = "Outbound",
                 IsApproved = false,
-                CompanyEmail = beneficiary.CompanyEmail,
+                CompanyEmail = companyEmail,
             };
 
-            var companies = companyService.GetAllCompanies();
-            bool isValidCompany = companies
-                .Any(c => c.CompanyEmail == beneficiary.CompanyEmail);
-
-            if (isValidCompany)
-            {
-                var approvedCompanies = companyService.GetAprovedCompanies();
-                bool isValidApprovedCompany = companies
-                    .Any(c => c.CompanyEmail == beneficiary.CompanyEmail);
-                if (isValidApprovedCompany)
-                {
-                    await repository.AddAsync(beneficiaryEntity);
-                    return beneficiaryEntity;
-                }
-                else
-                {
-                    throw new NullReferenceException();
-                }
-            }
-            else
-            {
-                throw new NullReferenceException();
-            }
+            await repository.AddAsync(beneficiaryEntity);
+            return beneficiaryEntity;
         }
 
         //public Task DeleteBeneficiaries(int beneficiaryId)
@@ -104,13 +86,23 @@ namespace BankingApp.Service
 
         public List<Beneficiary> GetAllInboundBeneficiaries()
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
             var beneficiaries = repository.GetAllAsync();
-            return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Inbound").ToList();
+            return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Inbound"
+            && beneficiary.CompanyEmail==companyEmail).ToList();
         }
         public List<Beneficiary> GetAllOutboundBeneficiaries()
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
             var beneficiaries = repository.GetAllAsync();
-            return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Outbound").ToList();
+            return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Outbound"
+            && beneficiary.CompanyEmail == companyEmail).ToList();
         }
 
         public List<Beneficiary> GetAllOutboundNotApprovedBeneficiaries()

@@ -18,12 +18,14 @@ namespace BankingApp.Controllers
     {
         ITransactionServices transactionServices;
         IMapper mapper;
-        public TransactionController(ITransactionServices transactionServices)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public TransactionController(ITransactionServices transactionServices, IHttpContextAccessor httpContextAccessor)
         {
             this.transactionServices = transactionServices;
             var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
             mapper = config.CreateMapper();
             this.mapper = mapper;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpGet("all-pending-transactions")]
@@ -54,8 +56,15 @@ namespace BankingApp.Controllers
         [Authorize(Roles = "Company")]
         public IActionResult AddTransactions([FromForm] AddTransactionDto addTransactionDto)
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
+
+            if (string.IsNullOrEmpty(companyEmail))
+                return Unauthorized("Company email not found in token.");
             var transactions = mapper.Map<Transaction>(addTransactionDto);
-            var newTransaction = transactionServices.AddTrasaction(transactions);
+            var newTransaction = transactionServices.AddTrasaction(transactions, companyEmail);
             return Ok("Transaction Added Successfully");
         }
     }

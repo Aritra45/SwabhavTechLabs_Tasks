@@ -13,11 +13,13 @@ namespace BankingApp.Service
     {
         private readonly IGenericRepository<Employee> repository;
         MyContext context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
         //private readonly IServiceProvider serviceProvider;
-        public EmployeeServices(IGenericRepository<Employee> employeeRepository, MyContext context)
+        public EmployeeServices(IGenericRepository<Employee> employeeRepository, MyContext context, IHttpContextAccessor httpContextAccessor)
         {
             this.context = context;
             this.repository = employeeRepository;
+            _httpContextAccessor = httpContextAccessor;
             //this.serviceProvider = serviceProvider;
         }
 
@@ -74,15 +76,20 @@ namespace BankingApp.Service
 
 
 
-        public Task<Employee> AddEmployeesTransactionSalary(Employee employee)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<Employee> AddEmployeesTransactionSalary(Employee employee)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public List<Employee> GetAllEmployees()
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
             var employees = repository.GetAllAsync();
-            return employees.Where(employee => employee.IsActive == true).ToList();
+            return employees.Where(employee => employee.IsActive == true
+            && employee.CompanyEmail==companyEmail).ToList();
         }
 
         public async Task<string> DisburseSalaryToAllEmployees(string companyEmail)

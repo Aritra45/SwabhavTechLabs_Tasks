@@ -6,7 +6,7 @@ namespace BankingApp.Interfaces.IService
     {
         public List<Employee> GetAllEmployees();
         public Task<String> AddEmployeesByCSV(IFormFile csvFile, string companyEmail);
-        public Task<Employee> AddEmployeesTransactionSalary(Employee employee);
+        //public Task<Employee> AddEmployeesTransactionSalary(Employee employee);
         public Task<string> DisburseSalaryToAllEmployees(string companyEmail);
 
     }

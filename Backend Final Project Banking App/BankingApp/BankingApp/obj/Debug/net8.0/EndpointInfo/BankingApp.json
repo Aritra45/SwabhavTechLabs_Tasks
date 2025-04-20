@@ -511,9 +511,6 @@
                   },
                   "IFSCNumber": {
                     "type": "string"
-                  },
-                  "CompanyEmail": {
-                    "type": "string"
                   }
                 }
               },
@@ -528,9 +525,6 @@
                   "style": "form"
                 },
                 "IFSCNumber": {
-                  "style": "form"
-                },
-                "CompanyEmail": {
                   "style": "form"
                 }
               }
@@ -631,9 +625,6 @@
                   },
                   "IFSCNumber": {
                     "type": "string"
-                  },
-                  "CompanyEmail": {
-                    "type": "string"
                   }
                 }
               },
@@ -648,9 +639,6 @@
                   "style": "form"
                 },
                 "IFSCNumber": {
-                  "style": "form"
-                },
-                "CompanyEmail": {
                   "style": "form"
                 }
               }
@@ -741,9 +729,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "TransferFromCompanyEmail": {
-                    "type": "string"
-                  },
                   "TransferToCompanyEmail": {
                     "type": "string"
                   },
@@ -754,9 +739,6 @@
                 }
               },
               "encoding": {
-                "TransferFromCompanyEmail": {
-                  "style": "form"
-                },
                 "TransferToCompanyEmail": {
                   "style": "form"
                 },

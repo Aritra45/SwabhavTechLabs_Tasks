@@ -332,11 +332,6 @@
         "Name": "IFSCNumber",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "CompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -376,11 +371,6 @@
       },
       {
         "Name": "IFSCNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "CompanyEmail",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -436,11 +426,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "TransferFromCompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
       {
         "Name": "TransferToCompanyEmail",
         "Type": "System.String",
