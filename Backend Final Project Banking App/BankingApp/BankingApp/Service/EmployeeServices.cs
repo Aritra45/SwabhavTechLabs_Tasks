@@ -55,8 +55,8 @@ namespace BankingApp.Service
                             EmployeeBankAccountNumber = Convert.ToString(record.EmployeeBankAccountNumber),
                             EmployeeIFSCNumber = Convert.ToString(record.EmployeeIFSCNumber),
                             EmployeeSalaryAmount = Convert.ToDecimal(record.EmployeeSalaryAmount),
-                            IsActive = Convert.ToBoolean(record.IsActive),
-                            CompanyEmail = Convert.ToString(record.CompanyEmail)
+                            IsActive = true,
+                            CompanyEmail = companyEmail
                         };
 
                         employees.Add(employee);

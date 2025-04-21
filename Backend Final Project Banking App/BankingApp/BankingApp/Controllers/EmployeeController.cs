@@ -40,10 +40,17 @@ namespace BankingApp.Controllers
         [Authorize(Roles = "Company")]
         public async Task<IActionResult> UploadEmployeesFromCsv(IFormFile file)
         {
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+                .FirstOrDefault(c => c.Type == "Id");
+
+            var companyEmail = emailClaim?.Value;
+
+            if (string.IsNullOrEmpty(companyEmail))
+                return Unauthorized("Company email not found in token.");
             if (file == null || file.Length == 0)
                 return BadRequest("No file uploaded.");
 
-            var result = await employeeServices.AddEmployeesByCSV(file, User.Identity.Name);
+            var result = await employeeServices.AddEmployeesByCSV(file, companyEmail);
             return Ok(new { message = result });
         }
 
