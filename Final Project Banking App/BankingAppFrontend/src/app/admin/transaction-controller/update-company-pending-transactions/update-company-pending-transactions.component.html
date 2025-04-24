@@ -1,0 +1,64 @@
+<h2 mat-dialog-title>Pending Companies List</h2>
+
+<div mat-dialog-content *ngIf="getData && getData.length > 0; else noData">
+  <table mat-table [dataSource]="getData" class="mat-elevation-z8 full-width-table">
+
+    <!-- Index Column -->
+    <ng-container matColumnDef="transactionId">
+      <th mat-header-cell *matHeaderCellDef style="text-align: center;">TransactionId</th>
+      <td mat-cell *matCellDef="let element">{{ element.transactionId }}</td>
+    </ng-container>
+
+    <!-- Username Column -->
+    <ng-container matColumnDef="transferFromCompanyEmail">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center;">TransferFromCompanyEmail</th>
+        <td mat-cell *matCellDef="let element">{{ element.transferFromCompanyEmail }}</td>
+      </ng-container>
+
+    <ng-container matColumnDef="transferToCompanyEmail">
+      <th mat-header-cell *matHeaderCellDef style="text-align: center;">TransferToCompanyEmail</th>
+      <td mat-cell *matCellDef="let element">{{ element.transferToCompanyEmail }}</td>
+    </ng-container>
+
+    <!-- Email Column -->
+    <ng-container matColumnDef="transactionAmount">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center;">TransactionAmount</th>
+        <td mat-cell *matCellDef="let element">{{ element.transactionAmount }}</td>
+      </ng-container>
+    
+      <ng-container matColumnDef="paymentDate">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center;">PaymentDate</th>
+        <td mat-cell *matCellDef="let element">{{ element.paymentDate }}</td>
+      </ng-container>
+      
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center;">Status</th>
+        <td mat-cell *matCellDef="let element">{{ element.status }}</td>
+      </ng-container>
+
+    <!-- Action Column -->
+    <ng-container matColumnDef="action1" >
+      <th mat-header-cell *matHeaderCellDef style="text-align: center;">Action</th>
+      <td mat-cell *matCellDef="let element" style="display: inline-flex; gap: 20px;">
+        <button mat-raised-button color="warn" style="background-color: red; color: white;" (click)="rejectTransaction(element.transactionId)">
+            Reject
+          </button>
+          <button mat-raised-button color="warn" style="background-color: red; color: white;" (click)="approveTransaction(element.transactionId)">
+            Approved
+          </button>
+      </td>
+
+        
+
+    </ng-container>
+
+    
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+
+<ng-template #noData>
+  <p>No admins found.</p>
+</ng-template>

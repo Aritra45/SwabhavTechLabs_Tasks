@@ -1,0 +1,14 @@
+<!-- main-dashboard.component.html -->
+<mat-sidenav-container class="dashboard-container">
+    <mat-sidenav mode="side" opened>
+      <mat-nav-list>
+        <h3 style="margin-left: 10px;"><b><u>Bank Controller</u></b></h3>
+        <a mat-list-item routerLink="bank-controller" routerLinkActive="active">Transaction Dashboard</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content class="dashboard-content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\Tasks\\Form\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|solutionrelative:form\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83E15C3C-1BB2-4662-BFBB-11FE7E45F3D2}|Form\\Form.csproj|e:\\tasks\\form\\form\\model\\myform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormController.cs",
               "DocumentMoniker": "E:\\Tasks\\Form\\Form\\Controllers\\FormController.cs",
               "RelativeDocumentMoniker": "Form\\Controllers\\FormController.cs",
               "ToolTip": "E:\\Tasks\\Form\\Form\\Controllers\\FormController.cs",
               "RelativeToolTip": "Form\\Controllers\\FormController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wCMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T11:39:40.12Z",
               "EditorCaption": ""
@@ -59,13 +59,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Tasks\\Form\\Form\\Program.cs",
               "RelativeDocumentMoniker": "Form\\Program.cs",
               "ToolTip": "E:\\Tasks\\Form\\Form\\Program.cs",
               "RelativeToolTip": "Form\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T11:31:09.386Z",
               "EditorCaption": ""
@@ -92,8 +92,7 @@
               "RelativeToolTip": "Form\\Model\\MyForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T11:24:26.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T11:24:26.246Z"
             }
           ]
         }

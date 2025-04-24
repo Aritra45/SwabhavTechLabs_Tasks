@@ -1,0 +1,27 @@
+
+<div *ngIf="!loggedIn">
+    <mat-card style="max-width: 400px; margin: 2rem auto;">
+        <form (ngSubmit)="onSubmit() ">
+          <h2>Login</h2>
+    
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" name="userEmail" [(ngModel)]="userEmail" required />
+            <mat-error >Email is required</mat-error>
+            <mat-error >Invalid email format</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" [(ngModel)]="password" required />
+            <mat-error >Password is required</mat-error>
+            
+          </mat-form-field>
+      
+          <button mat-raised-button color="primary" type="submit" >Submit</button>
+          <button mat-raised-button color="primary" type="button">Register Company</button>
+        </form>
+      </mat-card>
+    </div>
+    <router-outlet *ngIf="loggedIn"></router-outlet>
+      

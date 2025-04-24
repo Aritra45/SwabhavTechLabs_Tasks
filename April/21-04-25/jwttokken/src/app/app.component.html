@@ -1,0 +1,10 @@
+<div *ngIf="!isLoggedIn()" class="login-container">
+  <h2>Login</h2>
+  <form>
+    <input type="email" placeholder="UserEmail" name="userEmail" [(ngModel)]="userEmail">
+    <input type="password" placeholder="Password" name="password" [(ngModel)]="password">
+    <button type="button" (click)="navigateToLogin1()">Login</button> 
+  </form>
+</div>
+
+<router-outlet *ngIf="isLoggedIn()"></router-outlet>

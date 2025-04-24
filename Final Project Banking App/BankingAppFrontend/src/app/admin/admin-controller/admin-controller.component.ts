@@ -1,0 +1,57 @@
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { AdminServiceService } from '../admin-service.service';
+import { AddAdminComponent } from './add-admin/add-admin.component';
+import { GetAdminComponent } from './get-admin/get-admin.component';
+import { RemoveAdminComponent } from './remove-admin/remove-admin.component';
+
+@Component({
+  selector: 'app-admin-controller',
+  standalone: false,
+  templateUrl: './admin-controller.component.html',
+  styleUrl: './admin-controller.component.css'
+})
+export class AdminControllerComponent {
+  constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {}
+
+  openAddAdminDialog(): void {
+    this.dialog.open(AddAdminComponent, {
+      width: '500px'
+    });
+  }
+  
+  getData :any
+  get() {
+    this.rs.getregistration().subscribe(
+      (response) => {
+        console.log("Admins fetched:", response);
+        this.dialog.open(GetAdminComponent, {
+          width: '600px',
+          data: response
+        });
+      },
+      (error) => {
+        console.error("Error fetching admins:", error);
+        alert("Something went wrong");
+      }
+    );
+  }
+  
+  remove(){
+    this.rs.getregistration().subscribe(
+      (response) => {
+        console.log("Admins fetched:", response);
+        this.dialog.open(RemoveAdminComponent, {
+          width: '90%',
+          maxWidth: '700px',
+          data: response
+        });
+      },
+      (error) => {
+        console.error("Error fetching admins:", error);
+        alert("Something went wrong");
+      }
+    );
+  }
+}

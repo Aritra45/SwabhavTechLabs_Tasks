@@ -1,0 +1,9 @@
+.mat-column-action {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .mat-dialog-content {
+    overflow-x: auto;
+  }
+  

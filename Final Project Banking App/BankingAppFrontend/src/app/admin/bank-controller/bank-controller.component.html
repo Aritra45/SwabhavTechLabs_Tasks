@@ -1,0 +1,55 @@
+<!-- <app-logout></app-logout> -->
+
+<div class="dashboard-cards">
+    <mat-card class="card get-card" >
+      <mat-card-title>All Bank Details</mat-card-title>
+      <mat-card-content>
+        <p>View the details of all bank</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="primary" (click)="view()">VIEW</button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <mat-card class="card post-card" >
+      <mat-card-title>Add Bank</mat-card-title>
+      <mat-card-content>
+        <p>Create a new bank</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="accent" (click)="Add()">ADD</button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <mat-card class="card delete-card">
+      <mat-card-title>Remove Bank</mat-card-title>
+      <mat-card-content>
+        <p>Delete bank access using email</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="warn" (click)="remove()">REMOVE</button>
+      </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="card get-card" >
+        <mat-card-title>Get Bank by ID</mat-card-title>
+        <mat-card-content>
+          <p>View bank using their email</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="primary" (click)="id()">VIEW</button>
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="card update-card">
+        <mat-card-title>Update Bank Password</mat-card-title>
+        <mat-card-content>
+          <p>Change a bank's password using their email</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button color="warn" (click)="update()">UPDATE</button>
+        </mat-card-actions>
+      </mat-card>
+      
+  </div>
+  

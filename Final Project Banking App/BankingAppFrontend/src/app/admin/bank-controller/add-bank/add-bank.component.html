@@ -1,0 +1,57 @@
+<div *ngIf="formVisible">
+    <form [formGroup]="adminForm" (ngSubmit)="onSubmit()" class="admin-form-container">
+      <div class="form-header">
+        <h2>Add Bank</h2>
+        <button mat-icon-button class="close-btn" (click)="closeForm()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+    
+      <div class="form-group">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>BankEmail</mat-label>
+          <input matInput formControlName="bankEmail" placeholder="Enter email" required>
+          <mat-error *ngIf="adminForm.get('bankEmail')?.invalid">Valid email required</mat-error>
+        </mat-form-field>
+      </div>
+    
+      <div class="form-group">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="bankName" placeholder="Enter BankName" required>
+          <mat-error *ngIf="adminForm.get('bankName')?.invalid">BankName required</mat-error>
+        </mat-form-field>
+      </div>
+    
+      <div class="form-group">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="bankPassword" placeholder="Enter password" required>
+          <mat-error *ngIf="adminForm.get('bankPassword')?.invalid">Password required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>BranchCode</mat-label>
+          <input matInput formControlName="branchCode" placeholder="Enter BranchCode" required>
+          <mat-error *ngIf="adminForm.get('branchCode')?.invalid">BranchCode required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>BankAddress</mat-label>
+          <input matInput formControlName="bankAddress" placeholder="Enter Address" required>
+          <mat-error *ngIf="adminForm.get('bankAddress')?.invalid">BankAddress required</mat-error>
+        </mat-form-field>
+      </div>
+    
+      <div class="form-action">
+        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" class="submit-btn">
+          Add Admin
+        </button>
+      </div>
+    </form>
+  </div>
+  

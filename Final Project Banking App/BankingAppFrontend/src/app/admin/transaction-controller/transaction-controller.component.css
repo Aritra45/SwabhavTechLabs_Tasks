@@ -1,0 +1,26 @@
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  
+  
+  
+  .get-card { border-left: 5px solid #2196F3; }
+  .post-card { border-left: 5px solid #4CAF50; }
+  .delete-card { border-left: 5px solid #F44336; }
+  .update-card {border-left: 5px solid orange;}
+  
