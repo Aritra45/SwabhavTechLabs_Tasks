@@ -1,0 +1,23 @@
+<mat-card style="max-width: 600px; margin: 2rem auto;">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <h2>Verify Company</h2>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Company Email</mat-label>
+        <input matInput type="email" formControlName="companyEmail" required [disabled]="true"/>
+        
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>OTP</mat-label>
+        <input type="text" matInput formControlName="otp" required />
+      </mat-form-field>
+  
+      
+  
+      
+  
+      <button mat-raised-button color="primary" type="submit">VERIFY</button>
+    </form>
+  </mat-card>
+  

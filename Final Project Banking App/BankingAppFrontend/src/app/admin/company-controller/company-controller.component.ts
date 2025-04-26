@@ -22,7 +22,7 @@ export class CompanyControllerComponent {
       (response) => {
         console.log("Companies fetched:", response);
         this.dialog.open(UpdatePendingCompaniesComponent, {
-          width: '900px',
+          width: 'auto',
           data : response
         });
       },

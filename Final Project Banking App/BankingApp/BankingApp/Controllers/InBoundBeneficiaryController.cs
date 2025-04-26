@@ -38,7 +38,7 @@ namespace BankingApp.Controllers
 
         [HttpPost("add-inbound-beneficiaries")]
         [Authorize(Roles = "Company")]
-        public IActionResult AddInboundBeneficiaries([FromForm] AddBeneficiaryDto addBeneficiaryDto)
+        public IActionResult AddInboundBeneficiaries([FromBody] AddBeneficiaryDto addBeneficiaryDto)
         {
             var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
                 .FirstOrDefault(c => c.Type == "Id");

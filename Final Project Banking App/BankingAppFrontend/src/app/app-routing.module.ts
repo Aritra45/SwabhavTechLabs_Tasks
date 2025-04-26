@@ -12,7 +12,15 @@ const routes: Routes = [
 
   {
     path: 'bank-dashboard', loadChildren: () => import('./bank/bank.module').then(m => m.BankModule), canActivate: [AuthGuardServiceService], data: { role: 'Bank' }
-  }
+  },
+
+  {
+    path: 'company-dashboard', loadChildren: () => import('./company/company.module').then(m => m.CompanyModule), canActivate: [AuthGuardServiceService], data: { role: 'Company' }
+  },
+
+  {
+    path: 'register', loadChildren: () => import('./registration-company/registration-company.module').then(m => m.RegistrationCompanyModule)
+  },
 
 ];
 

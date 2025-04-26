@@ -2,4 +2,19 @@
     width: 100%;
     margin-bottom: 16px;
   }
+
+  .login-content {
+    height: 100vh;
+    background-image: url('../../../assets/bg-login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  mat-card{
+    background-color: transparent;
+  }
   

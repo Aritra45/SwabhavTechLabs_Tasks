@@ -2,6 +2,7 @@
 using BankingApp.Interfaces.IService;
 using BankingApp.Mapper;
 using BankingApp.Model.BankDto;
+using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.UserDtos;
@@ -40,6 +41,15 @@ public class CompanyController : ControllerBase
         return Ok("Company Updated Successfully");
     }
 
+    [HttpGet("all-companies")]
+    [Authorize(Roles = "Company")]
+    public IActionResult GetAllInboundBeneficiaries()
+    {
+        var allCompanies = companyServices.GetAllCompanies();
+        var getCompanies = mapper.Map<List<GetAllCompanyDto>>(allCompanies);
+        return Ok(getCompanies);
+    }
+
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromForm] CompanyRegisterDto dto)
     {
@@ -58,7 +68,7 @@ public class CompanyController : ControllerBase
     }
 
     [HttpPost("verify-otp")]
-    public async Task<IActionResult> VerifyOtp([FromForm] OtpVerificationDto dto)
+    public async Task<IActionResult> VerifyOtp([FromBody] OtpVerificationDto dto)
     {
         var isValid = await companyServices.VerifyOtpAsync(dto);
         return isValid ? Ok("Company verified successfully.") : BadRequest("Invalid OTP.");

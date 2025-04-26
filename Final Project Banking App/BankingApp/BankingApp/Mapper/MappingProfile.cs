@@ -32,6 +32,8 @@ namespace BankingApp.Mapper
             CreateMap<GetAllNotApprovedCompanies, Company>();
             CreateMap<Company, UpdateNotApprovedDto>();
             CreateMap<UpdateNotApprovedDto, Company>();
+            CreateMap<Company, GetAllCompanyDto>();
+            CreateMap<GetAllCompanyDto, Company>();
 
             CreateMap<Beneficiary, AddBeneficiaryDto>();
             CreateMap<AddBeneficiaryDto, Beneficiary>();

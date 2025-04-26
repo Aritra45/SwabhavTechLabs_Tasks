@@ -54,7 +54,7 @@ namespace BankingApp.Controllers
 
         [HttpPost("add-new-transaction")]
         [Authorize(Roles = "Company")]
-        public IActionResult AddTransactions([FromForm] AddTransactionDto addTransactionDto)
+        public IActionResult AddTransactions([FromBody] AddTransactionDto addTransactionDto)
         {
             var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
                 .FirstOrDefault(c => c.Type == "Id");

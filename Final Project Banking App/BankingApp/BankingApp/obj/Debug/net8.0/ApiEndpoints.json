@@ -138,6 +138,16 @@
   },
   {
     "ContainingType": "CompanyController",
+    "Method": "GetAllInboundBeneficiaries",
+    "RelativePath": "api/Company/all-companies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
     "Method": "GetAllNotApprovedCompanies",
     "RelativePath": "api/Company/all-pending-companies",
     "HttpMethod": "GET",
@@ -232,14 +242,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "CompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Otp",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "BankingApp.Model.CompanyDto.OtpVerificationDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -289,24 +294,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "BeneficiaryCompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BeneficiaryCompanyName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BankAccountNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "IFSCNumber",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "addBeneficiaryDto",
+        "Type": "BankingApp.Model.BeneficiaryDto.AddBeneficiaryDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -402,14 +392,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "TransferToCompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "TransactionAmount",
-        "Type": "System.Decimal",
-        "IsRequired": false
+        "Name": "addTransactionDto",
+        "Type": "BankingApp.Model.TrasactionDto.AddTransactionDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

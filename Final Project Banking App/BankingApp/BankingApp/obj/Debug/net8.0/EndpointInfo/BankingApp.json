@@ -273,6 +273,18 @@
         }
       }
     },
+    "/api/Company/all-companies": {
+      "get": {
+        "tags": [
+          "Company"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Company/register": {
       "post": {
         "tags": [
@@ -361,25 +373,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "CompanyEmail": {
-                    "type": "string"
-                  },
-                  "Otp": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "CompanyEmail": {
-                  "style": "form"
-                },
-                "Otp": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/OtpVerificationDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OtpVerificationDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OtpVerificationDto"
               }
             }
           }
@@ -466,37 +472,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "BeneficiaryCompanyEmail": {
-                    "type": "string"
-                  },
-                  "BeneficiaryCompanyName": {
-                    "type": "string"
-                  },
-                  "BankAccountNumber": {
-                    "type": "string"
-                  },
-                  "IFSCNumber": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "BeneficiaryCompanyEmail": {
-                  "style": "form"
-                },
-                "BeneficiaryCompanyName": {
-                  "style": "form"
-                },
-                "BankAccountNumber": {
-                  "style": "form"
-                },
-                "IFSCNumber": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/AddBeneficiaryDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBeneficiaryDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBeneficiaryDto"
               }
             }
           }
@@ -695,26 +683,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "TransferToCompanyEmail": {
-                    "type": "string"
-                  },
-                  "TransactionAmount": {
-                    "type": "number",
-                    "format": "double"
-                  }
-                }
-              },
-              "encoding": {
-                "TransferToCompanyEmail": {
-                  "style": "form"
-                },
-                "TransactionAmount": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/AddTransactionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddTransactionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddTransactionDto"
               }
             }
           }
@@ -820,6 +801,42 @@
         },
         "additionalProperties": false
       },
+      "AddBeneficiaryDto": {
+        "type": "object",
+        "properties": {
+          "beneficiaryCompanyEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "beneficiaryCompanyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bankAccountNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "ifscNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddTransactionDto": {
+        "type": "object",
+        "properties": {
+          "transferToCompanyEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionAmount": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "AddUserDto": {
         "type": "object",
         "properties": {
@@ -832,6 +849,20 @@
             "nullable": true
           },
           "userPassword": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OtpVerificationDto": {
+        "type": "object",
+        "properties": {
+          "companyEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "otp": {
             "type": "string",
             "nullable": true
           }

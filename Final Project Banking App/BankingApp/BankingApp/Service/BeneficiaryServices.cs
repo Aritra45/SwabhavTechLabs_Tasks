@@ -40,14 +40,14 @@ namespace BankingApp.Service
 
             var companies = companyService.GetAllCompanies();
             bool isValidCompany = companies
-                .Any(c => c.CompanyEmail==beneficiary.CompanyEmail);
+                .Any(c => string.Equals( c.CompanyEmail,beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
 
-            if (isValidCompany)
+            if (!isValidCompany)
             {
                 var approvedCompanies = companyService.GetAprovedCompanies();
-                bool isValidApprovedCompany = companies
-                    .Any(c => c.CompanyEmail == beneficiary.CompanyEmail);
-                if (isValidApprovedCompany)
+                bool isValidApprovedCompany = approvedCompanies
+                    .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
+                if (!isValidApprovedCompany)
                 {
                     await repository.AddAsync(beneficiaryEntity);
                     return beneficiaryEntity;

@@ -14,6 +14,12 @@ export class LoginComponent {
   password = '';
   loggedIn = false;
 
+  hidePassword: boolean = true;
+
+  togglePasswordVisibility() {
+    this.hidePassword = !this.hidePassword;
+  }
+
   constructor(
     private authService: AuthServiceService,
     private router: Router,
@@ -28,7 +34,7 @@ export class LoginComponent {
     }
     return false;
   }
-  
+
   // onSubmit() {
   //   if (this.form.valid) {
   //     console.log(this.form.value);
@@ -36,10 +42,20 @@ export class LoginComponent {
   //   }
   // }
 
+  captchaResolved: boolean = false;
+  captchaToken: string = '';
+
+  onCaptchaResolved(captchaResponse: string | null): void {
+    this.captchaResolved = !!captchaResponse;
+    this.captchaToken = captchaResponse ?? '';
+  }
+
+
   onSubmit() {
+    if (this.captchaResolved) {
     this.authService.login1(this.userEmail, this.password).subscribe(response => {
       localStorage.setItem('token', response.token);
- 
+
       const token = localStorage.getItem('token');
       if (token) {
         const decodedToken: any = jwtDecode(token);
@@ -55,10 +71,11 @@ export class LoginComponent {
       }
 
       return null;
- 
- 
+
+
     }, error => {
       alert('Login Failed');
     });
   }
+}
 }

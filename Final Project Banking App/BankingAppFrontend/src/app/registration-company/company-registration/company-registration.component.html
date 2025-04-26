@@ -1,0 +1,63 @@
+<div class="register-content">
+<mat-card style="max-width: 600px; margin: 2rem auto;">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <h2>Register Company</h2>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Company Email</mat-label>
+        <input matInput type="email" formControlName="companyEmail" required />
+        <mat-error *ngIf="registerForm.get('companyEmail')?.invalid">Valid email is required</mat-error>
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Company Name</mat-label>
+        <input matInput formControlName="companyName" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Contact Number</mat-label>
+        <input matInput formControlName="companyContactNumber" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="companyAddress" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Account Number</mat-label>
+        <input matInput formControlName="companyAccountNumber" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>IFSC Number</mat-label>
+        <input matInput formControlName="ifscNumber" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" required />
+        <button mat-icon-button 
+                matSuffix 
+                (click)="togglePasswordVisibility()" 
+                [attr.aria-label]="'Hide password'" 
+                [attr.aria-pressed]="!hidePassword"
+                type="button">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+  
+      <div class="file-input">
+        <label>Aadhar File</label>
+        <input type="file" (change)="onAadharFileSelected($event)" required />
+      </div>
+  
+      <div class="file-input">
+        <label>PAN File</label>
+        <input type="file" (change)="onPanFileSelected($event)" required />
+      </div>
+  
+      <button mat-raised-button color="primary" type="submit">Register</button>
+    </form>
+  </mat-card>
+</div>

@@ -26,7 +26,15 @@
       <div class="form-group">
         <mat-form-field appearance="fill" class="full-width">
           <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="userPassword" placeholder="Enter password" required>
+          <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="userPassword" placeholder="Enter password" required>
+          <button mat-icon-button 
+                matSuffix 
+                (click)="togglePasswordVisibility()" 
+                [attr.aria-label]="'Hide password'" 
+                [attr.aria-pressed]="!hidePassword"
+                type="button">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
           <mat-error *ngIf="adminForm.get('userPassword')?.invalid">Password required</mat-error>
         </mat-form-field>
       </div>

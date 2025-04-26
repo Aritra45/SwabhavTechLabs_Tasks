@@ -12,6 +12,13 @@ import { AdminServiceService } from '../../admin-service.service';
 export class AddAdminComponent {
   adminForm!: FormGroup;
   formVisible: boolean = true;
+
+  hidePassword: boolean = true;
+
+  togglePasswordVisibility() {
+    this.hidePassword = !this.hidePassword;
+  }
+  
   constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:AdminServiceService) {
     
   }

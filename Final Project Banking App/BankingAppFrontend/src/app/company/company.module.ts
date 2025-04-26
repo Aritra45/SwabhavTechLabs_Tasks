@@ -2,13 +2,63 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CompanyRoutingModule } from './company-routing.module';
+import { CompanyDashboardComponent } from './company-dashboard/company-dashboard.component';
 
+import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { InboundbeneficiaryControllerComponent } from './inboundbeneficiary-controller/inboundbeneficiary-controller.component';
+import { GetInboundbeneficiaryComponent } from './inboundbeneficiary-controller/get-inboundbeneficiary/get-inboundbeneficiary.component';
+import { AddInboundbeneficiaryComponent } from './inboundbeneficiary-controller/add-inboundbeneficiary/add-inboundbeneficiary.component';
+import { GetOutboundbeneficiaryComponent } from './outboundbeneficiary-controller/get-outboundbeneficiary/get-outboundbeneficiary.component';
+import { OutboundbeneficiaryControllerComponent } from './outboundbeneficiary-controller/outboundbeneficiary-controller.component';
+import { AddOutboundbeneficiaryComponent } from './outboundbeneficiary-controller/add-outboundbeneficiary/add-outboundbeneficiary.component';
+import { TransactionControllerCompanyComponent } from './transaction-controller-company/transaction-controller-company.component';
+import { AddTransactionComponent } from './transaction-controller-company/add-transaction/add-transaction.component';
+import { EmployeeControllerCompanyComponent } from './employee-controller-company/employee-controller-company.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CompanyDashboardComponent,
+    InboundbeneficiaryControllerComponent,
+    GetInboundbeneficiaryComponent,
+    AddInboundbeneficiaryComponent,
+    GetOutboundbeneficiaryComponent,
+    OutboundbeneficiaryControllerComponent,
+    AddOutboundbeneficiaryComponent,
+    TransactionControllerCompanyComponent,
+    AddTransactionComponent,
+    EmployeeControllerCompanyComponent
+  ],
   imports: [
     CommonModule,
-    CompanyRoutingModule
+    CompanyRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    FormsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    MatDialogModule,
+    MatTableModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class CompanyModule { }

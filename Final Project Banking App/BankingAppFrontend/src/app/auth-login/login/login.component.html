@@ -1,27 +1,45 @@
+<div *ngIf="!loggedIn" class="login-content">
+  <mat-card style="max-width: 400px; margin: 2rem auto; margin-left: 10%;">
+    <form (ngSubmit)="onSubmit() ">
+      <h2>Login</h2>
 
-<div *ngIf="!loggedIn">
-    <mat-card style="max-width: 400px; margin: 2rem auto;">
-        <form (ngSubmit)="onSubmit() ">
-          <h2>Login</h2>
-    
-          <mat-form-field appearance="outline" class="full-width">
-            <mat-label>Email</mat-label>
-            <input matInput type="email" name="userEmail" [(ngModel)]="userEmail" required />
-            <mat-error >Email is required</mat-error>
-            <mat-error >Invalid email format</mat-error>
-          </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" name="userEmail" [(ngModel)]="userEmail" style="color: white;" required />
+        <mat-error>Email is required</mat-error>
+        <mat-error>Invalid email format</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput 
+               [type]="hidePassword ? 'password' : 'text'" 
+               name="password" 
+               [(ngModel)]="password" 
+               required 
+               style="color: white;" />
+        
+        <button mat-icon-button 
+                matSuffix 
+                (click)="togglePasswordVisibility()" 
+                [attr.aria-label]="'Hide password'" 
+                [attr.aria-pressed]="!hidePassword"
+                type="button">
+          <mat-icon style="color: white;">{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
       
-          <mat-form-field appearance="outline" class="full-width">
-            <mat-label>Password</mat-label>
-            <input matInput type="password" name="password" [(ngModel)]="password" required />
-            <mat-error >Password is required</mat-error>
-            
-          </mat-form-field>
+        <mat-error>Password is required</mat-error>
+      </mat-form-field>
       
-          <button mat-raised-button color="primary" type="submit" >Submit</button>
-          <button mat-raised-button color="primary" type="button">Register Company</button>
-        </form>
-      </mat-card>
-    </div>
-    <router-outlet *ngIf="loggedIn"></router-outlet>
-      
+
+      <re-captcha siteKey="6LcnuyIrAAAAALX5-LOr4czGMBECQbtI-e9iaW40" (resolved)="onCaptchaResolved($event)" required></re-captcha>
+
+
+      <button mat-raised-button color="primary" type="submit" >
+        Submit
+      </button>
+      <button mat-raised-button color="primary" type="button" routerLink="/register/register-company">Register Company</button>
+    </form>
+  </mat-card>
+</div>
+<router-outlet *ngIf="loggedIn"></router-outlet>
