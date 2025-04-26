@@ -9,8 +9,24 @@ public interface ICompanyService
 {
     Task<string> RegisterAsync(CompanyRegisterDto dto);
     Task<bool> VerifyOtpAsync(OtpVerificationDto dto);
-    public List<Company> GetAllNotAprovedCompanies();
+    
     public List<Company> GetAprovedCompanies();
     public List<Company> GetAllCompanies();
-    public Company UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto);
+
+    public List<Beneficiary> GetAllInboundBeneficiaries();
+    public Task<Beneficiary> AddInbouBeneficiaries(Beneficiary beneficiary, string companyEmail);
+
+    public List<Beneficiary> GetAllBeneficiaries();
+
+    public List<Beneficiary> GetAllOutboundBeneficiaries();
+
+
+    public Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary, string companyEmail);
+
+    public Task<Transaction> AddTrasaction(Transaction transaction, string companyEmail);
+
+    public List<Employee> GetAllEmployees();
+    public Task<String> AddEmployeesByCSV(IFormFile csvFile, string companyEmail);
+    public Task<string> DisburseSalaryToAllEmployees(string companyEmail);
+
 }

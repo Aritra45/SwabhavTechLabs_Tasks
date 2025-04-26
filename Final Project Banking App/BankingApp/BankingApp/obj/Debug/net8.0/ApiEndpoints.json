@@ -1,47 +1,5 @@
 [
   {
-    "ContainingType": "BankingApp.Controllers.AuditLogController",
-    "Method": "GetAllLogs",
-    "RelativePath": "api/AuditLog/all-logs",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.AuditLogController",
-    "Method": "GetLogsByDate",
-    "RelativePath": "api/AuditLog/by-date",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "date",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.AuditLogController",
-    "Method": "GetLogsByUser",
-    "RelativePath": "api/AuditLog/by-user/{userId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "BankingApp.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/login",
@@ -59,24 +17,8 @@
   },
   {
     "ContainingType": "BankingApp.Controllers.BankController",
-    "Method": "AddBanks",
-    "RelativePath": "api/Bank/add-new-bank",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addBankDto",
-        "Type": "BankingApp.Model.BankDto.AddBankDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.BankController",
-    "Method": "GetAllBanks",
-    "RelativePath": "api/Bank/all-banks",
+    "Method": "GetAllTransactions",
+    "RelativePath": "api/Bank/all-transactions",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -84,53 +26,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BankingApp.Controllers.BankController",
-    "Method": "GetByEmail",
-    "RelativePath": "api/Bank/get-by-bank-email/{bankEmail}",
-    "HttpMethod": "GET",
+    "ContainingType": "CompanyController",
+    "Method": "AddInboundBeneficiaries",
+    "RelativePath": "api/Company/add-inbound-beneficiaries",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "bankEmail",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.BankController",
-    "Method": "DeleteBanks",
-    "RelativePath": "api/Bank/remove-bank-access/{bankEmail}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bankEmail",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.BankController",
-    "Method": "UpdateBankPassword",
-    "RelativePath": "api/Bank/update-bank-password/{bankEmail}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bankEmail",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "updateBankPasswordDto",
-        "Type": "BankingApp.Model.BankDto.UpdateBankPasswordDto",
+        "Name": "addBeneficiaryDto",
+        "Type": "BankingApp.Model.BeneficiaryDto.AddBeneficiaryDto",
         "IsRequired": true
       }
     ],
@@ -138,7 +43,54 @@
   },
   {
     "ContainingType": "CompanyController",
-    "Method": "GetAllInboundBeneficiaries",
+    "Method": "AddTransactions",
+    "RelativePath": "api/Company/add-new-transaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addTransactionDto",
+        "Type": "BankingApp.Model.TrasactionDto.AddTransactionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
+    "Method": "AddOutboundBeneficiaries",
+    "RelativePath": "api/Company/add-outbound-beneficiaries",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BeneficiaryCompanyEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BeneficiaryCompanyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BankAccountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IFSCNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
+    "Method": "GetAllCompany",
     "RelativePath": "api/Company/all-companies",
     "HttpMethod": "GET",
     "IsController": true,
@@ -148,9 +100,39 @@
   },
   {
     "ContainingType": "CompanyController",
-    "Method": "GetAllNotApprovedCompanies",
-    "RelativePath": "api/Company/all-pending-companies",
+    "Method": "GetAllEmployees",
+    "RelativePath": "api/Company/all-employees",
     "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
+    "Method": "GetAllInboundBeneficiaries",
+    "RelativePath": "api/Company/all-inbound-beneficiaries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
+    "Method": "GetOutboundBeneficiaries",
+    "RelativePath": "api/Company/all-oubound-beneficiaries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
+    "Method": "DisburseSalaryToAllEmployees",
+    "RelativePath": "api/Company/bulk-salary-disbursement",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -214,21 +196,16 @@
   },
   {
     "ContainingType": "CompanyController",
-    "Method": "UpdateBankPassword",
-    "RelativePath": "api/Company/update-pending-companies/{companyEmail}",
-    "HttpMethod": "PUT",
+    "Method": "UploadEmployeesFromCsv",
+    "RelativePath": "api/Company/upload-csv",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "companyEmail",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "UpdateNotApprovedDto",
-        "Type": "BankingApp.Model.CompanyDto.UpdateNotApprovedDto",
-        "IsRequired": true
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -244,197 +221,6 @@
       {
         "Name": "dto",
         "Type": "BankingApp.Model.CompanyDto.OtpVerificationDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.EmployeeController",
-    "Method": "GetAllEmployees",
-    "RelativePath": "api/Employee/all-employees",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.EmployeeController",
-    "Method": "DisburseSalaryToAllEmployees",
-    "RelativePath": "api/Employee/bulk-salary-disbursement",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.EmployeeController",
-    "Method": "UploadEmployeesFromCsv",
-    "RelativePath": "api/Employee/upload-csv",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "file",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.InBoundBeneficiaryController",
-    "Method": "AddInboundBeneficiaries",
-    "RelativePath": "api/InBoundBeneficiary/add-inbound-beneficiaries",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addBeneficiaryDto",
-        "Type": "BankingApp.Model.BeneficiaryDto.AddBeneficiaryDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.InBoundBeneficiaryController",
-    "Method": "GetAllInboundBeneficiaries",
-    "RelativePath": "api/InBoundBeneficiary/all-inbound-beneficiaries",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.OutBoundBeneficiaryController",
-    "Method": "AddOutboundBeneficiaries",
-    "RelativePath": "api/OutBoundBeneficiary/add-outbound-beneficiaries",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "BeneficiaryCompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BeneficiaryCompanyName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BankAccountNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "IFSCNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.OutBoundBeneficiaryController",
-    "Method": "GetOutboundBeneficiaries",
-    "RelativePath": "api/OutBoundBeneficiary/all-oubound-beneficiaries",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.OutBoundBeneficiaryController",
-    "Method": "GetAllOutboundNotApprovedBeneficiaries",
-    "RelativePath": "api/OutBoundBeneficiary/all-oubound-pending-beneficiaries",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.OutBoundBeneficiaryController",
-    "Method": "UpdateOutboundNotApprovedBeneficiaries",
-    "RelativePath": "api/OutBoundBeneficiary/update-pending-beneficiaries/{beneficiaryEmail}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "beneficiaryEmail",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "updateNotApprovedBeneficiaryDto",
-        "Type": "BankingApp.Model.BeneficiaryDto.UpdateNotApprovedBeneficiaryDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.TransactionController",
-    "Method": "AddTransactions",
-    "RelativePath": "api/Transaction/add-new-transaction",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "addTransactionDto",
-        "Type": "BankingApp.Model.TrasactionDto.AddTransactionDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.TransactionController",
-    "Method": "GetAllPendingTransactions",
-    "RelativePath": "api/Transaction/all-pending-transactions",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.TransactionController",
-    "Method": "GetAllTransactions",
-    "RelativePath": "api/Transaction/all-transactions",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BankingApp.Controllers.TransactionController",
-    "Method": "UpdatePendingTransaction",
-    "RelativePath": "api/Transaction/update-pending-transactions/{transactionID}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "transactionID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "updatePendingTransactionDto",
-        "Type": "BankingApp.Model.TrasactionDto.UpdatePendingTransactionDto",
         "IsRequired": true
       }
     ],
@@ -458,12 +244,126 @@
   },
   {
     "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "AddBanks",
+    "RelativePath": "api/User/add-new-bank",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addBankDto",
+        "Type": "BankingApp.Model.BankDto.AddBankDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User/all-admins",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllBanks",
+    "RelativePath": "api/User/all-banks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllLogs",
+    "RelativePath": "api/User/all-logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllOutboundNotApprovedBeneficiaries",
+    "RelativePath": "api/User/all-oubound-pending-beneficiaries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllNotApprovedCompanies",
+    "RelativePath": "api/User/all-pending-companies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllPendingTransactions",
+    "RelativePath": "api/User/all-pending-transactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetLogsByDate",
+    "RelativePath": "api/User/by-date",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetLogsByUser",
+    "RelativePath": "api/User/by-user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetByEmail",
+    "RelativePath": "api/User/get-by-bank-email/{bankEmail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -477,6 +377,106 @@
       {
         "Name": "UserEmail",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "DeleteBanks",
+    "RelativePath": "api/User/remove-bank-access/{bankEmail}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "UpdateBankPassword",
+    "RelativePath": "api/User/update-bank-password/{bankEmail}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateBankPasswordDto",
+        "Type": "BankingApp.Model.BankDto.UpdateBankPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "UpdateOutboundNotApprovedBeneficiaries",
+    "RelativePath": "api/User/update-pending-beneficiaries/{beneficiaryEmail}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "beneficiaryEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateNotApprovedBeneficiaryDto",
+        "Type": "BankingApp.Model.BeneficiaryDto.UpdateNotApprovedBeneficiaryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "UpdateBankPassword",
+    "RelativePath": "api/User/update-pending-companies/{companyEmail}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "UpdateNotApprovedDto",
+        "Type": "BankingApp.Model.CompanyDto.UpdateNotApprovedDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "UpdatePendingTransaction",
+    "RelativePath": "api/User/update-pending-transactions/{transactionID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatePendingTransactionDto",
+        "Type": "BankingApp.Model.TrasactionDto.UpdatePendingTransactionDto",
         "IsRequired": true
       }
     ],

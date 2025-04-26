@@ -5,6 +5,7 @@ using BankingApp.Model.BankDto;
 using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
 using BankingApp.Model.Entity;
+using BankingApp.Model.TrasactionDto;
 using BankingApp.Model.UserDtos;
 using BankingApp.Service;
 using Microsoft.AspNetCore.Authorization;
@@ -16,34 +17,21 @@ public class CompanyController : ControllerBase
 {
     ICompanyService companyServices;
     IMapper mapper;
-    public CompanyController(ICompanyService companyServices)
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    public CompanyController(ICompanyService companyServices, IHttpContextAccessor httpContextAccessor)
     {
         this.companyServices = companyServices;
         var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
         mapper = config.CreateMapper();
         this.mapper = mapper;
+        _httpContextAccessor = httpContextAccessor;
     }
 
-    [HttpGet("all-pending-companies")]
-    [Authorize(Roles = "Admin")]
-    public IActionResult GetAllNotApprovedCompanies()
-    {
-        var allCompanies = companyServices.GetAllNotAprovedCompanies();
-        var getCompanies = mapper.Map<List<GetAllNotApprovedCompanies>>(allCompanies);
-        return Ok(getCompanies);
-    }
-
-    [HttpPut("update-pending-companies/{companyEmail}")]
-    [Authorize(Roles = "Admin")]
-    public IActionResult UpdateBankPassword(string companyEmail, [FromBody] UpdateNotApprovedDto UpdateNotApprovedDto)
-    {
-        var bankEntity = companyServices.UpdateNotAprovedCompanies(companyEmail, UpdateNotApprovedDto);
-        return Ok("Company Updated Successfully");
-    }
+    
 
     [HttpGet("all-companies")]
     [Authorize(Roles = "Company")]
-    public IActionResult GetAllInboundBeneficiaries()
+    public IActionResult GetAllCompany()
     {
         var allCompanies = companyServices.GetAllCompanies();
         var getCompanies = mapper.Map<List<GetAllCompanyDto>>(allCompanies);
@@ -72,5 +60,114 @@ public class CompanyController : ControllerBase
     {
         var isValid = await companyServices.VerifyOtpAsync(dto);
         return isValid ? Ok("Company verified successfully.") : BadRequest("Invalid OTP.");
+    }
+
+    [HttpGet("all-inbound-beneficiaries")]
+    [Authorize(Roles = "Company")]
+    public IActionResult GetAllInboundBeneficiaries()
+    {
+        var allBeneficiaries = companyServices.GetAllInboundBeneficiaries();
+        var getBeneficiaries = mapper.Map<List<GetAllbeneficiariesDto>>(allBeneficiaries);
+        return Ok(getBeneficiaries);
+    }
+
+    [HttpPost("add-inbound-beneficiaries")]
+    [Authorize(Roles = "Company")]
+    public IActionResult AddInboundBeneficiaries([FromBody] AddBeneficiaryDto addBeneficiaryDto)
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+
+        if (string.IsNullOrEmpty(companyEmail))
+            return Unauthorized("Company email not found in token.");
+        var beneficiaries = mapper.Map<Beneficiary>(addBeneficiaryDto);
+        var newbeneficiaries = companyServices.AddInbouBeneficiaries(beneficiaries, companyEmail);
+        return Ok("beneficiary Added Successfully");
+    }
+
+    [HttpGet("all-oubound-beneficiaries")]
+    [Authorize(Roles = "Company")]
+    public IActionResult GetOutboundBeneficiaries()
+    {
+        var allBeneficiaries = companyServices.GetAllOutboundBeneficiaries();
+        var getBeneficiaries = mapper.Map<List<GetAllbeneficiariesDto>>(allBeneficiaries);
+        return Ok(getBeneficiaries);
+    }
+
+    [HttpPost("add-outbound-beneficiaries")]
+    [Authorize(Roles = "Company")]
+    public IActionResult AddOutboundBeneficiaries([FromForm] AddBeneficiaryDto addBeneficiaryDto)
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+
+        if (string.IsNullOrEmpty(companyEmail))
+            return Unauthorized("Company email not found in token.");
+        var beneficiaries = mapper.Map<Beneficiary>(addBeneficiaryDto);
+        var newbeneficiaries = companyServices.AddOutbouBeneficiaries(beneficiaries, companyEmail);
+        return Ok("beneficiary Added Successfully");
+    }
+
+    [HttpPost("add-new-transaction")]
+    [Authorize(Roles = "Company")]
+    public IActionResult AddTransactions([FromBody] AddTransactionDto addTransactionDto)
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+
+        if (string.IsNullOrEmpty(companyEmail))
+            return Unauthorized("Company email not found in token.");
+        var transactions = mapper.Map<Transaction>(addTransactionDto);
+        var newTransaction = companyServices.AddTrasaction(transactions, companyEmail);
+        return Ok("Transaction Added Successfully");
+    }
+
+    [HttpGet("all-employees")]
+    [Authorize(Roles = "Company")]
+    public IActionResult GetAllEmployees()
+    {
+        var allEmployees = companyServices.GetAllEmployees();
+        var getEmployees = mapper.Map<List<GetAllEmployeesDto>>(allEmployees);
+        return Ok(getEmployees);
+    }
+
+    [HttpPost("upload-csv")]
+    [Authorize(Roles = "Company")]
+    public async Task<IActionResult> UploadEmployeesFromCsv(IFormFile file)
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+
+        if (string.IsNullOrEmpty(companyEmail))
+            return Unauthorized("Company email not found in token.");
+        if (file == null || file.Length == 0)
+            return BadRequest("No file uploaded.");
+
+        var result = await companyServices.AddEmployeesByCSV(file, companyEmail);
+        return Ok(new { message = result });
+    }
+
+    [HttpPost("bulk-salary-disbursement")]
+    [Authorize(Roles = "Company")]
+    public async Task<IActionResult> DisburseSalaryToAllEmployees()
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+
+        if (string.IsNullOrEmpty(companyEmail))
+            return Unauthorized("Company email not found in token.");
+
+        var result = await companyServices.DisburseSalaryToAllEmployees(companyEmail);
+        return Ok(new { message = result });
     }
 }

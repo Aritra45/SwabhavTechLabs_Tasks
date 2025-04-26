@@ -41,7 +41,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200") // your Angular app
+            policy.WithOrigins("http://localhost:4200") 
                   .AllowAnyHeader()
                   .AllowAnyMethod();
         });
@@ -56,11 +56,11 @@ builder.Services.AddScoped<IBankServices, BankServices>();
 builder.Services.AddScoped<IGenericRepository<Bank>, GenericRepository<Bank>>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
 builder.Services.AddScoped<IGenericRepository<Company>, GenericRepository<Company>>();
-builder.Services.AddScoped<IBeneficiaryServices, BeneficiaryServices>();
+
 builder.Services.AddScoped<IGenericRepository<Beneficiary>, GenericRepository<Beneficiary>>();
-builder.Services.AddScoped<ITransactionServices, TransactionServices>();
+
 builder.Services.AddScoped<IGenericRepository<Transaction>, GenericRepository<Transaction>>();
-builder.Services.AddScoped<IEmployeeServices, EmployeeServices>();
+
 builder.Services.AddScoped<IGenericRepository<Employee>, GenericRepository<Employee>>();
 
 // HttpContext & Interceptor for Audit Logging

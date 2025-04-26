@@ -29,59 +29,12 @@ namespace BankingApp.Controllers
             _httpContextAccessor = httpContextAccessor;
         }
 
-        [HttpGet("all-banks")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult GetAllBanks()
+        [HttpGet("all-transactions")]
+        [Authorize(Roles = "Bank")]
+        public IActionResult GetAllTransactions()
         {
-            var allBanks = bankServices.GetAllBanks();
-            var getBanks = mapper.Map<List<GetAllBankDto>>(allBanks);
-            return Ok(getBanks);
-        }
-
-        [HttpPost("add-new-bank")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult AddBanks([FromBody]  AddBankDto addBankDto)
-        {            
-            //var banks = mapper.Map<Bank>(addBankDto);
-            //var newUser = bankServices.AddBank(banks);
-            string passwd = BCrypt.Net.BCrypt.EnhancedHashPassword(addBankDto.BankPassword);
-            addBankDto.BankPassword = passwd;
-            var bank = mapper.Map<Bank>(addBankDto);
-            var bankEntity = bankServices.AddBank(bank);
-            if(bankEntity.Status.ToString() != "Faulted")
-            {
-                return Ok("Bank Added Successfully");
-            }
-            else
-            {
-                return UnprocessableEntity("Email Already Used");
-            }
-            
-        }
-
-        [HttpDelete("remove-bank-access/{bankEmail}")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult DeleteBanks(string bankEmail)
-        {
-            bankServices.DeleteBank(bankEmail);
-            return Ok("Bank Deleted Successfully");
-        }
-
-        [HttpPut("update-bank-password/{bankEmail}")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult UpdateBankPassword(string bankEmail, [FromBody] UpdateBankPasswordDto updateBankPasswordDto)
-        {
-            var bankEntity = bankServices.UpdateBankPassword(bankEmail, updateBankPasswordDto);
-            return Ok("Password Updated Successfully");
-        }
-
-        [HttpGet("get-by-bank-email/{bankEmail}")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult GetByEmail(string bankEmail)
-        {
-            var bank = bankServices.GetByEmail(bankEmail);
-            var getBank = mapper.Map<GetAllBankDto>(bank);
-            return Ok(getBank);
+            var allTransactions = bankServices.GetAllTransactions();
+            return Ok(allTransactions);
         }
     }
 }

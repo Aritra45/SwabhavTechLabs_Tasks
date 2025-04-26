@@ -10,18 +10,18 @@ export class CompanyServiceService {
   constructor(private http: HttpClient) { }
 
   //inbound
-  private apiUrl1 = "http://localhost:5147/api/InBoundBeneficiary/all-inbound-beneficiaries"
-  private apiUrl3 = "http://localhost:5147/api/InBoundBeneficiary/add-inbound-beneficiaries"
+  private apiUrl1 = "http://localhost:5147/api/Company/all-inbound-beneficiaries"
+  private apiUrl3 = "http://localhost:5147/api/Company/add-inbound-beneficiaries"
 
   //company
   private apiUrl2 = "http://localhost:5147/api/Company/all-companies"
   
   //outbound
-  private apiUrl4 = "http://localhost:5147/api/OutBoundBeneficiary/all-oubound-beneficiaries"
-  private apiUrl5 = "http://localhost:5147/api/OutBoundBeneficiary/add-outbound-beneficiaries"
+  private apiUrl4 = "http://localhost:5147/api/Company/all-oubound-beneficiaries"
+  private apiUrl5 = "http://localhost:5147/api/Company/add-outbound-beneficiaries"
 
   //transaction
-  private apiUrl6 = "http://localhost:5147/api/Transaction/add-new-transaction"
+  private apiUrl6 = "http://localhost:5147/api/Company/add-new-transaction"
 
   //inbound
   getInBoundBeneficiary(): Observable<any> {

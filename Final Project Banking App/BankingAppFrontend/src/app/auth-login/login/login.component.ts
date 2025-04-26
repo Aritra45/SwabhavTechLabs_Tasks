@@ -52,6 +52,9 @@ export class LoginComponent {
 
 
   onSubmit() {
+    if(!this.captchaResolved){
+      alert("check the captcha!!!")
+    }
     if (this.captchaResolved) {
     this.authService.login1(this.userEmail, this.password).subscribe(response => {
       localStorage.setItem('token', response.token);

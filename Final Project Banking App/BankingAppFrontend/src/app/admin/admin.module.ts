@@ -39,6 +39,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { MatNativeDateModule } from '@angular/material/core';
 
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+
 @NgModule({
   declarations: [
     AdminControllerComponent,
@@ -80,7 +83,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDialogModule,
     MatTableModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatPaginatorModule
   ]
 })
 export class AdminModule { }

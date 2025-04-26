@@ -12,15 +12,25 @@ using BankingApp.Helper;
 using BankingApp.Model.BankDto;
 using BankingApp.Service;
 using BankingApp.Interfaces.IService;
+using CsvHelper.Configuration;
+using CsvHelper;
+using System.Globalization;
+using BankingApp.Database;
+using System.Runtime.CompilerServices;
 
 public class CompanyService : ICompanyService
 {
     private readonly IGenericRepository<Company> _companyRepo;
+    private readonly IGenericRepository<Beneficiary> repository;
+    private readonly IGenericRepository<Transaction> trans_repository;
+    private readonly IGenericRepository<Employee> emp_repository;
     private readonly IMemoryCache _cache;
     private readonly SmtpSettings _smtpSettings;
     private readonly Cloudinary _cloudinary;
     private readonly IPhotoService _photoService;
     private readonly IServiceProvider serviceProvider;
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    MyContext context;
 
     public CompanyService(
         IGenericRepository<Company> companyRepo,
@@ -28,7 +38,12 @@ public class CompanyService : ICompanyService
         IOptions<SmtpSettings> smtpOptions,
         IOptions<CloudinarySettings> cloudinaryOptions,
         IPhotoService photoService,
-        IServiceProvider serviceProvider)
+        IServiceProvider serviceProvider,
+        IGenericRepository<Beneficiary> repository,
+        IHttpContextAccessor httpContextAccessor,
+        IGenericRepository<Transaction> trans_repository,
+        IGenericRepository<Employee> emp_repository,
+        MyContext context)
         
     {
         _companyRepo = companyRepo;
@@ -42,6 +57,11 @@ public class CompanyService : ICompanyService
         _photoService = photoService;
         _cloudinary = new Cloudinary(acc);
         this.serviceProvider = serviceProvider;
+        this.repository = repository;
+        _httpContextAccessor = httpContextAccessor;
+        this.trans_repository = trans_repository;
+        this.emp_repository = emp_repository;
+        this.context = context;
     }
 
     public async Task<string> RegisterAsync(CompanyRegisterDto dto)
@@ -68,7 +88,7 @@ public class CompanyService : ICompanyService
             RoleId = 3
         };
 
-        var bankService = serviceProvider.GetRequiredService<IBankServices>();
+        var bankService = serviceProvider.GetRequiredService<IUserServices>();
         var bankEntity = bankService.GetAllsBanks();
         bool isValidForAdmin = bankEntity
             .Any(b => b.BankEmail == dto.CompanyEmail);
@@ -158,11 +178,7 @@ public class CompanyService : ICompanyService
         }
     }
 
-    public List<Company> GetAllNotAprovedCompanies()
-    {
-        var companies = _companyRepo.GetAllAsync();
-        return companies.Where(company => company.IsAproved == false).ToList();
-    }
+   
 
     public List<Company> GetAprovedCompanies()
     {
@@ -170,14 +186,45 @@ public class CompanyService : ICompanyService
         return companies.Where(company => company.IsAproved == true && company.IsVerified == true).ToList();
     }
 
-    public Company UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto)
+    
+
+    public List<Company> GetAllCompanies()
     {
-        var companyEntity = _companyRepo.GetByEmail(company);
-        if (companyEntity != null)
+        var companies = _companyRepo.GetAllAsync();
+        return companies.ToList();
+    }
+
+    public async Task<Beneficiary> AddInbouBeneficiaries(Beneficiary beneficiary, string companyEmail)
+    {
+        var beneficiaryEntity = new Beneficiary
         {
-            companyEntity.IsAproved = updateNotApprovedDto.IsAproved;
-            _companyRepo.Update(companyEntity);
-            return companyEntity;
+            BeneficiaryCompanyEmail = beneficiary.BeneficiaryCompanyEmail,
+            BeneficiaryCompanyName = beneficiary.BeneficiaryCompanyName,
+            BankAccountNumber = beneficiary.BankAccountNumber,
+            IFSCNumber = beneficiary.IFSCNumber,
+            BeneficiaryType = "Inbound",
+            IsApproved = true,
+            CompanyEmail = companyEmail,
+        };
+
+        var companies = GetAllCompanies();
+        bool isValidCompany = companies
+            .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
+
+        if (!isValidCompany)
+        {
+            var approvedCompanies = GetAprovedCompanies();
+            bool isValidApprovedCompany = approvedCompanies
+                .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
+            if (!isValidApprovedCompany)
+            {
+                await repository.AddAsync(beneficiaryEntity);
+                return beneficiaryEntity;
+            }
+            else
+            {
+                throw new NullReferenceException();
+            }
         }
         else
         {
@@ -185,9 +232,196 @@ public class CompanyService : ICompanyService
         }
     }
 
-    public List<Company> GetAllCompanies()
+    public List<Beneficiary> GetAllInboundBeneficiaries()
     {
-        var companies = _companyRepo.GetAllAsync();
-        return companies.ToList();
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+        var beneficiaries = repository.GetAllAsync();
+        return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Inbound"
+        && beneficiary.CompanyEmail == companyEmail).ToList();
+    }
+
+    public async Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary, string companyEmail)
+    {
+        var beneficiaryEntity = new Beneficiary
+        {
+            BeneficiaryCompanyEmail = beneficiary.BeneficiaryCompanyEmail,
+            BeneficiaryCompanyName = beneficiary.BeneficiaryCompanyName,
+            BankAccountNumber = beneficiary.BankAccountNumber,
+            IFSCNumber = beneficiary.IFSCNumber,
+            BeneficiaryType = "Outbound",
+            IsApproved = false,
+            CompanyEmail = companyEmail,
+        };
+
+        await repository.AddAsync(beneficiaryEntity);
+        return beneficiaryEntity;
+    }
+
+
+    public List<Beneficiary> GetAllOutboundBeneficiaries()
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+        var beneficiaries = repository.GetAllAsync();
+        return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Outbound"
+        && beneficiary.CompanyEmail == companyEmail).ToList();
+    }
+
+
+
+    public List<Beneficiary> GetAllBeneficiaries()
+    {
+        var beneficiaries = repository.GetAllAsync();
+        return beneficiaries.ToList();
+    }
+
+    public async Task<Transaction> AddTrasaction(Transaction transaction, string companyEmail)
+    {
+        var transactionEntity = new Transaction
+        {
+            TransferFromCompanyEmail = companyEmail,
+            TransferToCompanyEmail = transaction.TransferToCompanyEmail,
+            TransactionAmount = transaction.TransactionAmount,
+            PaymentDate = DateTime.Now,
+            Status = "Pending"
+        };
+
+        var beneficiaries = GetAllBeneficiaries();
+
+        bool isValidBeneficiary = beneficiaries.Any(b =>
+            string.Equals(b.BeneficiaryCompanyEmail, transaction.TransferToCompanyEmail, StringComparison.OrdinalIgnoreCase) &&
+            string.Equals(b.CompanyEmail, companyEmail, StringComparison.OrdinalIgnoreCase));
+
+        if (isValidBeneficiary)
+        {
+            await trans_repository.AddAsync(transactionEntity);
+            return transactionEntity;
+        }
+        else
+        {
+            throw new NullReferenceException();
+        }
+    }
+
+    public async Task<string> AddEmployeesByCSV(IFormFile csvFile, string companyEmail)
+    {
+        if (csvFile == null || csvFile.Length == 0)
+            return "CSV file is empty.";
+
+        var employees = new List<Employee>();
+        var existingEmails = context.Employees.Select(e => e.EmployeeEmail).ToHashSet(); 
+
+        using (var stream = new StreamReader(csvFile.OpenReadStream()))
+        using (var csvReader = new CsvReader(stream, new CsvConfiguration(CultureInfo.InvariantCulture)
+        {
+            HeaderValidated = null,
+            MissingFieldFound = null
+        }))
+        {
+            var csvRecords = csvReader.GetRecords<dynamic>();
+
+            foreach (var record in csvRecords)
+            {
+                try
+                {
+                    string email = Convert.ToString(record.EmployeeEmail);
+                    if (existingEmails.Contains(email))
+                        continue;
+
+                    var employee = new Employee
+                    {
+                        EmployeeEmail = email,
+                        EmployeeFullName = Convert.ToString(record.EmployeeFullName),
+                        EmployeeBankAccountNumber = Convert.ToString(record.EmployeeBankAccountNumber),
+                        EmployeeIFSCNumber = Convert.ToString(record.EmployeeIFSCNumber),
+                        EmployeeSalaryAmount = Convert.ToDecimal(record.EmployeeSalaryAmount),
+                        IsActive = true,
+                        CompanyEmail = companyEmail
+                    };
+
+                    employees.Add(employee);
+                }
+                catch (System.Exception ex)
+                {
+                    throw new System.Exception("Check CSV File: " + ex.Message);
+                }
+            }
+        }
+
+        await context.Employees.AddRangeAsync(employees);
+        await context.SaveChangesAsync();
+
+        return $"{employees.Count} new employees successfully uploaded (duplicates skipped).";
+    }
+
+
+
+    //public Task<Employee> AddEmployeesTransactionSalary(Employee employee)
+    //{
+    //    throw new NotImplementedException();
+    //}
+
+    public List<Employee> GetAllEmployees()
+    {
+        var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+        var companyEmail = emailClaim?.Value;
+        var employees = emp_repository.GetAllAsync();
+        return employees.Where(employee => employee.IsActive == true
+        && employee.CompanyEmail == companyEmail).ToList();
+    }
+
+    public async Task<string> DisburseSalaryToAllEmployees(string companyEmail)
+    {
+        var employees = context.Employees
+            .Where(e => e.IsActive && e.CompanyEmail == companyEmail)
+            .ToList();
+
+        if (!employees.Any())
+            return "No active employees found for this company.";
+
+        int successfulDisbursements = 0;
+        var disbursementRecords = new List<SalaryDisburesement>();
+
+        foreach (var emp in employees)
+        {
+            try
+            {
+
+                Console.WriteLine($"Transferring {emp.EmployeeSalaryAmount:C} to {emp.EmployeeFullName} ({emp.EmployeeBankAccountNumber})");
+
+
+                var disbursement = new SalaryDisburesement
+                {
+                    EmployeeEmail = emp.EmployeeEmail,
+                    Amount = emp.EmployeeSalaryAmount,
+                    TransactionDate = DateTime.UtcNow,
+                    CompanyEmail = companyEmail
+                };
+
+                disbursementRecords.Add(disbursement);
+                successfulDisbursements++;
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine($"Failed to disburse salary to {emp.EmployeeEmail}: {ex.Message}");
+
+            }
+        }
+
+
+        if (disbursementRecords.Any())
+        {
+            await context.SalaryDisburesements.AddRangeAsync(disbursementRecords);
+            await context.SaveChangesAsync();
+        }
+
+        return $"Salary disbursed to {successfulDisbursements} out of {employees.Count} employees.";
     }
 }

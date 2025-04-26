@@ -28,10 +28,7 @@ namespace BankingApp.Model.Entity
         public bool IsActive { get; set; }
         public bool IsVerified { get; set; }
         public bool IsAproved { get; set; }
-        
-      
         public int RoleId { get; set; }
-       
-
+        public string Remark { get; set; }
     }
 }

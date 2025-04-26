@@ -12,28 +12,28 @@ export class AdminServiceService {
   private apiUrl3 = "http://localhost:5147/api/User/remove-admin-access"
 
   //bank-controller
-  private apiUrl4 = "http://localhost:5147/api/Bank/all-banks";
-  private apiUrl5 = "http://localhost:5147/api/Bank/add-new-bank";
-  private apiUrl6 = "http://localhost:5147/api/Bank/remove-bank-access";
-  private apiUrl7 = "http://localhost:5147/api/Bank/get-by-bank-email"
-  private apiUrl8 = "http://localhost:5147/api/Bank/update-bank-password"
+  private apiUrl4 = "http://localhost:5147/api/User/all-banks";
+  private apiUrl5 = "http://localhost:5147/api/User/add-new-bank";
+  private apiUrl6 = "http://localhost:5147/api/User/remove-bank-access";
+  private apiUrl7 = "http://localhost:5147/api/User/get-by-bank-email"
+  private apiUrl8 = "http://localhost:5147/api/User/update-bank-password"
 
   //company-controller
-  private apiUrl9 = "http://localhost:5147/api/Company/update-pending-companies"
-  private apiUrl10 = "http://localhost:5147/api/Company/all-pending-companies"
+  private apiUrl9 = "http://localhost:5147/api/User/update-pending-companies"
+  private apiUrl10 = "http://localhost:5147/api/User/all-pending-companies"
 
   //transaction-controller
-  private apiUrl11 = "http://localhost:5147/api/Transaction/all-pending-transactions"
-  private apiUrl12 = "http://localhost:5147/api/Transaction/update-pending-transactions"
+  private apiUrl11 = "http://localhost:5147/api/User/all-pending-transactions"
+  private apiUrl12 = "http://localhost:5147/api/User/update-pending-transactions"
 
   //beneficiary-controller
-  private apiUrl13 = "http://localhost:5147/api/OutBoundBeneficiary/all-oubound-pending-beneficiaries"
-  private apiUrl14 = "http://localhost:5147/api/OutBoundBeneficiary/update-pending-beneficiaries"
+  private apiUrl13 = "http://localhost:5147/api/User/all-oubound-pending-beneficiaries"
+  private apiUrl14 = "http://localhost:5147/api/User/update-pending-beneficiaries"
 
   //auditlog-controller
-  private apiUrl15 = "http://localhost:5147/api/AuditLog/all-logs"
-  private apiUrl16 = "http://localhost:5147/api/AuditLog/by-user"
-  private apiUrl17 = "http://localhost:5147/api/AuditLog/by-date"
+  private apiUrl15 = "http://localhost:5147/api/User/all-logs"
+  private apiUrl16 = "http://localhost:5147/api/User/by-user"
+  private apiUrl17 = "http://localhost:5147/api/User/by-date"
 
   constructor(private http: HttpClient) { }
 
@@ -169,7 +169,7 @@ export class AdminServiceService {
   getAuditByDate(date: string): Observable<any[]> {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.http.get<any[]>(`http://localhost:5147/api/AuditLog/by-date?date=${date}`, { headers });
+    return this.http.get<any[]>(`http://localhost:5147/api/User/by-date?date=${date}`, { headers });
   }
   
   
