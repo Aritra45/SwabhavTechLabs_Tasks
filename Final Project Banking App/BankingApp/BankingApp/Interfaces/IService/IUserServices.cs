@@ -1,6 +1,7 @@
 ﻿using BankingApp.Model.BankDto;
 using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
+using BankingApp.Model.EmployeeDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.TrasactionDto;
 
@@ -32,5 +33,9 @@ namespace BankingApp.Interfaces.IService
         //outbound
         public List<Beneficiary> GetAllOutboundNotApprovedBeneficiaries();
         public Beneficiary UpdateOutboundNotApprovedBeneficiaries(string beneficiaryEmail, UpdateNotApprovedBeneficiaryDto updateNotApprovedBeneficiaryDto);
+
+        //employee
+        public List<SalaryDisburesement> GetAllPendingSalary();
+        public SalaryDisburesement UpdatePendingSalary(int transactionId, UpdatePendingSalaryDto updatePendingSalaryDto);
     }
 }

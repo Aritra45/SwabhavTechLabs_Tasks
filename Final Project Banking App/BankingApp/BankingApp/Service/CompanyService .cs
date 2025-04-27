@@ -17,6 +17,7 @@ using CsvHelper;
 using System.Globalization;
 using BankingApp.Database;
 using System.Runtime.CompilerServices;
+using Microsoft.EntityFrameworkCore;
 
 public class CompanyService : ICompanyService
 {
@@ -85,6 +86,7 @@ public class CompanyService : ICompanyService
             IsVerified = false,
             IsAproved = false,
             CreatedAt = DateTime.Now,
+            Remark = "",
             RoleId = 3
         };
 
@@ -377,44 +379,44 @@ public class CompanyService : ICompanyService
         && employee.CompanyEmail == companyEmail).ToList();
     }
 
-    public async Task<string> DisburseSalaryToAllEmployees(string companyEmail)
+    public async Task<string> DisburseSalaryToAllEmployees(string companyEmail, List<SalaryDisburesement> employees)
     {
-        var employees = context.Employees
-            .Where(e => e.IsActive && e.CompanyEmail == companyEmail)
-            .ToList();
-
-        if (!employees.Any())
-            return "No active employees found for this company.";
-
-        int successfulDisbursements = 0;
+        var successfulDisbursements = 0;
         var disbursementRecords = new List<SalaryDisburesement>();
 
         foreach (var emp in employees)
         {
             try
             {
+                // Check if salary has been disbursed for the employee this month
+                var existingDisbursement = await context.SalaryDisburesements
+                    .FirstOrDefaultAsync(d => d.EmployeeEmail == emp.EmployeeEmail && d.TransactionDate.Month == DateTime.Now.Month && d.TransactionDate.Year == DateTime.Now.Year);
 
-                Console.WriteLine($"Transferring {emp.EmployeeSalaryAmount:C} to {emp.EmployeeFullName} ({emp.EmployeeBankAccountNumber})");
+                if (existingDisbursement != null)
+                {
+                    // Skip employees who have already received salary this month
+                    Console.WriteLine($"Salary already disbursed to {emp.EmployeeEmail} for this month.");
+                    continue;
+                }
 
-
+                // Disbursement logic
                 var disbursement = new SalaryDisburesement
                 {
                     EmployeeEmail = emp.EmployeeEmail,
-                    Amount = emp.EmployeeSalaryAmount,
-                    TransactionDate = DateTime.UtcNow,
-                    CompanyEmail = companyEmail
+                    Amount = emp.Amount,
+                    TransactionDate = DateTime.Now,
+                    CompanyEmail = emp.CompanyEmail, 
+                    Status = emp.Status
                 };
 
                 disbursementRecords.Add(disbursement);
                 successfulDisbursements++;
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine($"Failed to disburse salary to {emp.EmployeeEmail}: {ex.Message}");
-
             }
         }
-
 
         if (disbursementRecords.Any())
         {
@@ -422,6 +424,8 @@ public class CompanyService : ICompanyService
             await context.SaveChangesAsync();
         }
 
-        return $"Salary disbursed to {successfulDisbursements} out of {employees.Count} employees.";
+        return $"Salary disbursed to {successfulDisbursements} employees.";
     }
+
+    
 }

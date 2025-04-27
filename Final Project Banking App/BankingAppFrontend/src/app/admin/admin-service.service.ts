@@ -35,6 +35,10 @@ export class AdminServiceService {
   private apiUrl16 = "http://localhost:5147/api/User/by-user"
   private apiUrl17 = "http://localhost:5147/api/User/by-date"
 
+  //employee
+  private apiUrl18 = "http://localhost:5147/api/User/all-pending-salary"
+  private apiUrl19 = "http://localhost:5147/api/User/update-pending-salary"
+
   constructor(private http: HttpClient) { }
 
     //admin
@@ -169,9 +173,29 @@ export class AdminServiceService {
   getAuditByDate(date: string): Observable<any[]> {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.http.get<any[]>(`http://localhost:5147/api/User/by-date?date=${date}`, { headers });
+    return this.http.get<any[]>(`${this.apiUrl17}?date=${date}`, { headers });
   }
   
+  //employee
+  getPendingSalary():Observable<any>{
+    return this.http.get<any>(this.apiUrl18)
+  }
+
+  updatePendingSalary(transactionID: number, data:any): Observable<any> {
+
+    const token = localStorage.getItem('token');
+    if (!token) {
+      throw new Error('No authentication token found.');
+    }
   
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    });
+  
+    const url = `${this.apiUrl19}/${transactionID}`;
+  
+    return this.http.put<any>(url,data , { headers, responseType: 'text' as 'json' });
+  }
    
 }

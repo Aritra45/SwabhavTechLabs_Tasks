@@ -2,6 +2,7 @@
 using BankingApp.Model.BankDto;
 using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
+using BankingApp.Model.EmployeeDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.TrasactionDto;
 using BankingApp.Model.UserDtos;
@@ -53,6 +54,11 @@ namespace BankingApp.Mapper
 
             CreateMap<Employee, GetAllEmployeesDto>();
             CreateMap<GetAllEmployeesDto, Employee>();
+
+            CreateMap<SalaryDisburesement, GetAllPendingSalaryDto>();
+            CreateMap<GetAllPendingSalaryDto, SalaryDisburesement>();
+            CreateMap<SalaryDisburesement, UpdatePendingSalaryDto>();
+            CreateMap<UpdatePendingSalaryDto, SalaryDisburesement>();
 
         }
     }

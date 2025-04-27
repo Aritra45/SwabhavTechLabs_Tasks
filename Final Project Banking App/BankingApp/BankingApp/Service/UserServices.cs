@@ -6,6 +6,7 @@ using BankingApp.Interfaces.IService;
 using BankingApp.Model.BankDto;
 using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
+using BankingApp.Model.EmployeeDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.TrasactionDto;
 
@@ -18,10 +19,11 @@ namespace BankingApp.Service
         private readonly IGenericRepository<Company> _companyRepo;
         private readonly IGenericRepository<Transaction> trans_repository;
         private readonly IGenericRepository<Beneficiary> out_repository;
+        private readonly IGenericRepository<SalaryDisburesement> salary_repository;
         MyContext context;
         private readonly IServiceProvider serviceProvider;
 
-        public UserServices(IGenericRepository<User> userRepository, MyContext context, IServiceProvider serviceProvider, IGenericRepository<Bank> bank_repository, IGenericRepository<Company> companyRepo, IGenericRepository<Transaction> trans_repository, IGenericRepository<Beneficiary> out_repository)
+        public UserServices(IGenericRepository<User> userRepository, MyContext context, IServiceProvider serviceProvider, IGenericRepository<Bank> bank_repository, IGenericRepository<Company> companyRepo, IGenericRepository<Transaction> trans_repository, IGenericRepository<Beneficiary> out_repository, IGenericRepository<SalaryDisburesement> salary_repository)
         {
             this.context = context;
             this.repository = userRepository;
@@ -30,6 +32,7 @@ namespace BankingApp.Service
             _companyRepo = companyRepo;
             this.trans_repository = trans_repository;
             this.out_repository = out_repository;
+            this.salary_repository = salary_repository;
         }
         public async Task<User> AddUser(User user)
         {
@@ -201,7 +204,7 @@ namespace BankingApp.Service
         public List<Company> GetAllNotAprovedCompanies()
         {
             var companies = _companyRepo.GetAllAsync();
-            return companies.Where(company => company.IsAproved == false).ToList();
+            return companies.Where(company => company.IsAproved == false && company.Remark == "").ToList();
         }
 
         public Company UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto)
@@ -210,6 +213,7 @@ namespace BankingApp.Service
             if (companyEntity != null)
             {
                 companyEntity.IsAproved = updateNotApprovedDto.IsAproved;
+                companyEntity.Remark = updateNotApprovedDto.Remark;
                 _companyRepo.Update(companyEntity);
                 return companyEntity;
             }
@@ -257,6 +261,27 @@ namespace BankingApp.Service
                 beneficiaryEntity.IsApproved = updateNotApprovedBeneficiary.IsApproved;
                 out_repository.Update(beneficiaryEntity);
                 return beneficiaryEntity;
+            }
+            else
+            {
+                throw new NullReferenceException();
+            }
+        }
+
+        public List<SalaryDisburesement> GetAllPendingSalary()
+        {
+            var salaries = salary_repository.GetAllAsync();
+            return salaries.Where(salary => salary.Status == "Pending").ToList();
+        }
+
+        public SalaryDisburesement UpdatePendingSalary(int transactionId, UpdatePendingSalaryDto updatePendingSalaryDto)
+        {
+            var salaryEntity = salary_repository.GetByID(transactionId);
+            if (salaryEntity != null)
+            {
+                salaryEntity.Status = updatePendingSalaryDto.Status;
+                salary_repository.Update(salaryEntity);
+                return salaryEntity;
             }
             else
             {

@@ -40,6 +40,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { SalaryDisburesementComponent } from './salary-disburesement/salary-disburesement.component';
+import { UpdateEmployeeSalaryDisburesementComponent } from './salary-disburesement/update-employee-salary-disburesement/update-employee-salary-disburesement.component';
+import { ReasonRejectComponent } from './company-controller/reason-reject/reason-reject.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -65,7 +69,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     AuditControllerComponent,
     GetAllAuditComponent,
     GetAllAuditUseridComponent,
-    GetAllAuditDateComponent
+    GetAllAuditDateComponent,
+    SalaryDisburesementComponent,
+    UpdateEmployeeSalaryDisburesementComponent,
+    ReasonRejectComponent
   ],
   imports: [
     CommonModule,
@@ -84,7 +91,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCheckboxModule
   ]
 })
 export class AdminModule { }

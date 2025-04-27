@@ -2,9 +2,9 @@
     <form [formGroup]="adminForm" (ngSubmit)="onSubmit()" class="admin-form-container">
       <div class="form-header">
         <h2>Add Bank</h2>
-        <button mat-icon-button class="close-btn" (click)="closeForm()">
-          <mat-icon>close</mat-icon>
-        </button>
+        <mat-dialog-actions align="end">
+          <button mat-button mat-dialog-close>Close</button>
+        </mat-dialog-actions>
       </div>
     
       <div class="form-group">
@@ -49,7 +49,7 @@
     
       <div class="form-action">
         <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" class="submit-btn">
-          Add Admin
+          Add Bank
         </button>
       </div>
     </form>

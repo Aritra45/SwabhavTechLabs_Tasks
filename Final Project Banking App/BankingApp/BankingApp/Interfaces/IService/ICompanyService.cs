@@ -27,6 +27,8 @@ public interface ICompanyService
 
     public List<Employee> GetAllEmployees();
     public Task<String> AddEmployeesByCSV(IFormFile csvFile, string companyEmail);
-    public Task<string> DisburseSalaryToAllEmployees(string companyEmail);
+    public Task<string> DisburseSalaryToAllEmployees(string companyEmail, List<SalaryDisburesement> employees);
+
+    
 
 }

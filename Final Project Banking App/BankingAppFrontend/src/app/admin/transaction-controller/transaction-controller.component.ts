@@ -12,15 +12,15 @@ import { UpdateCompanyPendingTransactionsComponent } from './update-company-pend
   styleUrl: './transaction-controller.component.css'
 })
 export class TransactionControllerComponent {
-  constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {}
+  constructor(private dialog: MatDialog, private router: Router, private rs: AdminServiceService) { }
 
-  update(){
+  update() {
     this.rs.getPendingCompaniesTransaction().subscribe(
       (response) => {
         console.log("Transactions fetched:", response);
         this.dialog.open(UpdateCompanyPendingTransactionsComponent, {
           width: '900px',
-          data : response
+          data: response
         });
       },
       (error) => {
@@ -28,5 +28,5 @@ export class TransactionControllerComponent {
         alert("Something went wrong");
       }
     )
-}
+  }
 }

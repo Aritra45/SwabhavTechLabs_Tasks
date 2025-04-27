@@ -1,0 +1,51 @@
+<h2 mat-dialog-title>InBound Beneficiary List</h2>
+
+<!-- Search Input -->
+<mat-form-field class="example-form-field" appearance="fill">
+  <mat-label>Search</mat-label>
+  <input matInput [(ngModel)]="searchText" placeholder="Search by email, name, or salary" />
+</mat-form-field>
+
+<div mat-dialog-content *ngIf="getData && getData.length > 0; else noData">
+  <table mat-table [dataSource]="filteredData" class="mat-elevation-z8 full-width-table">
+
+    <!-- Select All Checkbox Column -->
+    <ng-container matColumnDef="select">
+      <th mat-header-cell *matHeaderCellDef>
+        <mat-checkbox (change)="toggleAll($event)" [checked]="isAllSelected()" [indeterminate]="isIndeterminate()">Select All</mat-checkbox>
+      </th>
+      <td mat-cell *matCellDef="let row">
+        <mat-checkbox [(ngModel)]="row.selected"></mat-checkbox>
+      </td>
+    </ng-container>
+
+    <!-- Email Column -->
+    <ng-container matColumnDef="employeeEmail">
+      <th mat-header-cell *matHeaderCellDef>EmployeeEmail</th>
+      <td mat-cell *matCellDef="let data">{{ data.employeeEmail }}</td>
+    </ng-container>
+
+    <!-- Full Name Column -->
+    <ng-container matColumnDef="employeeFullName">
+      <th mat-header-cell *matHeaderCellDef>EmployeeFullName</th>
+      <td mat-cell *matCellDef="let data">{{ data.employeeFullName }}</td>
+    </ng-container>
+
+    <!-- Salary Column -->
+    <ng-container matColumnDef="employeeSalaryAmount">
+      <th mat-header-cell *matHeaderCellDef>EmployeeSalaryAmount</th>
+      <td mat-cell *matCellDef="let data">{{ data.employeeSalaryAmount }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <button mat-raised-button color="primary" (click)="sendSalary()" class="submit-btn">
+    Send Salary
+  </button>
+</div>
+
+<ng-template #noData>
+  <p>No employees found.</p>
+</ng-template>

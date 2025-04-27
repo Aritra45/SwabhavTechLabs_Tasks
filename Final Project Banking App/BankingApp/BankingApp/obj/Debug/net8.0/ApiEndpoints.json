@@ -130,12 +130,18 @@
   },
   {
     "ContainingType": "CompanyController",
-    "Method": "DisburseSalaryToAllEmployees",
+    "Method": "DisburseSalaryToSelectedEmployees",
     "RelativePath": "api/Company/bulk-salary-disbursement",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "employees",
+        "Type": "System.Collections.Generic.List\u00601[[BankingApp.Model.Entity.SalaryDisburesement, BankingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -310,6 +316,16 @@
   },
   {
     "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllPendingSalary",
+    "RelativePath": "api/User/all-pending-salary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
     "Method": "GetAllPendingTransactions",
     "RelativePath": "api/User/all-pending-transactions",
     "HttpMethod": "GET",
@@ -456,6 +472,27 @@
       {
         "Name": "UpdateNotApprovedDto",
         "Type": "BankingApp.Model.CompanyDto.UpdateNotApprovedDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "UpdatePendingSalary",
+    "RelativePath": "api/User/update-pending-salary/{transactionID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatePendingSalaryDto",
+        "Type": "BankingApp.Model.EmployeeDto.UpdatePendingSalaryDto",
         "IsRequired": true
       }
     ],

@@ -23,6 +23,11 @@ export class CompanyServiceService {
   //transaction
   private apiUrl6 = "http://localhost:5147/api/Company/add-new-transaction"
 
+  //employee
+  private apiUrl7 = "http://localhost:5147/api/Company/all-employees"
+  private apiUrl8 = "http://localhost:5147/api/Company/upload-csv"
+  private apiUrl9 = "http://localhost:5147/api/Company/bulk-salary-disbursement"
+
   //inbound
   getInBoundBeneficiary(): Observable<any> {
     return this.http.get<any>(this.apiUrl1)
@@ -56,4 +61,22 @@ export class CompanyServiceService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post(this.apiUrl6, data, { headers, responseType: 'text' });
   }
+
+  //employee
+  getEmployee(): Observable<any> {
+    return this.http.get<any>(this.apiUrl7)
+  }
+
+  AddEmployee(formData: FormData): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.post(this.apiUrl8, formData, { headers });
+  }
+
+  addSalaryEmployee(employees: any, headers: HttpHeaders): Observable<any> {
+    return this.http.post(this.apiUrl9, employees, { headers });
+  }
+  
+  
+  
 }

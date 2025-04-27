@@ -4,6 +4,7 @@ using BankingApp.Mapper;
 using BankingApp.Model.BankDto;
 using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
+using BankingApp.Model.EmployeeDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.TrasactionDto;
 using BankingApp.Model.UserDtos;
@@ -157,7 +158,7 @@ public class CompanyController : ControllerBase
 
     [HttpPost("bulk-salary-disbursement")]
     [Authorize(Roles = "Company")]
-    public async Task<IActionResult> DisburseSalaryToAllEmployees()
+    public async Task<IActionResult> DisburseSalaryToSelectedEmployees([FromBody] List<SalaryDisburesement> employees)
     {
         var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
             .FirstOrDefault(c => c.Type == "Id");
@@ -167,7 +168,9 @@ public class CompanyController : ControllerBase
         if (string.IsNullOrEmpty(companyEmail))
             return Unauthorized("Company email not found in token.");
 
-        var result = await companyServices.DisburseSalaryToAllEmployees(companyEmail);
+        var result = await companyServices.DisburseSalaryToAllEmployees(companyEmail, employees);
         return Ok(new { message = result });
     }
+
+    
 }

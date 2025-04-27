@@ -45,9 +45,5 @@ export class AddBankComponent {
     }
   }
   
-  closeForm() {
-    this.adminForm.reset(); 
-    this.formVisible = false;     
-
-  }
+  
 }

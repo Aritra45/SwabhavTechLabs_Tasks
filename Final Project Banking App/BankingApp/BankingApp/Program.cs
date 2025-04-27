@@ -62,6 +62,7 @@ builder.Services.AddScoped<IGenericRepository<Beneficiary>, GenericRepository<Be
 builder.Services.AddScoped<IGenericRepository<Transaction>, GenericRepository<Transaction>>();
 
 builder.Services.AddScoped<IGenericRepository<Employee>, GenericRepository<Employee>>();
+builder.Services.AddScoped<IGenericRepository<SalaryDisburesement>, GenericRepository<SalaryDisburesement>>();
 
 // HttpContext & Interceptor for Audit Logging
 builder.Services.AddHttpContextAccessor();

@@ -12,6 +12,8 @@ import { CompanyControllerComponent } from './company-controller/company-control
 import { TransactionControllerComponent } from './transaction-controller/transaction-controller.component';
 import { OutboundBeneficiaryControllerComponent } from './outbound-beneficiary-controller/outbound-beneficiary-controller.component';
 import { AuditControllerComponent } from './audit-controller/audit-controller.component';
+import { SalaryDisburesementComponent } from './salary-disburesement/salary-disburesement.component';
+import { UpdateEmployeeSalaryDisburesementComponent } from './salary-disburesement/update-employee-salary-disburesement/update-employee-salary-disburesement.component';
 
 const routes: Routes = [
   {
@@ -30,7 +32,9 @@ const routes: Routes = [
       { path: 'company-controller', component: CompanyControllerComponent },
       { path: 'transaction-controller', component: TransactionControllerComponent },
       { path: 'outbound-beneficiary-controller', component: OutboundBeneficiaryControllerComponent },
-      { path: 'audit-controller', component: AuditControllerComponent }
+      { path: 'audit-controller', component: AuditControllerComponent },
+      { path: 'emloyee-salary-controller', component: SalaryDisburesementComponent },
+      { path: 'update-employee-salary-disburesement', component: UpdateEmployeeSalaryDisburesementComponent }
     ]
   }
 ];

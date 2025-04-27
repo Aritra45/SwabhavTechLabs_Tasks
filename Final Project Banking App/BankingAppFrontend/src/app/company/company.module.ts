@@ -17,7 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, MatPseudoCheckboxModule } from '@angular/material/core';
 import { InboundbeneficiaryControllerComponent } from './inboundbeneficiary-controller/inboundbeneficiary-controller.component';
 import { GetInboundbeneficiaryComponent } from './inboundbeneficiary-controller/get-inboundbeneficiary/get-inboundbeneficiary.component';
 import { AddInboundbeneficiaryComponent } from './inboundbeneficiary-controller/add-inboundbeneficiary/add-inboundbeneficiary.component';
@@ -27,7 +27,10 @@ import { AddOutboundbeneficiaryComponent } from './outboundbeneficiary-controlle
 import { TransactionControllerCompanyComponent } from './transaction-controller-company/transaction-controller-company.component';
 import { AddTransactionComponent } from './transaction-controller-company/add-transaction/add-transaction.component';
 import { EmployeeControllerCompanyComponent } from './employee-controller-company/employee-controller-company.component';
-
+import { AddEmployeeComponent } from './employee-controller-company/add-employee/add-employee.component';
+import { GetEmployeeComponent } from './employee-controller-company/get-employee/get-employee.component';
+import { EmployeeSalaryDistributionComponent } from './employee-controller-company/employee-salary-distribution/employee-salary-distribution.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     CompanyDashboardComponent,
@@ -39,7 +42,10 @@ import { EmployeeControllerCompanyComponent } from './employee-controller-compan
     AddOutboundbeneficiaryComponent,
     TransactionControllerCompanyComponent,
     AddTransactionComponent,
-    EmployeeControllerCompanyComponent
+    EmployeeControllerCompanyComponent,
+    AddEmployeeComponent,
+    GetEmployeeComponent,
+    EmployeeSalaryDistributionComponent
   ],
   imports: [
     CommonModule,
@@ -58,7 +64,8 @@ import { EmployeeControllerCompanyComponent } from './employee-controller-compan
     MatDatepickerModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatCheckboxModule
   ]
 })
 export class CompanyModule { }

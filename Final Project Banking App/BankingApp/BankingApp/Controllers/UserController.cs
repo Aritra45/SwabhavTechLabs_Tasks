@@ -5,6 +5,7 @@ using BankingApp.Mapper;
 using BankingApp.Model.BankDto;
 using BankingApp.Model.BeneficiaryDto;
 using BankingApp.Model.CompanyDto;
+using BankingApp.Model.EmployeeDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.TrasactionDto;
 using BankingApp.Model.UserDtos;
@@ -207,6 +208,23 @@ namespace BankingApp.Controllers
                 .ToListAsync();
 
             return Ok(logs);
+        }
+
+        [HttpGet("all-pending-salary")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult GetAllPendingSalary()
+        {
+            var allsalary = userServices.GetAllPendingSalary();
+            var getsalaries = mapper.Map<List<GetAllPendingSalaryDto>>(allsalary);
+            return Ok(getsalaries);
+        }
+
+        [HttpPut("update-pending-salary/{transactionID}")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult UpdatePendingSalary(int transactionID, UpdatePendingSalaryDto updatePendingSalaryDto)
+        {
+            var transactionEntity = userServices.UpdatePendingSalary(transactionID, updatePendingSalaryDto);
+            return Ok("Transaction Updated Successfully");
         }
     }
 }

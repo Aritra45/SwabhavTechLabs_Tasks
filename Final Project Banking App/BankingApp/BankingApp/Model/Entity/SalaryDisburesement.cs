@@ -15,5 +15,7 @@ namespace BankingApp.Model.Entity
         public DateTime TransactionDate { get; set; }
         [NotNull]
         public string CompanyEmail { get; set; }
+
+        public string Status { get; set; }
     }
 }
