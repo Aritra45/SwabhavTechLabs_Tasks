@@ -1,0 +1,38 @@
+<div style="display: inline-flex;">
+    <h2 mat-dialog-title>Document Status</h2>
+    <mat-dialog-actions align="end" style="margin-left: 35%;">
+      <button mat-button mat-dialog-close>Close</button>
+    </mat-dialog-actions>
+    </div>
+    <div mat-dialog-content *ngIf="getData && getData.length > 0; else noData">
+      <table mat-table [dataSource]="getData" class="mat-elevation-z8 full-width-table">
+    
+        <!-- Index Column -->
+        <ng-container matColumnDef="companyEmail">
+          <th mat-header-cell *matHeaderCellDef>Your Email</th>
+          <td mat-cell *matCellDef="let data">{{ data.companyEmail }}</td>
+        </ng-container>
+    
+        <!-- Username Column -->
+        <ng-container matColumnDef="remark">
+            <th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let data">
+              <div *ngFor="let item of splitStatus(data.remark)">
+                {{ item }}
+              </div>
+            </td>
+          </ng-container>
+    
+        
+        
+    
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      
+    </div>
+    
+    <ng-template #noData>
+      <p>No status found.</p>
+    </ng-template>

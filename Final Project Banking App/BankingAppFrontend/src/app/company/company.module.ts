@@ -33,6 +33,8 @@ import { EmployeeSalaryDistributionComponent } from './employee-controller-compa
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CompanyProfileComponent } from './company-profile/company-profile.component';
+import { CheckStatusComponent } from './company-profile/check-status/check-status.component';
 @NgModule({
   declarations: [
     CompanyDashboardComponent,
@@ -47,7 +49,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     EmployeeControllerCompanyComponent,
     AddEmployeeComponent,
     GetEmployeeComponent,
-    EmployeeSalaryDistributionComponent
+    EmployeeSalaryDistributionComponent,
+    CompanyProfileComponent,
+    CheckStatusComponent
   ],
   imports: [
     CommonModule,

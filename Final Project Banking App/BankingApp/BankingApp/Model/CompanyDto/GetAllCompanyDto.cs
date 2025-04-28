@@ -11,5 +11,6 @@ namespace BankingApp.Model.CompanyDto
         public string CompanyAccountNumber { get; set; }
 
         public string IFSCNumber { get; set; }
+        public string Remark { get; set; }
     }
 }

@@ -12,6 +12,7 @@ import { OutboundbeneficiaryControllerComponent } from './outboundbeneficiary-co
 import { TransactionControllerCompanyComponent } from './transaction-controller-company/transaction-controller-company.component';
 import { AddTransactionComponent } from './transaction-controller-company/add-transaction/add-transaction.component';
 import { EmployeeControllerCompanyComponent } from './employee-controller-company/employee-controller-company.component';
+import { CompanyProfileComponent } from './company-profile/company-profile.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,7 @@ const routes: Routes = [
       { path: 'transaction-controller-company', component: TransactionControllerCompanyComponent },
       { path: 'add-transaction-company', component: AddTransactionComponent },
       { path: 'employee-controller-company', component: EmployeeControllerCompanyComponent },
+      { path: 'company-profile', component: CompanyProfileComponent },
     ]
   }
 ];
