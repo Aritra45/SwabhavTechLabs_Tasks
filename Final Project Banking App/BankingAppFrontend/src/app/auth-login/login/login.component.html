@@ -35,8 +35,9 @@
       <re-captcha siteKey="6LcnuyIrAAAAALX5-LOr4czGMBECQbtI-e9iaW40" (resolved)="onCaptchaResolved($event)" required></re-captcha>
 
 
-      <button mat-raised-button color="primary" type="submit" >
-        Submit
+      <button mat-raised-button color="primary" type="submit" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Submit</span>
+        <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
       </button>
       <button mat-raised-button color="primary" type="button" routerLink="/register/register-company">Register Company</button>
     </form>

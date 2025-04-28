@@ -21,7 +21,8 @@ export class BankControllerComponent {
         (response) => {
           console.log("Transactions fetched:", response);
           this.dialog.open(GetTransactionBankComponent, {
-            width: '600px',
+            width: '1000px',
+            maxWidth: '1000px',
             data: response
           });
         },

@@ -1,6 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CompanyServiceService } from '../../company-service.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-add-outboundbeneficiary',
@@ -9,30 +11,46 @@ import { CompanyServiceService } from '../../company-service.service';
   styleUrl: './add-outboundbeneficiary.component.css'
 })
 export class AddOutboundbeneficiaryComponent {
-  displayedColumns: string[] = ['companyEmail', 'companyName', 'companyAccountNumber', 'iFSCNumber', 'action'];
+  adminForm!: FormGroup;
+  formVisible: boolean = true;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private addInbound:CompanyServiceService) {}
+  hidePassword: boolean = true;
 
-  AddInbound(beneficiary: any) {
-    const payload = {
-      BeneficiaryCompanyEmail: beneficiary.companyEmail,
-      BeneficiaryCompanyName: beneficiary.companyName,
-      BankAccountNumber: beneficiary.companyAccountNumber,
-      IFSCNumber: beneficiary.ifscNumber
-    };
-    console.log("Payload being sent:", payload);
-
-    this.addInbound.AddInBound(payload)
-      .subscribe(
-        (response) => {
-          console.log("Success:", response);
-          alert(`Beneficiary ${beneficiary.companyName} added successfully.`);
-          this.getData = this.getData.filter((admin: any) => admin.companyEmail !== beneficiary.companyEmail);
-        },
-        (error) => {
-          console.error("Error:", error);
-          alert(`Error: ${error.message || 'Something went wrong'}`);
-        }
-      );
+  togglePasswordVisibility() {
+    this.hidePassword = !this.hidePassword;
   }
+  
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:CompanyServiceService) {
+    
+  }
+  ngOnInit(){
+    this.adminForm = this.fb.group({
+      beneficiaryCompanyEmail: ['', [Validators.required, Validators.email]],
+      beneficiaryCompanyName: ['', Validators.required],
+      bankAccountNumber: ['', Validators.required],
+      ifscNumber: ['', Validators.required],
+    });
+  }
+isLoading = false
+  onSubmit() {
+    if (this.adminForm.valid) {
+      const formData = this.adminForm.value;
+      console.log("Form Data: ", formData);
+      this.isLoading = true
+      this.addAdmin.AddOutBound(formData)
+        .subscribe(
+          (response) => {
+            this.isLoading = false
+            console.log("Success:", response);
+            alert(response); 
+          },
+          (error) => {
+            console.error("Error:", error);
+            alert(`Error: ${error.message || 'Something went wrong'}`);
+            console.log('Error Details:', error);
+          }
+        );
+    }
+  }
+  
 }

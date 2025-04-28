@@ -172,6 +172,37 @@
         }
       }
     },
+    "/api/Company/resend-otp": {
+      "post": {
+        "tags": [
+          "Company"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Company/all-inbound-beneficiaries": {
       "get": {
         "tags": [
@@ -234,37 +265,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "BeneficiaryCompanyEmail": {
-                    "type": "string"
-                  },
-                  "BeneficiaryCompanyName": {
-                    "type": "string"
-                  },
-                  "BankAccountNumber": {
-                    "type": "string"
-                  },
-                  "IFSCNumber": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "BeneficiaryCompanyEmail": {
-                  "style": "form"
-                },
-                "BeneficiaryCompanyName": {
-                  "style": "form"
-                },
-                "BankAccountNumber": {
-                  "style": "form"
-                },
-                "IFSCNumber": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/AddBeneficiaryDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBeneficiaryDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddBeneficiaryDto"
               }
             }
           }

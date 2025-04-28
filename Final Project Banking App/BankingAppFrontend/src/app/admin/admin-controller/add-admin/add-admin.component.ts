@@ -26,18 +26,19 @@ export class AddAdminComponent {
     this.adminForm = this.fb.group({
       userEmail: ['', [Validators.required, Validators.email]],
       userName: ['', Validators.required],
-      userPassword: ['', Validators.required]
+      userPassword: ['', [Validators.required, Validators.minLength(6), Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).{6,}$')]]
     });
   }
-
+  isLoading = false;
   onSubmit() {
     if (this.adminForm.valid) {
       const formData = this.adminForm.value;
-      console.log("Form Data: ", formData);  // Check if data is valid
-  
+      console.log("Form Data: ", formData);  
+      this.isLoading = true;
       this.addAdmin.doRegistration(formData)
         .subscribe(
           (response) => {
+            this.isLoading = false;
             console.log("Success:", response);
             alert(response); 
           },

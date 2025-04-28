@@ -9,7 +9,9 @@ public interface ICompanyService
 {
     Task<string> RegisterAsync(CompanyRegisterDto dto);
     Task<bool> VerifyOtpAsync(OtpVerificationDto dto);
-    
+    public Task<string> ResendOtpAsync(string companyEmail);
+
+
     public List<Company> GetAprovedCompanies();
     public List<Company> GetAllCompanies();
 

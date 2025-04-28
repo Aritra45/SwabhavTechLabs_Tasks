@@ -1,4 +1,9 @@
-<h2 mat-dialog-title>InBound Beneficiary List</h2>
+<div style="display: inline-flex;">
+  <h2 mat-dialog-title>Employee List</h2>
+  <mat-dialog-actions align="end" style="margin-left: 50%;">
+    <button mat-button mat-dialog-close>Close</button>
+  </mat-dialog-actions>
+</div>
 
 <!-- Search Input -->
 <mat-form-field class="example-form-field" appearance="fill">
@@ -41,8 +46,13 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
-  <button mat-raised-button color="primary" (click)="sendSalary()" class="submit-btn">
-    Send Salary
+  <!-- MatPaginator for Pagination -->
+  <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+
+  
+  <button mat-raised-button color="primary" type="submit" (click)="sendSalary()" [disabled]="isLoading" class="submit-btn">
+    <span *ngIf="!isLoading">Send Salary</span>
+    <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
   </button>
 </div>
 

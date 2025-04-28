@@ -121,22 +121,6 @@ public class CompanyService : ICompanyService
         
     }
 
-    //private async Task<(string fileUrl, string fileName)> UploadDocumentAsync(IFormFile file)
-    //{
-    //    if (file == null || file.Length == 0)
-    //        return (null, null);
-
-    //    await using var stream = file.OpenReadStream();
-    //    var uploadParams = new RawUploadParams
-    //    {
-    //        File = new FileDescription(file.FileName, stream),
-    //        Folder = "banking_docs"
-    //    };
-
-    //    var result = await _cloudinary.UploadAsync(uploadParams);
-    //    return (result.SecureUrl.ToString(), result.OriginalFilename);
-    //}
-
     public async Task<bool> VerifyOtpAsync(OtpVerificationDto dto)
     {
         if (_cache.TryGetValue(dto.CompanyEmail, out string cachedOtp) && cachedOtp == dto.Otp)
@@ -153,6 +137,19 @@ public class CompanyService : ICompanyService
         return false;
     }
 
+    public async Task<string> ResendOtpAsync(string companyEmail)
+    {
+        var company = _companyRepo.GetByEmail(companyEmail);
+        if (company == null) return "Company not found.";
+
+        var otp = new Random().Next(100000, 999999).ToString();
+        _cache.Set(companyEmail, otp, TimeSpan.FromMinutes(5));
+
+        await SendOtpEmailAsync(companyEmail, otp);
+        return "OTP has been resent to your email.";
+    }
+
+
     private async Task SendOtpEmailAsync(string toEmail, string otp)
     {
         try
@@ -160,7 +157,9 @@ public class CompanyService : ICompanyService
             var message = new MailMessage(_smtpSettings.UserName, toEmail)
             {
                 Subject = "Your OTP Code",
-                Body = $"Your OTP for registration is: {otp}",
+                Body = $"Dear User,\n\nYour One-Time Password (OTP) for registration is: {otp}. " +
+                $"\n\nPlease use this code to complete your registration. This OTP is valid for 5 minutes. " +
+                $"\n\nIf you did not request this, please disregard this message.\n\nBest regards,\nAD Banking App",
                 IsBodyHtml = false
             };
 

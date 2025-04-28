@@ -20,7 +20,7 @@ export class OutboundbeneficiaryControllerComponent {
         (response) => {
           console.log("OutBoundBeneficiary fetched:", response);
           this.dialog.open(GetOutboundbeneficiaryComponent, {
-            width: '600px',
+            maxWidth: '1000px',
             data: response
           });
         },
@@ -32,18 +32,8 @@ export class OutboundbeneficiaryControllerComponent {
     }
 
     add(){
-      this.rs.getAllCompany().subscribe(
-        (response) => {
-          console.log("Companies fetched:", response);
-          this.dialog.open(AddOutboundbeneficiaryComponent, {
-            width: '600px',
-            data: response
-          });
-        },
-        (error) => {
-          console.error("Error fetching admins:", error);
-          alert("Something went wrong");
-        }
-      );
+      this.dialog.open(AddOutboundbeneficiaryComponent, {
+        width: '600px',
+      });
     }
 }

@@ -50,35 +50,37 @@ export class LoginComponent {
     this.captchaToken = captchaResponse ?? '';
   }
 
-
+  isLoading = false;
   onSubmit() {
-    if(!this.captchaResolved){
-      alert("check the captcha!!!")
+    if (!this.captchaResolved) {
+      alert("Check the captcha!");
+      return;
     }
-    if (this.captchaResolved) {
+
+    this.isLoading = true;  // Show spinner when submission starts
+
     this.authService.login1(this.userEmail, this.password).subscribe(response => {
+      this.isLoading = false;  // Hide spinner once the response is received
       localStorage.setItem('token', response.token);
 
       const token = localStorage.getItem('token');
       if (token) {
         const decodedToken: any = jwtDecode(token);
-        var loginRole = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] || null; // Assuming "role" is in the payload
+        var loginRole = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] || null;
         alert(`Login Successful ${loginRole}`);
-        // window.location.reload()
-        if (loginRole == 'Admin')
+        
+        // Navigate based on role
+        if (loginRole === 'Admin') {
           this.router.navigate(['/admin-dashboard']);
-        if (loginRole == 'Bank')
+        } else if (loginRole === 'Bank') {
           this.router.navigate(['/bank-dashboard']);
-        if (loginRole == 'Company')
+        } else if (loginRole === 'Company') {
           this.router.navigate(['/company-dashboard']);
+        }
       }
-
-      return null;
-
-
     }, error => {
+      this.isLoading = false;  // Hide spinner if login fails
       alert('Login Failed');
     });
   }
-}
 }

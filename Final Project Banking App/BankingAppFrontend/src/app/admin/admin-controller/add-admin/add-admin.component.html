@@ -35,14 +35,18 @@
                 type="button">
           <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
         </button>
-          <mat-error *ngIf="adminForm.get('userPassword')?.invalid">Password required</mat-error>
+        <mat-error *ngIf="adminForm.get('userPassword')?.hasError('required')">Password is required</mat-error>
+        <mat-error *ngIf="adminForm.get('userPassword')?.hasError('minlength')">Password must be at least 6 characters long</mat-error>
+        <mat-error *ngIf="adminForm.get('userPassword')?.hasError('pattern')">Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character</mat-error>
         </mat-form-field>
       </div>
     
       <div class="form-action">
-        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" class="submit-btn">
-          Add Admin
+        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" [disabled]="isLoading" class="submit-btn">
+          <span *ngIf="!isLoading">Add Admin</span>
+          <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
         </button>
+        
       </div>
     </form>
   </div>

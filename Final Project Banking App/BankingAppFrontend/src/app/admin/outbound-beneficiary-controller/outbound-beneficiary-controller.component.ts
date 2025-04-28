@@ -18,7 +18,7 @@ export class OutboundBeneficiaryControllerComponent {
       (response) => {
         console.log("Beneficiaries fetched:", response);
         this.dialog.open(UpdatePendingOutboundBeneficiaryComponent, {
-          width: '900px',
+          maxWidth: '1000px',
           data : response
         });
       },

@@ -35,12 +35,14 @@ export class AuditControllerComponent {
     viewbyid(){
       this.dialog.open(GetAllAuditUseridComponent, {
         width: '600px',
+        height: '600px'
       });
     }
 
     viewbydate(){
       this.dialog.open(GetAllAuditDateComponent, {
-        width: 'auto',
+        width: '600px',
+        height: '600px'
       });
     }
 }

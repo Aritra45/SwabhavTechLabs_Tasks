@@ -66,24 +66,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "BeneficiaryCompanyEmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BeneficiaryCompanyName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BankAccountNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "IFSCNumber",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "addBeneficiaryDto",
+        "Type": "BankingApp.Model.BeneficiaryDto.AddBeneficiaryDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -196,6 +181,22 @@
         "Name": "PanFile",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
+    "Method": "ResendOtp",
+    "RelativePath": "api/Company/resend-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyEmail",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

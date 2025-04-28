@@ -1,8 +1,10 @@
-import { Component, Inject } from '@angular/core';
+import { AfterViewInit, Component, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CompanyServiceService } from '../../company-service.service';
 import { HttpHeaders } from '@angular/common/http';
 import { jwtDecode } from 'jwt-decode';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-employee-salary-distribution',
@@ -10,25 +12,32 @@ import { jwtDecode } from 'jwt-decode';
   templateUrl: './employee-salary-distribution.component.html',
   styleUrl: './employee-salary-distribution.component.css'
 })
-export class EmployeeSalaryDistributionComponent {
+export class EmployeeSalaryDistributionComponent implements AfterViewInit{
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+
   displayedColumns: any = ['select', 'employeeEmail', 'employeeFullName', 'employeeSalaryAmount'];
   currentMonth: string = new Date().toISOString().slice(0, 7);
   searchText: string = '';
+  dataSource: MatTableDataSource<any>;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public getData: any,
     private rs: CompanyServiceService
-  ) { }
+  ) {
+    this.dataSource = new MatTableDataSource(getData);
+  }
 
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 
   get filteredData() {
-    return this.getData.filter((employee: any) =>
+    return this.dataSource.filteredData.filter((employee: any) =>
       employee.employeeEmail.toLowerCase().includes(this.searchText.toLowerCase()) ||
       employee.employeeFullName.toLowerCase().includes(this.searchText.toLowerCase()) ||
       employee.employeeSalaryAmount.toString().includes(this.searchText)
     );
   }
-
 
   isSalaryDisbursed(employee: any): boolean {
     return Array.isArray(employee.salaryDisbursements) &&
@@ -37,13 +46,11 @@ export class EmployeeSalaryDistributionComponent {
       );
   }
 
-
   getEligibleEmployees() {
     return this.filteredData.filter((employee: any) =>
       !this.isSalaryDisbursed(employee) && employee.selected
     );
   }
-
 
   toggleAll(event: any) {
     const selected = event.checked;
@@ -62,10 +69,10 @@ export class EmployeeSalaryDistributionComponent {
     return this.getData.some((row: any) => row.selected && !this.isSalaryDisbursed(row)) && !this.isAllSelected();
   }
 
-
+  isLoading = false
   sendSalary() {
-    var con = confirm("Would you like to procced?")
-    if (con == true) {
+    var con = confirm("Would you like to proceed?");
+    if (con === true) {
       const selectedEmployees = this.getEligibleEmployees();
 
       if (selectedEmployees.length === 0) {
@@ -87,7 +94,6 @@ export class EmployeeSalaryDistributionComponent {
         return;
       }
 
-
       const payload = selectedEmployees.map((emp: any) => ({
         EmployeeEmail: emp.employeeEmail || '',
         CompanyEmail: companyEmail,
@@ -99,10 +105,10 @@ export class EmployeeSalaryDistributionComponent {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'
       });
-
-
+      this.isLoading = true
       this.rs.addSalaryEmployee(payload, headers).subscribe(
         (response) => {
+          this.isLoading = false
           console.log("Salary disbursed:", response);
           alert(response.message || 'Salary disbursed successfully!');
         },
@@ -121,7 +127,7 @@ export class EmployeeSalaryDistributionComponent {
       );
     }
     else {
-      alert("Transaction Dismiss!!!")
+      alert("Transaction Dismissed!");
     }
   }
 }

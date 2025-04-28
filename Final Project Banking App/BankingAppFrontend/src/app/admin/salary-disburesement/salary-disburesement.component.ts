@@ -18,7 +18,7 @@ export class SalaryDisburesementComponent {
       (response) => {
         console.log("Salaries fetched:", response);
         this.dialog.open(UpdateEmployeeSalaryDisburesementComponent, {
-          width: '900px',
+          maxWidth: '1000px',
           data : response
         });
       },

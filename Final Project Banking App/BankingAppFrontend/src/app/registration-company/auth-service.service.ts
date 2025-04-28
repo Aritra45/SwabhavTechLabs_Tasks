@@ -9,6 +9,7 @@ export class AuthServiceService {
 
   private apiUrl1 = "http://localhost:5147/api/Company/register";
   private apiUrl2 = "http://localhost:5147/api/Company/verify-otp";
+  private apiUrl3 = "http://localhost:5147/api/Company/resend-otp";
 
   constructor(private http: HttpClient) {}
 
@@ -22,5 +23,12 @@ export class AuthServiceService {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post(this.apiUrl2, data, { headers, responseType: 'text' });
+  }
+
+  resendOtp(companyEmail: string) {
+    return this.http.post<string>(this.apiUrl3, JSON.stringify(companyEmail), {
+      headers: { 'Content-Type': 'application/json' },
+      responseType: 'text' as 'json'
+    });
   }
 }

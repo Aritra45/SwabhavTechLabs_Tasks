@@ -26,8 +26,18 @@
       <div class="form-group">
         <mat-form-field appearance="fill" class="full-width">
           <mat-label>Password</mat-label>
-          <input matInput type="password" formControlName="bankPassword" placeholder="Enter password" required>
-          <mat-error *ngIf="adminForm.get('bankPassword')?.invalid">Password required</mat-error>
+          <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="bankPassword" placeholder="Enter password" required>
+          <button mat-icon-button 
+                matSuffix 
+                (click)="togglePasswordVisibility()" 
+                [attr.aria-label]="'Hide password'" 
+                [attr.aria-pressed]="!hidePassword"
+                type="button">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error *ngIf="adminForm.get('bankPassword')?.hasError('required')">Password is required</mat-error>
+        <mat-error *ngIf="adminForm.get('bankPassword')?.hasError('minlength')">Password must be at least 6 characters long</mat-error>
+        <mat-error *ngIf="adminForm.get('bankPassword')?.hasError('pattern')">Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character</mat-error>
         </mat-form-field>
       </div>
 
@@ -48,8 +58,9 @@
       </div>
     
       <div class="form-action">
-        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" class="submit-btn">
-          Add Bank
+        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" [disabled]="isLoading" class="submit-btn">
+          <span *ngIf="!isLoading">Add Bank</span>
+          <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
         </button>
       </div>
     </form>

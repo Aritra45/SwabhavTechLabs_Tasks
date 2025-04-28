@@ -1,5 +1,9 @@
+<div style="display: inline-flex;">
 <h2 mat-dialog-title>Admin List</h2>
-
+<mat-dialog-actions align="end" style="margin-left: 60%;">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
+</div>
 <div mat-dialog-content *ngIf="getData && getData.length > 0; else noData">
   <table mat-table [dataSource]="getData" class="mat-elevation-z8 full-width-table">
 

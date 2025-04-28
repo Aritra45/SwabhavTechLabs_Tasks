@@ -15,10 +15,10 @@ import { UpdateBankPasswordComponent } from './update-bank-password/update-bank-
   styleUrl: './bank-controller.component.css'
 })
 export class BankControllerComponent {
-  constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {}
-  getData :any
+  constructor(private dialog: MatDialog, private router: Router, private rs: AdminServiceService) { }
+  getData: any
 
-  view(){
+  view() {
     this.rs.getbanks().subscribe(
       (response) => {
         console.log("Banks fetched:", response);
@@ -41,7 +41,7 @@ export class BankControllerComponent {
   }
 
 
-  remove(){
+  remove() {
     this.rs.getbanks().subscribe(
       (response) => {
         console.log("Banks fetched:", response);
@@ -58,16 +58,26 @@ export class BankControllerComponent {
     );
   }
 
-  id(){
-    
-        this.dialog.open(GetBankIdComponent, {
-          width: '600px',
-        });
-  }
+  id() {
 
-  update(){
-    this.dialog.open(UpdateBankPasswordComponent, {
+    this.dialog.open(GetBankIdComponent, {
       width: '600px',
     });
+  }
+
+  update() {
+    this.rs.getbanks().subscribe(
+      (response) => {
+        console.log("Banks fetched:", response);
+        this.dialog.open(UpdateBankPasswordComponent, {
+          maxWidth: '1000px',
+          data: response
+        });
+      },
+      (error) => {
+        console.error("Error fetching banks:", error);
+        alert("Something went wrong");
+      }
+    );
   }
 }

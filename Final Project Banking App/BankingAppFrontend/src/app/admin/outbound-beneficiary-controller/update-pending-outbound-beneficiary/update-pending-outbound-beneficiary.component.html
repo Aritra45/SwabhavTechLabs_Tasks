@@ -1,5 +1,9 @@
-<h2 mat-dialog-title>Pending Companies List</h2>
-
+<div style="display: inline-flex;">
+<h2 mat-dialog-title>Pending Beneficiary List</h2>
+<mat-dialog-actions align="end" style="margin-left: 40%;">
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
+</div>
 <!-- Search Box -->
 <div style="margin-bottom: 10px;">
   <mat-form-field appearance="outline" class="full-width">
@@ -32,7 +36,7 @@
         <button mat-raised-button color="warn" style="background-color: red; color: white;" (click)="rejectBeneficiary(element.beneficiaryCompanyEmail, element.beneficiaryCompanyName)">
             Reject
           </button>
-          <button mat-raised-button color="warn" style="background-color: red; color: white;" (click)="approveBeneficiary(element.beneficiaryCompanyEmail, element.beneficiaryCompanyName)">
+          <button mat-raised-button color="warn" style="background-color: blue; color: white;" (click)="approveBeneficiary(element.beneficiaryCompanyEmail, element.beneficiaryCompanyName)">
             Approved
           </button>
       </td>

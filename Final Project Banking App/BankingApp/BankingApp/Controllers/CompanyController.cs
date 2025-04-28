@@ -63,6 +63,13 @@ public class CompanyController : ControllerBase
         return isValid ? Ok("Company verified successfully.") : BadRequest("Invalid OTP.");
     }
 
+    [HttpPost("resend-otp")]
+    public async Task<IActionResult> ResendOtp([FromBody] string companyEmail)
+    {
+        var isValid = await companyServices.ResendOtpAsync(companyEmail);
+        return Ok(isValid);
+    }
+
     [HttpGet("all-inbound-beneficiaries")]
     [Authorize(Roles = "Company")]
     public IActionResult GetAllInboundBeneficiaries()
@@ -99,7 +106,7 @@ public class CompanyController : ControllerBase
 
     [HttpPost("add-outbound-beneficiaries")]
     [Authorize(Roles = "Company")]
-    public IActionResult AddOutboundBeneficiaries([FromForm] AddBeneficiaryDto addBeneficiaryDto)
+    public IActionResult AddOutboundBeneficiaries([FromBody] AddBeneficiaryDto addBeneficiaryDto)
     {
         var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
             .FirstOrDefault(c => c.Type == "Id");

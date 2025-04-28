@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { GetTransactionBankComponent } from './bank-controller/get-transaction-bank/get-transaction-bank.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { GetTransactionBankComponent } from './bank-controller/get-transaction-b
     MatListModule,
     MatIconModule,
     MatDialogModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ]
 })
 export class BankModule { }

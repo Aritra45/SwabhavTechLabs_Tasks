@@ -5,6 +5,7 @@ import { BankServiceService } from '../../bank/bank-service.service';
 import { GetInboundbeneficiaryComponent } from './get-inboundbeneficiary/get-inboundbeneficiary.component';
 import { CompanyServiceService } from '../company-service.service';
 import { AddInboundbeneficiaryComponent } from './add-inboundbeneficiary/add-inboundbeneficiary.component';
+import {jwtDecode} from 'jwt-decode';
 
 @Component({
   selector: 'app-inboundbeneficiary-controller',
@@ -21,7 +22,7 @@ export class InboundbeneficiaryControllerComponent {
         (response) => {
           console.log("InBoundBeneficiary fetched:", response);
           this.dialog.open(GetInboundbeneficiaryComponent, {
-            width: '600px',
+            maxWidth: '1000px',
             data: response
           });
         },
@@ -32,19 +33,37 @@ export class InboundbeneficiaryControllerComponent {
       );
     }
 
-    add(){
-      this.rs.getAllCompany().subscribe(
-        (response) => {
-          console.log("Companies fetched:", response);
-          this.dialog.open(AddInboundbeneficiaryComponent, {
-            width: '600px',
-            data: response
-          });
-        },
-        (error) => {
-          console.error("Error fetching admins:", error);
-          alert("Something went wrong");
-        }
-      );
+    add() {
+      const token = localStorage.getItem('token');
+      
+      if (!token) {
+        alert("Token not found. Please log in again.");
+        return;
+      }
+    
+      try {
+        const decodedToken:any = jwtDecode(token);
+        console.log(decodedToken)
+        const loggedInCompanyId = decodedToken.Id; 
+        
+        this.rs.getAllCompany().subscribe(
+          (response) => {
+            const filteredCompanies = response.filter((company:any) => company.companyEmail !== loggedInCompanyId);
+    
+            console.log("Filtered companies:", filteredCompanies);
+            this.dialog.open(AddInboundbeneficiaryComponent, {
+              maxWidth: '1000px',
+              data: filteredCompanies
+            });
+          },
+          (error) => {
+            console.error("Error fetching companies:", error);
+            alert("Something went wrong");
+          }
+        );
+      } catch (error) {
+        console.error("Error decoding token:", error);
+        alert("Invalid token. Please log in again.");
+      }
     }
 }

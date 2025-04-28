@@ -24,11 +24,11 @@ export class CompanyRegistrationComponent {
     this.registerForm = this.fb.group({
       companyEmail: ['', [Validators.required, Validators.email]],
       companyName: ['', Validators.required],
-      companyContactNumber: ['', Validators.required],
+      companyContactNumber: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       companyAddress: ['', Validators.required],
       companyAccountNumber: ['', Validators.required],
       ifscNumber: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', [Validators.required, Validators.minLength(6), Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).{6,}$')]]
     });
   }
 

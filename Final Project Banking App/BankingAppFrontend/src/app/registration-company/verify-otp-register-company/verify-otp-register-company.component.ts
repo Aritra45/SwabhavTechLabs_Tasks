@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthServiceService } from '../auth-service.service';
 import { Router } from '@angular/router';
+import { error } from 'console';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class VerifyOtpRegisterCompanyComponent {
     console.log('State:', state);
     this.registerForm = this.fb.group({
       companyEmail: [{ value: state?.email || '', disabled: true }, [Validators.required, Validators.email]],
-      otp: ['', Validators.required],
+      otp: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(6)]],
     });
   }
 
@@ -46,5 +47,19 @@ export class VerifyOtpRegisterCompanyComponent {
     console.log('Form submitted!', body);
   }
   
+  resendOtp() {
+    const companyEmail = this.registerForm.getRawValue().companyEmail;
+    if (!companyEmail) return;
+    this.authService.resendOtp(companyEmail).subscribe({
+      next: (res) => {
+        alert('A new OTP has been sent to your email.');
+      },
+      error: (err) => {
+        console.error('Error resending OTP:', err);
+        alert('Failed to resend OTP. Please try again.');
+      }
+    }
+    );
+  }
   
 }

@@ -30,22 +30,7 @@ export class UpdatePendingCompaniesComponent implements AfterViewInit {
     this.dataSource.paginator = this.paginator;
   }
 
-  // rejectCompany(email: string, name: string) {
-  //   this.removeAdmin.updatependingCompany(email, this.payload2)
-  //     .subscribe(
-  //       (response) => {
-  //         console.log("Success:", response);
-  //         alert(`Company ${name} updated successfully.`);
 
-  //         this.getData = this.getData.filter((admin: any) => admin.companyEmail !== email);
-  //         this.dataSource.data = this.getData;
-  //       },
-  //       (error) => {
-  //         console.error("Error:", error);
-  //         alert(`Error: ${error.message || 'Something went wrong'}`);
-  //       }
-  //     );
-  // }
 
   rejectCompany(email: string, name: string) {
     this.dialog.open(ReasonRejectComponent, {

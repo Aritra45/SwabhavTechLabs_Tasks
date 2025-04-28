@@ -31,6 +31,8 @@ import { AddEmployeeComponent } from './employee-controller-company/add-employee
 import { GetEmployeeComponent } from './employee-controller-company/get-employee/get-employee.component';
 import { EmployeeSalaryDistributionComponent } from './employee-controller-company/employee-salary-distribution/employee-salary-distribution.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [
     CompanyDashboardComponent,
@@ -65,7 +67,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatNativeDateModule,
     ReactiveFormsModule,
     FormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule
   ]
 })
 export class CompanyModule { }

@@ -1,4 +1,4 @@
-import { Component, Inject, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Inject, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { AdminServiceService } from '../../admin-service.service';
@@ -10,7 +10,7 @@ import { MatPaginator } from '@angular/material/paginator';
   templateUrl: './update-employee-salary-disburesement.component.html',
   styleUrl: './update-employee-salary-disburesement.component.css'
 })
-export class UpdateEmployeeSalaryDisburesementComponent {
+export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit{
   displayedColumns: string[] = ['transactionId', 'employeeEmail', 'amount', 'transactionDate','status', 'action1'];
   dataSource: MatTableDataSource<any>;
   constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatesalary:AdminServiceService) {

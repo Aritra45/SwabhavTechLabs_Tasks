@@ -44,6 +44,8 @@ import { SalaryDisburesementComponent } from './salary-disburesement/salary-disb
 import { UpdateEmployeeSalaryDisburesementComponent } from './salary-disburesement/update-employee-salary-disburesement/update-employee-salary-disburesement.component';
 import { ReasonRejectComponent } from './company-controller/reason-reject/reason-reject.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ChangePasswordComponent } from './bank-controller/update-bank-password/change-password/change-password.component';
 
 
 @NgModule({
@@ -72,7 +74,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     GetAllAuditDateComponent,
     SalaryDisburesementComponent,
     UpdateEmployeeSalaryDisburesementComponent,
-    ReasonRejectComponent
+    ReasonRejectComponent,
+    ChangePasswordComponent
   ],
   imports: [
     CommonModule,
@@ -92,7 +95,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatDatepickerModule,
     MatNativeDateModule,
     MatPaginatorModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatProgressSpinnerModule
   ]
 })
 export class AdminModule { }

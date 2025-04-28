@@ -45,7 +45,7 @@ export class EmployeeControllerCompanyComponent {
       (response) => {
         console.log("Employees fetched:", response);
         this.dialog.open(EmployeeSalaryDistributionComponent, {
-          width: 'auto',
+          maxWidth: '1000px',
           data: response
         });
       },

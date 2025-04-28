@@ -19,7 +19,7 @@ export class TransactionControllerComponent {
       (response) => {
         console.log("Transactions fetched:", response);
         this.dialog.open(UpdateCompanyPendingTransactionsComponent, {
-          width: '900px',
+          maxWidth: '1200px',
           data: response
         });
       },

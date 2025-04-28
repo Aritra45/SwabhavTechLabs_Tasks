@@ -19,20 +19,27 @@ export class AddBankComponent {
     this.adminForm = this.fb.group({
       bankEmail: ['', [Validators.required, Validators.email]],
       bankName: ['', Validators.required],
-      bankPassword: ['', Validators.required],
+      bankPassword: ['', [Validators.required, Validators.minLength(6), Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).{6,}$')]],
       branchCode: ['', Validators.required],
       bankAddress: ['', Validators.required]
     });
   }
 
+  hidePassword: boolean = true;
+
+  togglePasswordVisibility() {
+    this.hidePassword = !this.hidePassword;
+  }
+  isLoading=false
   onSubmit() {
     if (this.adminForm.valid) {
       const formData = this.adminForm.value;
       console.log("Form Data: ", formData);  // Check if data is valid
-  
+      this.isLoading=true
       this.addAdmin.doBankRegistration(formData)
         .subscribe(
           (response) => {
+            this.isLoading=false
             console.log("Success:", response);
             alert(response); 
           },
