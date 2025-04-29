@@ -15,6 +15,7 @@ export class CompanyServiceService {
 
   //company
   private apiUrl2 = "http://localhost:5147/api/Company/all-companies"
+  private apiUrl10 = "http://localhost:5147/api/Company/all-approved-companies"
   
   //outbound
   private apiUrl4 = "http://localhost:5147/api/Company/all-oubound-beneficiaries"
@@ -42,6 +43,9 @@ export class CompanyServiceService {
   //company
   getAllCompany(): Observable<any> {
     return this.http.get<any>(this.apiUrl2)
+  }
+  getApprovedCompany(): Observable<any> {
+    return this.http.get<any>(this.apiUrl10)
   }
 
   //outbound

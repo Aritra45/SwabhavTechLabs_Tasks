@@ -92,7 +92,15 @@ public class CompanyController : ControllerBase
             return Unauthorized("Company email not found in token.");
         var beneficiaries = mapper.Map<Beneficiary>(addBeneficiaryDto);
         var newbeneficiaries = companyServices.AddInbouBeneficiaries(beneficiaries, companyEmail);
-        return Ok("beneficiary Added Successfully");
+        if(newbeneficiaries.Status.ToString() == "Faulted")
+        {
+            return Unauthorized("You are not approved");
+        }
+        else
+        {
+            return Ok("beneficiary Added Successfully");
+        }
+        
     }
 
     [HttpGet("all-oubound-beneficiaries")]
@@ -102,6 +110,15 @@ public class CompanyController : ControllerBase
         var allBeneficiaries = companyServices.GetAllOutboundBeneficiaries();
         var getBeneficiaries = mapper.Map<List<GetAllbeneficiariesDto>>(allBeneficiaries);
         return Ok(getBeneficiaries);
+    }
+
+    [HttpGet("all-approved-companies")]
+    [Authorize(Roles = "Company")]
+    public IActionResult GetApprovedCompany()
+    {
+        var allapproved = companyServices.GetAprovedCompanies();
+        
+        return Ok(allapproved);
     }
 
     [HttpPost("add-outbound-beneficiaries")]
@@ -117,7 +134,15 @@ public class CompanyController : ControllerBase
             return Unauthorized("Company email not found in token.");
         var beneficiaries = mapper.Map<Beneficiary>(addBeneficiaryDto);
         var newbeneficiaries = companyServices.AddOutbouBeneficiaries(beneficiaries, companyEmail);
-        return Ok("beneficiary Added Successfully");
+        if (newbeneficiaries.Status.ToString() == "Faulted")
+        {
+            return Unauthorized("You are not approved");
+        }
+        else
+        {
+            return Ok("beneficiary Added Successfully");
+        }
+            
     }
 
     [HttpPost("add-new-transaction")]

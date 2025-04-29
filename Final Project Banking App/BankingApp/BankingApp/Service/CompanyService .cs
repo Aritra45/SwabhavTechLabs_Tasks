@@ -217,7 +217,7 @@ public class CompanyService : ICompanyService
             var approvedCompanies = GetAprovedCompanies();
             bool isValidApprovedCompany = approvedCompanies
                 .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
-            if (!isValidApprovedCompany)
+            if (isValidApprovedCompany)
             {
                 await repository.AddAsync(beneficiaryEntity);
                 return beneficiaryEntity;
@@ -256,9 +256,30 @@ public class CompanyService : ICompanyService
             IsApproved = false,
             CompanyEmail = companyEmail,
         };
+        var companies = GetAllCompanies();
+        bool isValidCompany = companies
+            .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
 
-        await repository.AddAsync(beneficiaryEntity);
-        return beneficiaryEntity;
+        if (!isValidCompany)
+        {
+            var approvedCompanies = GetAprovedCompanies();
+            bool isValidApprovedCompany = approvedCompanies
+                .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
+            if (isValidApprovedCompany)
+            {
+                await repository.AddAsync(beneficiaryEntity);
+                return beneficiaryEntity;
+            }
+            else
+            {
+                throw new NullReferenceException();
+            }
+        }
+        else
+        {
+            throw new NullReferenceException();
+        }
+        
     }
 
 
@@ -300,8 +321,18 @@ public class CompanyService : ICompanyService
 
         if (isValidBeneficiary)
         {
-            await trans_repository.AddAsync(transactionEntity);
-            return transactionEntity;
+            var approvedCompanies = GetAprovedCompanies();
+            bool isValidApprovedCompany = approvedCompanies
+                .Any(c => string.Equals(c.CompanyEmail, companyEmail, StringComparison.OrdinalIgnoreCase));
+            if (isValidApprovedCompany)
+            {
+                await trans_repository.AddAsync(transactionEntity);
+                return transactionEntity;
+            }
+            else
+            {
+                throw new NullReferenceException();
+            }
         }
         else
         {

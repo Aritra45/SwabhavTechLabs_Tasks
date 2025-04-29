@@ -30,6 +30,7 @@ namespace BankingApp.Repository
             return dbSet.ToList();
         }
 
+
         public T GetByID(int id)
         {
             return dbSet.Find(id);

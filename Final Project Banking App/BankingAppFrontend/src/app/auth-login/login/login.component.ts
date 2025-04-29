@@ -35,12 +35,7 @@ export class LoginComponent {
     return false;
   }
 
-  // onSubmit() {
-  //   if (this.form.valid) {
-  //     console.log(this.form.value);
-  //     alert('Form Submitted!');
-  //   }
-  // }
+
 
   captchaResolved: boolean = false;
   captchaToken: string = '';

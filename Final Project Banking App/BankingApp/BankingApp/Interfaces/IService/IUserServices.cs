@@ -14,6 +14,7 @@ namespace BankingApp.Interfaces.IService
         public Task<User> AddUser(User user);
         public Task DeleteUsers(string UserEmail);
 
+
         //bank
         public List<Bank> GetAllBanks();
         public List<Bank> GetAllsBanks();

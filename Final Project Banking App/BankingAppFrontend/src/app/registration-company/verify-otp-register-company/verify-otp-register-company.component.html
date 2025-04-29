@@ -16,6 +16,9 @@
 
     <button mat-raised-button color="primary" type="submit">VERIFY</button>
     <br>
-    <button mat-raised-button color="accent" (click)="resendOtp()" type="button">Resend OTP</button>
+    <button mat-raised-button color="accent" (click)="resendOtp()" [disabled]="isResendDisabled" type="button">
+      Resend OTP
+      <span *ngIf="isResendDisabled">({{ timer }}s)</span>
+    </button>
   </form>
 </mat-card>

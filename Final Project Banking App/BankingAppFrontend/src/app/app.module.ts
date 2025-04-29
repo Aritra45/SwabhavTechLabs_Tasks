@@ -13,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AuthInterceptor } from './auth.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,7 @@ import { AuthInterceptor } from './auth.interceptor';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),
@@ -36,7 +37,8 @@ import { AuthInterceptor } from './auth.interceptor';
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    }
+    },
+    
   ],
   bootstrap: [AppComponent]
 })

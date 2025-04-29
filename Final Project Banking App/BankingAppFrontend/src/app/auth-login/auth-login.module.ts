@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { NzMessageModule } from 'ng-zorro-antd/message';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     FormsModule,
     RecaptchaModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NzMessageModule
   ]
 })
 export class AuthLoginModule { }

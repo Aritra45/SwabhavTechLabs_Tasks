@@ -35,6 +35,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
 import { CheckStatusComponent } from './company-profile/check-status/check-status.component';
+import { SendMoneyComponent } from './transaction-controller-company/add-transaction/send-money/send-money.component';
 @NgModule({
   declarations: [
     CompanyDashboardComponent,
@@ -51,7 +52,8 @@ import { CheckStatusComponent } from './company-profile/check-status/check-statu
     GetEmployeeComponent,
     EmployeeSalaryDistributionComponent,
     CompanyProfileComponent,
-    CheckStatusComponent
+    CheckStatusComponent,
+    SendMoneyComponent
   ],
   imports: [
     CommonModule,

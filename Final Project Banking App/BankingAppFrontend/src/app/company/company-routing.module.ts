@@ -21,7 +21,7 @@ const routes: Routes = [
     canActivate: [AuthGuardServiceService],
     data: { role: 'Company' },
     children: [
-      { path: '', redirectTo: 'inboundbeneficiary-controller', pathMatch: 'full' },
+      { path: '', redirectTo: 'company-profile', pathMatch: 'full' },
       { path: 'inboundbeneficiary-controller', component: InboundbeneficiaryControllerComponent },
       { path: 'get-inboundbeneficiary-company', component: GetInboundbeneficiaryComponent },
       { path: 'add-inboundbeneficiary-company', component: AddInboundbeneficiaryComponent },

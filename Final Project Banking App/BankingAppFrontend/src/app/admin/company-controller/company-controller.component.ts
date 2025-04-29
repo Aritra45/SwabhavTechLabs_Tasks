@@ -2,10 +2,6 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AdminServiceService } from '../admin-service.service';
-import { AddAdminComponent } from '../admin-controller/add-admin/add-admin.component';
-import { GetAdminComponent } from '../admin-controller/get-admin/get-admin.component';
-import { RemoveAdminComponent } from '../admin-controller/remove-admin/remove-admin.component';
-import { UpdateBankPasswordComponent } from '../bank-controller/update-bank-password/update-bank-password.component';
 import { UpdatePendingCompaniesComponent } from './update-pending-companies/update-pending-companies.component';
 
 @Component({

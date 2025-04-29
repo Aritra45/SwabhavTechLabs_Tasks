@@ -2,7 +2,7 @@
     height: 100vh;
   }
   .dashboard-content {
-    background-color: rgb(1, 1, 189);
+    background-color: white;
     padding: 20px;
   }
   mat-sidenav {

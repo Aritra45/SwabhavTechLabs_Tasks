@@ -75,6 +75,16 @@
   },
   {
     "ContainingType": "CompanyController",
+    "Method": "GetApprovedCompany",
+    "RelativePath": "api/Company/all-approved-companies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
     "Method": "GetAllCompany",
     "RelativePath": "api/Company/all-companies",
     "HttpMethod": "GET",

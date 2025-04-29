@@ -1,18 +1,31 @@
 <!-- main-dashboard.component.html -->
 <mat-sidenav-container class="dashboard-container">
-    <mat-sidenav mode="side" opened>
-      <mat-nav-list>
-        <h3 style="margin-left: 10px;"><b><u>Company Controller</u></b></h3>
-        <a mat-list-item routerLink="inboundbeneficiary-controller" routerLinkActive="active">InBoundBeneficiary<br> Dashboard</a>
-        <a mat-list-item routerLink="outboundbeneficiary-controller-company" routerLinkActive="active">OutBoundBeneficiary<br> Dashboard</a>
-        <a mat-list-item routerLink="transaction-controller-company" routerLinkActive="active">Transaction Dashboard</a>
-        <a mat-list-item routerLink="employee-controller-company" routerLinkActive="active">Employee Dashboard</a>
-        <a mat-list-item routerLink="company-profile" routerLinkActive="active" style="margin-top: 150%;">Your Document Activation<br> Status</a>
-      </mat-nav-list>
-    </mat-sidenav>
-  
-    <mat-sidenav-content class="dashboard-content">
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  
+  <mat-sidenav mode="side" opened>
+    <mat-nav-list>
+      <h3 style="margin-left: 10px;"><b><u>Company Controller</u></b></h3>
+      <a mat-list-item (click)="checkAndNavigate('inboundbeneficiary-controller')">InBoundBeneficiary<br>Dashboard</a>
+      <a mat-list-item (click)="checkAndNavigate('outboundbeneficiary-controller-company')">OutBoundBeneficiary<br> Dashboard</a>
+      <a mat-list-item (click)="checkAndNavigate('transaction-controller-company')">Transaction Dashboard</a>
+      <a mat-list-item  (click)="checkAndNavigate('employee-controller-company')">Employee Dashboard</a>
+      <a mat-list-item routerLink="company-profile" routerLinkActive="active"
+        style="margin-top: auto; margin-bottom: 0%;" >Your Document Activation<br> Status</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="dashboard-content">
+    <div style="margin-left: 85%; color: white; display: flex; align-items: center; gap: 8px;">
+      <span [ngStyle]="{
+          width: '10px',
+          height: '10px',
+          'background-color': documentStatusColor,
+          'border-radius': '50%',
+          display: 'inline-block'
+        }">
+      </span>
+
+      Document Status
+    </div>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

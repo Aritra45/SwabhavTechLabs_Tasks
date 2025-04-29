@@ -1,8 +1,14 @@
 <div style="display: inline-flex;">
 <h2 mat-dialog-title>InBound Beneficiary List</h2>
-<mat-dialog-actions align="end" style="margin-left: 45%;">
+<mat-dialog-actions align="end" style="margin-left: auto; margin-right: 0%;">
   <button mat-button mat-dialog-close>Close</button>
 </mat-dialog-actions>
+</div>
+<div style="margin-bottom: 10px;">
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Search InBound Beneficiary</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Type to search...">
+  </mat-form-field>
 </div>
 <div mat-dialog-content *ngIf="getData && getData.length > 0; else noData">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 full-width-table">

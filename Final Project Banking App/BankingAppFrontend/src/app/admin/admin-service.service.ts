@@ -51,6 +51,7 @@ export class AdminServiceService {
   getregistration():Observable<any>{
     return this.http.get<any>(this.apiUrl2)
   }
+  
 
   removeAdminAccess(userEmail: any): Observable<string> {
     return this.http.delete<string>(`${this.apiUrl3}/${encodeURIComponent(userEmail)}`, { responseType: 'text' as 'json' });

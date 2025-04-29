@@ -37,8 +37,8 @@ export class AddInboundbeneficiaryComponent implements AfterViewInit{
       .subscribe(
         (response) => {
           console.log("Success:", response);
-          alert(`Beneficiary ${beneficiary.companyName} added successfully.`);
-          this.getData = this.getData.filter((admin: any) => admin.companyEmail !== beneficiary.companyEmail);
+          alert(response);
+          this.getData = this.getData.filter((company: any) => company.companyEmail !== beneficiary.companyEmail);
           this.dataSource.data = this.getData;
         },
         (error) => {
@@ -46,6 +46,11 @@ export class AddInboundbeneficiaryComponent implements AfterViewInit{
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
 

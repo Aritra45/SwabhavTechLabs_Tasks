@@ -258,6 +258,18 @@
         }
       }
     },
+    "/api/Company/all-approved-companies": {
+      "get": {
+        "tags": [
+          "Company"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Company/add-outbound-beneficiaries": {
       "post": {
         "tags": [

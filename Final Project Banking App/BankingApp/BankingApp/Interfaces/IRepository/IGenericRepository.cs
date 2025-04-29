@@ -8,5 +8,6 @@
         public T GetByID(int id);
         public T GetByEmail(string id);
         void Delete(T t);
+
     }
 }

@@ -16,13 +16,38 @@ export class TransactionControllerCompanyComponent {
   getData :any
     
 
-    add(){
-      
-          this.dialog.open(AddTransactionComponent, {
-            width: '600px',
-          });
-
-        
-    }
+  add() {
+    this.rs.getInBoundBeneficiary().subscribe(
+      (inBoundRes) => {
+        this.rs.getOutBoundBeneficiary().subscribe(
+          (outBoundRes) => {
+            // Combine inbound and outbound data into one array (or object, if necessary)
+            this.getData = {
+              inbound: inBoundRes,
+              outbound: outBoundRes
+            };
+  
+            console.log("Combined data:", this.getData);
+            
+            // Open dialog with combined data
+            this.dialog.open(AddTransactionComponent, {
+              width: '600px',
+              data: this.getData
+            });
+          },
+          (error) => {
+            console.error("Error fetching outbound data:", error);
+            alert("Failed to fetch outbound beneficiaries.");
+          }
+        );
+      },
+      (error) => {
+        console.error("Error fetching inbound data:", error);
+        alert("Failed to fetch inbound beneficiaries.");
+      }
+    );
+  }
+  
+  
 
   }

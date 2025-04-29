@@ -1,70 +1,8 @@
-.admin-form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .close-btn {
-    background-color: transparent;
-    border: none;
-    color: #888;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .close-btn:hover {
-    color: #f44336; /* Red color when hovered */
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .full-width {
-    width: 100%;
-  }
-  
-  .submit-btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-btn:hover {
-    background-color: #004d88;
-  }
-  
-  .mat-form-field {
-    display: block;
-  }
-  
-  mat-label {
-    font-weight: bold;
-  }
-  
-  mat-error {
-    color: #f44336;
-    font-size: 12px;
-  }
-  
-  .form-action {
-    text-align: center;
-  }
-  
+.mat-column-action {
+  width: 100px;
+  text-align: center;
+}
+
+.mat-dialog-content {
+  overflow-x: auto;
+}

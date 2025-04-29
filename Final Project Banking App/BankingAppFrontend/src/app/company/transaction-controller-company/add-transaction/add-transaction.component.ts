@@ -1,7 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, Inject, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CompanyServiceService } from '../../company-service.service';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { SendMoneyComponent } from './send-money/send-money.component';
 
 @Component({
   selector: 'app-add-transaction',
@@ -9,43 +13,31 @@ import { CompanyServiceService } from '../../company-service.service';
   templateUrl: './add-transaction.component.html',
   styleUrl: './add-transaction.component.css'
 })
-export class AddTransactionComponent {
-  adminForm!: FormGroup;
-  formVisible: boolean = true;
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:CompanyServiceService) {
-    
+export class AddTransactionComponent implements AfterViewInit{
+  dataSource: MatTableDataSource<any>;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+
+  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private dialog: MatDialog) {
+    const combinedData = [...getData.inbound, ...getData.outbound];  
+    this.dataSource = new MatTableDataSource(combinedData);
   }
-  ngOnInit(){
-    this.adminForm = this.fb.group({
-      transferToCompanyEmail: ['', [Validators.required, Validators.email]],
-      transactionAmount: ['', Validators.required],
+
+  displayedColumns: string[] = ['beneficiaryCompanyEmail', 'beneficiaryCompanyName', 'action'];
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
+
+  Select(email: any) {
+    this.dialog.open(SendMoneyComponent, {
+      width: '600px',
+      data: email
     });
   }
 
-  onSubmit() {
-    var value = confirm("Are You Sure?")
-    if (this.adminForm.valid && value==true) {
-      const formData = this.adminForm.value;
-      console.log("Form Data: ", formData);  // Check if data is valid
-  
-      this.addAdmin.AddTransaction(formData)
-        .subscribe(
-          (response) => {
-            console.log("Success:", response);
-            alert(response); 
-          },
-          (error) => {
-            console.error("Error:", error);
-            alert(`Error: ${error.message || 'Something went wrong'}`);
-            console.log('Error Details:', error);
-          }
-        );
-    }
-  }
-  
-  closeForm() {
-    this.adminForm.reset(); 
-    this.formVisible = false;     
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }

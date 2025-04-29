@@ -1,0 +1,30 @@
+<div *ngIf="formVisible">
+    <form [formGroup]="adminForm" (ngSubmit)="onSubmit()" class="admin-form-container">
+      <div class="form-header">
+        <h2>Add Amount</h2>
+        <mat-dialog-actions align="end" style="margin-left: auto; margin-right: 0%;">
+          <button mat-button mat-dialog-close>Close</button>
+        </mat-dialog-actions>
+      </div>
+    
+      <div class="form-group">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Transaction Amount</mat-label>
+          <input matInput formControlName="transactionAmount" type="number" placeholder="Enter amount" required>
+          <mat-error *ngIf="adminForm.get('transactionAmount')?.invalid">amount required</mat-error>
+          <mat-error *ngIf="adminForm.get('transactionAmount')?.invalid">valid amount required</mat-error>
+        </mat-form-field>
+      </div>
+    
+      
+    
+      <div class="form-action">
+        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" [disabled]="isLoading" class="submit-btn">
+          <span *ngIf="!isLoading">Send Money</span>
+          <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
+        </button>
+        
+      </div>
+    </form>
+  </div>
+  

@@ -13,7 +13,9 @@ import { error } from 'console';
 })
 export class VerifyOtpRegisterCompanyComponent {
   registerForm: FormGroup;
-  
+  isResendDisabled = false;
+  timer = 0;
+  private intervalId: any;
 
   constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router) {
     const state = history.state as { email?: string };
@@ -50,16 +52,29 @@ export class VerifyOtpRegisterCompanyComponent {
   resendOtp() {
     const companyEmail = this.registerForm.getRawValue().companyEmail;
     if (!companyEmail) return;
+    
     this.authService.resendOtp(companyEmail).subscribe({
       next: (res) => {
         alert('A new OTP has been sent to your email.');
+        this.startTimer();
       },
       error: (err) => {
         console.error('Error resending OTP:', err);
         alert('Failed to resend OTP. Please try again.');
       }
-    }
-    );
+    });
+  }
+  startTimer() {
+    this.isResendDisabled = true;
+    this.timer = 120; 
+
+    this.intervalId = setInterval(() => {
+      this.timer--;
+      if (this.timer === 0) {
+        clearInterval(this.intervalId);
+        this.isResendDisabled = false;
+      }
+    }, 1000);
   }
   
 }
