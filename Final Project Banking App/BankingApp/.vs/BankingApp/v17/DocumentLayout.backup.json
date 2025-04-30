@@ -42,8 +42,7 @@
               "RelativeToolTip": "BankingApp\\Interfaces\\IService\\IUserServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:46:38.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:46:38.105Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "BankingApp\\Interfaces\\IRepository\\IGenericRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:45:36.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:45:36.698Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "BankingApp\\Service\\UserServices.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAgwFYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:33:07.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:33:07.837Z"
             },
             {
               "$type": "Document",
@@ -81,8 +78,7 @@
               "RelativeToolTip": "BankingApp\\Repository\\GenericRepository.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAwwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T10:31:11.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T10:31:11.24Z"
             },
             {
               "$type": "Document",
@@ -92,7 +88,7 @@
               "RelativeDocumentMoniker": "BankingApp\\Controllers\\UserController.cs",
               "ToolTip": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Controllers\\UserController.cs",
               "RelativeToolTip": "BankingApp\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAIAwwLEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T09:33:00.399Z",
               "EditorCaption": ""

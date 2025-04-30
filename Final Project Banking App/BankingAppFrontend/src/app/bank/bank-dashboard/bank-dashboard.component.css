@@ -1,11 +1,20 @@
+/* main-dashboard.component.css */
 .dashboard-container {
-    height: 100vh;
-  }
-  .dashboard-content {
-    background-color: white;
-    padding: 20px;
-  }
-  mat-sidenav {
-    background-color: aqua;
-    width: 220px;
-  }
+  height: 100vh;
+}
+
+.dashboard-content {
+  background-color: white;
+  padding: 20px;
+  background-image: url('../../../assets/dashboard-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+mat-sidenav {
+  background-color: aqua;
+  width: 220px;
+  color: black;
+}
+

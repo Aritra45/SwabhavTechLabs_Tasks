@@ -1,68 +1,71 @@
 <div class="register-content">
-<mat-card style="max-width: 600px; margin: 2rem auto;">
+  <mat-card style="max-width: 600px; margin: 2rem auto;">
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
       <h2>Register Company</h2>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Company Email</mat-label>
         <input matInput type="email" formControlName="companyEmail" required />
         <mat-error *ngIf="registerForm.get('companyEmail')?.invalid">Valid email is required</mat-error>
       </mat-form-field>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Company Name</mat-label>
         <input matInput formControlName="companyName" required />
       </mat-form-field>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Contact Number</mat-label>
         <input matInput formControlName="companyContactNumber" type="number" required />
-        <mat-error *ngIf="registerForm.get('companyContactNumber')?.hasError('minlength')">Contact Number must be 10 digits long</mat-error>
-        <mat-error *ngIf="registerForm.get('companyContactNumber')?.hasError('maxlength')">Contact Number must be 10 digits long</mat-error>
+        <mat-error *ngIf="registerForm.get('companyContactNumber')?.hasError('minlength')">Contact Number must be 10
+          digits long</mat-error>
+        <mat-error *ngIf="registerForm.get('companyContactNumber')?.hasError('maxlength')">Contact Number must be 10
+          digits long</mat-error>
       </mat-form-field>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Address</mat-label>
         <input matInput formControlName="companyAddress" required />
       </mat-form-field>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Account Number</mat-label>
         <input matInput formControlName="companyAccountNumber" required />
       </mat-form-field>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>IFSC Number</mat-label>
         <input matInput formControlName="ifscNumber" required />
       </mat-form-field>
-  
+
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Password</mat-label>
         <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" required />
-        <button mat-icon-button 
-                matSuffix 
-                (click)="togglePasswordVisibility()" 
-                [attr.aria-label]="'Hide password'" 
-                [attr.aria-pressed]="!hidePassword"
-                type="button">
+        <button mat-icon-button matSuffix (click)="togglePasswordVisibility()" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="!hidePassword" type="button">
           <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
         </button>
         <mat-error *ngIf="registerForm.get('password')?.hasError('required')">Password is required</mat-error>
-        <mat-error *ngIf="registerForm.get('password')?.hasError('minlength')">Password must be at least 6 characters long</mat-error>
-        <mat-error *ngIf="registerForm.get('password')?.hasError('pattern')">Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character</mat-error>
+        <mat-error *ngIf="registerForm.get('password')?.hasError('minlength')">Password must be at least 6 characters
+          long</mat-error>
+        <mat-error *ngIf="registerForm.get('password')?.hasError('pattern')">Password must contain at least one
+          uppercase letter, one lowercase letter, one digit, and one special character</mat-error>
       </mat-form-field>
-  
+
       <div class="file-input">
         <label>Aadhar File</label>
         <input type="file" (change)="onAadharFileSelected($event)" required />
       </div>
-  
+
       <div class="file-input">
         <label>PAN File</label>
         <input type="file" (change)="onPanFileSelected($event)" required />
       </div>
-  
-      <button mat-raised-button color="primary" type="submit">Register</button>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Register</span>
+        <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
+      </button>
     </form>
   </mat-card>
 </div>

@@ -19,8 +19,8 @@ export class CompanyRegistrationComponent {
   togglePasswordVisibility() {
     this.hidePassword = !this.hidePassword;
   }
-  
-  constructor(private fb: FormBuilder, private authService:AuthServiceService, private router:Router) {
+
+  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router) {
     this.registerForm = this.fb.group({
       companyEmail: ['', [Validators.required, Validators.email]],
       companyName: ['', Validators.required],
@@ -45,7 +45,7 @@ export class CompanyRegistrationComponent {
       this.panFile = input.files[0];
     }
   }
-
+  isLoading = false
   onSubmit() {
     if (this.registerForm.valid && this.aadharFile && this.panFile) {
       const formData = new FormData();
@@ -58,23 +58,24 @@ export class CompanyRegistrationComponent {
       formData.append('Password', this.registerForm.value.password);
       formData.append('AadharFile', this.aadharFile);
       formData.append('PanFile', this.panFile);
-
+      this.isLoading = true
       this.authService.doRegistration(formData).subscribe({
         next: (res) => {
           alert('Otp send to your mail');
+          this.isLoading = false
           this.router.navigate(['/register/verify-company'], {
             state: { email: this.registerForm.value.companyEmail }
           });
           this.registerForm.reset();
-          
-          
+
+
         },
         error: (err) => {
           console.error('Registration failed:', err);
           alert('Registration failed. Please try again.');
         }
       });
-      
+
       console.log('Form submitted!', formData);
     } else {
       alert('Please fill all fields and upload required documents.');

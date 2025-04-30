@@ -5,6 +5,7 @@ import { AdminServiceService } from '../admin-service.service';
 import { AddAdminComponent } from './add-admin/add-admin.component';
 import { GetAdminComponent } from './get-admin/get-admin.component';
 import { RemoveAdminComponent } from './remove-admin/remove-admin.component';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-admin-controller',
@@ -39,13 +40,21 @@ export class AdminControllerComponent {
   }
   
   remove(){
+    const token = localStorage.getItem('token');
+    if (!token) {
+      alert("Token not found. Please log in again.");
+      return;
+    }
+    const decodedToken: any = jwtDecode(token);
+    const loggedInAdminId = decodedToken.Id;
     this.rs.getregistration().subscribe(
       (response) => {
+        const filteredAdmins = response.filter((admin: any) => admin.userEmail !== loggedInAdminId);
         console.log("Admins fetched:", response);
         this.dialog.open(RemoveAdminComponent, {
           width: '90%',
           maxWidth: '700px',
-          data: response
+          data: filteredAdmins
         });
       },
       (error) => {

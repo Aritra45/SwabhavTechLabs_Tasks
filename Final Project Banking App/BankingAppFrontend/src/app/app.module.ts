@@ -30,6 +30,7 @@ import { AuthInterceptor } from './auth.interceptor';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    
   ],
   providers: [
     provideClientHydration(withEventReplay()),

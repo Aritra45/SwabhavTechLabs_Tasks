@@ -12,35 +12,29 @@
 
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Password</mat-label>
-        <input matInput 
-               [type]="hidePassword ? 'password' : 'text'" 
-               name="password" 
-               [(ngModel)]="password" 
-               required 
-               style="color: white;" />
-        
-        <button mat-icon-button 
-                matSuffix 
-                (click)="togglePasswordVisibility()" 
-                [attr.aria-label]="'Hide password'" 
-                [attr.aria-pressed]="!hidePassword"
-                type="button">
+        <input matInput [type]="hidePassword ? 'password' : 'text'" name="password" [(ngModel)]="password" required
+          style="color: white;" />
+
+        <button mat-icon-button matSuffix (click)="togglePasswordVisibility()" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="!hidePassword" type="button">
           <mat-icon style="color: white;">{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
         </button>
-      
+
         <mat-error>Password is required</mat-error>
       </mat-form-field>
-      
 
-      <re-captcha siteKey="6LcnuyIrAAAAALX5-LOr4czGMBECQbtI-e9iaW40" (resolved)="onCaptchaResolved($event)" required></re-captcha>
+
+      <re-captcha siteKey="6LcnuyIrAAAAALX5-LOr4czGMBECQbtI-e9iaW40" (resolved)="onCaptchaResolved($event)"
+        required></re-captcha>
 
       <div style="display: flex; gap: 20px;">
-      <button mat-raised-button color="primary" type="submit" [disabled]="isLoading">
-        <span *ngIf="!isLoading">Submit</span>
-        <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
-      </button>
-      <button mat-raised-button color="primary" type="button" routerLink="/register/register-company">Register Company</button>
-    </div>
+        <button mat-raised-button color="primary" type="submit" [disabled]="isLoading">
+          <span *ngIf="!isLoading">Submit</span>
+          <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
+        </button>
+        <button mat-raised-button color="primary" type="button" routerLink="/register/register-company">Register
+          Company</button>
+      </div>
     </form>
   </mat-card>
 </div>

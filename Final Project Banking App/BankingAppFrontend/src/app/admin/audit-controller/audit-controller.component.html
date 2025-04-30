@@ -1,37 +1,33 @@
 <!-- <app-logout></app-logout> -->
 
 <div class="dashboard-cards">
-  <mat-card class="card get-card" >
+  <mat-card class="card get-card" (click)="view()">
     <mat-card-title>All Audit Logs</mat-card-title>
     <mat-card-content>
       <p>View all audit logs</p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button color="primary" (click)="view()">VIEW</button>
+      <button mat-button color="primary" >VIEW</button>
     </mat-card-actions>
   </mat-card>
 
-  <mat-card class="card get-card" >
+  <mat-card class="card get-card" (click)="viewbyid()">
     <mat-card-title>All Audit Logs By UserId</mat-card-title>
     <mat-card-content>
       <p>Search all audit logs by userId</p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button color="primary" (click)="viewbyid()">SEARCH</button>
+      <button mat-button color="primary" >SEARCH</button>
     </mat-card-actions>
   </mat-card>
 
-  <mat-card class="card get-card" >
+  <mat-card class="card get-card" (click)="viewbydate()">
     <mat-card-title>All Audit Logs By Date</mat-card-title>
     <mat-card-content>
       <p>Search all audit logs by date</p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button color="primary" (click)="viewbydate()">SEARCH</button>
+      <button mat-button color="primary" >SEARCH</button>
     </mat-card-actions>
   </mat-card>
-  
-
-  
-    
 </div>

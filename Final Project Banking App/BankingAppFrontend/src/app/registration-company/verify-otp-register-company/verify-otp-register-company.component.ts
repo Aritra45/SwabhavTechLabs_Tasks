@@ -27,16 +27,17 @@ export class VerifyOtpRegisterCompanyComponent {
   }
 
   
-
+isLoading = false
   onSubmit() {
     const body = {
       CompanyEmail: this.registerForm.getRawValue().companyEmail,  
       OTP: this.registerForm.value.otp,
     };
-  
+  this.isLoading = true
     this.authService.doVerify(body).subscribe({
       next: (res) => {
         alert('Registration successful!!!');
+        this.isLoading = false
         this.registerForm.reset();
         this.router.navigate(['/auth-login/login']);
       },
