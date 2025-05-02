@@ -16,21 +16,12 @@ export class AuditControllerComponent {
   constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {}
     getData :any
   
-    view(){
-      this.rs.getAllAudit().subscribe(
-        (response) => {
-          console.log("Banks fetched:", response);
-          this.dialog.open(GetAllAuditComponent, {
-            width: 'auto',
-            data: response
-          });
-        },
-        (error) => {
-          console.error("Error fetching banks:", error);
-          alert("Something went wrong");
-        }
-      );
+    view() {
+      this.dialog.open(GetAllAuditComponent, {
+        width: '90%'
+      });
     }
+    
   
     viewbyid(){
       this.dialog.open(GetAllAuditUseridComponent, {

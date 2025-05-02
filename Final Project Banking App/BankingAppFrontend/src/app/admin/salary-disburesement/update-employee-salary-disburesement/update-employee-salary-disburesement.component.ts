@@ -29,6 +29,8 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
   }
 
   rejectTransaction(id: number) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     this.updatesalary.updatePendingSalary(id, this.payload2)
       .subscribe(
         (response) => {
@@ -43,9 +45,15 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    else{
+      alert("Task Dismiss!!!")
+    }
   }
 
   approveTransaction(id: number) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     this.updatesalary.updatePendingSalary(id, this.payload1)
       .subscribe(
         (response) => {
@@ -60,6 +68,8 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    alert("Task Dismiss!!!")
   }
 
   applyFilter(event: Event) {

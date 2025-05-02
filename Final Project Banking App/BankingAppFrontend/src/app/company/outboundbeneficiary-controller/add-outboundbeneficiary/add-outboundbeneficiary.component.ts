@@ -19,38 +19,44 @@ export class AddOutboundbeneficiaryComponent {
   togglePasswordVisibility() {
     this.hidePassword = !this.hidePassword;
   }
-  
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:CompanyServiceService) {
-    
+
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService) {
+
   }
-  ngOnInit(){
+  ngOnInit() {
     this.adminForm = this.fb.group({
       beneficiaryCompanyEmail: ['', [Validators.required, Validators.email]],
       beneficiaryCompanyName: ['', Validators.required],
-      bankAccountNumber: ['', Validators.required],
-      ifscNumber: ['', Validators.required],
+      bankAccountNumber: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]],
+      ifscNumber: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]],
     });
   }
-isLoading = false
+  isLoading = false
   onSubmit() {
-    if (this.adminForm.valid) {
-      const formData = this.adminForm.value;
-      console.log("Form Data: ", formData);
-      this.isLoading = true
-      this.addAdmin.AddOutBound(formData)
-        .subscribe(
-          (response) => {
-            this.isLoading = false
-            console.log("Success:", response);
-            alert(response); 
-          },
-          (error) => {
-            console.error("Error:", error);
-            alert(`Error: ${error.message || 'Something went wrong'}`);
-            console.log('Error Details:', error);
-          }
-        );
+    const val = confirm("Are You Sure?")
+    if (val == true) {
+      if (this.adminForm.valid) {
+        const formData = this.adminForm.value;
+        console.log("Form Data: ", formData);
+        this.isLoading = true
+        this.addAdmin.AddOutBound(formData)
+          .subscribe(
+            (response) => {
+              this.isLoading = false
+              console.log("Success:", response);
+              alert(response);
+            },
+            (error) => {
+              console.error("Error:", error);
+              alert(`Error: ${error.message || 'Something went wrong'}`);
+              console.log('Error Details:', error);
+            }
+          );
+      }
+    }
+    else {
+      alert("Task Dismiss!!!")
     }
   }
-  
+
 }

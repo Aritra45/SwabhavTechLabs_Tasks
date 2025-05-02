@@ -46,6 +46,8 @@ import { ReasonRejectComponent } from './company-controller/reason-reject/reason
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ChangePasswordComponent } from './bank-controller/update-bank-password/change-password/change-password.component';
+import { SearchComponent } from './search/search.component';
+
 
 
 @NgModule({
@@ -75,7 +77,8 @@ import { ChangePasswordComponent } from './bank-controller/update-bank-password/
     SalaryDisburesementComponent,
     UpdateEmployeeSalaryDisburesementComponent,
     ReasonRejectComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    SearchComponent,
   ],
   imports: [
     CommonModule,
@@ -96,7 +99,7 @@ import { ChangePasswordComponent } from './bank-controller/update-bank-password/
     MatNativeDateModule,
     MatPaginatorModule,
     MatCheckboxModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
   ]
 })
 export class AdminModule { }

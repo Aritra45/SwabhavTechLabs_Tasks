@@ -18,6 +18,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { VerifyOtpRegisterCompanyComponent } from './verify-otp-register-company/verify-otp-register-company.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { RecaptchaModule } from 'ng-recaptcha';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatTableModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    RecaptchaModule
   ]
 })
 export class RegistrationCompanyModule { }

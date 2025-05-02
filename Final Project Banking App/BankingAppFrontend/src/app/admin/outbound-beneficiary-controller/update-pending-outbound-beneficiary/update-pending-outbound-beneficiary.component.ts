@@ -36,6 +36,8 @@ export class UpdatePendingOutboundBeneficiaryComponent implements AfterViewInit 
   }
 
   rejectBeneficiary(email: string, name:string) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     this.updatebeneficiary.updatependingBeneficiaries(email, this.payload2)
       .subscribe(
         (response) => {
@@ -50,9 +52,13 @@ export class UpdatePendingOutboundBeneficiaryComponent implements AfterViewInit 
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    alert("Task Dismiss!!!")
   }
 
   approveBeneficiary(email: string, name:string) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     this.updatebeneficiary.updatependingBeneficiaries(email, this.payload1)
       .subscribe(
         (response) => {
@@ -67,5 +73,9 @@ export class UpdatePendingOutboundBeneficiaryComponent implements AfterViewInit 
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    else{
+      alert("Task Dismiss!!!")
+    }
   }
 }

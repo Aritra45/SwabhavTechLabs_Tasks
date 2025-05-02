@@ -14,6 +14,8 @@ export class RemoveBankComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private removeBank:AdminServiceService) {}
 
   deleteBank(email: string, name: string) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     console.log(email)
     this.removeBank.removeBankAccess(email)
       .subscribe(
@@ -29,5 +31,9 @@ export class RemoveBankComponent {
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    else{
+      alert("Task Dismiss!!!")
+    }
   }
 }

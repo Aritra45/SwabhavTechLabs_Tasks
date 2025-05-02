@@ -177,14 +177,34 @@ namespace BankingApp.Controllers
 
         [HttpGet("all-logs")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAllLogs()
+        public async Task<IActionResult> GetAllLogs(int pageNumber = 1, int pageSize = 5, string? search = "")
         {
-            var logs = await _context.AuditLogs
+            var query = _context.AuditLogs.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                query = query.Where(log =>
+                    log.UserId.Contains(search) ||
+                    log.Description.Contains(search)
+                );
+            }
+
+            var totalLogs = await query.CountAsync();
+            var logs = await query
                 .OrderByDescending(log => log.Time)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
 
-            return Ok(logs);
+            return Ok(new
+            {
+                totalItems = totalLogs,
+                pageNumber,
+                pageSize,
+                logs
+            });
         }
+
 
         [HttpGet("by-user/{userId}")]
         [Authorize(Roles = "Admin")]

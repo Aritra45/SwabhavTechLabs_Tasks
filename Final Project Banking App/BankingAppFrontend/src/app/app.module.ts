@@ -13,12 +13,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AuthInterceptor } from './auth.interceptor';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoutComponent
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +31,7 @@ import { AuthInterceptor } from './auth.interceptor';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatDialogModule
     
   ],
   providers: [

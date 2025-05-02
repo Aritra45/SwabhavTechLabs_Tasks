@@ -30,12 +30,20 @@
 
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>Account Number</mat-label>
-        <input matInput formControlName="companyAccountNumber" required />
+        <input matInput formControlName="companyAccountNumber"  required />
+        <mat-error *ngIf="registerForm.get('companyAccountNumber')?.hasError('minlength')">Account Number must be 11 charectors
+          long</mat-error>
+          <mat-error *ngIf="registerForm.get('companyAccountNumber')?.hasError('maxlength')">Account Number must be 11 charectors
+            long</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="full-width">
         <mat-label>IFSC Number</mat-label>
         <input matInput formControlName="ifscNumber" required />
+        <mat-error *ngIf="registerForm.get('ifscNumber')?.hasError('minlength')">IFSC Number must be 11 charectors
+          long</mat-error>
+          <mat-error *ngIf="registerForm.get('ifscNumber')?.hasError('maxlength')">IFSC Number must be 11 charectors
+            long</mat-error>
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="full-width">
@@ -62,6 +70,9 @@
         <input type="file" (change)="onPanFileSelected($event)" required />
       </div>
 
+      <re-captcha siteKey="6LcnuyIrAAAAALX5-LOr4czGMBECQbtI-e9iaW40" (resolved)="onCaptchaResolved($event)"
+        required></re-captcha>
+        
       <button mat-raised-button color="primary" type="submit" [disabled]="isLoading">
         <span *ngIf="!isLoading">Register</span>
         <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>

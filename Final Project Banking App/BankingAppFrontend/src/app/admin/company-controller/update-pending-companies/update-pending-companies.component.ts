@@ -44,6 +44,8 @@ export class UpdatePendingCompaniesComponent implements AfterViewInit {
   }
 
   approveCompany(email: string, name: string) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     this.updateCompany.updatependingCompany(email, this.payload1)
       .subscribe(
         (response) => {
@@ -59,6 +61,10 @@ export class UpdatePendingCompaniesComponent implements AfterViewInit {
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    else{
+      alert("Task Dismiss!!!")
+    }
   }
 
   applyFilter(event: Event) {

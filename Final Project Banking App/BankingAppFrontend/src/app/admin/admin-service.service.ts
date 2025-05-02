@@ -161,9 +161,10 @@ export class AdminServiceService {
   }
 
   //audit
-  getAllAudit():Observable<any>{
-    return this.http.get<any>(this.apiUrl15)
+  getAllAudit(pageNumber: number, search: string = '', pageSize: number = 5): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl15}?pageNumber=${pageNumber}&pageSize=${pageSize}&search=${search}`);
   }
+  
 
   getAuditByUserId(auditId: any): Observable<any> {
     const token = localStorage.getItem('token');

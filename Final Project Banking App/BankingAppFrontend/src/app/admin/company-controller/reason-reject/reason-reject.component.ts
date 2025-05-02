@@ -12,67 +12,73 @@ import { AdminServiceService } from '../../admin-service.service';
   styleUrl: './reason-reject.component.css'
 })
 export class ReasonRejectComponent {
- displayedColumns: string[] = ['select', 'reasons'];
+  displayedColumns: string[] = ['select', 'reasons'];
 
- // Data for each row, including rejection reasons for each row
- getData: any[] = [
-   { selected: false, reasons: ['Missing Documents'] },
-   { selected: false, reasons: ['Expired Documents'] },
-   { selected: false, reasons: ['Incomplete Information'] },
-   { selected: false, reasons: ['Invalid Format'] },
-   { selected: false, reasons: ['Other'] },
+  // Data for each row, including rejection reasons for each row
+  getData: any[] = [
+    { selected: false, reasons: ['Missing Documents'] },
+    { selected: false, reasons: ['Expired Documents'] },
+    { selected: false, reasons: ['Incomplete Information'] },
+    { selected: false, reasons: ['Invalid Format'] },
+    { selected: false, reasons: ['Other'] },
 
- ];
+  ];
 
- constructor(@Inject(MAT_DIALOG_DATA) public email: any, private updateCompany:AdminServiceService) {}
-
-
- toggleAll(event: any) {
-   const selected = event.checked;
-   this.getData.forEach((row) => {
-     row.selected = selected;
-   });
- }
+  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private updateCompany: AdminServiceService) { }
 
 
- isAllSelected(): boolean {
-   return this.getData.every((row) => row.selected);
- }
+  toggleAll(event: any) {
+    const selected = event.checked;
+    this.getData.forEach((row) => {
+      row.selected = selected;
+    });
+  }
 
 
- isIndeterminate(): boolean {
-   return this.getData.some((row) => row.selected) && !this.isAllSelected();
- }
-
- payload2 = {
-  isAproved: false,
-  remark: ""
-}
+  isAllSelected(): boolean {
+    return this.getData.every((row) => row.selected);
+  }
 
 
- reject() {
-  const selectedReasons = this.getData
-    .filter(row => row.selected)  
-    .map(row => row.reasons[0]);
+  isIndeterminate(): boolean {
+    return this.getData.some((row) => row.selected) && !this.isAllSelected();
+  }
 
-  const remarkText = selectedReasons.join('. '); 
-
-
-  this.payload2.remark = remarkText;
-  this.payload2.isAproved = false;  
+  payload2 = {
+    isAproved: false,
+    remark: ""
+  }
 
 
-  this.updateCompany.updatependingCompany(this.email, this.payload2)
-    .subscribe(
-      (response) => {
-        console.log("Success:", response);
-        alert(`Company updated successfully.`);
-      },
-      (error) => {
-        console.error("Error:", error);
-        alert(`Error: ${error.message || 'Something went wrong'}`);
-      }
-    );
-}
+  reject() {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
+      const selectedReasons = this.getData
+        .filter(row => row.selected)
+        .map(row => row.reasons[0]);
+
+      const remarkText = selectedReasons.join('. ');
+
+
+      this.payload2.remark = remarkText;
+      this.payload2.isAproved = false;
+
+
+      this.updateCompany.updatependingCompany(this.email, this.payload2)
+        .subscribe(
+          (response) => {
+            console.log("Success:", response);
+            alert(`Company updated successfully.`);
+          },
+          (error) => {
+            console.error("Error:", error);
+            alert(`Error: ${error.message || 'Something went wrong'}`);
+          }
+        );
+    }
+    else {
+      alert("Task Dismiss!!!")
+    }
+  }
 
 }

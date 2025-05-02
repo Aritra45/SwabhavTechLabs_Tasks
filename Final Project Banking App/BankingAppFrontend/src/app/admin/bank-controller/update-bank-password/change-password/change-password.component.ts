@@ -42,34 +42,40 @@ export class ChangePasswordComponent {
 
   isLoading = false;
   onSubmit() {
-    if (this.adminForm.valid) {
-      console.log("Bank email:", this.email);
-  
-      const formValues = this.adminForm.value; 
-      console.log("Form Values:", formValues);
-  
-      const payload = {
-        CurrentPassword: formValues.currentPassword,
-        NewPassword: formValues.newPassword,
-        ConfirmPassword: formValues.confirmPassword
-      };
-  
-      this.isLoading = true;
-      this.adminService.updateBankPassword(this.email, payload).subscribe(
-        (res) => {
-          this.isLoading = false;
-          console.log('Password updated:', res);
-          alert('Password updated successfully!');
-        },
-        (err) => {
-          this.isLoading = false;
-          console.error('Error updating password:', err);
-          alert('Failed to update password.');
-        }
-      );
-    } else {
-      console.warn('Form is invalid.');
+    const val = confirm("Are You Sure?")
+    if (val == true) {
+      if (this.adminForm.valid) {
+        console.log("Bank email:", this.email);
+
+        const formValues = this.adminForm.value;
+        console.log("Form Values:", formValues);
+
+        const payload = {
+          CurrentPassword: formValues.currentPassword,
+          NewPassword: formValues.newPassword,
+          ConfirmPassword: formValues.confirmPassword
+        };
+
+        this.isLoading = true;
+        this.adminService.updateBankPassword(this.email, payload).subscribe(
+          (res) => {
+            this.isLoading = false;
+            console.log('Password updated:', res);
+            alert('Password updated successfully!');
+          },
+          (err) => {
+            this.isLoading = false;
+            console.error('Error updating password:', err);
+            alert('Failed to update password.');
+          }
+        );
+      } else {
+        console.warn('Form is invalid.');
+      }
+    }
+    else {
+      alert("Task Dismiss!!!")
     }
   }
-  
+
 }

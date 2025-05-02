@@ -26,8 +26,8 @@ export class CompanyRegistrationComponent {
       companyName: ['', Validators.required],
       companyContactNumber: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10)]],
       companyAddress: ['', Validators.required],
-      companyAccountNumber: ['', Validators.required],
-      ifscNumber: ['', Validators.required],
+      companyAccountNumber: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]],
+      ifscNumber: ['', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]],
       password: ['', [Validators.required, Validators.minLength(6), Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).{6,}$')]]
     });
   }
@@ -45,8 +45,22 @@ export class CompanyRegistrationComponent {
       this.panFile = input.files[0];
     }
   }
+
+  captchaResolved: boolean = false;
+  captchaToken: string = '';
+
+  onCaptchaResolved(captchaResponse: string | null): void {
+    this.captchaResolved = !!captchaResponse;
+    this.captchaToken = captchaResponse ?? '';
+  }
+
+
   isLoading = false
   onSubmit() {
+    if (!this.captchaResolved) {
+      alert("Check the captcha!");
+      return;
+    }
     if (this.registerForm.valid && this.aadharFile && this.panFile) {
       const formData = new FormData();
       formData.append('CompanyEmail', this.registerForm.value.companyEmail);

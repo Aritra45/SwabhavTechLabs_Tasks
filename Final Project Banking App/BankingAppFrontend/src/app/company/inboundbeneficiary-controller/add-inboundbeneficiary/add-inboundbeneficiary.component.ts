@@ -25,6 +25,8 @@ export class AddInboundbeneficiaryComponent implements AfterViewInit{
     this.dataSource.paginator = this.paginator;
   }
   AddInbound(beneficiary: any) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
     const payload = {
       BeneficiaryCompanyEmail: beneficiary.companyEmail,
       BeneficiaryCompanyName: beneficiary.companyName,
@@ -46,6 +48,10 @@ export class AddInboundbeneficiaryComponent implements AfterViewInit{
           alert(`Error: ${error.message || 'Something went wrong'}`);
         }
       );
+    }
+    else{
+      alert("Task Dismiss!!!")
+    }
   }
 
   applyFilter(event: Event) {

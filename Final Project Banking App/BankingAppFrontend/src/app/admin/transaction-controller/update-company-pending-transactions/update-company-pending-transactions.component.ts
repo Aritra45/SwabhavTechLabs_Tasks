@@ -11,55 +11,68 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrl: './update-company-pending-transactions.component.css'
 })
 export class UpdateCompanyPendingTransactionsComponent implements AfterViewInit {
-  displayedColumns: string[] = ['transactionId', 'transferFromCompanyEmail', 'transferToCompanyEmail', 'transactionAmount', 'paymentDate','status', 'action1'];
+  displayedColumns: string[] = ['transactionId', 'transferFromCompanyEmail', 'transferToCompanyEmail', 'transactionAmount', 'paymentDate', 'status', 'action1'];
   dataSource: MatTableDataSource<any>;
-  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatetransaction:AdminServiceService) {
+  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatetransaction: AdminServiceService) {
     this.dataSource = new MatTableDataSource(this.getData);
   }
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-  payload1 ={
-    status : 'Success'
+  payload1 = {
+    status: 'Success'
   }
-  payload2={
-    status : 'Reject'
+  payload2 = {
+    status: 'Reject'
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
 
-  rejectTransaction(id: number) {
-    this.updatetransaction.updatependingCompanyTransaction(id, this.payload2)
-      .subscribe(
-        (response) => {
-          console.log("Success:", response);
-          alert(`Transaction updated successfully.`);
 
-          this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
-          this.dataSource.data = this.getData;
-        },
-        (error) => {
-          console.error("Error:", error);
-          alert(`Error: ${error.message || 'Something went wrong'}`);
-        }
-      );
+  rejectTransaction(id: number) {
+    const val = confirm("Are You Sure?")
+    if (val == true) {
+      this.updatetransaction.updatependingCompanyTransaction(id, this.payload2)
+        .subscribe(
+          (response) => {
+            console.log("Success:", response);
+            alert(`Transaction updated successfully.`);
+
+            this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
+            this.dataSource.data = this.getData;
+          },
+          (error) => {
+            console.error("Error:", error);
+            alert(`Error: ${error.message || 'Something went wrong'}`);
+          }
+        );
+    }
+    else {
+      alert("Task Dismiss!!!")
+    }
   }
 
   approveTransaction(id: number) {
-    this.updatetransaction.updatependingCompanyTransaction(id, this.payload1)
-      .subscribe(
-        (response) => {
-          console.log("Success:", response);
-          alert(`Transaction updated successfully.`);
+    const val = confirm("Are You Sure?")
+    if (val == true) {
+      this.updatetransaction.updatependingCompanyTransaction(id, this.payload1)
+        .subscribe(
+          (response) => {
+            console.log("Success:", response);
+            alert(`Transaction updated successfully.`);
 
-          this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
-          this.dataSource.data = this.getData;
-        },
-        (error) => {
-          console.error("Error:", error);
-          alert(`Error: ${error.message || 'Something went wrong'}`);
-        }
-      );
+            this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
+            this.dataSource.data = this.getData;
+          },
+          (error) => {
+            console.error("Error:", error);
+            alert(`Error: ${error.message || 'Something went wrong'}`);
+          }
+        );
+    }
+    else {
+      alert("Task Dismiss!!!")
+    }
   }
 
   applyFilter(event: Event) {

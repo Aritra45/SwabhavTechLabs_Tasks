@@ -28,6 +28,10 @@
           <mat-label>Bank Account Number</mat-label>
           <input matInput formControlName="bankAccountNumber" placeholder="Enter Bank Account Number" required>
           <mat-error *ngIf="adminForm.get('bankAccountNumber')?.invalid">Bank Account Number required</mat-error>
+          <mat-error *ngIf="adminForm.get('bankAccountNumber')?.hasError('minlength')">Account Number must be 11 charectors
+            long</mat-error>
+            <mat-error *ngIf="adminForm.get('bankAccountNumber')?.hasError('maxlength')">Account Number must be 11 charectors
+              long</mat-error>
         </mat-form-field>
       </div>
 
@@ -36,6 +40,10 @@
           <mat-label>IFSC Number</mat-label>
           <input matInput formControlName="ifscNumber" placeholder="Enter IFSC Number" required>
           <mat-error *ngIf="adminForm.get('ifscNumber')?.invalid">IFSC Number required</mat-error>
+          <mat-error *ngIf="adminForm.get('ifscNumber')?.hasError('minlength')">Account Number must be 11 charectors
+            long</mat-error>
+            <mat-error *ngIf="adminForm.get('ifscNumber')?.hasError('maxlength')">Account Number must be 11 charectors
+              long</mat-error>
         </mat-form-field>
       </div>
     
