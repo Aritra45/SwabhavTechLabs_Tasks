@@ -11,7 +11,7 @@ import { MatPaginator } from '@angular/material/paginator';
   styleUrl: './update-pending-outbound-beneficiary.component.css'
 })
 export class UpdatePendingOutboundBeneficiaryComponent implements AfterViewInit {
-  displayedColumns: string[] = ['beneficiaryCompanyEmail', 'beneficiaryCompanyName', 'action1'];
+  displayedColumns: string[] = ['beneficiaryCompanyEmail', 'beneficiaryCompanyName', 'companyEmail', 'action1'];
   dataSource: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatebeneficiary:AdminServiceService) {

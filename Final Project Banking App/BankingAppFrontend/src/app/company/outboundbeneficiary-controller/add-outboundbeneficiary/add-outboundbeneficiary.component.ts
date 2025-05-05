@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { CompanyServiceService } from '../../company-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -20,7 +20,7 @@ export class AddOutboundbeneficiaryComponent {
     this.hidePassword = !this.hidePassword;
   }
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService) {
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService, private dialogRef: MatDialogRef<AddOutboundbeneficiaryComponent>) {
 
   }
   ngOnInit() {
@@ -45,6 +45,7 @@ export class AddOutboundbeneficiaryComponent {
               this.isLoading = false
               console.log("Success:", response);
               alert(response);
+              this.dialogRef.close()
             },
             (error) => {
               console.error("Error:", error);

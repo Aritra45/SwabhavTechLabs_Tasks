@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, Inject, ViewChild } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { CompanyServiceService } from '../../company-service.service';
 import { HttpHeaders } from '@angular/common/http';
 import { jwtDecode } from 'jwt-decode';
@@ -22,7 +22,8 @@ export class EmployeeSalaryDistributionComponent implements AfterViewInit{
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public getData: any,
-    private rs: CompanyServiceService
+    private rs: CompanyServiceService,
+    private dialogRef: MatDialogRef<EmployeeSalaryDistributionComponent>
   ) {
     this.dataSource = new MatTableDataSource(getData);
   }
@@ -111,6 +112,7 @@ export class EmployeeSalaryDistributionComponent implements AfterViewInit{
           this.isLoading = false
           console.log("Salary disbursed:", response);
           alert(response.message || 'Salary disbursed successfully!');
+          this.dialogRef.close()
         },
         (error) => {
           console.error("Error disbursing salary:", error);

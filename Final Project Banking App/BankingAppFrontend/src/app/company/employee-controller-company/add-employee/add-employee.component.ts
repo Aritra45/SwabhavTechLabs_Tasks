@@ -17,7 +17,7 @@ export class AddEmployeeComponent {
   formVisible: boolean = true;
   selectedFile: File | null = null;
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService) {}
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService, private dialogRef: MatDialogRef<AddEmployeeComponent>) {}
 
   ngOnInit() {
     this.adminForm = this.fb.group({
@@ -42,6 +42,7 @@ export class AddEmployeeComponent {
           (response) => {
             console.log('Success:', response);
             alert("Employess Uploaded Successfully!!!"); 
+            this.dialogRef.close()
           },
           (error) => {
             console.error('Error:', error);

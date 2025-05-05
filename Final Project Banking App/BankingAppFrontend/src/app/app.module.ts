@@ -14,12 +14,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { AuthInterceptor } from './auth.interceptor';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoutComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

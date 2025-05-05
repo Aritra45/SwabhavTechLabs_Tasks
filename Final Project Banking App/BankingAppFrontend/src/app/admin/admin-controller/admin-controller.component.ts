@@ -16,7 +16,9 @@ import { jwtDecode } from 'jwt-decode';
 export class AdminControllerComponent {
   constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {}
 
-  openAddAdminDialog(): void {
+  openAddAdminDialog(){
+    console.log("hi");
+    
     this.dialog.open(AddAdminComponent, {
       width: '500px'
     });

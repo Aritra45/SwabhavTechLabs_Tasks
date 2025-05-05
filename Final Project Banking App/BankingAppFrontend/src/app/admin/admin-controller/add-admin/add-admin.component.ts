@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from '../../admin-service.service';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-admin',
@@ -11,18 +12,17 @@ import { AdminServiceService } from '../../admin-service.service';
 })
 export class AddAdminComponent {
   adminForm!: FormGroup;
-  formVisible: boolean = true;
 
   hidePassword: boolean = true;
 
   togglePasswordVisibility() {
     this.hidePassword = !this.hidePassword;
   }
-  
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:AdminServiceService) {
-    
+
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: AdminServiceService, private dialogRef: MatDialogRef<AddAdminComponent>) {
+
   }
-  ngOnInit(){
+  ngOnInit() {
     this.adminForm = this.fb.group({
       userEmail: ['', [Validators.required, Validators.email]],
       userName: ['', Validators.required],
@@ -30,26 +30,31 @@ export class AddAdminComponent {
     });
   }
   isLoading = false;
+
+
   onSubmit() {
     if (this.adminForm.valid) {
       const formData = this.adminForm.value;
-      console.log("Form Data: ", formData);  
       this.isLoading = true;
+
       this.addAdmin.doRegistration(formData)
         .subscribe(
           (response) => {
             this.isLoading = false;
             console.log("Success:", response);
-            alert(response); 
+            alert(response);
+            this.dialogRef.close();
+            
           },
           (error) => {
+            this.isLoading = false;
             console.error("Error:", error);
             alert(`Error: ${error.message || 'Something went wrong'}`);
-            console.log('Error Details:', error);
           }
         );
     }
   }
-  
-  
+
+
+
 }

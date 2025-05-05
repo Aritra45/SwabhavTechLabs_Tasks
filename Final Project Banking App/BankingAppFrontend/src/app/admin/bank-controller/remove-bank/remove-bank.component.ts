@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { AdminServiceService } from '../../admin-service.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { AdminServiceService } from '../../admin-service.service';
 export class RemoveBankComponent {
   displayedColumns: string[] = ['index', 'bankName', 'bankEmail', 'action'];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private removeBank:AdminServiceService) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private removeBank:AdminServiceService, private dialogRef: MatDialogRef<RemoveBankComponent>) {}
 
   deleteBank(email: string, name: string) {
     const val = confirm("Are You Sure?")
@@ -25,6 +25,7 @@ export class RemoveBankComponent {
   
           // Remove the deleted admin from the list
           this.getData = this.getData.filter((bank: any) => bank.bankEmail !== email);
+          this.dialogRef.close()
         },
         (error) => {
           console.error("Error:", error);

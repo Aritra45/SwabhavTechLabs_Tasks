@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from '../../../../admin/admin-service.service';
 import { HttpClient } from '@angular/common/http';
 import { CompanyServiceService } from '../../../company-service.service';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-send-money',
@@ -21,7 +21,7 @@ export class SendMoneyComponent {
     this.hidePassword = !this.hidePassword;
   }
 
-  constructor(private fb: FormBuilder, @Inject(MAT_DIALOG_DATA) public email: any, private cs: CompanyServiceService) {
+  constructor(private fb: FormBuilder, @Inject(MAT_DIALOG_DATA) public email: any, private cs: CompanyServiceService, private dialogRef: MatDialogRef<SendMoneyComponent>) {
 
   }
   ngOnInit() {
@@ -46,6 +46,7 @@ export class SendMoneyComponent {
               this.isLoading = false;
               console.log("Success:", response);
               alert(response);
+              this.dialogRef.close()
             },
             (error) => {
               console.error("Error:", error);

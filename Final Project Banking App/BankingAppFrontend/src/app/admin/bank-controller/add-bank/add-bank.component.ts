@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from '../../admin-service.service';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-bank',
@@ -12,7 +13,7 @@ import { AdminServiceService } from '../../admin-service.service';
 export class AddBankComponent {
   adminForm!: FormGroup;
   formVisible: boolean = true;
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:AdminServiceService) {
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin:AdminServiceService, private dialogRef: MatDialogRef<AddBankComponent>) {
     
   }
   ngOnInit(){
@@ -42,6 +43,7 @@ export class AddBankComponent {
             this.isLoading=false
             console.log("Success:", response);
             alert(response); 
+            this.dialogRef.close()
           },
           (error) => {
             console.error("Error:", error);

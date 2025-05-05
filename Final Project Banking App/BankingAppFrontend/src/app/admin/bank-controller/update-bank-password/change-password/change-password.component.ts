@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from '../../../admin-service.service';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-change-password',
@@ -28,7 +28,7 @@ export class ChangePasswordComponent {
     this.hidePassword3 = !this.hidePassword3;
   }
 
-  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private fb: FormBuilder, private http: HttpClient, private adminService: AdminServiceService) {
+  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private fb: FormBuilder, private http: HttpClient, private adminService: AdminServiceService, private dialogRef: MatDialogRef<ChangePasswordComponent>) {
 
   }
   ngOnInit() {
@@ -62,6 +62,7 @@ export class ChangePasswordComponent {
             this.isLoading = false;
             console.log('Password updated:', res);
             alert('Password updated successfully!');
+            this.dialogRef.close()
           },
           (err) => {
             this.isLoading = false;

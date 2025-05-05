@@ -1,6 +1,6 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { jwtDecode } from 'jwt-decode';
 import { CompanyServiceService } from '../../../company/company-service.service';
 import { AdminServiceService } from '../../admin-service.service';
@@ -24,7 +24,7 @@ export class ReasonRejectComponent {
 
   ];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private updateCompany: AdminServiceService) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private updateCompany: AdminServiceService, private dialogRef: MatDialogRef<ReasonRejectComponent>) { }
 
 
   toggleAll(event: any) {
@@ -69,6 +69,7 @@ export class ReasonRejectComponent {
           (response) => {
             console.log("Success:", response);
             alert(`Company updated successfully.`);
+            this.dialogRef.close()
           },
           (error) => {
             console.error("Error:", error);

@@ -217,7 +217,7 @@ public class CompanyService : ICompanyService
             var approvedCompanies = GetAprovedCompanies();
             bool isValidApprovedCompany = approvedCompanies
                 .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
-            if (isValidApprovedCompany)
+            if (!isValidApprovedCompany)
             {
                 await repository.AddAsync(beneficiaryEntity);
                 return beneficiaryEntity;
