@@ -67,7 +67,7 @@ namespace BankingApp.Service
             } 
         }
 
-        public async Task<User> AddSuperAdmin(User user)
+        public async Task<User> AddSuperAdmin(User user, string superAdminEmail)
         {
             var userEntity = new User
             {
@@ -76,7 +76,7 @@ namespace BankingApp.Service
                 UserPassword = user.UserPassword,
                 IsActive = true,
                 RoleId = 4,
-                SuperAdminEmail = ""
+                SuperAdminEmail = superAdminEmail
             };
             var bankService = serviceProvider.GetRequiredService<IUserServices>();
             var bankEntity = bankService.GetAllsBanks();

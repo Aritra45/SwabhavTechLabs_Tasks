@@ -12,7 +12,7 @@ namespace BankingApp.Interfaces.IService
         public List<User> GetAllUsers();
         public List<User> GetAllsUsers();
         public Task<User> AddUser(User user, string superAdminEmail);
-        public Task<User> AddSuperAdmin(User user);
+        public Task<User> AddSuperAdmin(User user, string superAdminEmail);
         public Task DeleteUsers(string UserEmail);
 
 

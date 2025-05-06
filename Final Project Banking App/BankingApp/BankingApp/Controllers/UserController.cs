@@ -23,14 +23,16 @@ namespace BankingApp.Controllers
     {
         IUserServices userServices;
         IMapper mapper;
+        private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly MyContext _context;
-        public UserController(IUserServices userServices, MyContext context)
+        public UserController(IUserServices userServices, MyContext context, IHttpContextAccessor httpContextAccessor)
         {
             this.userServices = userServices;
             var config = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
             mapper = config.CreateMapper();
             this.mapper = mapper;
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         [HttpGet("all-admins")]
@@ -68,17 +70,21 @@ namespace BankingApp.Controllers
         {
             //var users = mapper.Map<User>(addUserDto);
             //var newUser = userServices.AddUser(users);
+            var emailClaim = _httpContextAccessor.HttpContext?.User?.Claims
+            .FirstOrDefault(c => c.Type == "Id");
+
+            string superAdminEmail = emailClaim?.Value;
             string passwd = BCrypt.Net.BCrypt.EnhancedHashPassword(addUserDto.UserPassword);
             addUserDto.UserPassword = passwd;
             var user = mapper.Map<User>(addUserDto);
-            var userEntity = userServices.AddSuperAdmin(user);
+            var userEntity = userServices.AddSuperAdmin(user, superAdminEmail);
             if (userEntity.Status.ToString() != "Faulted")
             {
-                return UnprocessableEntity("Email Already Used");
+                return Ok("Super Admin Added Successfully");
             }
             else
-            {  
-                return Ok("Super Admin Added Successfully");
+            {
+                return UnprocessableEntity("Email Already Used");
             }
         }
 
