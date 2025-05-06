@@ -21,15 +21,18 @@ WITH (
 
 drop table Employees
 drop table Transactions
-drop table TransactionTypes
-drop table Role
+
+drop table Roles
 drop table Companies
 drop table Beneficiaries
 drop table Banks
-drop table BankAccountTypes
 drop table Users
+drop table AuditLogs
+drop table SalaryDisburesements
+
 
 Insert into Roles(RoleName) values ('Admin')
 Insert into Roles(RoleName) values ('Bank')
 Insert into Roles(RoleName) values ('Company')
+Insert into Roles(RoleName) values ('SuperAdmin')
 

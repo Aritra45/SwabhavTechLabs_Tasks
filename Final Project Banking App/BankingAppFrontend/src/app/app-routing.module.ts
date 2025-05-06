@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'auth-login', loadChildren: () => import('./auth-login/auth-login.module').then(m => m.AuthLoginModule), },
   
   {
-    path: 'admin-dashboard', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule), canActivate: [AuthGuardServiceService], data: { role: 'Admin' }
+    path: 'admin-dashboard', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule), canActivate: [AuthGuardServiceService], data: { role: ['SuperAdmin', 'Admin']}
   },
 
   {

@@ -22,8 +22,12 @@ export class AuthGuardServiceService implements CanActivate{
 
     const userRole = this.getUserRole(token);
     const expectedRole = route.data['role']; // Expected role from route
-
-    if (userRole !== expectedRole) {
+    const expectedRoles = route.data['role'] as string[];
+    if (!expectedRoles.includes(userRole)) {
+      const val = expectedRoles.includes(userRole)
+      console.log(val);
+      
+      console.log((expectedRoles));
       this.router.navigate(['']); // Redirect unauthorized users
       localStorage.removeItem('token');
       alert('Access Denied');

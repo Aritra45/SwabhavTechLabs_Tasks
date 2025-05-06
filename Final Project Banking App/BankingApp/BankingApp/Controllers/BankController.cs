@@ -33,7 +33,7 @@ namespace BankingApp.Controllers
         [Authorize(Roles = "Bank")]
         public IActionResult GetAllTransactions()
         {
-            var allTransactions = bankServices.GetAllTransactions();
+            var allTransactions = bankServices.GetAllTransactions().OrderByDescending(t => t.TransactionId); ;
             return Ok(allTransactions);
         }
     }

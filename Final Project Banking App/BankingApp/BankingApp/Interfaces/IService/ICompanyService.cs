@@ -26,6 +26,7 @@ public interface ICompanyService
     public Task<Beneficiary> AddOutbouBeneficiaries(Beneficiary beneficiary, string companyEmail);
 
     public Task<Transaction> AddTrasaction(Transaction transaction, string companyEmail);
+    public List<Transaction> GetAllCompanyTransaction(string companyEmail);
 
     public List<Employee> GetAllEmployees();
     public Task<String> AddEmployeesByCSV(IFormFile csvFile, string companyEmail);

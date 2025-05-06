@@ -145,6 +145,14 @@ public class CompanyController : ControllerBase
             
     }
 
+    [HttpGet("all-company-transactions/{companyEmail}")]
+    [Authorize(Roles = "Company")]
+    public IActionResult GetAllCompanyTransactions(string companyEmail)
+    {
+        var allTransactions = companyServices.GetAllCompanyTransaction(companyEmail).OrderByDescending(t => t.TransactionId);
+        return Ok(allTransactions);
+    }
+
     [HttpPost("add-new-transaction")]
     [Authorize(Roles = "Company")]
     public IActionResult AddTransactions([FromBody] AddTransactionDto addTransactionDto)

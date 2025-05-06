@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { combineAll, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +23,7 @@ export class CompanyServiceService {
 
   //transaction
   private apiUrl6 = "http://localhost:5147/api/Company/add-new-transaction"
+  private apiUrl11 = "http://localhost:5147/api/Company/all-company-transactions"
 
   //employee
   private apiUrl7 = "http://localhost:5147/api/Company/all-employees"
@@ -64,6 +65,10 @@ export class CompanyServiceService {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.post(this.apiUrl6, data, { headers, responseType: 'text' });
+  }
+
+  getCompanyTransactions(companyEmail:any):Observable<any>{
+    return this.http.get<any>(`${this.apiUrl11}/${encodeURIComponent(companyEmail)}`)
   }
 
   //employee

@@ -36,6 +36,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
 import { CheckStatusComponent } from './company-profile/check-status/check-status.component';
 import { SendMoneyComponent } from './transaction-controller-company/add-transaction/send-money/send-money.component';
+import { GetTransactionComponent } from './transaction-controller-company/get-transaction/get-transaction.component';
 @NgModule({
   declarations: [
     CompanyDashboardComponent,
@@ -53,7 +54,8 @@ import { SendMoneyComponent } from './transaction-controller-company/add-transac
     EmployeeSalaryDistributionComponent,
     CompanyProfileComponent,
     CheckStatusComponent,
-    SendMoneyComponent
+    SendMoneyComponent,
+    GetTransactionComponent
   ],
   imports: [
     CommonModule,

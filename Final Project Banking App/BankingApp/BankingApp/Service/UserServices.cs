@@ -34,7 +34,7 @@ namespace BankingApp.Service
             this.out_repository = out_repository;
             this.salary_repository = salary_repository;
         }
-        public async Task<User> AddUser(User user)
+        public async Task<User> AddUser(User user, string superAdminEmail)
         {
             var userEntity = new User
             {
@@ -43,6 +43,7 @@ namespace BankingApp.Service
                 UserPassword = user.UserPassword,
                 IsActive = true,
                 RoleId = 1,
+                SuperAdminEmail = superAdminEmail
             };
             var bankService = serviceProvider.GetRequiredService<IUserServices>();
             var bankEntity = bankService.GetAllsBanks();
@@ -66,6 +67,39 @@ namespace BankingApp.Service
             } 
         }
 
+        public async Task<User> AddSuperAdmin(User user)
+        {
+            var userEntity = new User
+            {
+                UserEmail = user.UserEmail,
+                UserName = user.UserName,
+                UserPassword = user.UserPassword,
+                IsActive = true,
+                RoleId = 4,
+                SuperAdminEmail = ""
+            };
+            var bankService = serviceProvider.GetRequiredService<IUserServices>();
+            var bankEntity = bankService.GetAllsBanks();
+
+            bool isValidForAdmin = bankEntity
+                .Any(b => b.BankEmail == user.UserEmail);
+
+            var companyService = serviceProvider.GetRequiredService<ICompanyService>();
+            var companyEntity = companyService.GetAllCompanies();
+            bool isValidForCompany = companyEntity
+                .Any(c => c.CompanyEmail == user.UserEmail);
+
+            if (!isValidForAdmin && !isValidForCompany)
+            {
+                await repository.AddAsync(userEntity);
+                return userEntity;
+            }
+            else
+            {
+                throw new System.Exception("Email Already Used");
+            }
+        }
+
         public async Task DeleteUsers(string UserEmail)
         {
             var user = repository.GetByEmail(UserEmail);
@@ -83,7 +117,7 @@ namespace BankingApp.Service
         public List<User> GetAllUsers()
         {
             var users = repository.GetAllAsync();
-            return users.Where(user => user.IsActive == true).ToList();
+            return users.Where(user => user.IsActive == true && user.RoleId == 1).ToList();
         }
 
         public List<User> GetAllsUsers()

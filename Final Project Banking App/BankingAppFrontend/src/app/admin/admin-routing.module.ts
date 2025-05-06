@@ -20,7 +20,7 @@ const routes: Routes = [
     path: '',
     component: AdminDashboardComponent,
     canActivate: [AuthGuardServiceService],
-    data: { role: 'Admin' },
+    data: { role: ['Admin', 'SuperAdmin'] },
     children: [
       { path: '', redirectTo: 'admin-controller', pathMatch: 'full' },
       { path: 'admin-controller', component: AdminControllerComponent },

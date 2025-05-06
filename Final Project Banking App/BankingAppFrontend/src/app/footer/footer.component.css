@@ -28,6 +28,7 @@
   }
   
   .footer-content a:hover {
+    transition: 0.3s;
     color: red;
   }
   

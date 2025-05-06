@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 export class AdminServiceService {
   //admin-controller
   private apiUrl1 = "http://localhost:5147/api/User/add-admin";
+  private apiUrl20 = "http://localhost:5147/api/User/add-super-admin";
   private apiUrl2 = "http://localhost:5147/api/User/all-admins"
   private apiUrl3 = "http://localhost:5147/api/User/remove-admin-access"
 
@@ -42,10 +43,21 @@ export class AdminServiceService {
   constructor(private http: HttpClient) { }
 
     //admin
-  doRegistration(data: any): Observable<any> {
+    doRegistration(data: any, superAdminEmail: any): Observable<any> {
+      const token = localStorage.getItem('token');
+      const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    
+      // Append superAdminEmail as a query parameter
+      const url = `${this.apiUrl1}?superAdminEmail=${encodeURIComponent(superAdminEmail)}`;
+    
+      return this.http.post(url, data, { headers, responseType: 'text' });
+    }
+    
+
+  addSuperAdmin(data: any): Observable<any> {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.http.post(this.apiUrl1, data, { headers, responseType: 'text' });
+    return this.http.post(this.apiUrl20, data, { headers, responseType: 'text' });
   }
 
   getregistration():Observable<any>{

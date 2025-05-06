@@ -302,6 +302,11 @@ public class CompanyService : ICompanyService
         return beneficiaries.ToList();
     }
 
+    public List<Transaction> GetAllCompanyTransaction(string companyEmail)
+    {
+        var transactions = trans_repository.GetAllAsync();
+        return transactions.Where(c => c.TransferFromCompanyEmail == companyEmail).ToList();
+    }
     public async Task<Transaction> AddTrasaction(Transaction transaction, string companyEmail)
     {
         var transactionEntity = new Transaction

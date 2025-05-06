@@ -3,6 +3,7 @@ import { ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/co
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from '../../admin-service.service';
 import { MatDialogRef } from '@angular/material/dialog';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-add-admin',
@@ -33,11 +34,19 @@ export class AddAdminComponent {
 
 
   onSubmit() {
+    const token = localStorage.getItem('token')
+    if(!token){
+      alert('token not found')
+      return
+    }
+    const decodeToken:any = jwtDecode(token)
+    const superAdminEmail  = decodeToken.Id
+
     if (this.adminForm.valid) {
       const formData = this.adminForm.value;
       this.isLoading = true;
 
-      this.addAdmin.doRegistration(formData)
+      this.addAdmin.doRegistration(formData, superAdminEmail )
         .subscribe(
           (response) => {
             this.isLoading = false;

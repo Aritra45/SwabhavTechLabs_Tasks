@@ -16,5 +16,7 @@ namespace BankingApp.Model.Entity
 
         public int RoleId { get; set; }
 
+        public string SuperAdminEmail { get; set; }
+
     }
 }

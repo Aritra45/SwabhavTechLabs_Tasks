@@ -34,7 +34,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-admins")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult GetAllUsers()
         {
             var allUsers = userServices.GetAllUsers();
@@ -43,18 +43,18 @@ namespace BankingApp.Controllers
         }
 
         [HttpPost("add-admin")]
-        [Authorize(Roles = "Admin")]
-        public IActionResult AddUsers([FromBody] AddUserDto addUserDto)
+        [Authorize(Roles = "SuperAdmin")]
+        public IActionResult AddUsers([FromBody] AddUserDto addUserDto, string superAdminEmail)
         {
             //var users = mapper.Map<User>(addUserDto);
             //var newUser = userServices.AddUser(users);
             string passwd = BCrypt.Net.BCrypt.EnhancedHashPassword(addUserDto.UserPassword);
             addUserDto.UserPassword = passwd;
             var user = mapper.Map<User>(addUserDto);
-            var userEntity = userServices.AddUser(user);
+            var userEntity = userServices.AddUser(user, superAdminEmail);
             if (userEntity.Status.ToString() != "Faulted")
             {
-                return Ok("User Added Successfully");
+                return Ok("Admin Added Successfully");
             }
             else
             {
@@ -62,8 +62,28 @@ namespace BankingApp.Controllers
             }
         }
 
+        [HttpPost("add-super-admin")]
+        [Authorize(Roles = "SuperAdmin")]
+        public IActionResult AddSuperAdmin([FromBody] AddUserDto addUserDto)
+        {
+            //var users = mapper.Map<User>(addUserDto);
+            //var newUser = userServices.AddUser(users);
+            string passwd = BCrypt.Net.BCrypt.EnhancedHashPassword(addUserDto.UserPassword);
+            addUserDto.UserPassword = passwd;
+            var user = mapper.Map<User>(addUserDto);
+            var userEntity = userServices.AddSuperAdmin(user);
+            if (userEntity.Status.ToString() != "Faulted")
+            {
+                return UnprocessableEntity("Email Already Used");
+            }
+            else
+            {  
+                return Ok("Super Admin Added Successfully");
+            }
+        }
+
         [HttpDelete("remove-admin-access/{UserEmail}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult DeleteEmployees(string UserEmail)
         {
             userServices.DeleteUsers(UserEmail);

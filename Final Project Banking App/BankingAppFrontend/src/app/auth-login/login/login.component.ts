@@ -65,9 +65,11 @@ export class LoginComponent {
         alert(`Login Successful ${loginRole}`);
 
         // Navigate based on role
-        if (loginRole === 'Admin') {
+        if (loginRole === 'SuperAdmin') {
           this.router.navigate(['/admin-dashboard']);
-        } else if (loginRole === 'Bank') {
+        }else if (loginRole === 'Admin') {
+          this.router.navigate(['/admin-dashboard']);
+        }else if (loginRole === 'Bank') {
           this.router.navigate(['/bank-dashboard']);
         } else if (loginRole === 'Company') {
           this.router.navigate(['/company-dashboard']);

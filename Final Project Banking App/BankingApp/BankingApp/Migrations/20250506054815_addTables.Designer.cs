@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankingApp.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20250416170802_updateAuditLogTable")]
-    partial class updateAuditLogTable
+    [Migration("20250506054815_addTables")]
+    partial class addTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -130,12 +130,48 @@ namespace BankingApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Remark")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
                     b.HasKey("CompanyEmail");
 
                     b.ToTable("Companies");
+                });
+
+            modelBuilder.Entity("BankingApp.Model.Entity.Employee", b =>
+                {
+                    b.Property<string>("EmployeeEmail")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CompanyEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeBankAccountNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeFullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeIFSCNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("EmployeeSalaryAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.HasKey("EmployeeEmail");
+
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("BankingApp.Model.Entity.Role", b =>
@@ -153,6 +189,37 @@ namespace BankingApp.Migrations
                     b.HasKey("RoleId");
 
                     b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("BankingApp.Model.Entity.SalaryDisburesement", b =>
+                {
+                    b.Property<int>("TransactionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionId"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("CompanyEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("TransactionId");
+
+                    b.ToTable("SalaryDisburesements");
                 });
 
             modelBuilder.Entity("BankingApp.Model.Entity.Transaction", b =>
@@ -188,17 +255,18 @@ namespace BankingApp.Migrations
 
             modelBuilder.Entity("BankingApp.Model.Entity.User", b =>
                 {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+                    b.Property<string>("UserEmail")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
+
+                    b.Property<string>("SuperAdminEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -208,18 +276,15 @@ namespace BankingApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserId");
+                    b.HasKey("UserEmail");
 
                     b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Beneficiary", b =>
                 {
-                    b.Property<int>("BeneficiaryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BeneficiaryId"));
+                    b.Property<string>("BeneficiaryCompanyEmail")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("BankAccountNumber")
                         .IsRequired()
@@ -241,7 +306,10 @@ namespace BankingApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("BeneficiaryId");
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
+                    b.HasKey("BeneficiaryCompanyEmail");
 
                     b.ToTable("Beneficiaries");
                 });

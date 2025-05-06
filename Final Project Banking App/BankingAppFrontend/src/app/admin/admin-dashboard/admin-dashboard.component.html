@@ -1,14 +1,21 @@
 <!-- main-dashboard.component.html -->
 <mat-sidenav-container class="dashboard-container">
-    <mat-sidenav mode="side" opened>
+    <mat-sidenav mode="side" opened >
       <mat-nav-list>
-        <h3 style="margin-left: 10px; font-weight: bolder;"><u>Admin Controller</u></h3>
-        <a mat-list-item routerLink="admin-controller" routerLinkActive="active">Admin Dashboard</a>
+        <h3 style="margin-left: 10px; font-weight: bolder; text-align: center;"><u>Admin Controller</u></h3>
+        <a mat-list-item *ngIf="show" routerLink="admin-controller" routerLinkActive="active">Super Admin Dashboard</a>
+        <a mat-list-item *ngIf="!show" routerLink="admin-controller" routerLinkActive="active">Admin Dashboard</a>
+        -----------------------------------------
         <a mat-list-item routerLink="bank-controller" routerLinkActive="active">Bank Dashboard</a>
+        -----------------------------------------
         <a mat-list-item routerLink="company-controller" routerLinkActive="active">Company Dashboard</a>
+        -----------------------------------------
         <a mat-list-item routerLink="transaction-controller" routerLinkActive="active">Transaction Dashboard</a>
+        -----------------------------------------
         <a mat-list-item routerLink="outbound-beneficiary-controller" routerLinkActive="active">Beneficiary Dashboard</a>
+        -----------------------------------------
         <a mat-list-item routerLink="emloyee-salary-controller" routerLinkActive="active">Salary Disburesement<br> Dashboard</a>
+        -----------------------------------------
         <a mat-list-item routerLink="audit-controller" routerLinkActive="active">Audit Log Dashboard</a>
       </mat-nav-list>
     </mat-sidenav>

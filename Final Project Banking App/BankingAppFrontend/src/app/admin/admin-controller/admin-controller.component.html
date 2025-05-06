@@ -15,7 +15,7 @@
       </mat-card-actions>
     </mat-card>
   
-    <mat-card class="card post-card" (click)="openAddAdminDialog()">
+    <mat-card *ngIf="show" class="card post-card" (click)="openAddAdminDialog()">
       <mat-card-title>Add Admin</mat-card-title>
       <mat-card-content>
         <p>Create a new admin</p>
@@ -25,7 +25,7 @@
       </mat-card-actions>
     </mat-card>
   
-    <mat-card class="card delete-card" (click)="remove()">
+    <mat-card *ngIf="show" class="card delete-card" (click)="remove()">
       <mat-card-title>Remove Admin</mat-card-title>
       <mat-card-content>
         <p>Delete admin access using email</p>

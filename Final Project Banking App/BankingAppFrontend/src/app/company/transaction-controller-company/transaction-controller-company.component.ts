@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { CompanyServiceService } from '../company-service.service';
 import { AddTransactionComponent } from './add-transaction/add-transaction.component';
+import { GetTransactionComponent } from './get-transaction/get-transaction.component';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-transaction-controller-company',
@@ -11,10 +13,10 @@ import { AddTransactionComponent } from './add-transaction/add-transaction.compo
   styleUrl: './transaction-controller-company.component.css'
 })
 export class TransactionControllerCompanyComponent {
-  constructor(private dialog: MatDialog, private router:Router, private rs:CompanyServiceService) {}
+  constructor(private dialog: MatDialog, private router: Router, private rs: CompanyServiceService) { }
 
-  getData :any
-    
+  getData: any
+
 
   add() {
     this.rs.getInBoundBeneficiary().subscribe(
@@ -26,9 +28,9 @@ export class TransactionControllerCompanyComponent {
               inbound: inBoundRes,
               outbound: outBoundRes
             };
-  
+
             console.log("Combined data:", this.getData);
-            
+
             // Open dialog with combined data
             this.dialog.open(AddTransactionComponent, {
               width: '600px',
@@ -47,7 +49,30 @@ export class TransactionControllerCompanyComponent {
       }
     );
   }
-  
-  
 
+  get() {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+      alert("Token not found. Please log in again.");
+      return;
+    }
+    const decodedToken: any = jwtDecode(token);
+    const companyEmail = decodedToken.Id;
+
+    this.rs.getCompanyTransactions(companyEmail).subscribe(
+      (response) => {
+        console.log("Transactions fetched:", response);
+        this.dialog.open(GetTransactionComponent, {
+          width: '600px',
+          data : response
+        });
+      },
+      (error) => {
+        console.error("Error fetching admins:", error);
+        alert("Something went wrong");
+      }
+    );
   }
+
+}

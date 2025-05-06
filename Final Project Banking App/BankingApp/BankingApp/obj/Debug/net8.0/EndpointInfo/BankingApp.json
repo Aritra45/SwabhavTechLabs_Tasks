@@ -301,6 +301,28 @@
         }
       }
     },
+    "/api/Company/all-company-transactions/{companyEmail}": {
+      "get": {
+        "tags": [
+          "Company"
+        ],
+        "parameters": [
+          {
+            "name": "companyEmail",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Company/add-new-transaction": {
       "post": {
         "tags": [
@@ -429,6 +451,46 @@
       }
     },
     "/api/User/add-admin": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "superAdminEmail",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddUserDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddUserDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/add-super-admin": {
       "post": {
         "tags": [
           "User"

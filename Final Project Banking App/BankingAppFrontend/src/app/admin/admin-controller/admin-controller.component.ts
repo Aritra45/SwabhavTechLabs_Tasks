@@ -6,6 +6,7 @@ import { AddAdminComponent } from './add-admin/add-admin.component';
 import { GetAdminComponent } from './get-admin/get-admin.component';
 import { RemoveAdminComponent } from './remove-admin/remove-admin.component';
 import { jwtDecode } from 'jwt-decode';
+import { BlockList } from 'net';
 
 @Component({
   selector: 'app-admin-controller',
@@ -14,10 +15,28 @@ import { jwtDecode } from 'jwt-decode';
   styleUrl: './admin-controller.component.css'
 })
 export class AdminControllerComponent {
-  constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {}
+  myrole:any
+  show : Boolean = false
+  constructor(private dialog: MatDialog, private router:Router, private rs:AdminServiceService) {
+    const token = localStorage.getItem('token')
+    if (!token) {
+      alert("Token not found. Please log in again.");
+      return;
+    }
+    const payload = JSON.parse(atob(token.split('.')[1])); // Decode JWT
+    const role = payload['role'] || payload['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'] || ''
+    console.log(role);
+    this.myrole = role
+    if(this.myrole == "SuperAdmin"){
+      this.show = true
+    }
+    else{
+      this.show = false
+    }
+  }
+  
 
   openAddAdminDialog(){
-    console.log("hi");
     
     this.dialog.open(AddAdminComponent, {
       width: '500px'

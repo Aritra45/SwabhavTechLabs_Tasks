@@ -261,6 +261,10 @@ namespace BankingApp.Migrations
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
+                    b.Property<string>("SuperAdminEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

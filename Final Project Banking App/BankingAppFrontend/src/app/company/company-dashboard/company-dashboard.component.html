@@ -2,11 +2,15 @@
 <mat-sidenav-container class="dashboard-container">
   <mat-sidenav mode="side" opened>
     <mat-nav-list>
-      <h3 style="margin-left: 10px;"><b><u>Company Controller</u></b></h3>
+      <h3 style="margin-left: 10px; text-align: center;"><b><u>Company Controller</u></b></h3>
       <a mat-list-item (click)="checkAndNavigate('inboundbeneficiary-controller')">InBoundBeneficiary<br>Dashboard</a>
+      -----------------------------------------
       <a mat-list-item (click)="checkAndNavigate('outboundbeneficiary-controller-company')">OutBoundBeneficiary<br> Dashboard</a>
+      -----------------------------------------
       <a mat-list-item (click)="checkAndNavigate('transaction-controller-company')">Transaction Dashboard</a>
+      -----------------------------------------
       <a mat-list-item  (click)="checkAndNavigate('employee-controller-company')">Employee Dashboard</a>
+      -----------------------------------------
       <a mat-list-item routerLink="company-profile" routerLinkActive="active"
         style="margin-top: auto; margin-bottom: 0%;" >Your Document Activation<br> Status</a>
     </mat-nav-list>

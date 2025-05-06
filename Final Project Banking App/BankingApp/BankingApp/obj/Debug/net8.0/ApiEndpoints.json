@@ -95,6 +95,22 @@
   },
   {
     "ContainingType": "CompanyController",
+    "Method": "GetAllCompanyTransactions",
+    "RelativePath": "api/Company/all-company-transactions/{companyEmail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companyEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CompanyController",
     "Method": "GetAllEmployees",
     "RelativePath": "api/Company/all-employees",
     "HttpMethod": "GET",
@@ -255,6 +271,11 @@
         "Name": "addUserDto",
         "Type": "BankingApp.Model.UserDtos.AddUserDto",
         "IsRequired": true
+      },
+      {
+        "Name": "superAdminEmail",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -270,6 +291,22 @@
       {
         "Name": "addBankDto",
         "Type": "BankingApp.Model.BankDto.AddBankDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "AddSuperAdmin",
+    "RelativePath": "api/User/add-super-admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addUserDto",
+        "Type": "BankingApp.Model.UserDtos.AddUserDto",
         "IsRequired": true
       }
     ],
