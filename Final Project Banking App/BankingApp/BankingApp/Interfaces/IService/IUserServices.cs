@@ -26,7 +26,7 @@ namespace BankingApp.Interfaces.IService
 
         //company
         public List<Company> GetAllNotAprovedCompanies();
-        public Company UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto);
+        public Task<Company> UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto);
 
         //transaction
         public List<Transaction> GetAllPendingTransactions();

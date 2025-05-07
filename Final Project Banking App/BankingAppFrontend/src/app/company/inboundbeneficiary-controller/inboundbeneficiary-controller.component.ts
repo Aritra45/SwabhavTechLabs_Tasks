@@ -45,7 +45,7 @@ export class InboundbeneficiaryControllerComponent {
       const decodedToken: any = jwtDecode(token);
       const loggedInCompanyId = decodedToken.Id;
   
-      this.rs.getAllCompany().subscribe(
+      this.rs.getApprovedCompany().subscribe(
         (allCompanies) => {
           // Filter out the logged-in company
           const filteredCompanies = allCompanies.filter((company: any) => company.companyEmail !== loggedInCompanyId);

@@ -36,7 +36,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-admins")]
-        [Authorize(Roles = "SuperAdmin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetAllUsers()
         {
             var allUsers = userServices.GetAllUsers();
@@ -97,7 +97,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-banks")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetAllBanks()
         {
             var allBanks = userServices.GetAllBanks();
@@ -106,7 +106,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpPost("add-new-bank")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult AddBanks([FromBody] AddBankDto addBankDto)
         {
             //var banks = mapper.Map<Bank>(addBankDto);
@@ -127,7 +127,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpDelete("remove-bank-access/{bankEmail}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult DeleteBanks(string bankEmail)
         {
             userServices.DeleteBank(bankEmail);
@@ -135,7 +135,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpPut("update-bank-password/{bankEmail}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult UpdateBankPassword(string bankEmail, [FromBody] UpdateBankPasswordDto updateBankPasswordDto)
         {
             var bankEntity = userServices.UpdateBankPassword(bankEmail, updateBankPasswordDto);
@@ -143,7 +143,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("get-by-bank-email/{bankEmail}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetByEmail(string bankEmail)
         {
             var bank = userServices.GetByEmail(bankEmail);
@@ -152,7 +152,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-pending-companies")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetAllNotApprovedCompanies()
         {
             var allCompanies = userServices.GetAllNotAprovedCompanies();
@@ -161,7 +161,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpPut("update-pending-companies/{companyEmail}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult UpdateBankPassword(string companyEmail, [FromBody] UpdateNotApprovedDto UpdateNotApprovedDto)
         {
             var bankEntity = userServices.UpdateNotAprovedCompanies(companyEmail, UpdateNotApprovedDto);
@@ -169,7 +169,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-pending-transactions")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetAllPendingTransactions()
         {
             var allTransactions = userServices.GetAllPendingTransactions();
@@ -177,7 +177,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpPut("update-pending-transactions/{transactionID}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult UpdatePendingTransaction(int transactionID, UpdatePendingTransactionDto updatePendingTransactionDto)
         {
             var transactionEntity = userServices.UpdatePendingTransaction(transactionID, updatePendingTransactionDto);
@@ -185,7 +185,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-oubound-pending-beneficiaries")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetAllOutboundNotApprovedBeneficiaries()
         {
             var allbeneficiaries = userServices.GetAllOutboundNotApprovedBeneficiaries();
@@ -194,7 +194,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpPut("update-pending-beneficiaries/{beneficiaryEmail}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult UpdateOutboundNotApprovedBeneficiaries(string beneficiaryEmail, UpdateNotApprovedBeneficiaryDto updateNotApprovedBeneficiaryDto)
         {
             var beneficiaryEntity = userServices.UpdateOutboundNotApprovedBeneficiaries(beneficiaryEmail, updateNotApprovedBeneficiaryDto);
@@ -202,7 +202,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-logs")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> GetAllLogs(int pageNumber = 1, int pageSize = 5, string? search = "")
         {
             var query = _context.AuditLogs.AsQueryable();
@@ -217,7 +217,7 @@ namespace BankingApp.Controllers
 
             var totalLogs = await query.CountAsync();
             var logs = await query
-                .OrderByDescending(log => log.Time)
+                .OrderByDescending(log => log.AuditId)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
@@ -233,7 +233,7 @@ namespace BankingApp.Controllers
 
 
         [HttpGet("by-user/{userId}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> GetLogsByUser(string userId)
         {
             var logs = await _context.AuditLogs
@@ -245,7 +245,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("by-date")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public async Task<IActionResult> GetLogsByDate([FromQuery] DateTime date)
         {
             var logs = await _context.AuditLogs
@@ -257,7 +257,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpGet("all-pending-salary")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult GetAllPendingSalary()
         {
             var allsalary = userServices.GetAllPendingSalary();
@@ -266,7 +266,7 @@ namespace BankingApp.Controllers
         }
 
         [HttpPut("update-pending-salary/{transactionID}")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult UpdatePendingSalary(int transactionID, UpdatePendingSalaryDto updatePendingSalaryDto)
         {
             var transactionEntity = userServices.UpdatePendingSalary(transactionID, updatePendingSalaryDto);

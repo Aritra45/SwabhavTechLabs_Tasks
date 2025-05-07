@@ -15,7 +15,8 @@ public class AuditLogInterceptor : SaveChangesInterceptor
     public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
     {
         var context = eventData.Context;
-        var userId = _httpContextAccessor.HttpContext?.User?.Identity?.Name ?? "Anonymous";
+        var userId = _httpContextAccessor.HttpContext?.User?.Claims.FirstOrDefault(c => c.Type == "Id")?.Value ?? "Anonymous";
+
 
         if (context == null) return base.SavingChanges(eventData, result);
 
@@ -29,7 +30,7 @@ public class AuditLogInterceptor : SaveChangesInterceptor
                 {
                     UserId = userId,
                     Description = $"{entry.Entity.GetType().Name} was {entry.State}",
-                    Time = DateTime.UtcNow
+                    Time = DateTime.Now
                 });
             }
         }

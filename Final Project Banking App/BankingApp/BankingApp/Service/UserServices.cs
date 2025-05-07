@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Net.Mail;
+using System.Net;
 using BankingApp.Database;
 using BankingApp.Exception;
+using BankingApp.Helper;
 using BankingApp.Interfaces.IRepository;
 using BankingApp.Interfaces.IService;
 using BankingApp.Model.BankDto;
@@ -9,6 +12,9 @@ using BankingApp.Model.CompanyDto;
 using BankingApp.Model.EmployeeDto;
 using BankingApp.Model.Entity;
 using BankingApp.Model.TrasactionDto;
+using static System.Net.WebRequestMethods;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Builder.Extensions;
 
 namespace BankingApp.Service
 {
@@ -20,10 +26,11 @@ namespace BankingApp.Service
         private readonly IGenericRepository<Transaction> trans_repository;
         private readonly IGenericRepository<Beneficiary> out_repository;
         private readonly IGenericRepository<SalaryDisburesement> salary_repository;
+        private readonly SmtpSettings _smtpSettings;
         MyContext context;
         private readonly IServiceProvider serviceProvider;
 
-        public UserServices(IGenericRepository<User> userRepository, MyContext context, IServiceProvider serviceProvider, IGenericRepository<Bank> bank_repository, IGenericRepository<Company> companyRepo, IGenericRepository<Transaction> trans_repository, IGenericRepository<Beneficiary> out_repository, IGenericRepository<SalaryDisburesement> salary_repository)
+        public UserServices(IGenericRepository<User> userRepository, MyContext context, IServiceProvider serviceProvider, IGenericRepository<Bank> bank_repository, IGenericRepository<Company> companyRepo, IGenericRepository<Transaction> trans_repository, IGenericRepository<Beneficiary> out_repository, IGenericRepository<SalaryDisburesement> salary_repository, IOptions<SmtpSettings> smtpOptions)
         {
             this.context = context;
             this.repository = userRepository;
@@ -33,6 +40,7 @@ namespace BankingApp.Service
             this.trans_repository = trans_repository;
             this.out_repository = out_repository;
             this.salary_repository = salary_repository;
+            _smtpSettings = smtpOptions.Value;
         }
         public async Task<User> AddUser(User user, string superAdminEmail)
         {
@@ -241,7 +249,7 @@ namespace BankingApp.Service
             return companies.Where(company => company.IsAproved == false && company.Remark == "").ToList();
         }
 
-        public Company UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto)
+        public async Task<Company> UpdateNotAprovedCompanies(string company, UpdateNotApprovedDto updateNotApprovedDto)
         {
             var companyEntity = _companyRepo.GetByEmail(company);
             if (companyEntity != null)
@@ -249,11 +257,50 @@ namespace BankingApp.Service
                 companyEntity.IsAproved = updateNotApprovedDto.IsAproved;
                 companyEntity.Remark = updateNotApprovedDto.Remark;
                 _companyRepo.Update(companyEntity);
+                await SendOtpEmailAsync(company, updateNotApprovedDto.Remark);
                 return companyEntity;
+
             }
             else
             {
                 throw new NullReferenceException();
+            }
+        }
+
+        private async Task SendOtpEmailAsync(string toEmail, string reason)
+        {
+            try
+            {
+                var reasonList = reason
+                .Split('.', StringSplitOptions.RemoveEmptyEntries)
+                .Select(r => r.Trim())
+                .ToList();
+
+                string formattedReasons = string.Join("\n", reasonList.Select((r, i) => $"{i + 1}. {r}"));
+
+                var message = new MailMessage(_smtpSettings.UserName, toEmail)
+                {
+                    Subject = "Update on Your Document Status",
+                    Body = $"Dear Valued User,\n\nWe are writing to inform you of the current status of your document with " +
+                    $"AD Bank:\n\nStatus: \n{formattedReasons}\n\nIf you have any questions or require further assistance, " +
+                    $"please do not hesitate to contact our support team.\n\nThank you for choosing AD Bank." +
+                    $"\n\nBest regards,\nAD Banking App Team",
+                    IsBodyHtml = false
+                };
+
+                using var smtp = new SmtpClient(_smtpSettings.Host)
+                {
+                    Port = _smtpSettings.Port,
+                    Credentials = new NetworkCredential(_smtpSettings.UserName, _smtpSettings.Password),
+                    EnableSsl = _smtpSettings.EnableSsl
+                };
+
+                await smtp.SendMailAsync(message);
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine($"[EMAIL ERROR] {ex}");
+                throw;
             }
         }
 

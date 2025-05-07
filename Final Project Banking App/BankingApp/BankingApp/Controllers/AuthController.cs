@@ -7,6 +7,8 @@ using System.Security.Claims;
 using System.Text;
 using BankingApp.Model.AuthControllerDto;
 using BankingApp.Model.AuthDto;
+using BankingApp.Repository;
+using BankingApp.Interfaces.IRepository;
 
 namespace BankingApp.Controllers
 {
@@ -17,12 +19,18 @@ namespace BankingApp.Controllers
         private readonly IConfiguration _configuration;
         private readonly MyContext _context;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IGenericRepository<User> user_repos;
+        private readonly IGenericRepository<Bank> bank_repos;
+        private readonly IGenericRepository<Company> company_repos;
 
-        public AuthController(IConfiguration configuration, MyContext context, IHttpContextAccessor httpContextAccessor)
+        public AuthController(IConfiguration configuration, MyContext context, IHttpContextAccessor httpContextAccessor, IGenericRepository<User> user_repos, IGenericRepository<Bank> bank_repos, IGenericRepository<Company> company_repos)
         {
             _configuration = configuration;
             _context = context;
             _httpContextAccessor = httpContextAccessor;
+            this.user_repos = user_repos;
+            this.bank_repos = bank_repos;
+            this.company_repos = company_repos;
         }
 
         [HttpPost("login")]
@@ -35,7 +43,17 @@ namespace BankingApp.Controllers
             {
                 if (BCrypt.Net.BCrypt.EnhancedVerify(loginDto.Password, userEntity.UserPassword))
                 {
-                    return await GenerateTokenForAdmin(userEntity, _configuration);
+                    var users = new User();
+                    string email = loginDto.UserEmail;
+                    var userDetails = user_repos.GetByEmail(email);
+                    if(userDetails.IsActive == true)
+                    {
+                        return await GenerateTokenForAdmin(userEntity, _configuration);
+                    }
+                    else
+                    {
+                        return Unauthorized("You Are Banned");
+                    }
                     
                 }
                 else
@@ -47,7 +65,17 @@ namespace BankingApp.Controllers
             {
                 if (BCrypt.Net.BCrypt.EnhancedVerify(loginDto.Password, bankEntity.BankPassword))
                 {
-                    return await GenerateTokenForBank(bankEntity, _configuration);
+                    var bank = new Bank();
+                    string email = loginDto.UserEmail;
+                    var bankDetails = bank_repos.GetByEmail(email);
+                    if(bankDetails.IsActive == true)
+                    {
+                        return await GenerateTokenForBank(bankEntity, _configuration);
+                    }
+                    else
+                    {
+                        return Unauthorized("Bank is Banned");
+                    }
 
                 }
                 else
@@ -59,8 +87,17 @@ namespace BankingApp.Controllers
             {
                 if (BCrypt.Net.BCrypt.EnhancedVerify(loginDto.Password, companyEntity.Password))
                 {
-                    return await GenerateTokenForCompany(companyEntity, _configuration);
-
+                    var company = new Company();
+                    string email = loginDto.UserEmail;
+                    var companyDetails = company_repos.GetByEmail(email);
+                    if (companyDetails.IsActive == true)
+                    {
+                        return await GenerateTokenForCompany(companyEntity, _configuration);
+                    }
+                    else
+                    {
+                        return Unauthorized("You Are Banned");
+                    }
                 }
                 else
                 {
