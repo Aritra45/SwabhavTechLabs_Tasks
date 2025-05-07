@@ -52,12 +52,14 @@ namespace BankingApp.Controllers
                     }
                     else
                     {
+                        await LogFailed(loginDto.UserEmail);
                         return Unauthorized("You Are Banned");
                     }
                     
                 }
                 else
                 {
+                    await LogFailed(loginDto.UserEmail);
                     return Unauthorized("Invalid Admin Email or Password.");
                 }
             }
@@ -74,12 +76,14 @@ namespace BankingApp.Controllers
                     }
                     else
                     {
+                        await LogFailed(loginDto.UserEmail);
                         return Unauthorized("Bank is Banned");
                     }
 
                 }
                 else
                 {
+                    await LogFailed(loginDto.UserEmail);
                     return Unauthorized("Invalid Bank Email or Password.");
                 }
             }
@@ -96,11 +100,13 @@ namespace BankingApp.Controllers
                     }
                     else
                     {
+                        await LogFailed(email);
                         return Unauthorized("You Are Banned");
                     }
                 }
                 else
                 {
+                    await LogFailed(loginDto.UserEmail);
                     return Unauthorized("Invalid Company Email or Password.");
                 }
             }
@@ -111,12 +117,26 @@ namespace BankingApp.Controllers
             
         }
 
-        private async Task<IActionResult> LogFailed(string email, string type)
+        [HttpPost("logout")]
+        public async Task<IActionResult> LogOut([FromBody] LogoutDto logoutDto)
+        {
+            _context.AuditLogs.Add(new AuditLog
+            {
+                UserId = logoutDto.Email,
+                Description = $"LogOut Successfull.",
+                Time = DateTime.Now
+            });
+
+            await _context.SaveChangesAsync();
+            return Ok("LogOut Successfull.");
+        }
+
+        private async Task<IActionResult> LogFailed(string email)
         {
             _context.AuditLogs.Add(new AuditLog
             {
                 UserId = email,
-                Description = $"Failed login attempt for {type} user.",
+                Description = $"Failed login attempt.",
                 Time = DateTime.Now
             });
 
