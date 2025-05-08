@@ -17,6 +17,8 @@ namespace BankingApp.Model.Entity
         public string TransferFromCompanyEmail { get; set; }
         [NotNull]
         public string TransferToCompanyEmail { get; set; }
+
+        public string ApprovedBy { get; set; }
         
     }
 }

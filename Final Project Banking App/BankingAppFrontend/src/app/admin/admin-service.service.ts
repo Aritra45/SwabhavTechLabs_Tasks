@@ -25,10 +25,12 @@ export class AdminServiceService {
 
   //transaction-controller
   private apiUrl11 = "http://localhost:5147/api/User/all-pending-transactions"
+  private apiUrl21 = "http://localhost:5147/api/User/all-updated-transactions"
   private apiUrl12 = "http://localhost:5147/api/User/update-pending-transactions"
 
   //beneficiary-controller
   private apiUrl13 = "http://localhost:5147/api/User/all-oubound-pending-beneficiaries"
+  private apiUrl22 = "http://localhost:5147/api/User/all-oubound-updated-beneficiaries"
   private apiUrl14 = "http://localhost:5147/api/User/update-pending-beneficiaries"
 
   //auditlog-controller
@@ -38,6 +40,7 @@ export class AdminServiceService {
 
   //employee
   private apiUrl18 = "http://localhost:5147/api/User/all-pending-salary"
+  private apiUrl23 = "http://localhost:5147/api/User/all-updated-salary"
   private apiUrl19 = "http://localhost:5147/api/User/update-pending-salary"
 
   constructor(private http: HttpClient) { }
@@ -133,6 +136,10 @@ export class AdminServiceService {
     return this.http.get<any>(this.apiUrl11)
   }
 
+  getUpdatedtransaction(adminEmail:any):Observable<any>{
+    return this.http.get<any>(`${this.apiUrl21}/${encodeURIComponent(adminEmail)}`)
+  }
+
   updatependingCompanyTransaction(transactionID: number, data:any): Observable<any> {
 
     const token = localStorage.getItem('token');
@@ -153,6 +160,10 @@ export class AdminServiceService {
   //beneficiary
   getPendingBeneficiaries():Observable<any>{
     return this.http.get<any>(this.apiUrl13)
+  }
+
+  getUpdatedBeneficiaries(adminEmail:any):Observable<any>{
+    return this.http.get<any>(`${this.apiUrl22}/${encodeURIComponent(adminEmail)}`)
   }
 
   updatependingBeneficiaries(beneficiaryEmail: string, data:any): Observable<any> {
@@ -193,6 +204,10 @@ export class AdminServiceService {
   //employee
   getPendingSalary():Observable<any>{
     return this.http.get<any>(this.apiUrl18)
+  }
+
+  getUpdatedSalary(adminEmail:any):Observable<any>{
+    return this.http.get<any>(`${this.apiUrl23}/${encodeURIComponent(adminEmail)}`)
   }
 
   updatePendingSalary(transactionID: number, data:any): Observable<any> {

@@ -4,6 +4,8 @@ import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { UpdatePendingCompaniesComponent } from '../company-controller/update-pending-companies/update-pending-companies.component';
 import { UpdateCompanyPendingTransactionsComponent } from './update-company-pending-transactions/update-company-pending-transactions.component';
+import { GetAllUpdatedTransactionComponent } from './get-all-updated-transaction/get-all-updated-transaction.component';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-transaction-controller',
@@ -29,4 +31,28 @@ export class TransactionControllerComponent {
       }
     )
   }
+  
+    getData :any
+      get() {
+        const token = localStorage.getItem('token')
+        if(!token){
+          return
+        }
+        const decodeToken:any = jwtDecode(token)
+        const adminEmail = decodeToken.Id
+        this.rs.getUpdatedtransaction(adminEmail).subscribe(
+          (response) => {
+            console.log("Transactions fetched:", response);
+            this.dialog.open(GetAllUpdatedTransactionComponent, {
+              width: '1000px',
+              maxWidth: '1000px',
+              data: response
+            });
+          },
+          (error) => {
+            console.error("Error fetching admins:", error);
+            alert("Something went wrong");
+          }
+        );
+      }
 }

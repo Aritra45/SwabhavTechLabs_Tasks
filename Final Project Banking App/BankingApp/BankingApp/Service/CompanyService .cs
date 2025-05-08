@@ -206,6 +206,7 @@ public class CompanyService : ICompanyService
             BeneficiaryType = "Inbound",
             IsApproved = true,
             CompanyEmail = companyEmail,
+            ApprovedBy = "",
         };
 
         var companies = GetAllCompanies();
@@ -255,6 +256,7 @@ public class CompanyService : ICompanyService
             BeneficiaryType = "Outbound",
             IsApproved = false,
             CompanyEmail = companyEmail,
+            ApprovedBy = ""
         };
         var companies = GetAllCompanies();
         bool isValidCompany = companies
@@ -265,7 +267,7 @@ public class CompanyService : ICompanyService
             var approvedCompanies = GetAprovedCompanies();
             bool isValidApprovedCompany = approvedCompanies
                 .Any(c => string.Equals(c.CompanyEmail, beneficiary.CompanyEmail, StringComparison.OrdinalIgnoreCase));
-            if (isValidApprovedCompany)
+            if (!isValidApprovedCompany)
             {
                 await repository.AddAsync(beneficiaryEntity);
                 return beneficiaryEntity;
@@ -315,7 +317,8 @@ public class CompanyService : ICompanyService
             TransferToCompanyEmail = transaction.TransferToCompanyEmail,
             TransactionAmount = transaction.TransactionAmount,
             PaymentDate = DateTime.Now,
-            Status = "Pending"
+            Status = "Pending",
+            ApprovedBy = "",
         };
 
         var beneficiaries = GetAllBeneficiaries();
@@ -441,7 +444,8 @@ public class CompanyService : ICompanyService
                     Amount = emp.Amount,
                     TransactionDate = DateTime.Now,
                     CompanyEmail = emp.CompanyEmail, 
-                    Status = emp.Status
+                    Status = emp.Status,
+                    ApprovedBy = "",
                 };
 
                 disbursementRecords.Add(disbursement);

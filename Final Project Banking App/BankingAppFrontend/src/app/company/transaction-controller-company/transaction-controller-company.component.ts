@@ -24,9 +24,10 @@ export class TransactionControllerCompanyComponent {
         this.rs.getOutBoundBeneficiary().subscribe(
           (outBoundRes) => {
             // Combine inbound and outbound data into one array (or object, if necessary)
+            const filterOutbound = outBoundRes.filter((beneficiary :any) => beneficiary.isApproved == true)
             this.getData = {
               inbound: inBoundRes,
-              outbound: outBoundRes
+              outbound: filterOutbound
             };
 
             console.log("Combined data:", this.getData);

@@ -767,6 +767,28 @@
         }
       }
     },
+    "/api/User/all-updated-transactions/{adminEmail}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "adminEmail",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/update-pending-transactions/{transactionID}": {
       "put": {
         "tags": [
@@ -813,6 +835,28 @@
       "get": {
         "tags": [
           "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/all-oubound-updated-beneficiaries/{adminEmail}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "adminEmail",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -950,6 +994,28 @@
       "get": {
         "tags": [
           "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/all-updated-salary/{adminEmail}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "adminEmail",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -1133,6 +1199,10 @@
           "status": {
             "type": "string",
             "nullable": true
+          },
+          "approvedBy": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1174,6 +1244,10 @@
         "properties": {
           "isApproved": {
             "type": "boolean"
+          },
+          "approvedBy": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1197,6 +1271,10 @@
           "status": {
             "type": "string",
             "nullable": true
+          },
+          "approvedBy": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1205,6 +1283,10 @@
         "type": "object",
         "properties": {
           "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedBy": {
             "type": "string",
             "nullable": true
           }

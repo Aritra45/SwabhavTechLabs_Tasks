@@ -311,12 +311,19 @@ namespace BankingApp.Service
             return transactions.Where(transaction => transaction.Status == "Pending").ToList();
         }
 
+        public List<Transaction> GetTransactionsApprovedBy(string adminEmail)
+        {
+            var transactions = trans_repository.GetAllAsync();
+            return transactions.Where(transaction => transaction.Status != "Pending" && transaction.ApprovedBy== adminEmail).ToList();
+        }
+
         public Transaction UpdatePendingTransaction(int transactionId, UpdatePendingTransactionDto updatePendingTransactionDto)
         {
             var transactionEntity = trans_repository.GetByID(transactionId);
             if (transactionEntity != null)
             {
                 transactionEntity.Status = updatePendingTransactionDto.Status;
+                transactionEntity.ApprovedBy = updatePendingTransactionDto.ApprovedBy;
                 trans_repository.Update(transactionEntity);
                 return transactionEntity;
             }
@@ -334,12 +341,20 @@ namespace BankingApp.Service
             beneficiary.IsApproved == false).ToList();
         }
 
+        public List<Beneficiary> GetUpdatedBeneficiary(string adminEmail)
+        {
+            var beneficiaries = out_repository.GetAllAsync();
+            return beneficiaries.Where(beneficiary => beneficiary.BeneficiaryType == "Outbound" &&
+            beneficiary.ApprovedBy==adminEmail).ToList();
+        }
+
         public Beneficiary UpdateOutboundNotApprovedBeneficiaries(string beneficiaryEmail, UpdateNotApprovedBeneficiaryDto updateNotApprovedBeneficiary)
         {
             var beneficiaryEntity = out_repository.GetByEmail(beneficiaryEmail);
             if (beneficiaryEntity != null)
             {
                 beneficiaryEntity.IsApproved = updateNotApprovedBeneficiary.IsApproved;
+                beneficiaryEntity.ApprovedBy = updateNotApprovedBeneficiary.ApprovedBy;
                 out_repository.Update(beneficiaryEntity);
                 return beneficiaryEntity;
             }
@@ -355,12 +370,19 @@ namespace BankingApp.Service
             return salaries.Where(salary => salary.Status == "Pending").ToList();
         }
 
+        public List<SalaryDisburesement> GetUpdatedSalary(string adminEmail)
+        {
+            var salaries = salary_repository.GetAllAsync();
+            return salaries.Where(salary => salary.Status != "Pending" && salary.ApprovedBy == adminEmail).ToList();
+        }
+
         public SalaryDisburesement UpdatePendingSalary(int transactionId, UpdatePendingSalaryDto updatePendingSalaryDto)
         {
             var salaryEntity = salary_repository.GetByID(transactionId);
             if (salaryEntity != null)
             {
                 salaryEntity.Status = updatePendingSalaryDto.Status;
+                salaryEntity.ApprovedBy = updatePendingSalaryDto.ApprovedBy;
                 salary_repository.Update(salaryEntity);
                 return salaryEntity;
             }

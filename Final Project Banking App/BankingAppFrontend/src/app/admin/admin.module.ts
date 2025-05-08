@@ -47,6 +47,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ChangePasswordComponent } from './bank-controller/update-bank-password/change-password/change-password.component';
 import { SearchComponent } from './search/search.component';
+import { GetAllUpdatedTransactionComponent } from './transaction-controller/get-all-updated-transaction/get-all-updated-transaction.component';
+import { GetUpdatedBeneficiaryComponent } from './outbound-beneficiary-controller/get-updated-beneficiary/get-updated-beneficiary.component';
+import { GetUpdatedSalaryComponent } from './salary-disburesement/get-updated-salary/get-updated-salary.component';
 
 
 
@@ -79,6 +82,9 @@ import { SearchComponent } from './search/search.component';
     ReasonRejectComponent,
     ChangePasswordComponent,
     SearchComponent,
+    GetAllUpdatedTransactionComponent,
+    GetUpdatedBeneficiaryComponent,
+    GetUpdatedSalaryComponent,
   ],
   imports: [
     CommonModule,

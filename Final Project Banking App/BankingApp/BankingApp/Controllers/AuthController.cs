@@ -112,7 +112,7 @@ namespace BankingApp.Controllers
             }
             else
             {
-                return Unauthorized("Invalid Staff ID or Password.");
+                return Unauthorized("Invalid User ID or Password.");
             }
             
         }

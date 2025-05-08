@@ -2,7 +2,8 @@
 <mat-sidenav-container class="dashboard-container">
     <mat-sidenav mode="side" opened >
       <mat-nav-list>
-        <h3 style="margin-left: 10px; font-weight: bolder; text-align: center;"><u>Admin Controller</u></h3>
+        <h3 *ngIf="show" style="margin-left: 10px; font-weight: bolder; text-align: center;"><u>Super Admin Controller</u></h3>
+        <h3 *ngIf="!show" style="margin-left: 10px; font-weight: bolder; text-align: center;"><u>Admin Controller</u></h3>
         <a mat-list-item *ngIf="show" routerLink="admin-controller" routerLinkActive="active">Super Admin Dashboard</a>
         <a mat-list-item *ngIf="!show" routerLink="admin-controller" routerLinkActive="active">Admin Dashboard</a>
         -----------------------------------------

@@ -4,6 +4,16 @@
   </h2>
 </div>
 <div class="dashboard-cards">
+  <mat-card class="card get-card" (click)="get()">
+    <mat-card-title>View Updated Employees Salary Transactions</mat-card-title>
+    <mat-card-content>
+      <p>View updated transactions</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="warn">VIEW</button>
+    </mat-card-actions>
+  </mat-card>
+
   <mat-card class="card update-card" (click)="update()">
     <mat-card-title>Update Pendeing Employees Salary Transactions</mat-card-title>
     <mat-card-content>

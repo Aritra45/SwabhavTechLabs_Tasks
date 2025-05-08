@@ -176,6 +176,14 @@ namespace BankingApp.Controllers
             return Ok(allTransactions);
         }
 
+        [HttpGet("all-updated-transactions/{adminEmail}")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public IActionResult GetAllUpdatedTransaction(string adminEmail)
+        {
+            var allTransactions = userServices.GetTransactionsApprovedBy(adminEmail).OrderByDescending(t => t.TransactionId);
+            return Ok(allTransactions);
+        }
+
         [HttpPut("update-pending-transactions/{transactionID}")]
         [Authorize(Roles = "SuperAdmin, Admin")]
         public IActionResult UpdatePendingTransaction(int transactionID, UpdatePendingTransactionDto updatePendingTransactionDto)
@@ -190,6 +198,15 @@ namespace BankingApp.Controllers
         {
             var allbeneficiaries = userServices.GetAllOutboundNotApprovedBeneficiaries();
             var getbeneficiaries = mapper.Map<List<GetAllOutboundNotApprovedBeneficiariesDto>>(allbeneficiaries);
+            return Ok(getbeneficiaries);
+        }
+
+        [HttpGet("all-oubound-updated-beneficiaries/{adminEmail}")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public IActionResult GetAllUpdatedBeneficiaries(string adminEmail)
+        {
+            var allbeneficiaries = userServices.GetUpdatedBeneficiary(adminEmail);
+            var getbeneficiaries = mapper.Map<List<GetAllbeneficiariesDto>>(allbeneficiaries);
             return Ok(getbeneficiaries);
         }
 
@@ -261,6 +278,15 @@ namespace BankingApp.Controllers
         public IActionResult GetAllPendingSalary()
         {
             var allsalary = userServices.GetAllPendingSalary();
+            var getsalaries = mapper.Map<List<GetAllPendingSalaryDto>>(allsalary);
+            return Ok(getsalaries);
+        }
+
+        [HttpGet("all-updated-salary/{adminEmail}")]
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        public IActionResult GetUpdatedSalary(string adminEmail)
+        {
+            var allsalary = userServices.GetUpdatedSalary(adminEmail);
             var getsalaries = mapper.Map<List<GetAllPendingSalaryDto>>(allsalary);
             return Ok(getsalaries);
         }

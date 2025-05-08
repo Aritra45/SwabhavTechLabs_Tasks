@@ -386,6 +386,22 @@
   },
   {
     "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllUpdatedBeneficiaries",
+    "RelativePath": "api/User/all-oubound-updated-beneficiaries/{adminEmail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adminEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
     "Method": "GetAllNotApprovedCompanies",
     "RelativePath": "api/User/all-pending-companies",
     "HttpMethod": "GET",
@@ -412,6 +428,38 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetUpdatedSalary",
+    "RelativePath": "api/User/all-updated-salary/{adminEmail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adminEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BankingApp.Controllers.UserController",
+    "Method": "GetAllUpdatedTransaction",
+    "RelativePath": "api/User/all-updated-transactions/{adminEmail}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "adminEmail",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

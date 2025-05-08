@@ -24,4 +24,6 @@ public class Beneficiary
     [NotNull]
     public string CompanyEmail { get; set; }
 
+    public string ApprovedBy {  get; set; }
+
 }

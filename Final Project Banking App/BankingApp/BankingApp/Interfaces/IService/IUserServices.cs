@@ -30,14 +30,17 @@ namespace BankingApp.Interfaces.IService
 
         //transaction
         public List<Transaction> GetAllPendingTransactions();
+        public List<Transaction> GetTransactionsApprovedBy(string adminEmail);
         public Transaction UpdatePendingTransaction(int transactionId, UpdatePendingTransactionDto updatePendingTransactionDto);
 
         //outbound
         public List<Beneficiary> GetAllOutboundNotApprovedBeneficiaries();
+        public List<Beneficiary> GetUpdatedBeneficiary(string adminEmail);
         public Beneficiary UpdateOutboundNotApprovedBeneficiaries(string beneficiaryEmail, UpdateNotApprovedBeneficiaryDto updateNotApprovedBeneficiaryDto);
 
         //employee
         public List<SalaryDisburesement> GetAllPendingSalary();
+        public List<SalaryDisburesement> GetUpdatedSalary(string adminEmail);
         public SalaryDisburesement UpdatePendingSalary(int transactionId, UpdatePendingSalaryDto updatePendingSalaryDto);
     }
 }

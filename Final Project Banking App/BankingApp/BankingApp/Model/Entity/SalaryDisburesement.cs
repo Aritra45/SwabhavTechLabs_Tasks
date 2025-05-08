@@ -17,5 +17,6 @@ namespace BankingApp.Model.Entity
         public string CompanyEmail { get; set; }
 
         public string Status { get; set; }
+        public string ApprovedBy { get; set; }
     }
 }

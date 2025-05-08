@@ -99,7 +99,8 @@ export class EmployeeSalaryDistributionComponent implements AfterViewInit{
         EmployeeEmail: emp.employeeEmail || '',
         CompanyEmail: companyEmail,
         Amount: emp.employeeSalaryAmount,
-        Status: 'Pending'
+        Status: 'Pending',
+        ApprovedBy : ''
       }));
 
       const headers = new HttpHeaders({

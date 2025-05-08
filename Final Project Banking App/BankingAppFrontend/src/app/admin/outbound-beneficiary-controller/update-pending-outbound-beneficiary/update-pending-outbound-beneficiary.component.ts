@@ -3,6 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AdminServiceService } from '../../admin-service.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-update-pending-outbound-beneficiary',
@@ -13,9 +14,29 @@ import { MatPaginator } from '@angular/material/paginator';
 export class UpdatePendingOutboundBeneficiaryComponent implements AfterViewInit {
   displayedColumns: string[] = ['beneficiaryCompanyEmail', 'beneficiaryCompanyName', 'companyEmail', 'action1'];
   dataSource: MatTableDataSource<any>;
+  payload1:any
+  payload2:any
+  adminEmail:any
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatebeneficiary:AdminServiceService) {
     this.dataSource = new MatTableDataSource(this.getData);
+
+    const token=localStorage.getItem('token')
+    if(!token){
+      return
+    }
+    const decodeToken:any = jwtDecode(token)
+    this.adminEmail = decodeToken.Id
+
+    this.payload1 ={
+      isApproved : true,
+      approvedBy : this.adminEmail
+    }
+  
+    this.payload2={
+      isApproved : false,
+      approvedBy : this.adminEmail
+    }
   }
 
   ngAfterViewInit() {
@@ -27,13 +48,7 @@ export class UpdatePendingOutboundBeneficiaryComponent implements AfterViewInit 
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  payload1 ={
-    isApproved : true
-  }
-
-  payload2={
-    isApproved : false
-  }
+  
 
   rejectBeneficiary(email: string, name:string) {
     const val = confirm("Are You Sure?")

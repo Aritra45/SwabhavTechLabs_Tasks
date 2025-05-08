@@ -3,6 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AdminServiceService } from '../../admin-service.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-update-company-pending-transactions',
@@ -12,17 +13,32 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class UpdateCompanyPendingTransactionsComponent implements AfterViewInit {
   displayedColumns: string[] = ['transactionId', 'transferFromCompanyEmail', 'transferToCompanyEmail', 'transactionAmount', 'paymentDate', 'status', 'action1'];
+  adminEmail:any
+  payload1:any
+  payload2:any
   dataSource: MatTableDataSource<any>;
   constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatetransaction: AdminServiceService) {
     this.dataSource = new MatTableDataSource(this.getData);
+
+    const token = localStorage.getItem('token')
+    if(!token){
+      alert ("token not found")
+      return
+    }
+    const decodeToken:any = jwtDecode(token)
+    this.adminEmail = decodeToken.Id
+
+    this.payload1 = {
+      status: 'Success',
+      approvedBy: this.adminEmail
+    }
+    this.payload2 = {
+      status: 'Reject',
+      approvedBy: this.adminEmail
+    }
   }
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-  payload1 = {
-    status: 'Success'
-  }
-  payload2 = {
-    status: 'Reject'
-  }
+  
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
@@ -55,6 +71,7 @@ export class UpdateCompanyPendingTransactionsComponent implements AfterViewInit 
   approveTransaction(id: number) {
     const val = confirm("Are You Sure?")
     if (val == true) {
+      console.log(this.payload1)
       this.updatetransaction.updatependingCompanyTransaction(id, this.payload1)
         .subscribe(
           (response) => {

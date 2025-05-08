@@ -3,6 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { AdminServiceService } from '../../admin-service.service';
 import { MatPaginator } from '@angular/material/paginator';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-update-employee-salary-disburesement',
@@ -10,19 +11,33 @@ import { MatPaginator } from '@angular/material/paginator';
   templateUrl: './update-employee-salary-disburesement.component.html',
   styleUrl: './update-employee-salary-disburesement.component.css'
 })
-export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit{
-  displayedColumns: string[] = ['transactionId', 'employeeEmail', 'amount', 'transactionDate','status', 'action1'];
+export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit {
+  displayedColumns: string[] = ['transactionId', 'employeeEmail', 'amount', 'transactionDate', 'status', 'action1'];
   dataSource: MatTableDataSource<any>;
-  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatesalary:AdminServiceService) {
+
+  payload1: any
+  payload2: any
+  adminEmail: any
+
+  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatesalary: AdminServiceService) {
     this.dataSource = new MatTableDataSource(this.getData);
+    const token = localStorage.getItem('token')
+    if (!token) {
+      return
+    }
+    const decodeToken: any = jwtDecode(token)
+    this.adminEmail = decodeToken.Id
+    this.payload1 = {
+      status: 'Success',
+      approvedBy: this.adminEmail
+    }
+    this.payload2 = {
+      status: 'Reject',
+      approvedBy: this.adminEmail
+    }
   }
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-  payload1 ={
-    status : 'Success'
-  }
-  payload2={
-    status : 'Reject'
-  }
+
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
@@ -31,22 +46,22 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
   rejectTransaction(id: number) {
     const val = confirm("Are You Sure?")
     if (val == true) {
-    this.updatesalary.updatePendingSalary(id, this.payload2)
-      .subscribe(
-        (response) => {
-          console.log("Success:", response);
-          alert(`Transaction updated successfully.`);
+      this.updatesalary.updatePendingSalary(id, this.payload2)
+        .subscribe(
+          (response) => {
+            console.log("Success:", response);
+            alert(`Transaction updated successfully.`);
 
-          this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
-          this.dataSource.data = this.getData;
-        },
-        (error) => {
-          console.error("Error:", error);
-          alert(`Error: ${error.message || 'Something went wrong'}`);
-        }
-      );
+            this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
+            this.dataSource.data = this.getData;
+          },
+          (error) => {
+            console.error("Error:", error);
+            alert(`Error: ${error.message || 'Something went wrong'}`);
+          }
+        );
     }
-    else{
+    else {
       alert("Task Dismiss!!!")
     }
   }
@@ -54,20 +69,20 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
   approveTransaction(id: number) {
     const val = confirm("Are You Sure?")
     if (val == true) {
-    this.updatesalary.updatePendingSalary(id, this.payload1)
-      .subscribe(
-        (response) => {
-          console.log("Success:", response);
-          alert(`Transaction updated successfully.`);
+      this.updatesalary.updatePendingSalary(id, this.payload1)
+        .subscribe(
+          (response) => {
+            console.log("Success:", response);
+            alert(`Transaction updated successfully.`);
 
-          this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
-          this.dataSource.data = this.getData;
-        },
-        (error) => {
-          console.error("Error:", error);
-          alert(`Error: ${error.message || 'Something went wrong'}`);
-        }
-      );
+            this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
+            this.dataSource.data = this.getData;
+          },
+          (error) => {
+            console.error("Error:", error);
+            alert(`Error: ${error.message || 'Something went wrong'}`);
+          }
+        );
     }
     alert("Task Dismiss!!!")
   }

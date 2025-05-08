@@ -12,5 +12,7 @@ namespace BankingApp.Model.EmployeeDto
 
         public DateTime TransactionDate { get; set; }
         public string Status { get; set; }
+
+        public string companyEmail { get; set; }
     }
 }

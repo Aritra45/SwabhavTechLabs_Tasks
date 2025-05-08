@@ -199,6 +199,10 @@ namespace BankingApp.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("ApprovedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CompanyEmail")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -226,6 +230,10 @@ namespace BankingApp.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionId"));
+
+                    b.Property<string>("ApprovedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("PaymentDate")
                         .HasColumnType("datetime2");
@@ -282,6 +290,10 @@ namespace BankingApp.Migrations
                 {
                     b.Property<string>("BeneficiaryCompanyEmail")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ApprovedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("BankAccountNumber")
                         .IsRequired()

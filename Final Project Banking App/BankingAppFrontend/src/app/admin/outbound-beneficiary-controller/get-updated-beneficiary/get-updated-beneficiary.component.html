@@ -1,0 +1,53 @@
+<div style="display: inline-flex;">
+    <h2 mat-dialog-title>OutBound Beneficiary List</h2>
+    <mat-dialog-actions align="end" style="margin-left: auto; margin-right: 0%;">
+      <button mat-button mat-dialog-close>Close</button>
+    </mat-dialog-actions>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Search OutBound Beneficiary</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Type to search...">
+      </mat-form-field>
+    </div>
+    <div mat-dialog-content *ngIf="getData && getData.length > 0; else noData">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 full-width-table">
+    
+        <!-- Index Column -->
+        <ng-container matColumnDef="beneficiaryCompanyEmail">
+          <th mat-header-cell *matHeaderCellDef>BeneficiaryCompanyEmail</th>
+          <td mat-cell *matCellDef="let data">{{ data.beneficiaryCompanyEmail }}</td>
+        </ng-container>
+    
+        <!-- Username Column -->
+        <ng-container matColumnDef="beneficiaryCompanyName">
+          <th mat-header-cell *matHeaderCellDef>BeneficiaryCompanyName</th>
+          <td mat-cell *matCellDef="let data">{{ data.beneficiaryCompanyName }}</td>
+        </ng-container>
+    
+        <!-- Email Column -->
+        <ng-container matColumnDef="bankAccountNumber">
+          <th mat-header-cell *matHeaderCellDef>BankAccountNumber</th>
+          <td mat-cell *matCellDef="let data">{{ data.bankAccountNumber }}</td>
+        </ng-container>
+    
+        <ng-container matColumnDef="iFSCNumber">
+            <th mat-header-cell *matHeaderCellDef>IFSCNumber</th>
+            <td mat-cell *matCellDef="let data">{{ data.ifscNumber}}</td>
+          </ng-container>
+    
+          <ng-container matColumnDef="beneficiaryType">
+            <th mat-header-cell *matHeaderCellDef>BeneficiaryType</th>
+            <td mat-cell *matCellDef="let data">{{ data.beneficiaryType }}</td>
+          </ng-container>
+    
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+    
+    <ng-template #noData>
+      <p>No outbound beneficiaries found.</p>
+    </ng-template>
