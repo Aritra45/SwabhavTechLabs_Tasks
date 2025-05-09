@@ -1,8 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { CompanyServiceService } from '../../company-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AlertBoxComponent } from '../../alert-box/alert-box.component';
 
 @Component({
   selector: 'app-add-employee',
@@ -11,13 +12,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './add-employee.component.css'
 })
 export class AddEmployeeComponent {
-  
+
 
   adminForm!: FormGroup;
   formVisible: boolean = true;
   selectedFile: File | null = null;
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService, private dialogRef: MatDialogRef<AddEmployeeComponent>) {}
+  constructor(private fb: FormBuilder, private http: HttpClient, private addAdmin: CompanyServiceService, private dialogRef: MatDialogRef<AddEmployeeComponent>, private dialog: MatDialog) { }
 
   ngOnInit() {
     this.adminForm = this.fb.group({
@@ -32,6 +33,8 @@ export class AddEmployeeComponent {
     }
   }
 
+  message: any
+  showAlert=false
   onSubmit() {
     if (this.adminForm.valid && this.selectedFile) {
       const formData = new FormData();
@@ -41,20 +44,42 @@ export class AddEmployeeComponent {
         .subscribe(
           (response) => {
             console.log('Success:', response);
-            alert("Employess Uploaded Successfully!!!"); 
+
+            this.message = "Employess Uploaded Successfully!!!"
+            const dialogalert = this.dialog.open(AlertBoxComponent, {
+              width: '500px',
+              height: '300px',
+              data: this.message
+            })
+            setTimeout(() => {
+              dialogalert.close();
+            }, 3000);
+
             this.dialogRef.close()
           },
           (error) => {
             console.error('Error:', error);
-            alert(`Error: ${error.message || 'Something went wrong'}`);
-            console.log('Error Details:', error);
+            this.message = 'Something went wrong!';
+            const dialogalert = this.dialog.open(AlertBoxComponent, {
+              width: '500px',
+              height: '300px',
+              data: this.message
+            })
+
+            setTimeout(() => {
+              dialogalert.close();
+            }, 3000);
+            this.dialogRef.close()
           }
         );
     } else {
-      alert('Please select a file.');
+      this.showAlert =true
+      setTimeout(() => {
+        this.showAlert = false;
+      }, 3000);
     }
   }
-  
-  
+
+
 
 }

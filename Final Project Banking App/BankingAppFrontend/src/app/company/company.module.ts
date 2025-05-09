@@ -37,6 +37,8 @@ import { CompanyProfileComponent } from './company-profile/company-profile.compo
 import { CheckStatusComponent } from './company-profile/check-status/check-status.component';
 import { SendMoneyComponent } from './transaction-controller-company/add-transaction/send-money/send-money.component';
 import { GetTransactionComponent } from './transaction-controller-company/get-transaction/get-transaction.component';
+import { NzAlertModule } from 'ng-zorro-antd/alert';
+import { AlertBoxComponent } from './alert-box/alert-box.component';
 @NgModule({
   declarations: [
     CompanyDashboardComponent,
@@ -55,7 +57,8 @@ import { GetTransactionComponent } from './transaction-controller-company/get-tr
     CompanyProfileComponent,
     CheckStatusComponent,
     SendMoneyComponent,
-    GetTransactionComponent
+    GetTransactionComponent,
+    AlertBoxComponent,
   ],
   imports: [
     CommonModule,
@@ -77,7 +80,8 @@ import { GetTransactionComponent } from './transaction-controller-company/get-tr
     FormsModule,
     MatCheckboxModule,
     MatPaginatorModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    NzAlertModule
   ]
 })
 export class CompanyModule { }

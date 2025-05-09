@@ -13,7 +13,8 @@ import { Router } from '@angular/router';
 })
 export class CompanyDashboardComponent {
   documentStatusColor: string = 'orange';
-  constructor(private cs: CompanyServiceService, private dialog: MatDialog, private router:Router) {
+
+  constructor(private cs: CompanyServiceService, private dialog: MatDialog, private router: Router) {
     const token = localStorage.getItem('token');
 
     if (!token) {
@@ -46,23 +47,24 @@ export class CompanyDashboardComponent {
       }
     )
   }
-  
+
+
   checkAndNavigate(path: string) {
     const token = localStorage.getItem('token');
-  
+
     if (!token) {
       alert("Token not found. Please log in again.");
       return;
     }
-  
+
     const decodedToken: any = jwtDecode(token);
     const loggedInCompanyId = decodedToken.Id;
-  
+
     this.cs.getApprovedCompany().subscribe(
       (response) => {
         const emails = response.map((c: any) => c.companyEmail);
         const isApproved = emails.includes(loggedInCompanyId);
-  
+
         if (!isApproved) {
           alert("Your Documents are not approved!!!");
         } else {
@@ -74,6 +76,30 @@ export class CompanyDashboardComponent {
         alert("Something went wrong.");
       }
     );
+    
   }
+
+  showAlert = true;
+  showSuccessAlert=true
+  ngOnInit() {
+    // Hide alert after 5 seconds
+    setTimeout(() => {
+      this.showAlert = false;
+    }, 5000); // 5000 ms = 5 seconds
+
+    // Hide alert after 5 seconds
+    setTimeout(() => {
+      this.showSuccessAlert = false;
+    }, 5000); // 5000 ms = 5 seconds
+
+  }
+  show = true
+  successMessage: any
+  
+  onAlert(value: any) {
+    console.log(value)
+    this.successMessage = value
+  }
+
   
 }

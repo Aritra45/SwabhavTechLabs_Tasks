@@ -62,7 +62,7 @@ export class LoginComponent {
       if (token) {
         const decodedToken: any = jwtDecode(token);
         var loginRole = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] || null;
-        alert(`Login Successful ${loginRole}`);
+        // alert(`Login Successful ${loginRole}`);
 
         // Navigate based on role
         if (loginRole === 'SuperAdmin') {

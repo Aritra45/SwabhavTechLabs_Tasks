@@ -17,6 +17,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { GetTransactionBankComponent } from './bank-controller/get-transaction-bank/get-transaction-bank.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { NzAlertModule } from 'ng-zorro-antd/alert';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatIconModule,
     MatDialogModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    NzAlertModule
   ]
 })
 export class BankModule { }

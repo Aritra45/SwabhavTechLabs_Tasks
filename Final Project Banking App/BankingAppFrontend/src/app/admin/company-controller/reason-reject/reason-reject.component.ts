@@ -1,9 +1,11 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { jwtDecode } from 'jwt-decode';
 import { CompanyServiceService } from '../../../company/company-service.service';
 import { AdminServiceService } from '../../admin-service.service';
+import { ConfirmBoxComponent } from '../../../confirm-box/confirm-box.component';
+import { AlertBoxAdminComponent } from '../../alert-box-admin/alert-box-admin.component';
 
 @Component({
   selector: 'app-reason-reject',
@@ -24,7 +26,7 @@ export class ReasonRejectComponent {
 
   ];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private updateCompany: AdminServiceService, private dialogRef: MatDialogRef<ReasonRejectComponent>) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public email: any, private updateCompany: AdminServiceService, private dialogRef: MatDialogRef<ReasonRejectComponent>, private dialog: MatDialog) { }
 
 
   toggleAll(event: any) {
@@ -49,37 +51,67 @@ export class ReasonRejectComponent {
     remark: ""
   }
 
-
+message:any
   reject() {
-    const val = confirm("Are You Sure?")
-    if (val == true) {
-      const selectedReasons = this.getData
-        .filter(row => row.selected)
-        .map(row => row.reasons[0]);
+    const dialogRef = this.dialog.open(ConfirmBoxComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        const selectedReasons = this.getData
+          .filter(row => row.selected)
+          .map(row => row.reasons[0]);
 
-      const remarkText = selectedReasons.join('. ');
-
-
-      this.payload2.remark = remarkText;
-      this.payload2.isAproved = false;
+        const remarkText = selectedReasons.join('. ');
 
 
-      this.updateCompany.updatependingCompany(this.email, this.payload2)
-        .subscribe(
-          (response) => {
-            console.log("Success:", response);
-            alert(`Company updated successfully.`);
-            this.dialogRef.close()
-          },
-          (error) => {
-            console.error("Error:", error);
-            alert(`Error: ${error.message || 'Something went wrong'}`);
-          }
-        );
-    }
-    else {
-      alert("Task Dismiss!!!")
-    }
+        this.payload2.remark = remarkText;
+        this.payload2.isAproved = false;
+
+
+        this.updateCompany.updatependingCompany(this.email, this.payload2)
+          .subscribe(
+            (response) => {
+              console.log("Success:", response);
+              this.message = 'Company updated successfully!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
+              this.dialogRef.close()
+            },
+            (error) => {
+              console.error("Error:", error);
+              this.message = 'Something went wrong!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
+            }
+          );
+      }
+      else {
+        this.message = "Task Dismissed!";
+        const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
+
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
+
+        this.dialogRef.close()
+      }
+    })
   }
 
 }

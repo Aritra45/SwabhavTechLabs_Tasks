@@ -1,9 +1,11 @@
 import { AfterViewInit, Component, Inject, ViewChild } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { AdminServiceService } from '../../admin-service.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { jwtDecode } from 'jwt-decode';
+import { ConfirmBoxComponent } from '../../../confirm-box/confirm-box.component';
+import { AlertBoxAdminComponent } from '../../alert-box-admin/alert-box-admin.component';
 
 @Component({
   selector: 'app-update-employee-salary-disburesement',
@@ -19,7 +21,7 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
   payload2: any
   adminEmail: any
 
-  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatesalary: AdminServiceService) {
+  constructor(@Inject(MAT_DIALOG_DATA) public getData: any, private updatesalary: AdminServiceService, private dialog: MatDialog) {
     this.dataSource = new MatTableDataSource(this.getData);
     const token = localStorage.getItem('token')
     if (!token) {
@@ -43,48 +45,102 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
     this.dataSource.paginator = this.paginator;
   }
 
+  message: any
   rejectTransaction(id: number) {
-    const val = confirm("Are You Sure?")
-    if (val == true) {
-      this.updatesalary.updatePendingSalary(id, this.payload2)
-        .subscribe(
-          (response) => {
-            console.log("Success:", response);
-            alert(`Transaction updated successfully.`);
+    const dialogRef = this.dialog.open(ConfirmBoxComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.updatesalary.updatePendingSalary(id, this.payload2)
+          .subscribe(
+            (response) => {
+              console.log("Success:", response);
+              this.message = 'Transaction updated successfully!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
+              this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
+              this.dataSource.data = this.getData;
+            },
+            (error) => {
+              console.error("Error:", error);
+              this.message = 'Something went wrong!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
+            }
+          );
+      }
+      else {
+        this.message = "Task Dismissed!";
+        const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
 
-            this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
-            this.dataSource.data = this.getData;
-          },
-          (error) => {
-            console.error("Error:", error);
-            alert(`Error: ${error.message || 'Something went wrong'}`);
-          }
-        );
-    }
-    else {
-      alert("Task Dismiss!!!")
-    }
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
+      }
+    })
   }
 
   approveTransaction(id: number) {
-    const val = confirm("Are You Sure?")
-    if (val == true) {
-      this.updatesalary.updatePendingSalary(id, this.payload1)
-        .subscribe(
-          (response) => {
-            console.log("Success:", response);
-            alert(`Transaction updated successfully.`);
+    const dialogRef = this.dialog.open(ConfirmBoxComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.updatesalary.updatePendingSalary(id, this.payload1)
+          .subscribe(
+            (response) => {
+              console.log("Success:", response);
+              this.message = 'Transaction updated successfully!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
 
-            this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
-            this.dataSource.data = this.getData;
-          },
-          (error) => {
-            console.error("Error:", error);
-            alert(`Error: ${error.message || 'Something went wrong'}`);
-          }
-        );
-    }
-    alert("Task Dismiss!!!")
+              this.getData = this.getData.filter((transaction: any) => transaction.transactionId !== id);
+              this.dataSource.data = this.getData;
+            },
+            (error) => {
+              console.error("Error:", error);
+              this.message = 'Something went wrong!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
+            }
+          );
+      }
+      this.message = "Task Dismissed!";
+      const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+        width: '500px',
+        height: '300px',
+        data: this.message
+      })
+
+      setTimeout(() => {
+        dialogalert.close();
+      }, 3000);
+    })
   }
 
   applyFilter(event: Event) {

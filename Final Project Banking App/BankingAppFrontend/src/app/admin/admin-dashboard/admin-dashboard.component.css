@@ -18,3 +18,45 @@ mat-sidenav {
   color: black;
 }
 
+.alert {
+  position: fixed;
+  top: -60px; /* Start above the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 500px;
+  transition: top 0.5s ease-in-out;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    top: -60px; /* Start above the screen */
+  }
+  100% {
+    top: 10px; /* Final position */
+  }
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+  0% {
+    top: 10px; /* Current position */
+  }
+  100% {
+    top: -60px; /* Move above the screen */
+  }
+}
+
+/* When the alert is visible, slide it in */
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+/* When the alert disappears, slide it out */
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+

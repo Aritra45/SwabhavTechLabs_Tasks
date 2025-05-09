@@ -59,8 +59,7 @@
               "RelativeToolTip": "BankingApp\\Controllers\\CompanyController.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAqwJcAAAB8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:40:16.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T06:40:16.87Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "BankingApp\\Controllers\\UserController.cs",
               "ViewState": "AgIAAA4BAAAAAAAAAAAMwBwBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:16:03.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T06:16:03.503Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "BankingApp\\Interfaces\\IService\\IUserServices.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA0wCoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:10:18.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T06:10:18.941Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "BankingApp\\Service\\UserServices.cs",
               "ViewState": "AgIAAG0BAAAAAAAAAAAvwIEBAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T05:54:25.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T05:54:25.088Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "BankingApp\\Service\\CompanyService .cs",
               "ViewState": "AgIAAK8BAAAAAAAAAAAkwMcBAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T05:53:24.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T05:53:24.751Z"
             }
           ]
         }

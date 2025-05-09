@@ -1,0 +1,12 @@
+<div *ngIf="showSuccessAlert" style="text-align: center; margin-top: 20px;">
+  <img [src]="successMessage === 'LogOut Failed!'? errorGif : successGif"
+       alt="alert-gif"
+       style="height: 200px; width: 300px;">
+  <div [ngClass]="{
+        'alert alert-danger': successMessage === 'LogOut Failed!',
+        'alert alert-success': successMessage !== 'LogOut Failed!',
+      }"
+       role="alert">
+    {{ successMessage }}
+  </div>
+</div>

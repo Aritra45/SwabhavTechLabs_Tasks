@@ -24,17 +24,14 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'admin-controller', pathMatch: 'full' },
       { path: 'admin-controller', component: AdminControllerComponent },
-      { path: 'add-admin', component: AddAdminComponent},
-      { path: 'get-admin', component: GetAdminComponent},
-      { path: 'remove-admin', component: RemoveAdminComponent },
+
       { path: 'bank-controller', component: BankControllerComponent },
-      {path:'get-bank', component:GetBankComponent},
+
       { path: 'company-controller', component: CompanyControllerComponent },
       { path: 'transaction-controller', component: TransactionControllerComponent },
       { path: 'outbound-beneficiary-controller', component: OutboundBeneficiaryControllerComponent },
       { path: 'audit-controller', component: AuditControllerComponent },
       { path: 'emloyee-salary-controller', component: SalaryDisburesementComponent },
-      { path: 'update-employee-salary-disburesement', component: UpdateEmployeeSalaryDisburesementComponent }
     ]
   }
 ];

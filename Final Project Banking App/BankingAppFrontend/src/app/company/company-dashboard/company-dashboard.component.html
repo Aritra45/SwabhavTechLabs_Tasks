@@ -1,16 +1,25 @@
 <!-- main-dashboard.component.html -->
+<!-- <app-employee-salary-distribution *ngIf="!show" (alert)="onAlert($event)"></app-employee-salary-distribution>
+<div *ngIf="showSuccessAlert"  [ngClass]="{'slide-in': showAlert, 'slide-out': !showAlert}" class="alert alert-success" role="alert">
+  {{successMessage}}
+</div> -->
+
+<div *ngIf="showAlert"  [ngClass]="{'slide-in': showAlert, 'slide-out': !showAlert}" class="alert alert-success" role="alert">
+  Login Successfull Company
+</div>
+
 <mat-sidenav-container class="dashboard-container">
   <mat-sidenav mode="side" opened>
     <mat-nav-list>
       <h3 style="margin-left: 10px; text-align: center;"><b><u>Company Controller</u></b></h3>
       <a mat-list-item (click)="checkAndNavigate('inboundbeneficiary-controller')">InBoundBeneficiary<br>Dashboard</a>
-      -----------------------------------------
+      ----------------------------------
       <a mat-list-item (click)="checkAndNavigate('outboundbeneficiary-controller-company')">OutBoundBeneficiary<br> Dashboard</a>
-      -----------------------------------------
+      ----------------------------------
       <a mat-list-item (click)="checkAndNavigate('transaction-controller-company')">Transaction Dashboard</a>
-      -----------------------------------------
+      ----------------------------------
       <a mat-list-item  (click)="checkAndNavigate('employee-controller-company')">Employee Dashboard</a>
-      -----------------------------------------
+      ----------------------------------
       <a mat-list-item routerLink="company-profile" routerLinkActive="active"
         style="margin-top: auto; margin-bottom: 0%;" >Your Document Activation<br> Status</a>
     </mat-nav-list>

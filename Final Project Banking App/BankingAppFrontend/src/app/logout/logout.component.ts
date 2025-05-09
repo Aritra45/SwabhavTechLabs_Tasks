@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { AuthServiceService } from '../auth-login/login/auth-service.service';
 import { jwtDecode } from 'jwt-decode';
 import { response } from 'express';
+import { AlertBoxMainComponent } from '../alert-box-main/alert-box-main.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -12,29 +14,48 @@ import { response } from 'express';
   styleUrl: './logout.component.css'
 })
 export class LogoutComponent {
-  constructor(private router:Router, private as:AuthServiceService){}
- 
+  constructor(private router: Router, private as: AuthServiceService, private dialog: MatDialog) { }
 
-  logout(){
+  message: any
+  logout() {
     const token = localStorage.getItem('token')
-    if(!token){
+    if (!token) {
       alert("token not found")
       return
     }
-    const decodeToken:any = jwtDecode(token)
+    const decodeToken: any = jwtDecode(token)
     const email = decodeToken.Id
     this.as.logout(email).subscribe(
-      (response)=>{
-        alert("You are Logged Out Successfully!!!")
+      (response) => {
+        this.message = "You are Logged Out Successfully";
+        const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
+
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
         localStorage.removeItem('token')
         this.router.navigate(['/auth-login/login'])
       },
       (error) => {
         console.error("LogOut Failed:", error);
         alert("LogOut Failed.");
+        this.message = 'LogOut Failed!';
+        const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
+
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
       }
     )
-    
+
   }
 
   ngOnInit() {

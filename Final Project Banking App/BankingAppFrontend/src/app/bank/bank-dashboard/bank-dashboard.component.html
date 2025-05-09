@@ -1,4 +1,7 @@
 <!-- main-dashboard.component.html -->
+<div *ngIf="showAlert"  [ngClass]="{'slide-in': showAlert, 'slide-out': !showAlert}" class="alert alert-success" role="alert">
+  Login Successfull Bank
+</div>
 <mat-sidenav-container class="dashboard-container">
     <mat-sidenav mode="side" opened>
       <mat-nav-list>

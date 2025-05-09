@@ -50,7 +50,8 @@ import { SearchComponent } from './search/search.component';
 import { GetAllUpdatedTransactionComponent } from './transaction-controller/get-all-updated-transaction/get-all-updated-transaction.component';
 import { GetUpdatedBeneficiaryComponent } from './outbound-beneficiary-controller/get-updated-beneficiary/get-updated-beneficiary.component';
 import { GetUpdatedSalaryComponent } from './salary-disburesement/get-updated-salary/get-updated-salary.component';
-
+import { NzAlertModule } from 'ng-zorro-antd/alert';
+import { AlertBoxAdminComponent } from './alert-box-admin/alert-box-admin.component';
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import { GetUpdatedSalaryComponent } from './salary-disburesement/get-updated-sa
     GetAllUpdatedTransactionComponent,
     GetUpdatedBeneficiaryComponent,
     GetUpdatedSalaryComponent,
+    AlertBoxAdminComponent,
   ],
   imports: [
     CommonModule,
@@ -106,6 +108,7 @@ import { GetUpdatedSalaryComponent } from './salary-disburesement/get-updated-sa
     MatPaginatorModule,
     MatCheckboxModule,
     MatProgressSpinnerModule,
+    NzAlertModule
   ]
 })
 export class AdminModule { }

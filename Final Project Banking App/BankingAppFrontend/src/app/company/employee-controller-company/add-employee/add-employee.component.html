@@ -1,16 +1,20 @@
-<div >
+<div *ngIf="showAlert" [ngClass]="{'slide-in': showAlert, 'slide-out': !showAlert}" class="alert alert-warning"
+    role="alert">
+    Please select a file
+</div>
+<div>
     <form [formGroup]="adminForm" (ngSubmit)="onSubmit()" class="admin-form-container">
         <div class="form-header">
             <h2>Upload Employee</h2>
             <mat-dialog-actions align="end" style="margin-left: auto; margin-right: 0%;">
                 <button mat-button mat-dialog-close>Close</button>
-              </mat-dialog-actions>
+            </mat-dialog-actions>
         </div>
 
         <div class="form-group">
             <input type="file" (change)="onFileSelected($event)" accept=".csv" required />
-          </div>
-          
+        </div>
+
 
 
 
@@ -18,8 +22,8 @@
             <button mat-raised-button color="primary" type="submit" class="submit-btn">
                 Add Employees
             </button>
-            
+
         </div>
-        
+
     </form>
 </div>

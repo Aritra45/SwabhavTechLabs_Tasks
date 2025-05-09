@@ -50,7 +50,7 @@
      
     
       <div class="form-action">
-        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" [disabled]="isLoading" class="submit-btn">
+        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid" [disabled]="isLoading" [disabled]="adminForm.invalid" class="submit-btn">
           <span *ngIf="!isLoading">Add Beneficiary</span>
           <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
         </button>

@@ -23,13 +23,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'company-profile', pathMatch: 'full' },
       { path: 'inboundbeneficiary-controller', component: InboundbeneficiaryControllerComponent },
-      { path: 'get-inboundbeneficiary-company', component: GetInboundbeneficiaryComponent },
-      { path: 'add-inboundbeneficiary-company', component: AddInboundbeneficiaryComponent },
       { path: 'outboundbeneficiary-controller-company', component: OutboundbeneficiaryControllerComponent },
-      { path: 'get-outboundbeneficiary-company', component: GetOutboundbeneficiaryComponent },
-      { path: 'add-outboundbeneficiary-company', component: AddOutboundbeneficiaryComponent },
       { path: 'transaction-controller-company', component: TransactionControllerCompanyComponent },
-      { path: 'add-transaction-company', component: AddTransactionComponent },
       { path: 'employee-controller-company', component: EmployeeControllerCompanyComponent },
       { path: 'company-profile', component: CompanyProfileComponent },
     ]

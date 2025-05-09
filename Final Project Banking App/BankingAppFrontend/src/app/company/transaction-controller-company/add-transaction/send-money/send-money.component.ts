@@ -3,7 +3,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AdminServiceService } from '../../../../admin/admin-service.service';
 import { HttpClient } from '@angular/common/http';
 import { CompanyServiceService } from '../../../company-service.service';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { AlertBoxComponent } from '../../../alert-box/alert-box.component';
+import { ConfirmBoxComponent } from '../../../../confirm-box/confirm-box.component';
 
 @Component({
   selector: 'app-send-money',
@@ -21,7 +23,7 @@ export class SendMoneyComponent {
     this.hidePassword = !this.hidePassword;
   }
 
-  constructor(private fb: FormBuilder, @Inject(MAT_DIALOG_DATA) public email: any, private cs: CompanyServiceService, private dialogRef: MatDialogRef<SendMoneyComponent>) {
+  constructor(private fb: FormBuilder, @Inject(MAT_DIALOG_DATA) public email: any, private cs: CompanyServiceService, private dialogRef: MatDialogRef<SendMoneyComponent>, private dialog: MatDialog) {
 
   }
   ngOnInit() {
@@ -32,33 +34,65 @@ export class SendMoneyComponent {
     });
   }
   isLoading = false;
+  message: any
   onSubmit() {
-    const val = confirm("Are Youe Sure?")
-    if (val == true) {
-      if (this.adminForm.valid) {
-        const formData = this.adminForm.value;
-        console.log("Form Data: ", formData);
-        this.isLoading = true;
+    const dialogRef = this.dialog.open(ConfirmBoxComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        if (this.adminForm.valid) {
+          const formData = this.adminForm.value;
+          console.log("Form Data: ", formData);
+          this.isLoading = true;
 
-        this.cs.AddTransaction(formData)
-          .subscribe(
-            (response) => {
-              this.isLoading = false;
-              console.log("Success:", response);
-              alert(response);
-              this.dialogRef.close()
-            },
-            (error) => {
-              console.error("Error:", error);
-              alert(`Error: ${error.message || 'Something went wrong'}`);
-              console.log('Error Details:', error);
-            }
-          );
+          this.cs.AddTransaction(formData)
+            .subscribe(
+              (response) => {
+                this.isLoading = false;
+                console.log("Success:", response);
+                this.message = response;
+                const dialogalert = this.dialog.open(AlertBoxComponent, {
+                  width: '500px',
+                  height: '300px',
+                  data: this.message
+                })
+
+                setTimeout(() => {
+                  dialogalert.close();
+                }, 3000);
+                this.dialogRef.close()
+              },
+              (error) => {
+                console.error("Error:", error);
+                this.message = 'Something went wrong!';
+                const dialogalert = this.dialog.open(AlertBoxComponent, {
+                  width: '500px',
+                  height: '300px',
+                  data: this.message
+                })
+
+                setTimeout(() => {
+                  dialogalert.close();
+                }, 3000);
+                this.dialogRef.close()
+              }
+            );
+        }
       }
-    }
-    else {
-      alert("Transaction Dismiss")
-    }
-  }
+      else {
+        this.message = "Transaction Dismissed!";
+        const dialogalert = this.dialog.open(AlertBoxComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
 
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
+
+        this.dialogRef.close()
+      }
+    })
+
+  }
 }

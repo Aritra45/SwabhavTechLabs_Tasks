@@ -27,4 +27,13 @@ export class AdminDashboardComponent {
       this.show = false
     }
   }
+
+  showAlert = true;
+
+  ngOnInit() {
+    // Hide alert after 5 seconds
+    setTimeout(() => {
+      this.showAlert = false;
+    }, 5000); // 5000 ms = 5 seconds
+  }
 }
