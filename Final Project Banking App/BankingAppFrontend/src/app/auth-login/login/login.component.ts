@@ -2,6 +2,8 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { AuthServiceService } from './auth-service.service';
 import { Router } from '@angular/router';
 import { jwtDecode } from 'jwt-decode';
+import { AlertBoxMainComponent } from '../../alert-box-main/alert-box-main.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-login',
@@ -23,7 +25,8 @@ export class LoginComponent {
   constructor(
     private authService: AuthServiceService,
     private router: Router,
-    private cdRef: ChangeDetectorRef
+    private cdRef: ChangeDetectorRef,
+    private dialog:MatDialog
   ) {
     this.loggedIn = this.isLoggedIn();
   }
@@ -46,9 +49,19 @@ export class LoginComponent {
   }
 
   isLoading = false;
+  message:any
   onSubmit() {
     if (!this.captchaResolved) {
-      alert("Check the captcha!");
+      this.message = 'Check the captcha first';
+
+      const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+        width: '500px',
+        height: '300px',
+        data: this.message
+      })
+      setTimeout(() => {
+        dialogalert.close();
+      }, 3000);
       return;
     }
 
@@ -67,9 +80,9 @@ export class LoginComponent {
         // Navigate based on role
         if (loginRole === 'SuperAdmin') {
           this.router.navigate(['/admin-dashboard']);
-        }else if (loginRole === 'Admin') {
+        } else if (loginRole === 'Admin') {
           this.router.navigate(['/admin-dashboard']);
-        }else if (loginRole === 'Bank') {
+        } else if (loginRole === 'Bank') {
           this.router.navigate(['/bank-dashboard']);
         } else if (loginRole === 'Company') {
           this.router.navigate(['/company-dashboard']);
@@ -77,7 +90,16 @@ export class LoginComponent {
       }
     }, error => {
       this.isLoading = false;  // Hide spinner if login fails
-      alert('Login Failed');
+      this.message = 'Login Failed!';
+
+      const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+        width: '500px',
+        height: '300px',
+        data: this.message
+      })
+      setTimeout(() => {
+        dialogalert.close();
+      }, 3000);
     });
   }
 }

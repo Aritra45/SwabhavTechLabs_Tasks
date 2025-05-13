@@ -25,6 +25,8 @@ export class RemoveAdminComponent {
             (response) => {
               console.log("Success:", response);
               this.message = `Admin ${name} removed successfully`;
+              const audio = new Audio('images/successStatus.mp3');
+              audio.play();
               const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
                 width: '500px',
                 height: '300px',

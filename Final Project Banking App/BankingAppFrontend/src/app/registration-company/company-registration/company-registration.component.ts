@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthServiceService } from '../auth-service.service';
 import { Router } from '@angular/router';
+import { AlertBoxMainComponent } from '../../alert-box-main/alert-box-main.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-company-registration',
@@ -20,7 +22,7 @@ export class CompanyRegistrationComponent {
     this.hidePassword = !this.hidePassword;
   }
 
-  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router) {
+  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router, private dialog: MatDialog) {
     this.registerForm = this.fb.group({
       companyEmail: ['', [Validators.required, Validators.email]],
       companyName: ['', Validators.required],
@@ -56,6 +58,7 @@ export class CompanyRegistrationComponent {
 
 
   isLoading = false
+  message: any
   onSubmit() {
     if (!this.captchaResolved) {
       alert("Check the captcha!");
@@ -75,7 +78,17 @@ export class CompanyRegistrationComponent {
       this.isLoading = true
       this.authService.doRegistration(formData).subscribe({
         next: (res) => {
-          alert('Otp send to your mail');
+          this.message = 'Otp send to your mail';
+
+          const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+            width: '500px',
+            height: '300px',
+            data: this.message
+          })
+
+          setTimeout(() => {
+            dialogalert.close();
+          }, 3000);
           this.isLoading = false
           this.router.navigate(['/register/verify-company'], {
             state: { email: this.registerForm.value.companyEmail }
@@ -86,7 +99,16 @@ export class CompanyRegistrationComponent {
         },
         error: (err) => {
           console.error('Registration failed:', err);
-          alert('Registration failed. Please try again.');
+          this.message = 'Registration failed. Please try again.';
+          const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+            width: '500px',
+            height: '300px',
+            data: this.message
+          })
+
+          setTimeout(() => {
+            dialogalert.close();
+          }, 3000);
         }
       });
 

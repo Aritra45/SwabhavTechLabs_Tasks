@@ -34,7 +34,7 @@ export class AddEmployeeComponent {
   }
 
   message: any
-  showAlert=false
+  showAlert = false
   onSubmit() {
     if (this.adminForm.valid && this.selectedFile) {
       const formData = new FormData();
@@ -46,6 +46,8 @@ export class AddEmployeeComponent {
             console.log('Success:', response);
 
             this.message = "Employess Uploaded Successfully!!!"
+            const audio = new Audio('images/successStatus.mp3');
+            audio.play();
             const dialogalert = this.dialog.open(AlertBoxComponent, {
               width: '500px',
               height: '300px',
@@ -73,7 +75,7 @@ export class AddEmployeeComponent {
           }
         );
     } else {
-      this.showAlert =true
+      this.showAlert = true
       setTimeout(() => {
         this.showAlert = false;
       }, 3000);

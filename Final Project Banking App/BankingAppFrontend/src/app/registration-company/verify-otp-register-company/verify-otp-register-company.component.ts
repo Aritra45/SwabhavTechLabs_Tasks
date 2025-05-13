@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthServiceService } from '../auth-service.service';
 import { Router } from '@angular/router';
 import { error } from 'console';
+import { AlertBoxMainComponent } from '../../alert-box-main/alert-box-main.component';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -17,7 +19,7 @@ export class VerifyOtpRegisterCompanyComponent {
   timer = 0;
   private intervalId: any;
 
-  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router) {
+  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router, private dialog:MatDialog) {
     const state = history.state as { email?: string };
     console.log('State:', state);
     this.registerForm = this.fb.group({
@@ -26,48 +28,88 @@ export class VerifyOtpRegisterCompanyComponent {
     });
   }
 
-  
-isLoading = false
+
+  isLoading = false
+  message:any
   onSubmit() {
     const body = {
-      CompanyEmail: this.registerForm.getRawValue().companyEmail,  
+      CompanyEmail: this.registerForm.getRawValue().companyEmail,
       OTP: this.registerForm.value.otp,
     };
-  this.isLoading = true
+    this.isLoading = true
     this.authService.doVerify(body).subscribe({
       next: (res) => {
-        alert('Registration successful!!!');
+
+        this.message = 'Registration successful!!!';
+
+        const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
+
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
         this.isLoading = false
         this.registerForm.reset();
         this.router.navigate(['/auth-login/login']);
       },
       error: (err) => {
         console.error('Verification failed:', err);
-        alert('InValid OTP. Please try again');
+        this.message = 'InValid OTP. Please try again';
+          const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+            width: '500px',
+            height: '300px',
+            data: this.message
+          })
+
+          setTimeout(() => {
+            dialogalert.close();
+          }, 3000);
       }
     });
-  
+
     console.log('Form submitted!', body);
   }
-  
+
   resendOtp() {
     const companyEmail = this.registerForm.getRawValue().companyEmail;
     if (!companyEmail) return;
-    
+
     this.authService.resendOtp(companyEmail).subscribe({
       next: (res) => {
-        alert('A new OTP has been sent to your email.');
+        this.message = 'A new OTP has been sent to your email.';
+
+        const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
+
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
         this.startTimer();
       },
       error: (err) => {
         console.error('Error resending OTP:', err);
-        alert('Failed to resend OTP. Please try again.');
+        this.message = 'Failed to resend OTP. Please try again.';
+          const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+            width: '500px',
+            height: '300px',
+            data: this.message
+          })
+
+          setTimeout(() => {
+            dialogalert.close();
+          }, 3000);
       }
     });
   }
   startTimer() {
     this.isResendDisabled = true;
-    this.timer = 120; 
+    this.timer = 120;
 
     this.intervalId = setInterval(() => {
       this.timer--;
@@ -77,5 +119,5 @@ isLoading = false
       }
     }, 1000);
   }
-  
+
 }

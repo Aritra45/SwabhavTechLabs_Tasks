@@ -54,6 +54,8 @@ export class AddAdminComponent {
             this.isLoading = false;
             console.log("Success:", response);
             this.message = response;
+            const audio = new Audio('images/successStatus.mp3');
+            audio.play();
             const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
               width: '500px',
               height: '300px',

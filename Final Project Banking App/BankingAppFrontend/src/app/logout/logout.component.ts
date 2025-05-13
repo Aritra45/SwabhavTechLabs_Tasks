@@ -25,9 +25,11 @@ export class LogoutComponent {
     }
     const decodeToken: any = jwtDecode(token)
     const email = decodeToken.Id
+    const payload = JSON.parse(atob(token.split('.')[1])); // Decode JWT
+    const role = payload['role'] || payload['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'] || '';
     this.as.logout(email).subscribe(
       (response) => {
-        this.message = "You are Logged Out Successfully";
+        this.message = `${role} Logged Out Successfully`;
         const dialogalert = this.dialog.open(AlertBoxMainComponent, {
           width: '500px',
           height: '300px',

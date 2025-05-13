@@ -50,6 +50,8 @@ export class SendMoneyComponent {
                 this.isLoading = false;
                 console.log("Success:", response);
                 this.message = response;
+                const audio = new Audio('images/success.mp3');
+                audio.play();
                 const dialogalert = this.dialog.open(AlertBoxComponent, {
                   width: '500px',
                   height: '300px',

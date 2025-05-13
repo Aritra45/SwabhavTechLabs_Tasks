@@ -104,6 +104,8 @@ export class UpdateEmployeeSalaryDisburesementComponent implements AfterViewInit
             (response) => {
               console.log("Success:", response);
               this.message = 'Transaction updated successfully!';
+              const audio = new Audio('images/successStatus.mp3');
+              audio.play();
               const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
                 width: '500px',
                 height: '300px',

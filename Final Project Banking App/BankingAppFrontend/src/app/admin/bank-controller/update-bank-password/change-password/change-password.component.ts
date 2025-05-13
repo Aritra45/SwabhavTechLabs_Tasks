@@ -66,6 +66,8 @@ export class ChangePasswordComponent {
               this.isLoading = false;
               console.log('Password updated:', res);
               this.message = 'Password updated successfully!';
+              const audio = new Audio('images/successStatus.mp3');
+              audio.play();
               const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
                 width: '500px',
                 height: '300px',

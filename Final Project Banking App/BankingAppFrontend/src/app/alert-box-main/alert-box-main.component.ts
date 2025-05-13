@@ -21,4 +21,18 @@ export class AlertBoxMainComponent {
 
   successGif = "images/successGif.gif"
   errorGif = "images/error.jpeg"
+
+  isErrorMessage(message: string): boolean {
+  const errorMessages = [
+    'LogOut Failed!',
+    'Please login first',
+    'Registration failed. Please try again.',
+    'InValid OTP. Please try again',
+    'Failed to resend OTP. Please try again.',
+    'Check the captcha first',
+    'Login Failed!'
+  ];
+  return errorMessages.includes(message);
+}
+
 }

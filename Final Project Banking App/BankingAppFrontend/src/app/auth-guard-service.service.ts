@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRouteSnapshot, CanActivate, Router } from '@angular/router';
+import { AlertBoxMainComponent } from './alert-box-main/alert-box-main.component';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuardServiceService implements CanActivate{
+export class AuthGuardServiceService implements CanActivate {
 
-  constructor(private router: Router) { }
-
+  constructor(private router: Router, private dialog: MatDialog) { }
+  message: any
   canActivate(route: ActivatedRouteSnapshot): boolean {
     if (typeof window === 'undefined') {
       return false; // Skip the check if not running in a browser (e.g., SSR or tests)
@@ -16,7 +18,16 @@ export class AuthGuardServiceService implements CanActivate{
     const token = localStorage.getItem('token');
     if (!token) {
       this.router.navigate([''], { queryParams: { alert: 'Please login first' } });
-      alert("Please Login First");
+      this.message = "Please login first"
+      const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+        width: '500px',
+        height: '300px',
+        data: this.message
+      })
+
+      setTimeout(() => {
+        dialogalert.close();
+      }, 3000);
       return false;
     }
 
@@ -26,7 +37,7 @@ export class AuthGuardServiceService implements CanActivate{
     if (!expectedRoles.includes(userRole)) {
       const val = expectedRoles.includes(userRole)
       console.log(val);
-      
+
       console.log((expectedRoles));
       this.router.navigate(['']); // Redirect unauthorized users
       localStorage.removeItem('token');

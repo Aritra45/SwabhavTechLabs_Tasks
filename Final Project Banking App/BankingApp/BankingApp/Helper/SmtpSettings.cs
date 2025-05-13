@@ -1,4 +1,6 @@
-﻿namespace BankingApp.Helper
+﻿using System.Threading.Tasks;
+
+namespace BankingApp.Helper
 {
     public class SmtpSettings
     {

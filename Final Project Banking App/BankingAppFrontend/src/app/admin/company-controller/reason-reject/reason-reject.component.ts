@@ -51,7 +51,7 @@ export class ReasonRejectComponent {
     remark: ""
   }
 
-message:any
+  message: any
   reject() {
     const dialogRef = this.dialog.open(ConfirmBoxComponent);
     dialogRef.afterClosed().subscribe(result => {
@@ -71,7 +71,9 @@ message:any
           .subscribe(
             (response) => {
               console.log("Success:", response);
-              this.message = 'Company updated successfully!';
+              this.message = 'Company Rejected successfully!';
+              const audio = new Audio('images/successStatus.mp3');
+              audio.play();
               const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
                 width: '500px',
                 height: '300px',

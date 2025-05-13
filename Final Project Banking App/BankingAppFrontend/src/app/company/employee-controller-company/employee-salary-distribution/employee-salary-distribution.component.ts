@@ -123,6 +123,8 @@ export class EmployeeSalaryDistributionComponent implements AfterViewInit {
             console.log("Salary disbursed:", response);
 
             this.message = response.message || 'Salary disbursed successfully!';
+            const audio = new Audio('images/success.mp3');
+            audio.play();
             const dialogalert = this.dialog.open(AlertBoxComponent, {
               width: '500px',
               height: '300px',
