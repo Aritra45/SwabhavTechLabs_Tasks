@@ -1,10 +1,10 @@
 <div *ngIf="showSuccessAlert" style="text-align: center; margin-top: 20px;">
-  <img [src]="successMessage === 'Something went wrong!' || successMessage === 'Task Dismissed!' || successMessage === 'Transaction Dismissed!' ? errorGif : successGif"
+  <img [src]="successMessage === 'Something went wrong!' || successMessage === 'Task Dismissed!' || successMessage === 'Transaction Dismissed!' || successMessage === 'Your Documents are not approved!!!' ? errorGif : successGif"
        alt="alert-gif"
        style="height: 200px; width: 300px;">
   <div [ngClass]="{
-        'alert alert-danger': successMessage === 'Something went wrong!',
-        'alert alert-success': successMessage !== 'Something went wrong!',
+        'alert alert-danger': successMessage === 'Something went wrong!' || successMessage === 'Your Documents are not approved!!!',
+        'alert alert-success': successMessage !== 'Something went wrong!' || successMessage !== 'Your Documents are not approved!!!',
         'alert alert-dark': successMessage === 'Task Dismissed!' || successMessage === 'Transaction Dismissed!'
       }"
        role="alert">

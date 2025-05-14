@@ -19,8 +19,8 @@
       <mat-spinner *ngIf="isLoading" diameter="20" [strokeWidth]="2"></mat-spinner>
     </button>
     <br>
-    <button mat-raised-button color="accent" (click)="resendOtp()" [disabled]="isResendDisabled" type="button">
-      Resend OTP
+    <button mat-raised-button color="accent" (click)="resendOtp()" [disabled]="isResendDisabled" [disabled]="isresendLoading" type="button">
+      <span *ngIf="!isresendLoading">Resend OTP</span>
       <span *ngIf="isResendDisabled">({{ timer }}s)</span>
     </button>
   </form>

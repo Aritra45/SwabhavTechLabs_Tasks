@@ -19,7 +19,7 @@ export class VerifyOtpRegisterCompanyComponent {
   timer = 0;
   private intervalId: any;
 
-  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router, private dialog:MatDialog) {
+  constructor(private fb: FormBuilder, private authService: AuthServiceService, private router: Router, private dialog: MatDialog) {
     const state = history.state as { email?: string };
     console.log('State:', state);
     this.registerForm = this.fb.group({
@@ -30,7 +30,7 @@ export class VerifyOtpRegisterCompanyComponent {
 
 
   isLoading = false
-  message:any
+  message: any
   onSubmit() {
     const body = {
       CompanyEmail: this.registerForm.getRawValue().companyEmail,
@@ -58,27 +58,28 @@ export class VerifyOtpRegisterCompanyComponent {
       error: (err) => {
         console.error('Verification failed:', err);
         this.message = 'InValid OTP. Please try again';
-          const dialogalert = this.dialog.open(AlertBoxMainComponent, {
-            width: '500px',
-            height: '300px',
-            data: this.message
-          })
+        const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
 
-          setTimeout(() => {
-            dialogalert.close();
-          }, 3000);
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
       }
     });
 
     console.log('Form submitted!', body);
   }
-
+  isresendLoading = false
   resendOtp() {
     const companyEmail = this.registerForm.getRawValue().companyEmail;
     if (!companyEmail) return;
-
+    this.isresendLoading = true
     this.authService.resendOtp(companyEmail).subscribe({
       next: (res) => {
+        this.isresendLoading = false
         this.message = 'A new OTP has been sent to your email.';
 
         const dialogalert = this.dialog.open(AlertBoxMainComponent, {
@@ -95,15 +96,15 @@ export class VerifyOtpRegisterCompanyComponent {
       error: (err) => {
         console.error('Error resending OTP:', err);
         this.message = 'Failed to resend OTP. Please try again.';
-          const dialogalert = this.dialog.open(AlertBoxMainComponent, {
-            width: '500px',
-            height: '300px',
-            data: this.message
-          })
+        const dialogalert = this.dialog.open(AlertBoxMainComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
 
-          setTimeout(() => {
-            dialogalert.close();
-          }, 3000);
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
       }
     });
   }

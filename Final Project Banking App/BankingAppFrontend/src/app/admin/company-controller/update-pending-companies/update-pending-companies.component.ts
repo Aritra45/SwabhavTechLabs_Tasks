@@ -5,6 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { ReasonRejectComponent } from '../reason-reject/reason-reject.component';
 import { AlertBoxAdminComponent } from '../../alert-box-admin/alert-box-admin.component';
+import { ConfirmBoxComponent } from '../../../confirm-box/confirm-box.component';
 
 @Component({
   selector: 'app-update-pending-companies',
@@ -45,57 +46,59 @@ export class UpdatePendingCompaniesComponent implements AfterViewInit {
   }
   message: any
   approveCompany(email: string, name: string) {
-    const val = confirm("Are You Sure?")
-    if (val == true) {
-      this.updateCompany.updatependingCompany(email, this.payload1)
-        .subscribe(
-          (response) => {
-            console.log(this.payload1);
-            console.log("Success:", response);
-            this.message = 'Company Approved successfully!';
-            const audio = new Audio('images/successStatus.mp3');
-            audio.play();
-            const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
-              width: '500px',
-              height: '300px',
-              data: this.message
-            })
+    const dialogRef = this.dialog.open(ConfirmBoxComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.updateCompany.updatependingCompany(email, this.payload1)
+          .subscribe(
+            (response) => {
+              console.log(this.payload1);
+              console.log("Success:", response);
+              this.message = 'Company Approved successfully!';
+              const audio = new Audio('images/successStatus.mp3');
+              audio.play();
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
 
-            setTimeout(() => {
-              dialogalert.close();
-            }, 3000);
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
 
-            this.getData = this.getData.filter((admin: any) => admin.companyEmail !== email);
-            this.dataSource.data = this.getData;
-          },
-          (error) => {
-            console.error("Error:", error);
-            this.message = 'Something went wrong!';
-            const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
-              width: '500px',
-              height: '300px',
-              data: this.message
-            })
-            setTimeout(() => {
-              dialogalert.close();
-            }, 3000);
-          }
-        );
-    }
-    else {
-      this.message = "Task Dismissed!";
-      const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
-        width: '500px',
-        height: '300px',
-        data: this.message
-      })
+              this.getData = this.getData.filter((admin: any) => admin.companyEmail !== email);
+              this.dataSource.data = this.getData;
+            },
+            (error) => {
+              console.error("Error:", error);
+              this.message = 'Something went wrong!';
+              const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+                width: '500px',
+                height: '300px',
+                data: this.message
+              })
+              setTimeout(() => {
+                dialogalert.close();
+              }, 3000);
+            }
+          );
+      }
+      else {
+        this.message = "Task Dismissed!";
+        const dialogalert = this.dialog.open(AlertBoxAdminComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
 
-      setTimeout(() => {
-        dialogalert.close();
-      }, 3000);
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
 
-      this.dialogRef.close()
-    }
+        this.dialogRef.close()
+      }
+    })
   }
 
   applyFilter(event: Event) {

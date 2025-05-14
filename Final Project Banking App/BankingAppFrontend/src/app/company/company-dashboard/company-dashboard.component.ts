@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { jwtDecode } from 'jwt-decode';
 import { response } from 'express';
 import { Router } from '@angular/router';
+import { AlertBoxComponent } from '../alert-box/alert-box.component';
 
 @Component({
   selector: 'app-company-dashboard',
@@ -47,7 +48,7 @@ export class CompanyDashboardComponent {
       }
     )
   }
-
+  message: any
 
   checkAndNavigate(path: string) {
     const token = localStorage.getItem('token');
@@ -66,21 +67,39 @@ export class CompanyDashboardComponent {
         const isApproved = emails.includes(loggedInCompanyId);
 
         if (!isApproved) {
-          alert("Your Documents are not approved!!!");
+
+          this.message = "Your Documents are not approved!!!"
+          const dialogalert = this.dialog.open(AlertBoxComponent, {
+            width: '500px',
+            height: '300px',
+            data: this.message
+          })
+          setTimeout(() => {
+            dialogalert.close();
+          }, 3000);
         } else {
           this.router.navigate([`/company-dashboard/${path}`]);
         }
       },
       (error) => {
         console.error("Error fetching approved companies:", error);
-        alert("Something went wrong.");
+        this.message = 'Something went wrong!';
+        const dialogalert = this.dialog.open(AlertBoxComponent, {
+          width: '500px',
+          height: '300px',
+          data: this.message
+        })
+
+        setTimeout(() => {
+          dialogalert.close();
+        }, 3000);
       }
     );
-    
+
   }
 
   showAlert = true;
-  showSuccessAlert=true
+  showSuccessAlert = true
   ngOnInit() {
     // Hide alert after 5 seconds
     setTimeout(() => {
@@ -95,11 +114,11 @@ export class CompanyDashboardComponent {
   }
   show = true
   successMessage: any
-  
+
   onAlert(value: any) {
     console.log(value)
     this.successMessage = value
   }
 
-  
+
 }
