@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Swabhav Onboarding Lerning\\DemoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\handlers\\generichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\handlers\\generichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\queries\\genericqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\queries\\genericqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\queries\\imodelrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\queries\\imodelrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\dataaccess\\idataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\dataaccess\\idataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\dataaccess\\demodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\dataaccess\\demodataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\models\\persondto\\updatepersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\models\\persondto\\updatepersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\interfaces\\irepository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\interfaces\\irepository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\models\\persondto\\addpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\models\\persondto\\addpersondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\demolibrarymediatrentrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\demolibrarymediatrentrypoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|e:\\swabhav onboarding lerning\\demoapi\\demoapi\\models\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7D99F5-E324-4F1A-AED7-3A5057848C08}|DemoApi\\DemoApi.csproj|solutionrelative:demoapi\\models\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenericQueries.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Queries\\GenericQueries.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Queries\\GenericQueries.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Queries\\GenericQueries.cs",
+              "RelativeToolTip": "DemoApi\\Queries\\GenericQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T05:00:01.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Controllers\\PersonController.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "DemoApi\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:04:40.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IModelRequest.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Queries\\IModelRequest.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Queries\\IModelRequest.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Queries\\IModelRequest.cs",
+              "RelativeToolTip": "DemoApi\\Queries\\IModelRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T04:51:06.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericHandler.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Handlers\\GenericHandler.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Handlers\\GenericHandler.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Handlers\\GenericHandler.cs",
+              "RelativeToolTip": "DemoApi\\Handlers\\GenericHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T13:15:30.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Program.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Program.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Program.cs",
+              "RelativeToolTip": "DemoApi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:57:40.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Repository\\GenericRepository.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "DemoApi\\Repository\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:18:43.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDataAccess.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\DataAccess\\IDataAccess.cs",
+              "RelativeDocumentMoniker": "DemoApi\\DataAccess\\IDataAccess.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\DataAccess\\IDataAccess.cs",
+              "RelativeToolTip": "DemoApi\\DataAccess\\IDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:44:43.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DemoDataAccess.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\DataAccess\\DemoDataAccess.cs",
+              "RelativeDocumentMoniker": "DemoApi\\DataAccess\\DemoDataAccess.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\DataAccess\\DemoDataAccess.cs",
+              "RelativeToolTip": "DemoApi\\DataAccess\\DemoDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:08:47.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UpdatePersonDto.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Models\\PersonDto\\UpdatePersonDto.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Models\\PersonDto\\UpdatePersonDto.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Models\\PersonDto\\UpdatePersonDto.cs",
+              "RelativeToolTip": "DemoApi\\Models\\PersonDto\\UpdatePersonDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:52:46.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Interfaces\\IRepository\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Interfaces\\IRepository\\IGenericRepository.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Interfaces\\IRepository\\IGenericRepository.cs",
+              "RelativeToolTip": "DemoApi\\Interfaces\\IRepository\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:14:03.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddPersonDto.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Models\\PersonDto\\AddPersonDto.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Models\\PersonDto\\AddPersonDto.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Models\\PersonDto\\AddPersonDto.cs",
+              "RelativeToolTip": "DemoApi\\Models\\PersonDto\\AddPersonDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T09:52:19.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DemoLibraryMediatREntrypoint.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\DemoLibraryMediatREntrypoint.cs",
+              "RelativeDocumentMoniker": "DemoApi\\DemoLibraryMediatREntrypoint.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\DemoLibraryMediatREntrypoint.cs",
+              "RelativeToolTip": "DemoApi\\DemoLibraryMediatREntrypoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T08:30:40.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PersonModel.cs",
+              "DocumentMoniker": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Models\\PersonModel.cs",
+              "RelativeDocumentMoniker": "DemoApi\\Models\\PersonModel.cs",
+              "ToolTip": "E:\\Swabhav Onboarding Lerning\\DemoApi\\DemoApi\\Models\\PersonModel.cs",
+              "RelativeToolTip": "DemoApi\\Models\\PersonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T07:06:21.624Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

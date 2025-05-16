@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Tasks\\Final Project Banking App\\BankingApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\final project banking app\\bankingapp\\bankingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\final project banking app\\bankingapp\\bankingapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\final project banking app\\bankingapp\\bankingapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\final project banking app\\bankingapp\\bankingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|solutionrelative:bankingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE4E2B4E-B697-4F9A-8D80-712CCC5D07C4}|BankingApp\\BankingApp.csproj|e:\\tasks\\final project banking app\\bankingapp\\bankingapp\\service\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Employee.cs",
               "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Employee.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Company.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\Company.cs",
               "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\Company.cs",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Model\\Entity\\User.cs",
               "RelativeDocumentMoniker": "BankingApp\\Model\\Entity\\User.cs",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MyContext.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Database\\MyContext.cs",
               "RelativeDocumentMoniker": "BankingApp\\Database\\MyContext.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "BankingApp\\Controllers\\UserController.cs",
@@ -134,28 +134,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "BankingApp\\Controllers\\AuthController.cs",
               "ToolTip": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Controllers\\AuthController.cs",
               "RelativeToolTip": "BankingApp\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAUwH0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwH0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T07:51:15.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Program.cs",
               "RelativeDocumentMoniker": "BankingApp\\Program.cs",
               "ToolTip": "E:\\Tasks\\Final Project Banking App\\BankingApp\\BankingApp\\Program.cs",
               "RelativeToolTip": "BankingApp\\Program.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAHsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T07:21:34.814Z"
+              "WhenOpened": "2025-05-13T07:21:34.814Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

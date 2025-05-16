@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DemoApi",
+    "\\DemoApi\\Controllers",
+    "\\DemoApi\\Queries"
+  ],
+  "SelectedNode": "\\DemoApi\\Controllers\\PersonController.cs",
+  "PreviewInSolutionExplorer": false
+}
