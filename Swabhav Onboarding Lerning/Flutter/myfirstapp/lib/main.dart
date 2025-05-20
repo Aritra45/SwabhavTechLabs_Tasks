@@ -11,12 +11,108 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: Image.network(
-          'https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        ),
-      ),
+      body: 
+      Stack(
+        children: [
+          Positioned.fill(
+            child: Image(
+              image: AssetImage('assets/bg.jpg'), 
+              fit: BoxFit.cover,
+            ),
+          ),
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text('Home'),
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.amber,
+                    foregroundColor: Colors.black,
+                  ),
+                ),
+                SizedBox(width: 8),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text('Contact'),
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.amber,
+                    foregroundColor: Colors.black,
+                  ),
+                ),
+                SizedBox(width: 8),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text('About'),
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.amber,
+                    foregroundColor: Colors.black,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
 
+            children: [
+              Container(
+                padding: EdgeInsets.all(16),
+                color: Colors.grey,
+                width: 300,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Login Form',
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                    SizedBox(height: 10),
+                    TextField(
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Enter your email',
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    TextField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                        labelText: 'Enter your password',
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(199.0, 0.0, 0.0, 0.0),
+                      child: TextButton(
+                        onPressed: () {
+                          print('submitted');
+                        },
+                        child: Text(
+                          'Submit',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        style: TextButton.styleFrom(
+                          backgroundColor: Colors.blue,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+        ]
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // Add your action here
