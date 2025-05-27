@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Apple iPhone 14",
+    "description": "128 GB, Midnight - 6.1-inch display, A15 Bionic chip",
+    "price": 71999,
+    "image": "https://m.media-amazon.com/images/I/61cwywLZR-L._SL1500_.jpg"
+  },
+  {
+    "name": "Samsung Galaxy M14 5G",
+    "description": "6.6-inch display, 6000 mAh battery, 50MP Triple Camera",
+    "price": 12999,
+    "image": "https://m.media-amazon.com/images/I/81ZSn2rk9WL._SL1500_.jpg"
+  },
+  {
+    "name": "boAt Airdopes 141",
+    "description": "Bluetooth Headset with 42 Hours Playback and ASAP Charge",
+    "price": 1299,
+    "image": "https://m.media-amazon.com/images/I/61KNJav3S9L._SL1500_.jpg"
+  },
+  {
+    "name": "Sony Bravia 43 Inch 4K TV",
+    "description": "Smart Google TV with 4K UHD, HDR, and Dolby Audio",
+    "price": 38999,
+    "image": "https://m.media-amazon.com/images/I/71KrVbKxk-L._SL1500_.jpg"
+  },
+  {
+    "name": "HP 15s Laptop",
+    "description": "12th Gen Intel i5, 8GB RAM, 512GB SSD, Windows 11",
+    "price": 47999,
+    "image": "https://m.media-amazon.com/images/I/81lZV8gYZuL._SL1500_.jpg"
+  },
+  {
+    "name": "Puma Men’s Running Shoes",
+    "description": "Lightweight shoes with breathable mesh and high-grip sole",
+    "price": 2499,
+    "image": "https://m.media-amazon.com/images/I/81MXZ2H5JwL._UL1500_.jpg"
+  },
+  {
+    "name": "Fastrack Reflex Beat+ Smartwatch",
+    "description": "1.69 HD Display, 60+ Sports Modes, SpO2 & HR Monitor",
+    "price": 1499,
+    "image": "https://m.media-amazon.com/images/I/61S6GgU6CHL._SL1500_.jpg"
+  },
+  {
+    "name": "Milton Thermosteel Water Bottle",
+    "description": "1 L, Stainless Steel, Hot & Cold, Leak-Proof Design",
+    "price": 699,
+    "image": "https://m.media-amazon.com/images/I/51zGJCY0QXL._SL1080_.jpg"
+  },
+  {
+    "name": "Classmate Notebook",
+    "description": "Single line, 200 pages, pack of 6",
+    "price": 179,
+    "image": "https://m.media-amazon.com/images/I/71q1zQbPfVL._SL1500_.jpg"
+  },
+  {
+    "name": "L'Oréal Paris Total Repair 5 Shampoo",
+    "description": "Repair damaged hair, 1 L bottle",
+    "price": 459,
+    "image": "https://m.media-amazon.com/images/I/71FQcsK4dtL._SL1500_.jpg"
+  }
+]
