@@ -40,6 +40,7 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   fluttertoast: ^8.2.12
   provider: ^6.1.5
+  reactive_forms: 17.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -75,9 +76,21 @@ flutter:
     - assets/beardo.jpg
     - assets/fogg.jpg
     - assets/boat.jpeg
+    - assets/banner.png
     - assets/products/fogg.png
     - assets/products/shoe.png
     - assets/products/trimmer.png
+    - assets/products/iphone.jpg
+    - assets/products/samsang.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/iphone.jpg
+    - assets/products/tv.png
     - lib/products/products.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

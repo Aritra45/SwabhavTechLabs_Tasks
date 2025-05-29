@@ -13,8 +13,8 @@ class CartPage extends StatefulWidget {
 class _CartPageState extends State<CartPage> {
   late Box<Product> cartBox;
   int _selectedIndex = 4;
-  Map<int, bool> selectedItems = {}; // Track selected items
-  Map<int, int> productQuantities = {}; // Track product quantities
+  Map<int, bool> selectedItems = {};
+  Map<int, int> productQuantities = {};
 
   @override
   void initState() {
@@ -55,12 +55,7 @@ class _CartPageState extends State<CartPage> {
         body: Column(
           children: [
             Expanded(
-              child: TabBarView(
-                children: [
-                  _buildCartTab(),
-                  _buildCartTab(), // Reuse for now
-                ],
-              ),
+              child: TabBarView(children: [_buildCartTab(), _buildCartTab()]),
             ),
           ],
         ),
@@ -72,34 +67,35 @@ class _CartPageState extends State<CartPage> {
     );
   }
 
+  // Replace inside _buildCartTab method
   Widget _buildCartTab() {
     return ValueListenableBuilder(
       valueListenable: cartBox.listenable(),
       builder: (context, Box<Product> box, _) {
         if (box.isEmpty) return _buildEmptyCart();
 
-        for (int i = 0; i < box.length; i++) {
-          selectedItems.putIfAbsent(i, () => false);
-          productQuantities.putIfAbsent(i, () => 1);
-        }
+        final keys = box.keys.cast<int>().toList().reversed.toList();
 
         double totalPrice = 0.0;
-        selectedItems.forEach((index, selected) {
-          if (selected) {
+        for (int key in keys) {
+          selectedItems.putIfAbsent(key, () => false);
+          productQuantities.putIfAbsent(key, () => 1);
+          if (selectedItems[key] == true) {
             totalPrice +=
-                (box.getAt(index)?.price ?? 0.0) *
-                (productQuantities[index] ?? 1);
+                (box.get(key)?.price ?? 0.0) * (productQuantities[key] ?? 1);
           }
-        });
+        }
 
         return Column(
           children: [
             Expanded(
               child: ListView.builder(
-                itemCount: box.length,
+                itemCount: keys.length,
                 itemBuilder: (context, index) {
-                  int reverseIndex = box.length - 1 - index;
-                  final product = box.getAt(reverseIndex);
+                  final key = keys[index];
+                  final product = box.get(key);
+
+                  if (product == null) return const SizedBox();
 
                   return Card(
                     margin: const EdgeInsets.symmetric(
@@ -114,35 +110,44 @@ class _CartPageState extends State<CartPage> {
                           Row(
                             children: [
                               Checkbox(
-                                value: selectedItems[reverseIndex] ?? false,
+                                value: selectedItems[key] ?? false,
                                 onChanged: (bool? value) {
                                   setState(() {
-                                    selectedItems[reverseIndex] =
-                                        value ?? false;
+                                    selectedItems[key] = value ?? false;
                                   });
                                 },
                               ),
                               const SizedBox(width: 8),
-                              Image.network(
-                                product?.image ?? '',
-                                width: 60,
-                                height: 60,
-                                fit: BoxFit.cover,
-                              ),
+                              product.image.isNotEmpty &&
+                                      Uri.tryParse(
+                                            product.image,
+                                          )?.hasAbsolutePath ==
+                                          true
+                                  ? Image.network(
+                                    product.image,
+                                    width: 60,
+                                    height: 60,
+                                    fit: BoxFit.cover,
+                                    errorBuilder:
+                                        (context, error, stackTrace) =>
+                                            const Icon(Icons.broken_image),
+                                  )
+                                  : const Icon(Icons.broken_image, size: 60),
+
                               const SizedBox(width: 12),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      product?.name ?? '',
+                                      product.name,
                                       style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                     const SizedBox(height: 4),
                                     Text(
-                                      '₹ ${product?.price.toStringAsFixed(2)}',
+                                      '₹ ${product.price.toStringAsFixed(2)}',
                                       style: const TextStyle(
                                         color: Colors.grey,
                                       ),
@@ -158,24 +163,20 @@ class _CartPageState extends State<CartPage> {
                               IconButton(
                                 onPressed: () {
                                   setState(() {
-                                    if ((productQuantities[reverseIndex] ?? 1) >
-                                        1) {
-                                      productQuantities[reverseIndex] =
-                                          (productQuantities[reverseIndex] ??
-                                              1) -
-                                          1;
+                                    if ((productQuantities[key] ?? 1) > 1) {
+                                      productQuantities[key] =
+                                          (productQuantities[key] ?? 1) - 1;
                                     }
                                   });
                                 },
                                 icon: const Icon(Icons.remove_circle_outline),
                               ),
-                              Text('${productQuantities[reverseIndex] ?? 1}'),
+                              Text('${productQuantities[key] ?? 1}'),
                               IconButton(
                                 onPressed: () {
                                   setState(() {
-                                    productQuantities[reverseIndex] =
-                                        (productQuantities[reverseIndex] ?? 1) +
-                                        1;
+                                    productQuantities[key] =
+                                        (productQuantities[key] ?? 1) + 1;
                                   });
                                 },
                                 icon: const Icon(Icons.add_circle_outline),
@@ -188,9 +189,9 @@ class _CartPageState extends State<CartPage> {
                             child: TextButton.icon(
                               onPressed: () {
                                 setState(() {
-                                  box.deleteAt(reverseIndex);
-                                  selectedItems.remove(reverseIndex);
-                                  productQuantities.remove(reverseIndex);
+                                  cartBox.delete(key);
+                                  selectedItems.remove(key);
+                                  productQuantities.remove(key);
                                 });
                               },
                               icon: const Icon(Icons.delete, color: Colors.red),
@@ -207,7 +208,8 @@ class _CartPageState extends State<CartPage> {
                 },
               ),
             ),
-            // Checkout and total section remains unchanged
+
+            /// Checkout Section
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
@@ -224,6 +226,7 @@ class _CartPageState extends State<CartPage> {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
                       ),
                       Text(
@@ -231,6 +234,7 @@ class _CartPageState extends State<CartPage> {
                         style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -243,48 +247,53 @@ class _CartPageState extends State<CartPage> {
                           totalPrice > 0
                               ? () async {
                                 final orderBox = Hive.box<Product>('ordersBox');
-                                final List<int> selectedKeys = [];
+                                final selectedKeys =
+                                    keys
+                                        .where(
+                                          (key) => selectedItems[key] == true,
+                                        )
+                                        .toList();
 
-                                for (int i = 0; i < cartBox.length; i++) {
-                                  final product = cartBox.getAt(i);
-                                  if (selectedItems[i] == true &&
-                                      product != null) {
-                                    final quantity = productQuantities[i] ?? 1;
-                                    for (int j = 0; j < quantity; j++) {
-                                      await orderBox.add(
-                                        Product(
-                                          name: product.name,
-                                          description: product.description,
-                                          price: product.price,
-                                          image: product.image,
-                                        ),
-                                      );
-                                    }
-                                    selectedKeys.add(i);
-                                  }
-                                }
-
-                                selectedKeys.sort((a, b) => b.compareTo(a));
                                 for (int key in selectedKeys) {
-                                  await cartBox.deleteAt(key);
-                                  selectedItems.remove(key);
-                                  productQuantities.remove(key);
+                                  final product = cartBox.get(key);
+                                  if (product != null) {
+                                    final quantity =
+                                        productQuantities[key] ?? 1;
+                                    for (int i = 0; i < quantity; i++) {
+                                      await orderBox.add(product);
+                                    }
+                                    await cartBox.delete(key);
+                                    selectedItems.remove(key);
+                                    productQuantities.remove(key);
+                                  }
                                 }
 
                                 setState(() {});
                                 Navigator.pushNamed(context, '/order');
                               }
                               : null,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.resolveWith<Color>((
+                              Set<MaterialState> states,
+                            ) {
+                              if (states.contains(MaterialState.disabled)) {
+                                return Colors.grey.shade500;
+                              }
+                              return Colors.blue;
+                            }),
+                        padding: MaterialStateProperty.all(
+                          const EdgeInsets.symmetric(vertical: 14),
+                        ),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
                         ),
                       ),
                       child: const Text(
                         'Checkout',
-                        style: TextStyle(fontSize: 16),
+                        style: TextStyle(fontSize: 16, color: Colors.black),
                       ),
                     ),
                   ),
@@ -323,7 +332,10 @@ class _CartPageState extends State<CartPage> {
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: const Text('Shop now'),
+            child: const Text(
+              'Shop now',
+              style: TextStyle(color: Colors.black),
+            ),
           ),
           const SizedBox(height: 30),
           Container(
@@ -352,12 +364,18 @@ class _CartPageState extends State<CartPage> {
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.symmetric(horizontal: 8),
               children: [
-                _suggestedItem("https://via.placeholder.com/120", "Suitcase"),
                 _suggestedItem(
-                  "https://via.placeholder.com/120",
+                  "https://static.vecteezy.com/system/resources/previews/047/241/778/non_2x/3d-suitcase-isolated-on-transparent-background-free-png.png",
+                  "Suitcase",
+                ),
+                _suggestedItem(
+                  "https://5.imimg.com/data5/SELLER/Default/2024/3/397046601/DX/IN/CW/7636429/smart-multipurpose-laptop-table.png",
                   "Laptop Table",
                 ),
-                _suggestedItem("https://via.placeholder.com/120", "Snacks"),
+                _suggestedItem(
+                  "https://www.pngitem.com/pimgs/m/198-1988986_snack-png-transparent-png.png",
+                  "Snacks",
+                ),
               ],
             ),
           ),
@@ -385,7 +403,7 @@ class _CartPageState extends State<CartPage> {
             child: Text(
               title,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 13),
+              style: const TextStyle(fontSize: 13, color: Colors.black),
             ),
           ),
         ],

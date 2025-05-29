@@ -1,9 +1,13 @@
 import 'dart:convert';
 import 'package:filpkart_clone/pages/ProductsDetails.dart';
+import 'package:filpkart_clone/provider/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
+import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'custom_bottom_nav.dart';
+import 'package:hive/hive.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class FlipkartHome extends StatefulWidget {
   const FlipkartHome({super.key});
@@ -14,7 +18,7 @@ class FlipkartHome extends StatefulWidget {
 
 class _FlipkartHomeState extends State<FlipkartHome> {
   int _selectedIndex = 0;
-
+  bool light = true;
   final List<String> imagePaths = [
     'assets/beardo.jpg',
     'assets/fogg.jpg',
@@ -56,6 +60,11 @@ class _FlipkartHomeState extends State<FlipkartHome> {
     }
   }
 
+  void deleteToken() async {
+    final userBox = await Hive.openBox('users');
+    userBox.delete('loggedUser');
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -81,6 +90,32 @@ class _FlipkartHomeState extends State<FlipkartHome> {
             icon: const Icon(Icons.shopping_cart),
             color: Colors.white,
           ),
+          IconButton(
+            onPressed: () {
+              try {
+                deleteToken();
+              Fluttertoast.showToast(
+                msg: 'Logout successful',
+                backgroundColor: Colors.green,
+                textColor: Colors.white,
+              );
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                '/',
+                (route) => false,
+              );
+              } catch (e) {
+                Fluttertoast.showToast(
+                msg: 'Logout unsuccessful',
+                backgroundColor: Colors.red,
+                textColor: Colors.white,
+              );
+              }
+              
+            },
+            icon: const Icon(Icons.logout),
+            color: Colors.red,
+          ),
         ],
       ),
       body: SingleChildScrollView(
@@ -99,31 +134,44 @@ class _FlipkartHomeState extends State<FlipkartHome> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  const Icon(Icons.location_on),
-                  const Text("400061 "),
-                  GestureDetector(
-                    onTap: () {},
-                    child: Text(
-                      "Select delivery location",
-                      style: TextStyle(
-                        color: Colors.blue[700],
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Row(
+            //     children: [
+            //       const Icon(Icons.location_on),
+            //       const Text("400061 "),
+            //       GestureDetector(
+            //         onTap: () {},
+            //         child: Text(
+            //           "Select delivery location",
+            //           style: TextStyle(
+            //             color: Colors.blue[700],
+            //             fontWeight: FontWeight.bold,
+            //           ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            SizedBox(height: 8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: Row(
                 children: [
-                  const Text("Brand Mall"),
-                  Switch(value: false, onChanged: (_) {}),
+                  Consumer<ThemeNotifier>(
+                    builder:
+                        (context, themeNotifier, _) => Row(
+                          children: [
+                            Text(themeNotifier.isDark ? "Dark" : "Light"),
+                            Switch(
+                              value: themeNotifier.isDark,
+                              onChanged: (value) {
+                                themeNotifier.toggleTheme(value);
+                              },
+                            ),
+                          ],
+                        ),
+                  ),
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
@@ -144,7 +192,10 @@ class _FlipkartHomeState extends State<FlipkartHome> {
               color: Colors.yellow[300],
               child: Marquee(
                 text: '★ 7 DAYS RETURN ★ FREE DELIVERY ★ 7 DAYS RETURN ★ ',
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
                 scrollAxis: Axis.horizontal,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 blankSpace: 50.0,
@@ -157,7 +208,7 @@ class _FlipkartHomeState extends State<FlipkartHome> {
                 decelerationCurve: Curves.easeOut,
               ),
             ),
-            SizedBox(height : 5),
+            SizedBox(height: 5),
             Column(
               children: [
                 SizedBox(
@@ -219,7 +270,12 @@ class _FlipkartHomeState extends State<FlipkartHome> {
               padding: const EdgeInsets.all(12),
               child: const Text(
                 "Aritra, still looking for these?",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
               ),
             ),
             SizedBox(
@@ -236,6 +292,7 @@ class _FlipkartHomeState extends State<FlipkartHome> {
                           return _recommendedCard(
                             product['name'],
                             product['image'],
+
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -309,7 +366,7 @@ class _FlipkartHomeState extends State<FlipkartHome> {
           Text(
             title,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 12),
+            style: const TextStyle(fontSize: 12, color: Colors.black),
           ),
         ],
       ),
