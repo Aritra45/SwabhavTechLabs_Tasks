@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:filpkart_clone/pages/ProductsDetails.dart';
+import 'package:filpkart_clone/pages/loadUserName.dart';
 import 'package:filpkart_clone/provider/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
@@ -19,6 +20,8 @@ class FlipkartHome extends StatefulWidget {
 class _FlipkartHomeState extends State<FlipkartHome> {
   int _selectedIndex = 0;
   bool light = true;
+  bool isLoading = true;
+
   final List<String> imagePaths = [
     'assets/beardo.jpg',
     'assets/fogg.jpg',
@@ -28,21 +31,34 @@ class _FlipkartHomeState extends State<FlipkartHome> {
   final PageController _pageController = PageController(initialPage: 1000);
   int _realIndex(int index) => index % imagePaths.length;
   int currentPage = 1000;
-
+  String loggedUserName = '';
   List<dynamic> recommendedProducts = [];
 
   @override
   void initState() {
     super.initState();
-    loadProducts();
+    loadData();
   }
 
-  Future<void> loadProducts() async {
+  Future<void> loadProductsAndUserName() async {
     final String jsonStr = await DefaultAssetBundle.of(
       context,
-    ).loadString('lib/products/products.json'); // Ensure path is correct
+    ).loadString('lib/products/products.json');
+    LoadUserName loadUserName = new LoadUserName();
+    await loadUserName.loadLoggedInUserName();
     setState(() {
       recommendedProducts = json.decode(jsonStr);
+      loggedUserName = loadUserName.userName;
+    });
+  }
+
+  void loadData() async {
+    await Future.delayed(const Duration(seconds: 2));
+    await loadProductsAndUserName();
+
+    setState(() {
+      
+      isLoading = false;
     });
   }
 
@@ -68,7 +84,6 @@ class _FlipkartHomeState extends State<FlipkartHome> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -94,228 +109,241 @@ class _FlipkartHomeState extends State<FlipkartHome> {
             onPressed: () {
               try {
                 deleteToken();
-              Fluttertoast.showToast(
-                msg: 'Logout successful',
-                backgroundColor: Colors.green,
-                textColor: Colors.white,
-              );
-              Navigator.pushNamedAndRemoveUntil(
-                context,
-                '/',
-                (route) => false,
-              );
+                Fluttertoast.showToast(
+                  msg: 'Logout successful',
+                  backgroundColor: Colors.green,
+                  textColor: Colors.white,
+                );
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/',
+                  (route) => false,
+                );
               } catch (e) {
                 Fluttertoast.showToast(
-                msg: 'Logout unsuccessful',
-                backgroundColor: Colors.red,
-                textColor: Colors.white,
-              );
+                  msg: 'Logout unsuccessful',
+                  backgroundColor: Colors.red,
+                  textColor: Colors.white,
+                );
               }
-              
             },
             icon: const Icon(Icons.logout),
             color: Colors.red,
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              color: Colors.blue[100],
-              padding: const EdgeInsets.symmetric(vertical: 12),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  _quickIcon(Icons.shopping_bag, "Flipkart"),
-                  _quickIcon(Icons.local_grocery_store, "Grocery"),
-                  _quickIcon(Icons.flight, "Travel"),
-                  _quickIcon(Icons.payment, "Pay"),
-                ],
-              ),
-            ),
-            // Padding(
-            //   padding: const EdgeInsets.all(8.0),
-            //   child: Row(
-            //     children: [
-            //       const Icon(Icons.location_on),
-            //       const Text("400061 "),
-            //       GestureDetector(
-            //         onTap: () {},
-            //         child: Text(
-            //           "Select delivery location",
-            //           style: TextStyle(
-            //             color: Colors.blue[700],
-            //             fontWeight: FontWeight.bold,
-            //           ),
-            //         ),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-            SizedBox(height: 8),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: Row(
-                children: [
-                  Consumer<ThemeNotifier>(
-                    builder:
-                        (context, themeNotifier, _) => Row(
-                          children: [
-                            Text(themeNotifier.isDark ? "Dark" : "Light"),
-                            Switch(
-                              value: themeNotifier.isDark,
-                              onChanged: (value) {
-                                themeNotifier.toggleTheme(value);
-                              },
-                            ),
-                          ],
-                        ),
-                  ),
-                  Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Search for products",
-                        prefixIcon: const Icon(Icons.search),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
+      body:
+          isLoading
+              ? Center(child: CircularProgressIndicator())
+              : SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      color: Colors.blue[100],
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          _quickIcon(Icons.shopping_bag, "Flipkart"),
+                          _quickIcon(Icons.local_grocery_store, "Grocery"),
+                          _quickIcon(Icons.flight, "Travel"),
+                          _quickIcon(Icons.payment, "Pay"),
+                        ],
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 12),
-            Container(
-              height: 30,
-              color: Colors.yellow[300],
-              child: Marquee(
-                text: '★ 7 DAYS RETURN ★ FREE DELIVERY ★ 7 DAYS RETURN ★ ',
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-                scrollAxis: Axis.horizontal,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                blankSpace: 50.0,
-                velocity: 50.0,
-                pauseAfterRound: const Duration(seconds: 1),
-                startPadding: 10.0,
-                accelerationDuration: const Duration(seconds: 1),
-                accelerationCurve: Curves.linear,
-                decelerationDuration: const Duration(milliseconds: 500),
-                decelerationCurve: Curves.easeOut,
-              ),
-            ),
-            SizedBox(height: 5),
-            Column(
-              children: [
-                SizedBox(
-                  height: size.height * 0.22,
-                  child: PageView.builder(
-                    controller: _pageController,
-                    onPageChanged: (index) {
-                      setState(() {
-                        currentPage = index;
-                      });
-                    },
-                    itemBuilder: (context, index) {
-                      final imagePath = imagePaths[_realIndex(index)];
-                      return Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 12),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          image: DecorationImage(
-                            image: AssetImage(imagePath),
-                            fit: BoxFit.cover,
+                    // Padding(
+                    //   padding: const EdgeInsets.all(8.0),
+                    //   child: Row(
+                    //     children: [
+                    //       const Icon(Icons.location_on),
+                    //       const Text("400061 "),
+                    //       GestureDetector(
+                    //         onTap: () {},
+                    //         child: Text(
+                    //           "Select delivery location",
+                    //           style: TextStyle(
+                    //             color: Colors.blue[700],
+                    //             fontWeight: FontWeight.bold,
+                    //           ),
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
+                    SizedBox(height: 8),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Row(
+                        children: [
+                          Consumer<ThemeNotifier>(
+                            builder:
+                                (context, themeNotifier, _) => Row(
+                                  children: [
+                                    Text(
+                                      themeNotifier.isDark ? "Dark" : "Light",
+                                    ),
+                                    Switch(
+                                      value: themeNotifier.isDark,
+                                      onChanged: (value) {
+                                        themeNotifier.toggleTheme(value);
+                                      },
+                                    ),
+                                  ],
+                                ),
                           ),
+                          Expanded(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                hintText: "Search for products",
+                                prefixIcon: const Icon(Icons.search),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Container(
+                      height: 30,
+                      color: Colors.yellow[300],
+                      child: Marquee(
+                        text:
+                            '★ 7 DAYS RETURN ★ FREE DELIVERY ★ 7 DAYS RETURN ★ ',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
-                      );
-                    },
-                  ),
-                ),
-                const SizedBox(height: 8),
-                SmoothPageIndicator(
-                  controller: _pageController,
-                  count: imagePaths.length,
-                  effect: WormEffect(
-                    dotHeight: 8,
-                    dotWidth: 8,
-                    spacing: 6,
-                    activeDotColor: Colors.black,
-                    dotColor: Colors.grey.shade300,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  _categoryIcon(Icons.spa, "Beauty"),
-                  _categoryIcon(Icons.person, "Fashion"),
-                  _categoryIcon(Icons.watch, "Gadgets"),
-                  _categoryIcon(Icons.chair, "Home"),
-                  _categoryIcon(Icons.tv, "Appliances"),
-                ],
-              ),
-            ),
-            const SizedBox(height: 16),
-            Container(
-              width: double.infinity,
-              color: Colors.blue[50],
-              padding: const EdgeInsets.all(12),
-              child: const Text(
-                "Aritra, still looking for these?",
-
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16,
-                  color: Colors.black,
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 180,
-              child:
-                  recommendedProducts.isEmpty
-                      ? const Center(child: CircularProgressIndicator())
-                      : ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                        itemCount: recommendedProducts.length,
-                        itemBuilder: (context, index) {
-                          final product = recommendedProducts[index];
-                          return _recommendedCard(
-                            product['name'],
-                            product['image'],
-
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder:
-                                      (context) => ProductDetailsPage(
-                                        productName: product['name'] ?? '',
-                                        productDescription:
-                                            product['description'] ?? '',
-                                        productPrice:
-                                            (product['price'] ?? 0).toDouble(),
-                                        productImageUrl: product['image'] ?? '',
-                                      ),
+                        scrollAxis: Axis.horizontal,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        blankSpace: 50.0,
+                        velocity: 50.0,
+                        pauseAfterRound: const Duration(seconds: 1),
+                        startPadding: 10.0,
+                        accelerationDuration: const Duration(seconds: 1),
+                        accelerationCurve: Curves.linear,
+                        decelerationDuration: const Duration(milliseconds: 500),
+                        decelerationCurve: Curves.easeOut,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Column(
+                      children: [
+                        SizedBox(
+                          height: size.height * 0.22,
+                          child: PageView.builder(
+                            controller: _pageController,
+                            onPageChanged: (index) {
+                              setState(() {
+                                currentPage = index;
+                              });
+                            },
+                            itemBuilder: (context, index) {
+                              final imagePath = imagePaths[_realIndex(index)];
+                              return Container(
+                                margin: const EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  image: DecorationImage(
+                                    image: AssetImage(imagePath),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               );
                             },
-                          );
-                        },
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        SmoothPageIndicator(
+                          controller: _pageController,
+                          count: imagePaths.length,
+                          effect: WormEffect(
+                            dotHeight: 8,
+                            dotWidth: 8,
+                            spacing: 6,
+                            activeDotColor: Colors.black,
+                            dotColor: Colors.grey.shade300,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          _categoryIcon(Icons.spa, "Beauty"),
+                          _categoryIcon(Icons.person, "Fashion"),
+                          _categoryIcon(Icons.watch, "Gadgets"),
+                          _categoryIcon(Icons.chair, "Home"),
+                          _categoryIcon(Icons.tv, "Appliances"),
+                        ],
                       ),
-            ),
-          ],
-        ),
-      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Container(
+                      width: double.infinity,
+                      color: Colors.blue[50],
+                      padding: const EdgeInsets.all(12),
+                      child: Text(
+                        "$loggedUserName, still looking for these?",
+
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 180,
+                      child:
+                          recommendedProducts.isEmpty
+                              ? const Center(child: CircularProgressIndicator())
+                              : ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                ),
+                                itemCount: recommendedProducts.length,
+                                itemBuilder: (context, index) {
+                                  final product = recommendedProducts[index];
+                                  return _recommendedCard(
+                                    product['name'],
+                                    product['image'],
+
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder:
+                                              (context) => ProductDetailsPage(
+                                                productName:
+                                                    product['name'] ?? '',
+                                                productDescription:
+                                                    product['description'] ??
+                                                    '',
+                                                productPrice:
+                                                    (product['price'] ?? 0)
+                                                        .toDouble(),
+                                                productImageUrl:
+                                                    product['image'] ?? '',
+                                              ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
+                    ),
+                  ],
+                ),
+              ),
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
@@ -330,7 +358,7 @@ class _FlipkartHomeState extends State<FlipkartHome> {
         child: Icon(icon, color: Colors.blue),
       ),
       const SizedBox(height: 4),
-      Text(label, style: const TextStyle(fontSize: 12)),
+      Text(label, style: const TextStyle(fontSize: 12, color: Colors.black)),
     ],
   );
 
@@ -361,7 +389,7 @@ class _FlipkartHomeState extends State<FlipkartHome> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network(imgUrl, height: 60, fit: BoxFit.cover),
+          Image.asset(imgUrl, height: 60, fit: BoxFit.cover),
           const SizedBox(height: 8),
           Text(
             title,

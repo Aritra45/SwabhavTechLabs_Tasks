@@ -260,7 +260,13 @@ class _CartPageState extends State<CartPage> {
                                     final quantity =
                                         productQuantities[key] ?? 1;
                                     for (int i = 0; i < quantity; i++) {
-                                      await orderBox.add(product);
+                                      final clonedProduct = Product(
+                                        name: product.name,
+                                        description : product.description,
+                                        price: product.price,
+                                        image: product.image,
+                                      );
+                                      await orderBox.add(clonedProduct);
                                     }
                                     await cartBox.delete(key);
                                     selectedItems.remove(key);
@@ -311,8 +317,8 @@ class _CartPageState extends State<CartPage> {
       child: Column(
         children: [
           const SizedBox(height: 40),
-          Image.network(
-            'https://cdn-icons-png.flaticon.com/512/2038/2038854.png',
+          Image.asset(
+            'assets/sopping.png',
             height: 120,
           ),
           const SizedBox(height: 20),
@@ -365,15 +371,15 @@ class _CartPageState extends State<CartPage> {
               padding: const EdgeInsets.symmetric(horizontal: 8),
               children: [
                 _suggestedItem(
-                  "https://static.vecteezy.com/system/resources/previews/047/241/778/non_2x/3d-suitcase-isolated-on-transparent-background-free-png.png",
+                  "assets/products/suitcase.jpeg",
                   "Suitcase",
                 ),
                 _suggestedItem(
-                  "https://5.imimg.com/data5/SELLER/Default/2024/3/397046601/DX/IN/CW/7636429/smart-multipurpose-laptop-table.png",
+                  "assets/products/laptop-table.png",
                   "Laptop Table",
                 ),
                 _suggestedItem(
-                  "https://www.pngitem.com/pimgs/m/198-1988986_snack-png-transparent-png.png",
+                  "assets/products/snacks.png",
                   "Snacks",
                 ),
               ],
@@ -396,7 +402,7 @@ class _CartPageState extends State<CartPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.network(imageUrl, height: 100, fit: BoxFit.cover),
+          Image.asset(imageUrl, height: 100, fit: BoxFit.cover),
           const SizedBox(height: 8),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4),

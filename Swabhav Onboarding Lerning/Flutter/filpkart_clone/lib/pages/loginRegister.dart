@@ -1,7 +1,10 @@
+import 'package:filpkart_clone/provider/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hive/hive.dart';
+import 'showPassword.dart';
 
 class FlipkartAuthPage extends StatefulWidget {
   const FlipkartAuthPage({super.key});
@@ -84,14 +87,21 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
     }
   }
 
+  bool _isRegistering = false;
   void _register() async {
     if (registerForm.valid) {
+      setState(() {
+        _isRegistering = true;
+      });
+
       final name = registerForm.control('name').value as String;
       final email = registerForm.control('email').value as String;
       final password = registerForm.control('password').value as String;
 
       final userBox = Hive.box('users');
       final existingUser = userBox.get(email);
+
+      await Future.delayed(const Duration(seconds: 1));
 
       if (existingUser == null) {
         await userBox.put(email, {
@@ -101,11 +111,11 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
         });
 
         Fluttertoast.showToast(
-          msg: 'Registration successful',
+          msg: 'Registration successful, Please Login',
           backgroundColor: Colors.green,
           textColor: Colors.white,
         );
-        Navigator.pushReplacementNamed(context, '/home');
+        Navigator.pushReplacementNamed(context, '/login');
       } else {
         Fluttertoast.showToast(
           msg: 'User already exists',
@@ -113,6 +123,10 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
           textColor: Colors.white,
         );
       }
+
+      setState(() {
+        _isRegistering = false;
+      });
     } else {
       registerForm.markAllAsTouched();
     }
@@ -123,9 +137,12 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
     String controlName, {
     bool obscure = false,
   }) {
+    if (obscure) {
+      return PasswordReactiveTextField(label: label, controlName: controlName);
+    }
+
     return ReactiveTextField<String>(
       formControlName: controlName,
-      obscureText: obscure,
       decoration: InputDecoration(
         labelText: label,
         border: const OutlineInputBorder(),
@@ -146,9 +163,12 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
         backgroundColor: Colors.amber,
         bottom: TabBar(
           controller: _tabController,
+          labelColor: Colors.blue[900],
+          unselectedLabelColor: Colors.black,
           tabs: const [Tab(text: 'Login'), Tab(text: 'Register')],
         ),
       ),
+
       body: SafeArea(
         child: TabBarView(
           controller: _tabController,
@@ -162,7 +182,18 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset('assets/banner.png', height: 100, width: 200),
+                      Consumer<ThemeNotifier>(
+                        builder: (context, themeNotifier, child) {
+                          return Image.asset(
+                            themeNotifier.isDark
+                                ? 'assets/banner-dark.png'
+                                : 'assets/banner.png',
+                            height: 100,
+                            width: 200,
+                          );
+                        },
+                      ),
+
                       const SizedBox(height: 16),
                       buildTextField('Email', 'email'),
                       const SizedBox(height: 16),
@@ -191,37 +222,49 @@ class _FlipkartAuthPageState extends State<FlipkartAuthPage>
             ),
 
             /// Register Tab
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: ReactiveForm(
-                formGroup: registerForm,
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset('assets/banner.png', height: 100, width: 200),
-                      const SizedBox(height: 16),
-                      buildTextField('Full Name', 'name'),
-                      const SizedBox(height: 16),
-                      buildTextField('Email', 'email'),
-                      const SizedBox(height: 16),
-                      buildTextField('Password', 'password', obscure: true),
-                      const SizedBox(height: 24),
-                      ElevatedButton(
-                        onPressed: _register,
-                        child: const Text(
-                          'Register',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.amber,
-                        ),
+            _isRegistering
+                ? Center(child: CircularProgressIndicator())
+                : Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: ReactiveForm(
+                    formGroup: registerForm,
+                    child: SingleChildScrollView(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Consumer<ThemeNotifier>(
+                            builder: (context, themeNotifier, child) {
+                              return Image.asset(
+                                themeNotifier.isDark
+                                    ? 'assets/banner-dark.png'
+                                    : 'assets/banner.png',
+                                height: 100,
+                                width: 200,
+                              );
+                            },
+                          ),
+                          const SizedBox(height: 16),
+                          buildTextField('Full Name', 'name'),
+                          const SizedBox(height: 16),
+                          buildTextField('Email', 'email'),
+                          const SizedBox(height: 16),
+                          buildTextField('Password', 'password', obscure: true),
+                          const SizedBox(height: 24),
+                          ElevatedButton(
+                            onPressed: _register,
+                            child: const Text(
+                              'Register',
+                              style: TextStyle(color: Colors.black),
+                            ),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.amber,
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
                 ),
-              ),
-            ),
           ],
         ),
       ),

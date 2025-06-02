@@ -77,20 +77,23 @@ flutter:
     - assets/fogg.jpg
     - assets/boat.jpeg
     - assets/banner.png
+    - assets/banner-dark.png
+    - assets/sopping.png
     - assets/products/fogg.png
     - assets/products/shoe.png
     - assets/products/trimmer.png
     - assets/products/iphone.jpg
     - assets/products/samsang.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
-    - assets/products/iphone.jpg
+    - assets/products/boat.jpg
+    - assets/products/laptop.png
+    - assets/products/bottol.jpg
+    - assets/products/notebook.jpg
+    - assets/products/sampoo.jpg
+    - assets/products/watch.jpg
     - assets/products/tv.png
+    - assets/products/suitcase.jpeg
+    - assets/products/laptop-table.png
+    - assets/products/snacks.png
     - lib/products/products.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

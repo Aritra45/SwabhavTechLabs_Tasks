@@ -22,7 +22,8 @@ void main() async {
   // Open necessary Hive boxes
   await Hive.openBox<Product>('cartBox');
   await Hive.openBox<Product>('ordersBox');
-  await Hive.openBox('users'); // Open users box for login/register
+  await Hive.openBox('users');
+  await Hive.openBox('settings');
 
   runApp(
     MultiProvider(
